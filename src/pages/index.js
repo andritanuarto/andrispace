@@ -4,11 +4,14 @@ import { Link, graphql } from "gatsby";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
 import Splash from "../components/home/splash";
+import PlanSwift from "../components/home/custom-splash/planswift/planswift";
 
 export default ({ data }) => {
   return (
     <>
-      <Splash/>
+      <Splash>
+        <PlanSwift/>
+      </Splash>
       <Layout>
         <div>
           <h1
