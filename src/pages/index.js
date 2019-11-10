@@ -4,12 +4,19 @@ import { Link, graphql } from "gatsby";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
 import Splash from "../components/home/splash";
+
+// Clients
 import PlanSwift from "../components/home/custom-splash/planswift/planswift";
+import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-logo.png";
 
 export default ({ data }) => {
   return (
     <>
-      <Splash>
+      <Splash
+        navColor={'light'}
+        backgroundColor={'#000000'}
+        clientLogo={PlanSwiftLogo}
+      >
         <PlanSwift/>
       </Splash>
       <Layout>

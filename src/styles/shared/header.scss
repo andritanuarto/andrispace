@@ -1,5 +1,19 @@
 .header {
   width: 100%;
+  &-light {
+    .hamburger {
+      hr {
+        background: $color-silver;
+      }
+    }
+  }
+  &-dark {
+    .hamburger {
+      hr {
+        background: $color-code-gray;
+      }
+    }
+  }
   .logo {
     float: left;
   }
@@ -19,7 +33,6 @@
     hr {
       width: 30px;
       display: block;
-      background: $color-silver;
       transition: background-color, 1s;
       margin: 0 0 10px 0;
       height: 2px;

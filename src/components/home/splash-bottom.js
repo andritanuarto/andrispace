@@ -1,11 +1,13 @@
 import React from 'react';
 
-export default () => {
+export default ({clientLogo}) => {
   return (
     <div className="splash__bottom">
       <div className="splash__left">
         <span>Project Client</span>
-        <div className="splash__client-logo"></div>
+        <div className="splash__client-logo">
+          <img src={clientLogo} />
+        </div>
       </div>
       <div className="splash__right">
         <span>Read more the case study</span>

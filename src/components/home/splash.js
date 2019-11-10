@@ -2,14 +2,14 @@ import React from 'react';
 import Header from '../shared/header';
 import SplashBottom from './splash-bottom';
 
-export default (props) => {
+export default ({children, clientLogo, backgroundColor, navColor}) => {
   return (
-    <div className="splash">
-      <Header/>
+    <div className="splash" style={{backgroundColor}}>
+      <Header navColor={navColor} />
       <div className="splash__content">
-        {props.children}
+        {children}
       </div>
-      <SplashBottom/>
+      <SplashBottom clientLogo={clientLogo} />
     </div>
   )
 }

@@ -1,5 +1,4 @@
 .splash {
-  background: $color-code-gray;
   height: 100vh;
   position: relative;
   .header {
@@ -34,7 +33,9 @@
   &__client-logo {
     width: 200px;
     height: 40px;
-    background: $color-white;
+    img {
+      height: 40px;
+    }
   }
   &__right {
     width: 50%;
