@@ -3,7 +3,7 @@ import { css } from "@emotion/core";
 import { Link, graphql } from "gatsby";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
-import Splash from "../components/splash";
+import Splash from "../components/home/splash";
 
 export default ({ data }) => {
   return (

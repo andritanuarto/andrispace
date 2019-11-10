@@ -1,0 +1,18 @@
+.logo {
+  display: inline-block;
+  color: $color-white;
+  line-height: normal;
+  position: relative;
+  text-decoration: none;
+  &__main {
+    font-family: 'Domine', serif;
+    font-size: 25px;
+  }
+  &__tag {
+    font-size: 11px;
+    position: relative;
+    top: 25px;
+    letter-spacing: 5px;
+    position: absolute;
+  }
+}

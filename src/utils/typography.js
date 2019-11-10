@@ -1,7 +1,12 @@
-import Typography from "typography"
-import kirkhamTheme from "typography-theme-kirkham"
+import Typography from "typography";
 
-const typography = new Typography(kirkhamTheme)
+const typography = new Typography({
+  baseFontSize: '18px',
+  headerFontFamily: ['Helvetica', 'sans-serif'],
+  bodyFontFamily: ['Helvetica', 'sans-serif'],
+  baseLineHeight: 2.5,
+});
 
-export default typography
-export const rhythm = typography.rhythm
+
+export default typography;
+export const rhythm = typography.rhythm;
