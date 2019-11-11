@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { connect } from "react-redux";
 import { css } from "@emotion/core";
 import { Link, graphql } from "gatsby";
 import { rhythm } from "../utils/typography";
@@ -9,7 +10,15 @@ import Splash from "../components/home/splash";
 import PlanSwift from "../components/home/custom-splash/planswift/planswift";
 import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-logo.png";
 
-export default ({ data }) => {
+const mapStateToProps = ({ count }) => {
+  return {
+    count
+  }
+}
+
+const Index = (props) => {
+  const { data } = props;
+
   return (
     <>
       <Splash
@@ -83,3 +92,5 @@ export const query = graphql`
     }
   }
 `
+
+export default connect(mapStateToProps)(Index);

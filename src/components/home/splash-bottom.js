@@ -6,7 +6,7 @@ export default ({clientLogo}) => {
       <div className="splash__left">
         <span>Project Client</span>
         <div className="splash__client-logo">
-          <img src={clientLogo} />
+          <img src={clientLogo} alt="planswift"/>
         </div>
       </div>
       <div className="splash__right">
