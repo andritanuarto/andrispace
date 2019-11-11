@@ -1,0 +1,106 @@
+@-webkit-keyframes planswiftWidthAnimation {
+  0%   { width: 0%; }
+  100% { width: 100%; }
+}
+@-moz-keyframes planswiftWidthAnimation {
+  0%   { width: 0%; }
+  100% { width: 100%; }
+}
+@-o-keyframes planswiftWidthAnimation {
+  0%   { width: 0%; }
+  100% { width: 100%; }
+}
+@keyframes planswiftWidthAnimation {
+  0%   { width: 0%; }
+  100% { width: 100%; }
+}
+
+@-webkit-keyframes planswiftSlideLeftAnimation {
+  0%   { left: 100%; }
+  100% { left: 0%; }
+}
+@-moz-keyframes planswiftSlideLeftAnimation {
+  0%   { left: 100%; }
+  100% { left: 0%; }
+}
+@-o-keyframes planswiftSlideLeftAnimation {
+  0%   { left: 100%; }
+  100% { left: 0%; }
+}
+@keyframes planswiftSlideLeftAnimation {
+  0%   { left: 100%; }
+  100% { left: 0%; }
+}
+
+@keyframes planswiftFadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.planswift {
+  &__content {
+    position: absolute;
+    width: 100%;
+    color: $color-white;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: center;
+    z-index: 2;
+    h1 {
+      opacity: 0;
+      margin-bottom: 0;
+      -webkit-animation: planswiftFadeIn 2s;
+      -moz-animation: planswiftFadeIn 2s;
+      -o-animation: planswiftFadeIn 2s;
+      animation: planswiftFadeIn 2s;
+      animation-delay: 3s;
+      animation-fill-mode: forwards;
+    }
+    img {
+      opacity: 0;
+      -webkit-animation: planswiftFadeIn 2s;
+      -moz-animation: planswiftFadeIn 2s;
+      -o-animation: planswiftFadeIn 2s;
+      animation: planswiftFadeIn 2s;
+      animation-delay: 4s;
+      animation-fill-mode: forwards;
+      max-width: 300px;
+      width: 100%;
+      margin-bottom: 0;
+      margin-left: 50px;
+    }
+  }
+  .line1 {
+    -webkit-animation: planswiftWidthAnimation 2s;
+    -moz-animation: planswiftWidthAnimation 2s;
+    -o-animation: planswiftWidthAnimation 2s;
+    animation: planswiftWidthAnimation 2s;
+    height: 80px;
+    background: #523360;
+  }
+  .line2 {
+    position: relative;
+    z-index: 0;
+    -webkit-animation: planswiftSlideLeftAnimation 2s;
+    -moz-animation: planswiftSlideLeftAnimation 2s;
+    -o-animation: planswiftSlideLeftAnimation 2s;
+    animation: planswiftSlideLeftAnimation 2s;
+    height: 80px;
+    background: #1D3860;
+  }
+  .line3 {
+    transition-timing-function: ease-in;
+    -webkit-animation: planswiftWidthAnimation 1s;
+    -moz-animation: planswiftWidthAnimation 1s;
+    -o-animation: planswiftWidthAnimation 1s;
+    animation: planswiftWidthAnimation 1s;
+    animation-delay: 2s;
+    width: 0%;
+    animation-fill-mode: forwards;
+    height: 120px;
+    background: #194D29;
+  }
+
+}
