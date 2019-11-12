@@ -70,7 +70,7 @@ const Splash = (
 Splash.defaultProps = {
   navColor: '#fff',
   logoColor: '#fff',
-  backgroundColor: '#000',
+  backgroundColor: '#101010',
   textColor: '#fff',
   slideNavColor: '#fff',
   activeSlideNavColor: 'yellow'

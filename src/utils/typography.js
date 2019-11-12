@@ -4,7 +4,7 @@ const typography = new Typography({
   baseFontSize: '18px',
   headerFontFamily: ['Helvetica', 'sans-serif'],
   bodyFontFamily: ['Helvetica', 'sans-serif'],
-  baseLineHeight: 2.5,
+  baseLineHeight: 1.5,
 });
 
 
