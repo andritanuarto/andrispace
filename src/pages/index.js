@@ -8,6 +8,7 @@ import Splash from "../components/home/splash";
 
 import PlanSwift from "../components/home/custom-splash/planswift/planswift";
 import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-logo.png";
+import WorldRevolutionLogo from "../components/home/custom-splash/world-revolution/world-revolution-logo.png";
 
 const mapStateToProps = ({ splashIndex }) => {
   return {
@@ -19,11 +20,12 @@ const Index = (props) => {
   const { data, splashIndex } = props;
   const splashes = [
     {
-      navColor: '#fff',
-      logoColor: '#fff',
-      backgroundColor: '#000',
       clientLogo: PlanSwiftLogo,
       contentComponent: <PlanSwift/>
+    },
+    {
+      clientLogo: WorldRevolutionLogo,
+      contentComponent: <div>World Revolution</div>
     },
   ];
 
@@ -34,7 +36,10 @@ const Index = (props) => {
         logoColor={splashes[splashIndex].logoColor}
         backgroundColor={splashes[splashIndex].backgroundColor}
         clientLogo={splashes[splashIndex].clientLogo}
+        textColor={splashes[splashIndex].textColor}
+        slideNavColor={splashes[splashIndex].slideNavColor}
         slideLength={splashes.length}
+        activeSlideIndex={splashIndex}
       >
         {splashes[splashIndex].contentComponent}
       </Splash>

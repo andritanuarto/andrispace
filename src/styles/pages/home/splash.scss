@@ -20,7 +20,6 @@
   &__bottom {
     position: absolute;
     padding: 0 25px 15px 25px;
-    color: $color-white;
     bottom: 0;
     width: 100%;
     z-index: 2;
@@ -67,8 +66,8 @@
         width: 35px;
         a {
           display: block;
-          height: 2px;
-          background: $color-white;
+          height: 5px;
+          cursor: pointer;
         }
       }
     }
