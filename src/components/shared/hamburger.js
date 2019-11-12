@@ -1,10 +1,10 @@
 import React from "react";
 
-export default () => {
+export default ({navColor}) => {
   return (
     <button className="hamburger">
-      <hr/>
-      <hr/>
+      <hr style={{background: navColor}}/>
+      <hr style={{background: navColor}}/>
     </button>
   )
 }

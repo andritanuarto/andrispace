@@ -1,4 +1,5 @@
-import React from "react";
+import React, {Fragment} from "react";
+import { connect } from "react-redux";
 import { css } from "@emotion/core";
 import { Link, graphql } from "gatsby";
 import { rhythm } from "../utils/typography";
@@ -8,18 +9,36 @@ import Splash from "../components/home/splash";
 import PlanSwift from "../components/home/custom-splash/planswift/planswift";
 import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-logo.png";
 
+const mapStateToProps = ({ splashIndex }) => {
+  return {
+    splashIndex
+  };
+};
+
 const Index = (props) => {
-  const { data } = props;
+  const { data, splashIndex } = props;
+  const splashes = [
+    {
+      navColor: '#fff',
+      logoColor: '#fff',
+      backgroundColor: '#000',
+      clientLogo: PlanSwiftLogo,
+      contentComponent: <PlanSwift/>
+    },
+  ];
 
   return (
-    <>
+    <Fragment>
       <Splash
-        navColor={'light'}
-        backgroundColor={'#000000'}
-        clientLogo={PlanSwiftLogo}
+        navColor={splashes[splashIndex].navColor}
+        logoColor={splashes[splashIndex].logoColor}
+        backgroundColor={splashes[splashIndex].backgroundColor}
+        clientLogo={splashes[splashIndex].clientLogo}
+        slideLength={splashes.length}
       >
-        <PlanSwift/>
+        {splashes[splashIndex].contentComponent}
       </Splash>
+
       <Layout>
         <div>
           <h1
@@ -60,7 +79,7 @@ const Index = (props) => {
           ))}
         </div>
       </Layout>
-    </>
+    </Fragment>
   )
 }
 
@@ -85,4 +104,4 @@ export const query = graphql`
   }
 `
 
-export default Index;
+export default connect(mapStateToProps)(Index);

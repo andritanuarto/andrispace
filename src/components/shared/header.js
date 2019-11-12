@@ -2,11 +2,11 @@ import React from "react";
 import Logo from "./logo";
 import Hamburger from "./hamburger";
 
-export default ({navColor}) => {
+export default ({navColor, logoColor}) => {
   return (
-    <div className={`header header-${navColor}`}>
-      <Logo/>
-      <Hamburger/>
+    <div className="header">
+      <Logo logoColor={logoColor}/>
+      <Hamburger navColor={navColor}/>
     </div>
   )
 }
