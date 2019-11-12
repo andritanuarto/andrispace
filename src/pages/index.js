@@ -1,20 +1,12 @@
 import React from "react";
-import { connect } from "react-redux";
 import { css } from "@emotion/core";
 import { Link, graphql } from "gatsby";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
 import Splash from "../components/home/splash";
 
-// Clients
 import PlanSwift from "../components/home/custom-splash/planswift/planswift";
 import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-logo.png";
-
-const mapStateToProps = ({ count }) => {
-  return {
-    count
-  }
-}
 
 const Index = (props) => {
   const { data } = props;
@@ -93,4 +85,4 @@ export const query = graphql`
   }
 `
 
-export default connect(mapStateToProps)(Index);
+export default Index;

@@ -11,5 +11,10 @@ const reducer = (state, action) => {
 
 const initialState = { count: 0 }
 
-const createStore = () => reduxCreateStore(reducer, initialState)
+const createStore = () => reduxCreateStore(
+  reducer,
+  initialState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
+
 export default createStore
