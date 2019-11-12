@@ -1,15 +1,28 @@
 import React from 'react';
 import { connect } from "react-redux";
 import Header from '../shared/header';
+import { handleSplash } from '../../actions/ui';
 
-const mapStateToProps = ({ count }) => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    count
-  }
-}
+    handleSplash: (splashIndex) => {
+      dispatch(handleSplash(splashIndex));
+    }
+  };
+};
 
-const Splash = ({children, clientLogo, backgroundColor, navColor, count}) => {
-  console.log(count, 'count');
+const mapStateToProps = ({ splashIndex }) => {
+  return {
+    splashIndex
+  };
+};
+
+const Splash = ({children, clientLogo, backgroundColor, navColor, count, handleSplash}) => {
+
+  const splashHandler = (splashIndex) => {
+    handleSplash(splashIndex)
+  };
+
   return (
     <div className="splash" style={{backgroundColor}}>
       <Header navColor={navColor} />
@@ -27,10 +40,10 @@ const Splash = ({children, clientLogo, backgroundColor, navColor, count}) => {
           <span>Read more the case study</span>
           <strong>Case Study</strong>
           <ul>
-            <li><a/></li>
-            <li><a/></li>
-            <li><a/></li>
-            <li><a/></li>
+            <li><a onClick={() => splashHandler(0)}/></li>
+            <li><a onClick={() => splashHandler(1)}/></li>
+            <li><a onClick={() => splashHandler(2)}/></li>
+            <li><a onClick={() => splashHandler(3)}/></li>
           </ul>
         </div>
       </div>
@@ -38,4 +51,4 @@ const Splash = ({children, clientLogo, backgroundColor, navColor, count}) => {
   )
 }
 
-export default connect(mapStateToProps)(Splash);
+export default connect(mapStateToProps, mapDispatchToProps)(Splash);

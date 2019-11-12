@@ -1,15 +1,24 @@
 import { createStore as reduxCreateStore } from "redux"
+import { UI } from '../actions/action-types';
 
-const reducer = (state, action) => {
-  if (action.type === `INCREMENT`) {
-    return Object.assign({}, state, {
-      count: state.count + 1,
-    })
+const initialState = {
+  splashIndex: 0,
+};
+
+const reducer = (state = initialState, action = {}) => {
+  switch (action.type) {
+    case UI.SET_SPLASH_INDEX: {
+      return Object.assign({}, state, {
+        splashIndex: action.splashIndex
+      });
+    }
+
+    default: {
+      return state;
+    }
   }
-  return state
 }
 
-const initialState = { count: 0 }
 
 const createStore = () => reduxCreateStore(
   reducer,
