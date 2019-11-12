@@ -21,7 +21,8 @@ const Index = (props) => {
   const splashes = [
     {
       clientLogo: PlanSwiftLogo,
-      contentComponent: <PlanSwift/>
+      contentComponent: <PlanSwift/>,
+      backgroundColor: '#090421'
     },
     {
       clientLogo: WorldRevolutionLogo,
