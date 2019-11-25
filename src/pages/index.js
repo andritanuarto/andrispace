@@ -8,6 +8,7 @@ import Splash from "../components/home/splash";
 
 import PlanSwift from "../components/home/custom-splash/planswift/planswift";
 import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-logo.png";
+import WorldRevolution from "../components/home/custom-splash/world-revolution/world-revolution";
 import WorldRevolutionLogo from "../components/home/custom-splash/world-revolution/world-revolution-logo.png";
 
 const mapStateToProps = ({ splashIndex }) => {
@@ -26,7 +27,8 @@ const Index = (props) => {
     },
     {
       clientLogo: WorldRevolutionLogo,
-      contentComponent: <div>World Revolution</div>
+      contentComponent: <WorldRevolution/>,
+      backgroundColor: '#000000'
     },
   ];
 
