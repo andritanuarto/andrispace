@@ -5,6 +5,7 @@ import { Link, graphql } from "gatsby";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
 import Splash from "../components/home/splash";
+import Header from "../components/shared/header";
 
 import PlanSwift from "../components/home/custom-splash/planswift/planswift";
 import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-logo.png";
@@ -34,7 +35,8 @@ const Index = (props) => {
 
   return (
     <Fragment>
-      <Splash
+      <Header/>
+      {/* <Splash
         navColor={splashes[splashIndex].navColor}
         logoColor={splashes[splashIndex].logoColor}
         backgroundColor={splashes[splashIndex].backgroundColor}
@@ -45,7 +47,7 @@ const Index = (props) => {
         activeSlideIndex={splashIndex}
       >
         {splashes[splashIndex].contentComponent}
-      </Splash>
+      </Splash> */}
 
       <Layout>
         <div>

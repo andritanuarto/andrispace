@@ -1,41 +1,51 @@
 .header {
   width: 100%;
-  &-dark {
-    .hamburger {
-      hr {
-        background: $color-code-gray;
-      }
-    }
-  }
-  .logo {
-    float: left;
-  }
-  .hamburger {
-    float: right;
-    background: none;
-    border: none;
-    padding: 0;
-    position: relative;
-    padding: 5px 0;
-    z-index: 2;
-    cursor: pointer;
-    &:hover {
-      hr {
-        background: $color-white;
-      }
-    }
-    hr {
-      width: 30px;
-      display: block;
-      transition: background-color, 1s;
-      margin: 0 0 10px 0;
-      height: 2px;
-      &:last-child {
-        margin: 0;
-      }
-    }
-  }
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
   &::after {
     clear: both;
+  }
+
+  &--dark {
+    background: $color-code-gray;
+    .hamburger {
+      .hamburger-inner {
+        background-color: $color-white;
+        &, &::before, &::after {
+          background-color: $color-white;
+        }
+      }
+      &.is-active {
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+          background-color: $color-white;
+        }
+      }
+    }
+    .logo {
+      color: $color-white;
+    }
+  }
+
+  &--light {
+    background: $color-white;
+    .hamburger {
+      .hamburger-inner {
+        background-color: $color-code-gray;
+        &, &::before, &::after {
+          background-color: $color-code-gray;
+        }
+      }
+      &.is-active {
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+          background-color: $color-code-gray;
+        }
+      }
+    }
+    .logo {
+      color: $color-code-gray;
+    }
   }
 }

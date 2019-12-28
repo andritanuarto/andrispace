@@ -6,8 +6,8 @@ export default ({logoColor}) => {
     <Link to={`/`} className="logo" style={{color: logoColor}}>
       <div className="logo__main">
         andri&apos;space
+        <span>UI / UX / DEV</span>
       </div>
-      <div className="logo__tag">UI/UX</div>
     </Link>
   )
 }
