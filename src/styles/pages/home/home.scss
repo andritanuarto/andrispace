@@ -1,3 +1,45 @@
 // @import './splash';
 // @import './splash-slides/planswift';
 // @import './splash-slides/world-revolution';
+
+.home-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  .hero-container {
+    flex: 1;
+    background: brown;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &__slide {
+      background: red;
+      flex: 1;
+    }
+    &__bottom-spacing {
+      background: black;
+      height: 100px;
+    }
+    &__slide-nav-container{
+      list-style-type: none;
+      position: absolute;
+      width: 100%;
+      height: 180px;
+      bottom: 0px;
+    }
+    &__slide-nav-center {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    &__slide-nav {
+      width: 25%;
+      height: 150px;
+      padding: 0 15px;
+    }
+    &__slide-nav-inner {
+      background: yellow;
+      height: 150px;
+    }
+  }
+}

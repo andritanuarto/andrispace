@@ -4,8 +4,8 @@ import { css } from "@emotion/core";
 import { Link, graphql } from "gatsby";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
-import Splash from "../components/home/splash";
 import Header from "../components/shared/header";
+// import Splash from "../components/home/splash";
 
 import PlanSwift from "../components/home/custom-splash/planswift/planswift";
 import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-logo.png";
@@ -35,7 +35,29 @@ const Index = (props) => {
 
   return (
     <Fragment>
-      <Header/>
+      <div className="home-container">
+        <Header/>
+        <div className="hero-container">
+          <div className="hero-container__slide"/>
+          <div className="hero-container__bottom-spacing"/>
+          <div className="hero-container__slide-nav-container">
+            <div className="hero-container__slide-nav-center">
+              <div className="hero-container__slide-nav">
+                <div className="hero-container__slide-nav-inner"/>
+              </div>
+              <div className="hero-container__slide-nav">
+                <div className="hero-container__slide-nav-inner"/>
+              </div>
+              <div className="hero-container__slide-nav">
+                <div className="hero-container__slide-nav-inner"/>
+              </div>
+              <div className="hero-container__slide-nav">
+                <div className="hero-container__slide-nav-inner"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* <Splash
         navColor={splashes[splashIndex].navColor}
         logoColor={splashes[splashIndex].logoColor}
