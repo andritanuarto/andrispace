@@ -15,6 +15,15 @@
       display: flex;
       flex: 1;
       align-items: center;
+      position: relative;
+      background-size: cover;
+      background-position: center center;
+    }
+    &__overlay {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
     }
     &__bottom-spacing {
       height: 100px;
@@ -25,13 +34,14 @@
       width: 100%;
       height: 180px;
       bottom: 0px;
+      z-index: 1;
     }
     &__slide-nav-center {
       display: flex;
       position: relative;
       max-width: 1200px;
       margin: 0 auto;
-      strong {
+      &--label {
         position: absolute;
         top: -40px;
         left: 15px;
@@ -44,27 +54,8 @@
         width: 200px;
         justify-content: flex-end;
         align-items: center;
-        span {
+        strong {
           margin-right: 15px;
-        }
-        button {
-          color: $color-white;
-          height:30px;
-          width: 30px;
-          display: flex;
-          background: none;
-          text-align: center;
-          align-items: center;
-          padding: 0;
-          outline: 0;
-          &:nth-child(2) {
-            border-radius: 3px 0 0 3px;
-          }
-          &:last-child {
-            border-left: none;
-            border-radius: 0 3px 3px 0;
-          }
-
         }
       }
     }
@@ -83,10 +74,16 @@
       width: 100%;
       margin: 0 auto;
       padding: 0 15px;
+      position: relative;
+      z-index: 2;
       &--l {
-        width: 225px;
+        width: 200px;
+        padding-right: 30px;
         span {
           font-size: 12px;
+        }
+        img {
+          max-width: 100%;
         }
       }
       &--r {
@@ -96,6 +93,9 @@
         }
         span {
           font-size: 14px;
+        }
+        button {
+          margin-top: 20px;
         }
       }
     }
