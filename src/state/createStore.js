@@ -3,6 +3,7 @@ import { UI } from '../actions/action-types';
 
 const initialState = {
   splashIndex: 0,
+  heroIndex: 0,
 };
 
 const reducer = (state = initialState, action = {}) => {

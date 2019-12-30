@@ -5,8 +5,8 @@ import { Link, graphql } from "gatsby";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
 import Header from "../components/shared/header";
+import Hero from "../components/home/hero";
 // import Splash from "../components/home/splash";
-
 import PlanSwift from "../components/home/custom-splash/planswift/planswift";
 import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-logo.png";
 import WorldRevolution from "../components/home/custom-splash/world-revolution/world-revolution";
@@ -37,26 +37,7 @@ const Index = (props) => {
     <Fragment>
       <div className="home-container">
         <Header/>
-        <div className="hero-container">
-          <div className="hero-container__slide"/>
-          <div className="hero-container__bottom-spacing"/>
-          <div className="hero-container__slide-nav-container">
-            <div className="hero-container__slide-nav-center">
-              <div className="hero-container__slide-nav">
-                <div className="hero-container__slide-nav-inner"/>
-              </div>
-              <div className="hero-container__slide-nav">
-                <div className="hero-container__slide-nav-inner"/>
-              </div>
-              <div className="hero-container__slide-nav">
-                <div className="hero-container__slide-nav-inner"/>
-              </div>
-              <div className="hero-container__slide-nav">
-                <div className="hero-container__slide-nav-inner"/>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Hero/>
       </div>
       {/* <Splash
         navColor={splashes[splashIndex].navColor}

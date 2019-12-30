@@ -23,7 +23,7 @@ const Splash = (
     textColor,
     slideNavColor,
     activeSlideNavColor,
-    activeSlideIndex
+    activeSlideIndex,
   }
 ) => {
   const splashHandler = (splashNumber) => {
@@ -76,4 +76,4 @@ Splash.defaultProps = {
   activeSlideNavColor: 'yellow'
 };
 
-export default connect(null, mapDispatchToProps)(Splash);
+export default connect(mapStateToProps, mapDispatchToProps)(Splash);

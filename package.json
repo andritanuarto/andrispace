@@ -14,6 +14,9 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.22",
+    "@material-ui/core": "^4.8.1",
+    "@material-ui/icons": "^4.5.1",
+    "add": "^2.0.6",
     "gatsby": "^2.17.6",
     "gatsby-cli": "^2.8.22",
     "gatsby-plugin-emotion": "^4.1.13",
@@ -29,7 +32,8 @@
     "redux": "^4.0.4",
     "typography": "^0.16.19",
     "typography-theme-fairy-gates": "^0.16.19",
-    "typography-theme-kirkham": "^0.16.19"
+    "typography-theme-kirkham": "^0.16.19",
+    "yarn": "^1.21.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
