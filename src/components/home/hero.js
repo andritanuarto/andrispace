@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PrevNextButtons from '../shared/prevNextButtons';
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
@@ -27,7 +27,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
   const slides = [
     {
       clientName: 'Adbusters',
-      porjectTitle: 'World Revolution',
+      projectTitle: 'World Revolution',
       blurb: 'an app for organizing social activity campaigns',
       logoLink: adbustersLogo,
       heroBackground: adbustersBackground,
@@ -36,7 +36,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
     },
     {
       clientName: 'Under The Gui (UTG)',
-      porjectTitle: 'Under The Gui (UTG)',
+      projectTitle: 'Under The Gui (UTG)',
       blurb: 'coding school for kids website redesign',
       logoLink: utgLogo,
       logoWidth: '100px',
@@ -71,8 +71,8 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
             <img style={{width: slideIndex.logoWidth || null }} src={slideIndex.logoLink} alt={slideIndex.clientName}/>
           </div>
           <div className="hero-container__project-info--r">
-            <h1>{slideIndex.porjectTitle}</h1>
-            <div>{slideIndex.blurb}</div>
+            <h1>{slideIndex.projectTitle}</h1>
+            <span>{slideIndex.blurb}</span>
             <button className="btn btn--primary">Read The Case Study <ArrowRightAlt/></button>
           </div>
         </div>
@@ -95,7 +95,9 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
                   <div
                     className="hero-container__slide-nav-inner"
                     style={{backgroundImage: `url(${slide.heroBackground})`}}
-                  />
+                  >
+                    <strong>{slide.projectTitle}</strong>
+                  </div>
                 </div>
               )
             })
