@@ -17,18 +17,6 @@
   100% { left: 0%; }
 }
 
-@mixin animationDelay($interval) {
-  animation-delay: $interval;
-  -webkit-animation-delay: $interval;
-}
-
-@mixin heroSlideAnimation($interval) {
-  -webkit-animation: heroSlideAnimation $interval;
-  -moz-animation: heroSlideAnimation $interval;
-  -o-animation: heroSlideAnimation $interval;
-  animation: heroSlideAnimation $interval;
-}
-
 .home-container {
   display: flex;
   height: 100vh;
@@ -45,12 +33,18 @@
       position: relative;
       background-size: cover;
       background-position: center center;
+      opacity: 1;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
     }
     &__overlay {
       position: absolute;
       z-index: 1;
       width: 100%;
       height: 100%;
+      animation-fill-mode: forwards;
+      transition: all 0.5s;
     }
     &__bottom-spacing {
       height: 100px;
@@ -150,13 +144,13 @@
           position: relative;
           font-size: 12px;
           @include animationDelay(1s);
-          @include heroSlideAnimation(2s);
+          @include animation(heroSlideAnimation, 1s);
         }
         img {
           margin-top: 15px;
           max-width: 100%;
           position: relative;
-          @include heroSlideAnimation(1s);
+          @include animation(heroSlideAnimation, 1s);
         }
       }
       &--r {
@@ -166,20 +160,20 @@
         h1 {
           position: relative;
           margin: 0;
-          @include heroSlideAnimation(1s);
+          @include animation(heroSlideAnimation, 1s);
         }
         span {
           font-size: 14px;
           position: relative;
           display: block;
           @include animationDelay(1s);
-          @include heroSlideAnimation(1s);
+          @include animation(heroSlideAnimation, 1s);
         }
         button {
           margin-top: 20px;
           position: relative;
           @include animationDelay(1.1s);
-          @include heroSlideAnimation(1s);
+          @include animation(heroSlideAnimation, 1s);
         }
       }
     }

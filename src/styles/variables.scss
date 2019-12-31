@@ -6,3 +6,15 @@ $color-yellow:    #ffcd3f;
 $font-generic: 'Helvetica', sans-serif;
 
 $hover-transition: 0.5s;
+
+@mixin animation($animationType, $interval) {
+  -webkit-animation: $animationType $interval;
+  -moz-animation: $animationType $interval;
+  -o-animation: $animationType $interval;
+  animation: $animationType $interval;
+}
+
+@mixin animationDelay($interval) {
+  animation-delay: $interval;
+  -webkit-animation-delay: $interval;
+}

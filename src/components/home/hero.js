@@ -44,8 +44,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
       opacityColor: '#000000',
       opacityLevel: '0.3'
     }
-  ]
-
+  ];
   const slideIndexHandler = (nextOrPrev) => {
     handleHeroIndex(nextOrPrev);
   }
@@ -55,6 +54,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
   return (
     <div className="hero-container">
       <div
+        key={slideIndex.clientName}
         className="hero-container__slide"
         style={{backgroundImage: `url(${slideIndex.heroBackground})`}}
       >
