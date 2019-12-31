@@ -13,3 +13,10 @@ export const handleHeroIndex = (heroIndex) => {
     heroIndex
   }
 }
+
+export const handleNavigation = (openOrClose) => {
+  return {
+    type: UI.SET_SET_NAVIGATION_OPEN,
+    openOrClose
+  }
+}

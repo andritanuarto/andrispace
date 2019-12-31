@@ -4,6 +4,7 @@ import { UI } from '../actions/action-types';
 const initialState = {
   splashIndex: 0,
   heroIndex: 0,
+  navigationOpen: false
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -17,6 +18,12 @@ const reducer = (state = initialState, action = {}) => {
     case UI.SET_HERO_INDEX: {
       return Object.assign({}, state, {
         heroIndex: action.heroIndex
+      });
+    }
+
+    case UI.SET_SET_NAVIGATION_OPEN: {
+      return Object.assign({}, state, {
+        navigationOpen: action.openOrClose
       });
     }
 

@@ -1,7 +1,6 @@
 // @import './splash';
 // @import './splash-slides/planswift';
 // @import './splash-slides/world-revolution';
-
 @-webkit-keyframes heroSlideAnimation {
   0%   { left: -100%; }
   100% { left: 0%; }
@@ -19,15 +18,13 @@
 
 @-webkit-keyframes heroFadeIn {
   0% {
-      display: none;
-      opacity: 0;
+    display: none;
+    opacity: 0;
   }
-
   1% {
-      display: block;
-      opacity: 0;
+    display: block;
+    opacity: 0;
   }
-
   100% {
       display: block;
       opacity: 1;
@@ -36,52 +33,46 @@
 
 @-moz-keyframes heroFadeIn {
   0% {
-      display: none;
-      opacity: 0;
+    display: none;
+    opacity: 0;
   }
-
   1% {
-      display: block;
-      opacity: 0;
+    display: block;
+    opacity: 0;
   }
-
   100% {
-      display: block;
-      opacity: 1;
+    display: block;
+    opacity: 1;
   }
 }
 
 @-o-keyframes heroFadeIn {
   0% {
-      display: none;
-      opacity: 0;
+    display: none;
+    opacity: 0;
   }
-
   1% {
-      display: block;
-      opacity: 0;
+    display: block;
+    opacity: 0;
   }
-
   100% {
-      display: block;
-      opacity: 1;
+    display: block;
+    opacity: 1;
   }
 }
 
 @keyframes heroFadeIn {
   0% {
-      display: none;
-      opacity: 0;
+    display: none;
+    opacity: 0;
   }
-
   1% {
-      display: block;
-      opacity: 0;
+    display: block;
+    opacity: 0;
   }
-
   100% {
-      display: block;
-      opacity: 1;
+    display: block;
+    opacity: 1;
   }
 }
 
@@ -142,8 +133,11 @@
         align-items: center;
         strong {
           margin-right: 15px;
+          overflow: hidden;
           span {
+            position: relative;
             color: $color-yellow;
+            @include animation(heroFadeIn, 1s, ease-out);
           }
         }
       }
@@ -152,6 +146,15 @@
       width: 25%;
       height: 150px;
       padding: 0 15px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      .box--overlay {
+        z-index: 1;
+        &:hover {
+          opacity: 0;
+        }
+      }
       &--active {
         cursor: auto;
         .hero-container__slide-nav-inner {
@@ -215,7 +218,7 @@
           margin-top: 15px;
           max-width: 100%;
           position: relative;
-          @include animation(heroSlideAnimation, 1s, ease-out);
+          @include animation(heroSlideAnimation, 2s, ease-out);
         }
       }
       &--r {
@@ -225,20 +228,20 @@
         h1 {
           position: relative;
           margin: 0;
+          font-size: 55px;
           @include animation(heroSlideAnimation, 1s, ease-out);
         }
         span {
           font-size: 14px;
           position: relative;
           display: block;
-          @include animationDelay(1s);
-          @include animation(heroSlideAnimation, 1s, ease-out);
+          @include animation(heroSlideAnimation, 1.5s, ease-out);
         }
         button {
           margin-top: 20px;
           position: relative;
-          @include animationDelay(1.1s);
-          @include animation(heroSlideAnimation, 1s, ease-out);
+          box-shadow: 1px 1px 8px 1px $color-code-gray;
+          @include animation(heroSlideAnimation, 2s, ease-out);
         }
       }
     }
