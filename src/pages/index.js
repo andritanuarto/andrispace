@@ -20,18 +20,18 @@ const mapStateToProps = ({ splashIndex }) => {
 
 const Index = (props) => {
   const { data, splashIndex } = props;
-  const splashes = [
-    {
-      clientLogo: PlanSwiftLogo,
-      contentComponent: <PlanSwift/>,
-      backgroundColor: '#090421'
-    },
-    {
-      clientLogo: WorldRevolutionLogo,
-      contentComponent: <WorldRevolution/>,
-      backgroundColor: '#000000'
-    },
-  ];
+  // const splashes = [
+  //   {
+  //     clientLogo: PlanSwiftLogo,
+  //     contentComponent: <PlanSwift/>,
+  //     backgroundColor: '#090421'
+  //   },
+  //   {
+  //     clientLogo: WorldRevolutionLogo,
+  //     contentComponent: <WorldRevolution/>,
+  //     backgroundColor: '#000000'
+  //   },
+  // ];
 
   return (
     <Fragment>

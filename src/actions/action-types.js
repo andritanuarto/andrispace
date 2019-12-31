@@ -1,3 +1,4 @@
 export const UI = {
   SET_SPLASH_INDEX: 'SET_SPLASH_INDEX',
+  SET_HERO_INDEX: 'UI.SET_HERO_INDEX'
 }

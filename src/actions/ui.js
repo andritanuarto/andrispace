@@ -6,3 +6,10 @@ export const handleSplash = (splashIndex) => {
     splashIndex
   }
 }
+
+export const handleHeroIndex = (heroIndex) => {
+  return {
+    type: UI.SET_HERO_INDEX,
+    heroIndex
+  }
+}

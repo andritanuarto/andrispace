@@ -14,6 +14,12 @@ const reducer = (state = initialState, action = {}) => {
       });
     }
 
+    case UI.SET_HERO_INDEX: {
+      return Object.assign({}, state, {
+        heroIndex: action.heroIndex
+      });
+    }
+
     default: {
       return state;
     }

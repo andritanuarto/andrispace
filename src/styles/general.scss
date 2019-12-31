@@ -3,5 +3,6 @@ html {
   font-family: $font-generic;
   body {
     color: $color-white;
+    box-sizing: border-box;
   }
 }

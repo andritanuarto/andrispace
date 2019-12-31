@@ -56,6 +56,9 @@
         align-items: center;
         strong {
           margin-right: 15px;
+          span {
+            color: $color-yellow;
+          }
         }
       }
     }
@@ -63,31 +66,40 @@
       width: 25%;
       height: 150px;
       padding: 0 15px;
+      &--active {
+        .hero-container__slide-nav-inner {
+          border: solid $color-yellow;
+        }
+      }
     }
     &__slide-nav-inner {
-      background: white;
+      background-size: cover;
+      background-position: center;
       height: 150px;
     }
     &__project-info {
       display: flex;
       max-width: 1000px;
       width: 100%;
+      height: 150px;
       margin: 0 auto;
       padding: 0 15px;
       position: relative;
       z-index: 2;
       &--l {
         width: 200px;
-        padding-right: 30px;
+        padding-right: 50px;
         span {
           font-size: 12px;
         }
         img {
+          margin-top: 15px;
           max-width: 100%;
         }
       }
       &--r {
         flex: 1;
+        padding-left: 50px;
         h1 {
           margin: 0;
         }
