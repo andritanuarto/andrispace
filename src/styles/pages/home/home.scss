@@ -17,6 +17,74 @@
   100% { left: 0%; }
 }
 
+@-webkit-keyframes heroFadeIn {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes heroFadeIn {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
+@-o-keyframes heroFadeIn {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
+@keyframes heroFadeIn {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
 .home-container {
   display: flex;
   height: 100vh;
@@ -33,10 +101,7 @@
       position: relative;
       background-size: cover;
       background-position: center center;
-      opacity: 1;
-      transition: opacity .25s ease-in-out;
-      -moz-transition: opacity .25s ease-in-out;
-      -webkit-transition: opacity .25s ease-in-out;
+      @include animation(heroFadeIn, 2s, ease-out);
     }
     &__overlay {
       position: absolute;
@@ -144,13 +209,13 @@
           position: relative;
           font-size: 12px;
           @include animationDelay(1s);
-          @include animation(heroSlideAnimation, 1s);
+          @include animation(heroSlideAnimation, 1s, ease-out);
         }
         img {
           margin-top: 15px;
           max-width: 100%;
           position: relative;
-          @include animation(heroSlideAnimation, 1s);
+          @include animation(heroSlideAnimation, 1s, ease-out);
         }
       }
       &--r {
@@ -160,20 +225,20 @@
         h1 {
           position: relative;
           margin: 0;
-          @include animation(heroSlideAnimation, 1s);
+          @include animation(heroSlideAnimation, 1s, ease-out);
         }
         span {
           font-size: 14px;
           position: relative;
           display: block;
           @include animationDelay(1s);
-          @include animation(heroSlideAnimation, 1s);
+          @include animation(heroSlideAnimation, 1s, ease-out);
         }
         button {
           margin-top: 20px;
           position: relative;
           @include animationDelay(1.1s);
-          @include animation(heroSlideAnimation, 1s);
+          @include animation(heroSlideAnimation, 1s, ease-out);
         }
       }
     }

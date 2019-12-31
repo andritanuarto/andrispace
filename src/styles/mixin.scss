@@ -1,0 +1,11 @@
+@mixin animation($animationType, $interval, $easingType:ease) {
+  -webkit-animation: $animationType $interval $easingType;
+  -moz-animation: $animationType $interval $easingType;
+  -o-animation: $animationType $interval $easingType;
+  animation: $animationType $interval $easingType;
+}
+
+@mixin animationDelay($interval) {
+  animation-delay: $interval;
+  -webkit-animation-delay: $interval;
+}
