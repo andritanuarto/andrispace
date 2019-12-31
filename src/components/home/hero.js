@@ -93,11 +93,11 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
                   className={`hero-container__slide-nav ${heroIndex === index ? 'hero-container__slide-nav--active' : null}`}
                   onClick={() => {slideIndexHandler(index)}}
                 >
-                  {heroIndex === index || <div className="box--overlay box--overlay--dark"/>}
                   <div
                     className="hero-container__slide-nav-inner"
                     style={{backgroundImage: `url(${slide.heroBackground})`}}
                   >
+                    {heroIndex === index || <div className="box--overlay box--overlay--dark"/>}
                     <strong>{slide.projectTitle}</strong>
                   </div>
                 </div>
