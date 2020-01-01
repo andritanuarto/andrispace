@@ -5,23 +5,27 @@ button {
 .btn {
   height:30px;
   outline: 0;
-  border-radius: 3px;
+  border-radius: 10px;
   transition: all $generic-transition-time;
   font-size: 16px;
-  &--primary {
-    font-weight: bold;
-    background: $color-white;
-    color: $color-code-gray;
-    border: none;
+  text-transform: uppercase;
+  &--call-to-action {
+    height: 50px;
+    background-size: 200% auto;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background-image: linear-gradient(to right, #431467 0%, #aa4bf9 51%, #7c38b3 100%);
+    font-weight: lighter;
+    color: $color-white;
     display: inline-flex;
     align-items: center;
     padding: 0 15px;
     text-decoration: none;
+    transition: all 0.3s cubic-bezier(.25,.8,.50,1);
     svg {
       margin-left: 5px;
     }
     &:hover {
-      background: $color-yellow;
+      background-position: right center;
     }
   }
   &--transparent {
@@ -47,11 +51,11 @@ button {
   .btn {
     width: 30px;
     &:first-child {
-      border-radius: 3px 0 0 3px;
+      border-radius: 10px 0 0 10px;
     }
     &:last-child {
       border-left: none;
-      border-radius: 0 3px 3px 0;
+      border-radius: 0 10px 10px 0;
     }
   }
 }

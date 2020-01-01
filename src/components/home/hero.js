@@ -32,7 +32,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
       logoLink: adbustersLogo,
       heroBackground: adbustersBackground,
       opacityColor: '#000000',
-      opacityLevel: '0.5',
+      opacityLevel: '0.3',
       url: './adbusters'
     },
     {
@@ -77,7 +77,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
             <span>{slideIndex.blurb}</span>
             <Link
               to={slideIndex.url}
-              className="btn btn--primary"
+              className="btn btn--call-to-action"
             >
               Read The Case Study <ArrowRightAlt/>
             </Link>

@@ -151,6 +151,7 @@
       cursor: pointer;
       .box--overlay {
         z-index: 1;
+        background: rgba(0, 0, 0, 0.7);
         &:hover {
           opacity: 0;
         }
@@ -158,13 +159,15 @@
       &--active {
         cursor: auto;
         .hero-container__slide-nav-inner {
-          border: solid $color-yellow 3px;
           transition: all $generic-transition-time;
+          -webkit-box-shadow: 0px -1px 14px -4px rgba(0,0,0,0.53);
+          -moz-box-shadow: 0px -1px 14px -4px rgba(0,0,0,0.53);
+          box-shadow: 0px -1px 14px -4px rgba(0,0,0,0.53);
           .box--overlay {
             display: none;
           }
           strong {
-            background: rgba(0, 0, 0, 0.5);
+            background: $color-code-gray;
             transition: all $generic-transition-time;
           }
         }
@@ -181,7 +184,6 @@
       align-items: flex-end;
       overflow: hidden;
       position: relative;
-      border: solid $color-code-gray 3px;
       transition: all $generic-transition-time;
       &:hover {
         .box--overlay {
@@ -190,11 +192,11 @@
       }
       strong {
         display: block;
-        width: 100%;
-        padding: 15px;
+        padding: 5px 10px;
         position: relative;
         z-index: 1;
-        font-size: 14px;
+        font-size: 16px;
+        margin: 0 0 5px 5px;
       }
     }
     &__project-info {
@@ -239,11 +241,13 @@
           display: block;
           @include animation(heroSlideAnimation, 1.5s, ease-out);
         }
-        .btn--primary {
+        .btn--call-to-action {
           margin-top: 20px;
           position: relative;
-          box-shadow: 1px 1px 8px 1px $color-code-gray;
           @include animation(heroSlideAnimation, 2s, ease-out);
+          -webkit-box-shadow: 0px -1px 14px -4px rgba(0,0,0,0.53);
+          -moz-box-shadow: 0px -1px 14px -4px rgba(0,0,0,0.53);
+          box-shadow: 0px -1px 14px -4px rgba(0,0,0,0.53);
         }
       }
     }
