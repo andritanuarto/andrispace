@@ -100,7 +100,7 @@
       width: 100%;
       height: 100%;
       animation-fill-mode: forwards;
-      transition: all $hover-transition;
+      transition: all $generic-transition-time;
     }
     &__bottom-spacing {
       height: 100px;
@@ -159,13 +159,13 @@
         cursor: auto;
         .hero-container__slide-nav-inner {
           border: solid $color-yellow 3px;
-          transition: all $hover-transition;
+          transition: all $generic-transition-time;
           .box--overlay {
             display: none;
           }
           strong {
             background: rgba(0, 0, 0, 0.5);
-            transition: all $hover-transition;
+            transition: all $generic-transition-time;
           }
         }
       }
@@ -182,7 +182,7 @@
       overflow: hidden;
       position: relative;
       border: solid $color-code-gray 3px;
-      transition: all $hover-transition;
+      transition: all $generic-transition-time;
       &:hover {
         .box--overlay {
           background: rgba(0, 0, 0, 0);
@@ -213,14 +213,14 @@
         span {
           position: relative;
           font-size: 12px;
-          @include animationDelay(1s);
-          @include animation(heroSlideAnimation, 1s, ease-out);
+          @include animation(heroFadeIn, 1s, ease-out);
         }
         img {
           margin-top: 15px;
           max-width: 100%;
           position: relative;
-          @include animation(heroSlideAnimation, 2s, ease-out);
+          // @include animation(heroSlideAnimation, 2s, ease-out);
+          @include animation(heroFadeIn, 1s, ease-out);
         }
       }
       &--r {
@@ -239,7 +239,7 @@
           display: block;
           @include animation(heroSlideAnimation, 1.5s, ease-out);
         }
-        button {
+        .btn--primary {
           margin-top: 20px;
           position: relative;
           box-shadow: 1px 1px 8px 1px $color-code-gray;

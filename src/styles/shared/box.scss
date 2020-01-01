@@ -1,6 +1,6 @@
 .box {
   &--overlay {
-    transition: all $hover-transition;
+    transition: all $generic-transition-time;
     position: absolute;
     width: 100%;
     height: 100%;

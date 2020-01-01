@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PrevNextButtons from '../shared/prevNextButtons';
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
 import { handleHeroIndex } from '../../actions/ui';
-
+import { Link } from "gatsby";
 import adbustersLogo from './hero-images/adbusters/adbusters-logo.png';
 import adbustersBackground from './hero-images/adbusters/social-protest.jpg';
 import utgLogo from './hero-images/utg/utg-logo.png';
@@ -32,7 +32,8 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
       logoLink: adbustersLogo,
       heroBackground: adbustersBackground,
       opacityColor: '#000000',
-      opacityLevel: '0.5'
+      opacityLevel: '0.5',
+      url: './adbusters'
     },
     {
       clientName: 'Under The Gui (UTG)',
@@ -42,7 +43,8 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
       logoWidth: '100px',
       heroBackground: utgBackground,
       opacityColor: '#000000',
-      opacityLevel: '0.3'
+      opacityLevel: '0.3',
+      url: './utg'
     }
   ];
   const slideIndexHandler = (nextOrPrev) => {
@@ -73,7 +75,12 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
           <div className="hero-container__project-info--r">
             <h1>{slideIndex.projectTitle}</h1>
             <span>{slideIndex.blurb}</span>
-            <button className="btn btn--primary">Read The Case Study <ArrowRightAlt/></button>
+            <Link
+              to={slideIndex.url}
+              className="btn btn--primary"
+            >
+              Read The Case Study <ArrowRightAlt/>
+            </Link>
           </div>
         </div>
       </div>

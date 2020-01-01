@@ -12,14 +12,14 @@ import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-
 import WorldRevolution from "../components/home/custom-splash/world-revolution/world-revolution";
 import WorldRevolutionLogo from "../components/home/custom-splash/world-revolution/world-revolution-logo.png";
 
-const mapStateToProps = ({ splashIndex }) => {
+const mapStateToProps = ({ splashIndex, navigationOpen }) => {
   return {
-    splashIndex
+    splashIndex,
+    navigationOpen
   };
 };
 
-const Index = (props) => {
-  const { data, splashIndex } = props;
+const Index = ({ data, splashIndex, navigationOpen }) => {
   // const splashes = [
   //   {
   //     clientLogo: PlanSwiftLogo,
@@ -33,10 +33,21 @@ const Index = (props) => {
   //   },
   // ];
 
+  const mainMenu = (
+    <div className="nav">
+      <Link to="/">Home</Link>
+      <Link to="/case-study">Case Studies</Link>
+      <Link to="/journal">Journal</Link>
+      <Link to="/about">About</Link>
+      <Link to="/contact">Contact</Link>
+    </div>
+  )
+
   return (
     <Fragment>
       <div className="home-container">
         <Header/>
+        {navigationOpen && mainMenu}
         <Hero/>
       </div>
       {/* <Splash

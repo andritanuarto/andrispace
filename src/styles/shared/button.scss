@@ -6,16 +6,17 @@ button {
   height:30px;
   outline: 0;
   border-radius: 3px;
-  transition: all $hover-transition;
+  transition: all $generic-transition-time;
   font-size: 16px;
   &--primary {
     font-weight: bold;
     background: $color-white;
     color: $color-code-gray;
     border: none;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     padding: 0 15px;
+    text-decoration: none;
     svg {
       margin-left: 5px;
     }
@@ -30,7 +31,7 @@ button {
     align-items: center;
     text-align: center;
     background: none;
-    transition: all $hover-transition;
+    transition: all $generic-transition-time;
     color: $color-white;
     &:hover {
       background: $color-white;
