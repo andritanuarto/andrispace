@@ -73,8 +73,8 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
             <img style={{width: slideIndex.logoWidth || null }} src={slideIndex.logoLink} alt={slideIndex.clientName}/>
           </div>
           <div className="hero-container__project-info--r">
-            <h1>{slideIndex.projectTitle}</h1>
-            <span>{slideIndex.blurb}</span>
+            <h1 key={slideIndex.clientName}>{slideIndex.projectTitle}</h1>
+            <span key={slideIndex.clientName}>{slideIndex.blurb}</span>
             <Link
               to={slideIndex.url}
               className="btn btn--call-to-action"

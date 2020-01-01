@@ -14,7 +14,7 @@ button {
     background-size: 200% auto;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     background-image: linear-gradient(to right, #431467 0%, #aa4bf9 51%, #7c38b3 100%);
-    font-weight: lighter;
+    font-weight: bold;
     color: $color-white;
     display: inline-flex;
     align-items: center;
