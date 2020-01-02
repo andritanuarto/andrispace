@@ -43,7 +43,6 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
         />
         <div className="hero-container__project-info">
           <div className="hero-container__project-info--l">
-            <span>Project Client</span>
             <img style={{width: slideIndex.logoWidth || null }} src={slideIndex.logoLink} alt={slideIndex.clientName}/>
           </div>
           <div className="hero-container__project-info--r">

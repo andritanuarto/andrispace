@@ -212,11 +212,6 @@
         width: 200px;
         padding-right: 50px;
         overflow: hidden;
-        span {
-          position: relative;
-          font-size: 12px;
-          @include animation(heroFadeIn, 1s, ease-out);
-        }
         img {
           margin-top: 15px;
           max-width: 100%;

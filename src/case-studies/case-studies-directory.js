@@ -8,9 +8,9 @@ import adbustersBackground from './adbusters/social-protest.jpg';
 
 const caseStudies = [
   {
-    clientName: 'Under The Gui (UTG)',
+    clientName: 'UTG Academy',
     projectDate: 'December 18, 2019',
-    projectTitle: 'Under The Gui Academy',
+    projectTitle: 'UTG Academy',
     postTitle: 'Under The Gui (UTG) – Website redesign for coding school for kids',
     blurb: 'Website redesign',
     logoLink: utgLogo,
