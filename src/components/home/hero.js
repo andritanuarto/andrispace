@@ -33,18 +33,18 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
       heroBackground: adbustersBackground,
       opacityColor: '#000000',
       opacityLevel: '0.3',
-      url: './adbusters'
+      url: './case-studies/adbusters'
     },
     {
       clientName: 'Under The Gui (UTG)',
       projectTitle: 'Under The Gui (UTG)',
-      blurb: 'coding school for kids website redesign',
+      blurb: 'Website redesign for coding school for kids',
       logoLink: utgLogo,
       logoWidth: '100px',
       heroBackground: utgBackground,
       opacityColor: '#000000',
       opacityLevel: '0.3',
-      url: './utg'
+      url: './case-studies/utg'
     }
   ];
   const slideIndexHandler = (nextOrPrev) => {

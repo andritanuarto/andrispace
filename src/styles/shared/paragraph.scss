@@ -1,0 +1,24 @@
+.par {
+  margin: 0 auto;
+  p {
+    font-size: 18px;
+    margin: 48px 0 0 0;
+    line-height: 36px;
+  }
+
+  h1 {
+    margin: 48px 0 0 0;
+  }
+  &--normal-width {
+    max-width: 776px;
+    padding: 0 48px;
+  }
+  &--medium-width {
+    max-width: 1024px;
+    padding: 0 48px;
+  }
+  &--full-width {
+    max-width: 100%;
+    padding: 0 80px;
+  }
+}

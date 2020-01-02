@@ -1,29 +1,18 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
 import Header from "../shared/header";
 
 export default ({ children }) => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  );
-
   return (
     <div className="interior-page">
       <Header/>
       <div className="interior-page__content">
-        <h3>
-          {data.site.siteMetadata.title}
-        </h3>
+        <div className="interior-page__heading">
+          <h1>Under The Gui (UTG) – Website redesign for coding school for kids </h1>
+          <span className="interior-page__heading__date">December 18, 2019</span>
+        </div>
+        <div className="interior-page__heading__img"/>
+          {children}
       </div>
-      {children}
     </div>
   )
 }
