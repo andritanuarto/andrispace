@@ -3,14 +3,8 @@ import { connect } from "react-redux";
 import { css } from "@emotion/core";
 import { Link, graphql } from "gatsby";
 import { rhythm } from "../utils/typography";
-import Layout from "../components/layout";
 import Header from "../components/shared/header";
 import Hero from "../components/home/hero";
-// import Splash from "../components/home/splash";
-import PlanSwift from "../components/home/custom-splash/planswift/planswift";
-import PlanSwiftLogo from "../components/home/custom-splash/planswift/planswift-logo.png";
-import WorldRevolution from "../components/home/custom-splash/world-revolution/world-revolution";
-import WorldRevolutionLogo from "../components/home/custom-splash/world-revolution/world-revolution-logo.png";
 
 const mapStateToProps = ({ splashIndex, navigationOpen }) => {
   return {
@@ -20,89 +14,50 @@ const mapStateToProps = ({ splashIndex, navigationOpen }) => {
 };
 
 const Index = ({ data, splashIndex, navigationOpen }) => {
-  // const splashes = [
-  //   {
-  //     clientLogo: PlanSwiftLogo,
-  //     contentComponent: <PlanSwift/>,
-  //     backgroundColor: '#090421'
-  //   },
-  //   {
-  //     clientLogo: WorldRevolutionLogo,
-  //     contentComponent: <WorldRevolution/>,
-  //     backgroundColor: '#000000'
-  //   },
-  // ];
-
-  const mainMenu = (
-    <div className="nav">
-      <Link to="/">Home</Link>
-      <Link to="/case-study">Case Studies</Link>
-      <Link to="/journal">Journal</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
-    </div>
-  )
-
   return (
     <Fragment>
       <div className="home-container">
         <Header/>
-        {navigationOpen && mainMenu}
         <Hero/>
       </div>
-      {/* <Splash
-        navColor={splashes[splashIndex].navColor}
-        logoColor={splashes[splashIndex].logoColor}
-        backgroundColor={splashes[splashIndex].backgroundColor}
-        clientLogo={splashes[splashIndex].clientLogo}
-        textColor={splashes[splashIndex].textColor}
-        slideNavColor={splashes[splashIndex].slideNavColor}
-        slideLength={splashes.length}
-        activeSlideIndex={splashIndex}
-      >
-        {splashes[splashIndex].contentComponent}
-      </Splash> */}
-
-      <Layout>
-        <div>
-          <h1
-            css={css`
-              display: inline-block;
-              border-bottom: 1px solid;
-            `}
-          >
-            Amazing Pandas Eating Things
-          </h1>
-          <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <div key={node.id}>
-              <Link
-                to={node.fields.slug}
+      <div>
+        <h1
+          css={css`
+            display: inline-block;
+            border-bottom: 1px solid;
+          `}
+        >
+          Amazing Pandas Eating Things
+        </h1>
+        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div key={node.id}>
+            <Link
+              to={node.fields.slug}
+              css={css`
+                text-decoration: none;
+                color: inherit;
+              `}
+            >
+              <h3
                 css={css`
-                  text-decoration: none;
-                  color: inherit;
+                  margin-bottom: ${rhythm(1 / 4)};
                 `}
               >
-                <h3
+                {node.frontmatter.title}{" "}
+                <span
                   css={css`
-                    margin-bottom: ${rhythm(1 / 4)};
+                    color: #bbb;
                   `}
                 >
-                  {node.frontmatter.title}{" "}
-                  <span
-                    css={css`
-                      color: #bbb;
-                    `}
-                  >
-                    — {node.frontmatter.date}
-                  </span>
-                </h3>
-                <p>{node.excerpt}</p>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </Layout>
+                  — {node.frontmatter.date}
+                </span>
+              </h3>
+              <p>{node.excerpt}</p>
+            </Link>
+          </div>
+        ))}
+      </div>
     </Fragment>
   )
 }

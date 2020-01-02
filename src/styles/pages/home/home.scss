@@ -236,7 +236,6 @@
           @include animation(heroSlideAnimation, 1s, ease-out);
         }
         span {
-          font-size: 14px;
           position: relative;
           display: block;
           @include animation(heroSlideAnimation, 1.5s, ease-out);

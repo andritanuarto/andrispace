@@ -1,6 +1,5 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
+import React from "react";
+import Layout from "../components/interior/layout";
 
 export default () => (
   <Layout>
@@ -10,4 +9,4 @@ export default () => (
       photos and videos of pandas eating lots of food.
     </p>
   </Layout>
-)
+);
