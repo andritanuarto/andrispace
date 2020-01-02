@@ -4,10 +4,7 @@ import PrevNextButtons from '../shared/prevNextButtons';
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
 import { handleHeroIndex } from '../../actions/ui';
 import { Link } from "gatsby";
-import adbustersLogo from './hero-images/adbusters/adbusters-logo.png';
-import adbustersBackground from './hero-images/adbusters/social-protest.jpg';
-import utgLogo from './hero-images/utg/utg-logo.png';
-import utgBackground from './hero-images/utg/utg-class.jpg';
+import caseStudies from '../../case-studies/case-studies-directory';
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -24,34 +21,11 @@ const mapStateToProps = ({ heroIndex }) => {
 };
 
 const Hero = ({heroIndex, handleHeroIndex}) => {
-  const slides = [
-    {
-      clientName: 'Under The Gui (UTG)',
-      projectTitle: 'UTG Academy website redesign',
-      blurb: 'coding school for kids',
-      logoLink: utgLogo,
-      logoWidth: '100px',
-      heroBackground: utgBackground,
-      opacityColor: '#000000',
-      opacityLevel: '0.4',
-      url: './case-studies/utg'
-    },
-    {
-      clientName: 'Adbusters',
-      projectTitle: 'World Revolution',
-      blurb: 'an app for organizing social activity campaigns',
-      logoLink: adbustersLogo,
-      heroBackground: adbustersBackground,
-      opacityColor: '#000000',
-      opacityLevel: '0.4',
-      url: './case-studies/adbusters'
-    }
-  ];
   const slideIndexHandler = (nextOrPrev) => {
     handleHeroIndex(nextOrPrev);
   }
 
-  const slideIndex = slides[heroIndex];
+  const slideIndex = caseStudies[heroIndex];
 
   return (
     <div className="hero-container">
@@ -89,11 +63,11 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
         <div className="hero-container__slide-nav-center">
           <strong className="hero-container__slide-nav-center--label">Recent Projects</strong>
           <div className="hero-container__slide-nav-center__controller">
-            <strong><span key={heroIndex}>{`0${heroIndex + 1}`}</span> {`/ 0${slides.length}`}</strong>
-            <PrevNextButtons clickHandler={slideIndexHandler} slidesLength={slides.length} />
+            <strong><span key={heroIndex}>{`0${heroIndex + 1}`}</span> {`/ 0${caseStudies.length}`}</strong>
+            <PrevNextButtons clickHandler={slideIndexHandler} slidesLength={caseStudies.length} />
           </div>
           {
-            slides.map((slide, index) => {
+            caseStudies.map((slide, index) => {
               return (
                 <div
                   key={slide.projectTitle}
