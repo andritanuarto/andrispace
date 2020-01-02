@@ -6,24 +6,26 @@ const caseStudyContent = (
   <div className="par par--normal-width">
     <p>
       <h2>Introduction</h2>
-      Founded in 2013, UTG Academy (Under The GUI Academy) that teaches programming to kids. Their students ranged from grade 1 to 12.
+      Founded in 2013, UTG Academy (Under The GUI Academy) is a programming school for children and teenagers from grades 1 to 12. Headquartered in Vancouver they have 40 franchise locations in Canada and Taiwan.
     </p>
     <p>
       <h3>Project goals</h3>
-      As their business grew they wanted to redesign their website to be more functional and engaging. Some of the key points of this project are:
+      As the academy grew, redesign and reoptimized the website are necessary to help further growth. Some of the key goals of this project are:
       <ul>
         <li>Improve the course registration process.</li>
         <li>Incorporate the community-related content to their website.</li>
         <li>Reduce the redundancy of the content.</li>
         <li>Rebrand and redesign the overall website.</li>
+        <li>Optimized existing content and functionalities.</li>
+        <li>Create more engaging content for both parents and children.</li>
       </ul>
     </p>
     <p>
       <img src={utgTeam} alt="UTG Team" />
-      <span className="img-caption">The team for the UTG project (myself is third person from the right side)</span>
+      <span className="img-caption">The team for the UTG project (myself is the third person from the right side)</span>
     </p>
     <p>
-      For this 3 weeks project, our team consists of 4 UX and 2 UI designers. In my role besides part of the UX team, I also acted as a scrum master. My responsibilities were involved in all UX design processes, led daily scrum meetings, established the communication between the UX and UI teams, and made sure the project was on the right track.
+      In this project, our team consists of 4 UX and 2 UI designers. As a project scrum master, my role was leading daily scrum meetings, established communication between UX and UI teams, made sure the project was on the right track and involved in all UX design processes.
     </p>
   </div>
   <div className="par par--normal-width">
@@ -34,7 +36,14 @@ const caseStudyContent = (
       <img width="100%" src="https://media.giphy.com/media/l378rhA6c1QhJDgbu/giphy.gif" alt="researc"/>
     </p>
     <p>
-      In order to understand the market, users, problems, and to get different insight we conducted several qualitative and quantitative research methods such as domain research, contextual inquiry, survey, and user interview.
+      In order to understand the market, users, problems, and to get different insights we conducted a series of qualitative and quantitative research such as domain research, contextual inquiry, survey, and user interview.
+    </p>
+
+    <p>
+      <h3>Research Audiences</h3>
+      During the onboarding process with our client, we found mainly parents are the main initiator to enroll their children in UTG. So we decided to target UTG parents and other parents who are not part of the UTG as our research audiences.
+
+      Things what we wanted to know from UTG parents are:
     </p>
   </div>
   </>
