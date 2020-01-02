@@ -2,12 +2,19 @@
   margin: 0 auto;
   p {
     font-size: 18px;
-    margin: 48px 0 0 0;
+    margin: 36px 0 0 0;
     line-height: 36px;
   }
+  img {
+    margin-bottom: 0;
+  }
 
-  h1 {
-    margin: 48px 0 0 0;
+  h1, h2, h3, h4, h5 {
+    margin: 72px 0 8px 0;
+  }
+
+  ul {
+    margin-top: 16px;
   }
   &--normal-width {
     max-width: 776px;
@@ -20,5 +27,12 @@
   &--full-width {
     max-width: 100%;
     padding: 0 80px;
+  }
+
+  .img-caption {
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    font-style: italic;
   }
 }

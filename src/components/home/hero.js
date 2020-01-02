@@ -26,25 +26,25 @@ const mapStateToProps = ({ heroIndex }) => {
 const Hero = ({heroIndex, handleHeroIndex}) => {
   const slides = [
     {
+      clientName: 'Under The Gui (UTG)',
+      projectTitle: 'UTG Academy website redesign',
+      blurb: 'coding school for kids',
+      logoLink: utgLogo,
+      logoWidth: '100px',
+      heroBackground: utgBackground,
+      opacityColor: '#000000',
+      opacityLevel: '0.4',
+      url: './case-studies/utg'
+    },
+    {
       clientName: 'Adbusters',
       projectTitle: 'World Revolution',
       blurb: 'an app for organizing social activity campaigns',
       logoLink: adbustersLogo,
       heroBackground: adbustersBackground,
       opacityColor: '#000000',
-      opacityLevel: '0.3',
+      opacityLevel: '0.4',
       url: './case-studies/adbusters'
-    },
-    {
-      clientName: 'Under The Gui (UTG)',
-      projectTitle: 'Under The Gui (UTG)',
-      blurb: 'Website redesign for coding school for kids',
-      logoLink: utgLogo,
-      logoWidth: '100px',
-      heroBackground: utgBackground,
-      opacityColor: '#000000',
-      opacityLevel: '0.3',
-      url: './case-studies/utg'
     }
   ];
   const slideIndexHandler = (nextOrPrev) => {
@@ -105,7 +105,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
                     style={{backgroundImage: `url(${slide.heroBackground})`}}
                   >
                     {heroIndex === index || <div className="box--overlay box--overlay--dark"/>}
-                    <strong>{slide.projectTitle}</strong>
+                    <strong>{slide.clientName}</strong>
                   </div>
                 </div>
               )
