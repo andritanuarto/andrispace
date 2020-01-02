@@ -20,7 +20,7 @@ const caseStudyContent = (
     </p>
     <p>
       <img src={utgTeam} alt="UTG Team" />
-      <span className="img-caption">The team for the UTG project. I'm third person from the right side.</span>
+      <span className="img-caption">The team for the UTG project (myself is third person from the right side)</span>
     </p>
     <p>
       For this 3 weeks project, our team consists of 4 UX and 2 UI designers. In my role besides part of the UX team, I also acted as a scrum master. My responsibilities were involved in all UX design processes, led daily scrum meetings, established the communication between the UX and UI teams, and made sure the project was on the right track.
@@ -31,7 +31,7 @@ const caseStudyContent = (
       <h2>Research</h2>
     </p>
     <p>
-      <img src="https://media.giphy.com/media/l378rhA6c1QhJDgbu/giphy.gif" alt="researc"/>
+      <img width="100%" src="https://media.giphy.com/media/l378rhA6c1QhJDgbu/giphy.gif" alt="researc"/>
     </p>
     <p>
       In order to understand the market, users, problems, and to get different insight we conducted several qualitative and quantitative research methods such as domain research, contextual inquiry, survey, and user interview.
