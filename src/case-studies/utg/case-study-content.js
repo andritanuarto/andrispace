@@ -36,14 +36,7 @@ const caseStudyContent = (
       <img width="100%" src="https://media.giphy.com/media/l378rhA6c1QhJDgbu/giphy.gif" alt="researc"/>
     </p>
     <p>
-      In order to understand the market, users, problems, and to get different insights we conducted a series of qualitative and quantitative research such as domain research, contextual inquiry, survey, and user interview.
-    </p>
-
-    <p>
-      <h3>Research Audiences</h3>
-      During the onboarding process with our client, we found mainly parents are the main initiator to enroll their children in UTG. So we decided to target UTG parents and other parents who are not part of the UTG as our research audiences.
-
-      Things what we wanted to know from UTG parents are:
+      In order to get deeper understanding about the market, users, problems, and opportunities we conducted a series of qualitative and quantitative research such as domain research, contextual inquiry, survey, and user interview. We targeted parents to be our target audiences for our research. The reason because what we found from UTG staff mostly are parents who are the main initiator to enroll their children in programming school.
     </p>
   </div>
   </>
