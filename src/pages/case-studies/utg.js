@@ -3,7 +3,7 @@ import InteriorPostLayout from "../../components/interior/interior-post-layout";
 import caseStudiesDirectory from "../../case-studies/case-studies-directory";
 
 const caseStudyContent = caseStudiesDirectory.find((caseStudy) => {
-  return caseStudy.clientName === 'Under The Gui (UTG)'
+  return caseStudy.clientName === 'UTG Academy';
 });
 
 export default () => (
