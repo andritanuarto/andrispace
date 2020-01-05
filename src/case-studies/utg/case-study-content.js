@@ -1,5 +1,6 @@
 import React from "react";
 import utgTeam from "./utg-team.png";
+import utgCCAnalysis from "./utg-cc-analysis.png";
 
 const caseStudyContent = (
   <>
@@ -33,10 +34,23 @@ const caseStudyContent = (
       <h2>Research</h2>
     </p>
     <p>
-      <img width="100%" src="https://media.giphy.com/media/l378rhA6c1QhJDgbu/giphy.gif" alt="researc"/>
+      <img width="100%" src="https://media.giphy.com/media/l378rhA6c1QhJDgbu/giphy.gif" alt="research"/>
     </p>
     <p>
-      In order to get deeper understanding about the market, users, problems, and opportunities we conducted a series of qualitative and quantitative research such as domain research, contextual inquiry, survey, and user interview. We targeted parents to be our target audiences for our research. The reason because what we found from UTG staff mostly are parents who are the main initiator to enroll their children in programming school.
+      In order to get a deeper understanding of the market, users, problems, and opportunities we conducted a series of qualitative and quantitative research such as domain research, contextual inquiry, survey, and user interview.
+    </p>
+    <p>
+      <h3>Domain Research</h3>
+      What we did for domain research is basically to find out the current market for tech education industry especially for kids. What we found from <a href="https://www.canadalearningcode.ca/" target="_blank">canadalearningcode.ca</a> <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation a lot of parents are aware learning programming is a very useful skill to have, because there are increasing number of industries who relly on programming.
+    </p>
+    <p>
+      Part of the domain research we also did competitive/comparative analysis to get to know the gap in the market and where the UTG stands in the market. This analysis helped us for feature prioritization for this project.
+    </p>
+    <p>
+      <img src={utgCCAnalysis} alt="Competitive and comparative analysis"/>
+    </p>
+    <p>
+    <h3>Survey</h3>
     </p>
   </div>
   </>
