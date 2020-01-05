@@ -41,16 +41,22 @@ const caseStudyContent = (
     </p>
     <p>
       <h3>Domain Research</h3>
-      What we did for domain research is basically to find out the current market for tech education industry especially for kids. What we found from <a href="https://www.canadalearningcode.ca/" target="_blank">canadalearningcode.ca</a> <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation a lot of parents are aware learning programming is a very useful skill to have, because there are increasing number of industries who relly on programming.
+      To understand the market gap and how we position UTG, we conducted domain research. What we found from <a href="https://www.canadalearningcode.ca/" target="_blank">canadalearningcode.ca</a> <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation a lot of parents are aware learning programming is a very useful skill to have, because there are increasing number of industries who relly on programming.
     </p>
     <p>
-      Part of the domain research we also did competitive/comparative analysis to get to know the gap in the market and where the UTG stands in the market. This analysis helped us for feature prioritization for this project.
+      We also did competitive/comparative analysis to some other similar school websites to get to know their direction in terms of functionality and content on their websites. This analysis can help us how we position UTG for their online presence.
     </p>
+  </div>
+  <div className="par par--medium-width">
     <p>
       <img src={utgCCAnalysis} alt="Competitive and comparative analysis"/>
     </p>
+  </div>
+  <div className="par par--normal-width">
     <p>
-    <h3>Survey</h3>
+      <h3>Survey</h3>
+      During the research we wanted to know our users and motivations. We conducted a survey using Google Forms and send it to parents. Here are some of the highlights of our findings from 51 responses we received:
+
     </p>
   </div>
   </>
