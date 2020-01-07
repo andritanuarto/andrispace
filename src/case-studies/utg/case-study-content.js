@@ -46,7 +46,7 @@ const caseStudyContent = (
       </p>
       <p>
         <h3>Domain Research</h3>
-        To get a deeper understanding of how we positioned UTG among its competitors, we conducted domain research. What we found from <a href="https://www.canadalearningcode.ca/" target="_blank">canadalearningcode.ca</a> <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation, a lot of parents are aware learning programming is a very useful skill to have because there an increasing number of industries that rely on programming.
+        To get a deeper understanding of how we positioned UTG among its competitors, we conducted domain research. What we found from canadalearningcode.ca - <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation, a lot of parents are aware learning programming is a very useful skill to have because there an increasing number of industries that rely on programming.
       </p>
       <p>
         We also did competitive/comparative analysis to some other similar school websites to get to know their direction in terms of functionality and content on their websites. This analysis can help us how we position UTG for their online presence.
@@ -112,10 +112,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        From our affinity diagram, we found some of the pain points that we can improve such as finding course information and location, reducing text-heavy content, and fully responsive layout because from the survey data we got was most existing users are a mobile user.
-      </p>
-      <p>
-        We also found parents like the current instructor's information section and it would be good to have information about the learning environment for each location.
+        From our affinity diagram, we found some of the pain points that we can improve such as finding course information and location, reducing text-heavy content, and fully responsive layout because from the survey data we got was most existing users are a mobile user. We also found parents like the current instructor's information section and it would be good to have information about the learning environment for each location.
       </p>
     </div>
     <div className="par par--normal-width">
@@ -134,6 +131,9 @@ const caseStudyContent = (
       <div className="user-persona__right-section">
         <h3>Rachel Lee</h3>
         <strong className="user-persona__sub-info">40, Married, Senior Accountant</strong>
+        <strong className="user-persona__quoet">
+          "Ben is very curious and I believe coding helps him to achieve his full potential."
+        </strong>
         <p>
           Rachel is a Senior Accountant  and mother of Ben, a 8 years old kid. She and her family recently moved to Vancouver. Currently, Ben is taking swimming and violin lessons, but Rachel is starting to look into coding classes for Ben. Ever since Ben started learning coding skills in his past school and also with Minecraft, he’s been very passionate and excited about playing the games he creates. Since Ben’s current public school does not teach coding for kids his age, Rachel is looking into coding classes for him outside of school.
         </p>
@@ -164,6 +164,10 @@ const caseStudyContent = (
       <p>
         <h2>Planning</h2>
         After we finished our research and have a user persona in hand we began planning our design solution. In this phase, we created a user journey map, priority matrix, user flow and sitemap.
+      </p>
+      <p>
+        <h2>Journey Map</h2>
+        We made a journey map based on Rachel Lee's persona. Besides helping us to map out user's thoughts, experience, and pain points towards the UTG website, it also helped us to have a better understanding of which part of the website that we can improve to minimize user's frustration.
       </p>
     </div>
   </>
