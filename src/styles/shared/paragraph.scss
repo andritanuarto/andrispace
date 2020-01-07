@@ -15,9 +15,6 @@
 
   h2 {
     margin: 72px 0 8px 0;
-  }
-
-  h2 {
     font-size: 32px;
   }
 
@@ -28,6 +25,9 @@
   ul {
     margin-top: 16px;
   }
+  &.spacing {
+    margin-top: 36px;
+  }
   &--normal-width {
     max-width: 776px;
     padding: 0 48px;
@@ -35,10 +35,22 @@
   &--medium-width {
     max-width: 1024px;
     padding: 0 48px;
+    display: flex;
+    flex-direction: row;
   }
   &--full-width {
     max-width: 100%;
     padding: 0 80px;
+  }
+
+  .col {
+    flex: 1;
+    padding: 5px;
+    &--img {
+      height: 380px;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   .img-caption {

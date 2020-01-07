@@ -1,6 +1,9 @@
 import React from "react";
 import utgTeam from "./utg-team.png";
 import utgCCAnalysis from "./utg-cc-analysis.png";
+import utgContextualInquery1 from "./contextual-inquiry-1.jpeg";
+import utgContextualInquery2 from "./contextual-inquiry-2.jpeg";
+import utgContextualInquery3 from "./contextual-inquiry-3.jpeg";
 
 const caseStudyContent = (
   <>
@@ -37,11 +40,11 @@ const caseStudyContent = (
       <img width="100%" src="https://media.giphy.com/media/l378rhA6c1QhJDgbu/giphy.gif" alt="research"/>
     </p>
     <p>
-      In order to get a deeper understanding of the market, users, problems, and opportunities we conducted a series of qualitative and quantitative research such as domain research, contextual inquiry, survey, and user interview.
+      To know more about the market, users, problems, and opportunities we conducted a series of qualitative and quantitative research such as domain research, survey, and contextual inquiry.
     </p>
     <p>
       <h3>Domain Research</h3>
-      To understand the market gap and how we position UTG, we conducted domain research. What we found from <a href="https://www.canadalearningcode.ca/" target="_blank">canadalearningcode.ca</a> <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation a lot of parents are aware learning programming is a very useful skill to have, because there are increasing number of industries who relly on programming.
+      To get a deeper understanding of how we positioned UTG among its competitors, we conducted domain research. What we found from <a href="https://www.canadalearningcode.ca/" target="_blank">canadalearningcode.ca</a> <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation, a lot of parents are aware learning programming is a very useful skill to have because there an increasing number of industries that rely on programming.
     </p>
     <p>
       We also did competitive/comparative analysis to some other similar school websites to get to know their direction in terms of functionality and content on their websites. This analysis can help us how we position UTG for their online presence.
@@ -55,8 +58,40 @@ const caseStudyContent = (
   <div className="par par--normal-width">
     <p>
       <h3>Survey</h3>
-      During the research we wanted to know our users and motivations. We conducted a survey using Google Forms and send it to parents. Here are some of the highlights of our findings from 51 responses we received:
-
+      We surveyed to know our users and motivations by using Google Forms and send it to parents to fill the survey questions. Here are some of the highlights of our findings from 51 responses we received:
+    </p>
+  </div>
+  <div className="par par--normal-width">
+    <p>
+      <h3>Contextual Inquiry</h3>
+      We noticed a survey is very good to get more understanding about user demographics and decisions but in terms of detecting the pain point of the exact steps or pages on their website, the survey has limited capability in that area. So we decided to visit one of the UTG schools in Kitsilano, Vancouver BC to conduct contextual inquiry and user testing on the current website.
+      <ul>
+        <li>
+          <strong>Test Scenario 1: Find a class appropriate for your child’s age:</strong><br/> parents were able to find course information, but neither of them did it at the first try.</li>
+        <li>
+          <strong>Scenario 2: Contact the child’s instructor for a question:</strong><br/> Neither of them knew about the “Forum” feature that allows parents to ask instructors questions. In fact, one parent thought he had to go on the “Contact” page and fill out a form.
+        </li>
+      </ul>
+    </p>
+    <p>
+      We also found most parents were having difficulty to navigate the website. They were confused differentiating parts of the website for instructors, parents and franchises. For example, finding price info for specific courses, it took too many steps to find it from the homepage.
+    </p>
+  </div>
+  <div className="par par--medium-width spacing">
+      <div className="col">
+        <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery1})`}} />
+      </div>
+      <div className="col">
+        <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery2})`}} />
+      </div>
+      <div className="col">
+        <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery3})`}} />
+      </div>
+  </div>
+  <div className="par par--normal-width">
+    <p>
+      <h3>Affinity Diagram</h3>
+      After we collected all the data from our research we created an affinity diagram. We wrote key findings on sticky notes and group them into relevant categories. An affinity diagram will help us later in creating user persona and feature scope.
     </p>
   </div>
   </>
