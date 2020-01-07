@@ -1,21 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from 'react-redux';
 import { Link } from "gatsby";
 import Logo from "./logo";
 import Hamburger from "./hamburger";
-import { handleNavigation } from '../../actions/ui';
+import { handleNavigation, handleInitialRenderStatus } from '../../actions/ui';
 
 const mapDispatchToProps = (dispatch) => {
   return {
     handleNavigation: (openOrClose) => {
       dispatch(handleNavigation(openOrClose));
+    },
+    handleInitialRenderStatus: (status) => {
+      console.log(status);
+      dispatch(handleInitialRenderStatus(status));
     }
   };
 }
 
-const mapStateToProps = ({ navigationOpen }) => {
+const mapStateToProps = ({ navigationOpen, initialRender }) => {
   return {
-    navigationOpen
+    navigationOpen,
+    initialRender
   };
 };
 
@@ -27,12 +32,18 @@ const menus = [
   {label: 'contact', link: '/contact'}
 ];
 
-const Header = ({navColor, logoColor, navigationOpen, handleNavigation}) => {
+const Header = ({navColor, logoColor, navigationOpen, initialRender, handleNavigation, handleInitialRenderStatus}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      handleInitialRenderStatus(false);
+    }, 4000);
+  });
+
   const mainMenu = (
     <div className="nav">
       {menus.map((menu) => {
         return (
-          <Link onClick={() => {handleNavigation(!navigationOpen)}} to={menu.link}>
+          <Link key={menu.label} onClick={() => {handleNavigation(!navigationOpen)}} to={menu.link}>
             {menu.label}
           </Link>
         );
@@ -43,7 +54,7 @@ const Header = ({navColor, logoColor, navigationOpen, handleNavigation}) => {
   return (
     <>
       <div className="header header--dark">
-        <Logo logoColor={logoColor}/>
+        <Logo logoColor={logoColor} animated={true && initialRender}/>
         <Hamburger
           navColor={navColor}
           navigationOpen={navigationOpen}

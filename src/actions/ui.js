@@ -16,7 +16,14 @@ export const handleHeroIndex = (heroIndex) => {
 
 export const handleNavigation = (openOrClose) => {
   return {
-    type: UI.SET_SET_NAVIGATION_OPEN,
+    type: UI.SET_NAVIGATION_OPEN,
     openOrClose
+  }
+}
+
+export const handleInitialRenderStatus = (status) => {
+  return {
+    type: UI.SET_INITIAL_RENDER_STATUS,
+    status
   }
 }

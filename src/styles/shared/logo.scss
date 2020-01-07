@@ -1,8 +1,36 @@
+@keyframes flicker {
+  0%, 70%, 85%, 95% {
+    opacity: 0;
+  }
+	2%, 19.99%, 22%, 45%, 62%, 80% {
+		opacity: 0.2;
+  }
+	10%, 20%, 23%, 63%, 63%, 64%, 65%, 69% {
+		opacity: 0.5;
+  }
+  50%, 64%, 88%, 90% {
+    opacity: 0.7;
+  }
+  82%, 100% {
+    opacity: 1;
+  }
+}
+
 .logo {
   display: inline-block;
   line-height: normal;
   position: relative;
   text-decoration: none;
+  transition: color $generic-transition-time;
+  &--animated {
+    opacity: 0;
+    @include animation(flicker, 2s, ease-out);
+    @include animationDelay (2s);
+    animation-fill-mode: forwards;
+  }
+  &:hover {
+    color: darken(#ccc, 10%)
+  }
   &__main {
     font-family: 'Domine', serif;
     font-size: 25px;

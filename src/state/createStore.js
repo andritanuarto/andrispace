@@ -2,6 +2,7 @@ import { createStore as reduxCreateStore } from "redux"
 import { UI } from '../actions/action-types';
 
 const initialState = {
+  initialRender: true,
   splashIndex: 0,
   heroIndex: 0,
   navigationOpen: false
@@ -17,13 +18,20 @@ const reducer = (state = initialState, action = {}) => {
 
     case UI.SET_HERO_INDEX: {
       return Object.assign({}, state, {
-        heroIndex: action.heroIndex
+        heroIndex: action.heroIndex,
       });
     }
 
-    case UI.SET_SET_NAVIGATION_OPEN: {
+    case UI.SET_NAVIGATION_OPEN: {
       return Object.assign({}, state, {
         navigationOpen: action.openOrClose
+      });
+    }
+
+    case UI.SET_INITIAL_RENDER_STATUS: {
+      console.log(action.status);
+      return Object.assign({}, state, {
+        initialRender: action.status
       });
     }
 
