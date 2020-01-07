@@ -42,9 +42,6 @@ const caseStudyContent = (
         <h2>Research</h2>
       </p>
       <p>
-        <img width="100%" src="https://media.giphy.com/media/l378rhA6c1QhJDgbu/giphy.gif" alt="research"/>
-      </p>
-      <p>
         To know more about the market, users, problems, and opportunities we conducted a series of qualitative and quantitative research such as domain research, survey, and contextual inquiry.
       </p>
       <p>
@@ -136,7 +133,7 @@ const caseStudyContent = (
       </div>
       <div className="user-persona__right-section">
         <h3>Rachel Lee</h3>
-        <span>40, Married, Senior Accountant</span>
+        <strong className="user-persona__sub-info">40, Married, Senior Accountant</strong>
         <p>
           Rachel is a Senior Accountant  and mother of Ben, a 8 years old kid. She and her family recently moved to Vancouver. Currently, Ben is taking swimming and violin lessons, but Rachel is starting to look into coding classes for Ben. Ever since Ben started learning coding skills in his past school and also with Minecraft, he’s been very passionate and excited about playing the games he creates. Since Ben’s current public school does not teach coding for kids his age, Rachel is looking into coding classes for him outside of school.
         </p>
@@ -162,6 +159,12 @@ const caseStudyContent = (
           </div>
         </div>
       </div>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        <h2>Planning</h2>
+        After we finished our research and have a user persona in hand we began planning our design solution. In this phase, we created a user journey map, priority matrix, user flow and sitemap.
+      </p>
     </div>
   </>
 );

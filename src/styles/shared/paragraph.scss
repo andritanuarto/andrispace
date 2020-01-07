@@ -69,6 +69,10 @@
   &--light {
     border: solid 1px $color-white
   }
+  &__sub-info {
+    font-size: 16px;
+    font-weight: normal;
+  }
   &__left-section {
     flex: 1;
     display: flex;
@@ -82,14 +86,23 @@
   }
   &__right-section {
     flex: 2;
-    padding-left: 16px;
+    padding-left: 24px;
     font-size: 12px;
     p {
       font-size: 12px;
+      margin-top: 16px;
+    }
+    ul {
+      margin-bottom: 0;
+      padding: 0;
+      margin: 15px 0 0 15px;
     }
     &__bottom {
       display: flex;
       padding-top: 36px;
+      strong {
+        font-size: 16px;
+      }
       & > div {
         padding-right: 16px;
       }
