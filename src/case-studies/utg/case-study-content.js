@@ -11,27 +11,41 @@ import utgAffinity4 from "./affinity-4.jpeg";
 import personaPhoto from "./persona.jpeg";
 import journeyMap from "./journey-map.png";
 import featurePrioritization from "./feature-prioritization.jpg";
-import mvp from "./mvp.png";
-import userFlow1 from "./user-flow-1.jpeg";
-import userFlow2 from "./user-flow-2.jpeg";
-import userFlow3 from "./user-flow-3.jpeg";
-import userFlowFindClassLocation from "./find-classes-locations-userflow.jpeg";
-import overallUserflow from "./overall-user-flow.jpeg";
+import mvp from './mvp.png';
+import userFlow1 from './user-flow-1.jpeg';
+import userFlow2 from './user-flow-2.jpeg';
+import userFlow3 from './user-flow-3.jpeg';
+import userFlowFindClassLocation from './find-classes-locations-userflow.jpeg';
+import overallUserflow from './overall-user-flow.jpeg';
+import lowFi1 from './low-fi-1.jpeg';
+import lowFi2 from './low-fi-2.jpeg';
+import lowFi3 from './low-fi-3.jpeg';
+import lowFi4 from './low-fi-4.jpeg';
+import lowFi5 from './low-fi-5.jpeg';
+import lowFi6 from './low-fi-6.jpeg';
+import lowFiTest1 from './low-fi-test1.jpg';
+import lowFiTest2 from './low-fi-test2.jpg';
+import lowFiTest3 from './low-fi-test3.jpg';
+import lowFiTest4 from './low-fi-test4.jpg';
+import lowFiTest5 from './low-fi-test5.jpg';
+import midfiLib from './utg-midfi-library.png';
 
 const caseStudyContent = (
   <>
     <div className="par par--normal-width">
       <p>
         <h2>Introduction</h2>
-        Programming is a skill that is not easy to master for a lot of people. I remember myself 8 years ago when I decided to switch my career related to programming. It was quite intimidating at first because I didn't have the basic knowledge and when I was in high school I never thought I'm going to have a career as a programmer. It took me countless hours of study to get comfortable, and I noticed these days a lot of high demand jobs are required to have programming skills and it is expected to be more programming related job in the future.
+        Programming is a skill that is not easy to acquire. I remember myself eight years ago when I decided to switch my career related to programming. It was quite intimidating at first because I didn't have the basic knowledge. It took me a lot of hours of studying to get comfortable with it.
       </p>
       <p>
-        Parents nowadays are also aware of the potential to have programming skills for their children's future.
-        UTG Academy (Under The GUI Academy) was founded to facilitate that education demand. Founded in 2013, UTG Academy is a programming school for children and teenagers from grades 1 to 12. Headquartered in Vancouver they have 40 franchise locations in Canada and Taiwan.
+        These days a lot of high demand jobs are required to have programming skills. The fact that programming skills are increasingly important, but most secondary educations still don't teach programming as a mandatory subject. And a lot of parents nowadays are also aware of how important to have programming skills for their children.
+      </p>
+      <p>
+        UTG Academy (Under The GUI Academy) was founded to facilitate the programming education demand. Founded in 2013, UTG Academy is a programming school for students from grades 1 to 12.
       </p>
       <p>
         <h3>Project goals</h3>
-        As the academy grew, redesign and reoptimized the website are necessary to help further growth. Some of the key goals of this project are:
+        As the academy grew, redesign and reoptimized their website are necessary to help further growth. Some of the key goals of this project are:
         <ul>
           <li>Improve the finding courses and registration process</li>
           <li>Incorporate the community-related content to their website</li>
@@ -92,15 +106,18 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--medium-width spacing">
-      <div className="col">
-        <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery1})`}} />
+      <div className="par par__img-container">
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery1})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery2})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery3})`}} />
+        </div>
       </div>
-      <div className="col">
-        <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery2})`}} />
-      </div>
-      <div className="col">
-        <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery3})`}} />
-      </div>
+      <span className="img-caption">We visited one of the UTG school at Kitsilano, Vancouver</span>
     </div>
     <div className="par par--normal-width">
       <p>
@@ -109,22 +126,26 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--medium-width spacing">
-      <div className="col">
-        <div className="col--img" style={{backgroundImage: `url(${utgAffinity1})`}} />
+      <div className="par par__img-container">
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${utgAffinity1})`}} />
+        </div>
+        <div className="col" style={{flex: 1.5}}>
+          <div className="col--img" style={{backgroundImage: `url(${utgAffinity2})`}} />
+        </div>
+        <div className="col" style={{flex: 1.5}}>
+          <div className="col--img" style={{backgroundImage: `url(${utgAffinity4})`}} />
+        </div>
       </div>
-      <div className="col" style={{flex: 1.5}}>
-        <div className="col--img" style={{backgroundImage: `url(${utgAffinity2})`}} />
+      <div className="par par__img-container">
+        <div className="col">
+          <img width="100%" src={utgAffinity3} alt="Affinity Diagram"/>
+        </div>
       </div>
-      <div className="col" style={{flex: 1.5}}>
-        <div className="col--img" style={{backgroundImage: `url(${utgAffinity4})`}} />
-      </div>
-    </div>
-    <div className="par par--medium-width spacing">
-      <img width="100%" src={utgAffinity3} alt="Affinity Diagram"/>
     </div>
     <div className="par par--normal-width">
       <p>
-        From our affinity diagram, we found some of the pain points that we can improve such as finding course information and location, reducing text-heavy content, and fully responsive layout because from the survey data we got was most existing users are a mobile user. We also found parents like the current instructor's information section and it would be good to have information about the learning environment for each location.
+        From our affinity diagram, we found some of the pain points that we can improve such as finding course information and location, reducing text-heavy content, and fully responsive layout because from the survey data we got was most existing users are a mobile user. We also found parents like the current instructor's information section but it would be good to have additional information about the learning environment for each location.
       </p>
     </div>
     <div className="par par--normal-width">
@@ -175,7 +196,7 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h2>Planning</h2>
-        After we finished our research and have a user persona in hand we began planning our design solution. In this phase, we created a journey map, priority matrix, user flow and sitemap.
+        After we finished our research and have a user persona in hand we began planning our design solution. In this phase, we created a journey map, priority matrix, user-flows and sitemap.
       </p>
       <p>
         <h3>Journey Map</h3>
@@ -213,18 +234,20 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--wide-width spacing">
-      <div className="col">
-        <div className="col--img" style={{height: '280px', backgroundImage: `url(${userFlow2})`}} />
-      </div>
-      <div className="col">
-        <div className="col--img" style={{height: '280px', backgroundImage: `url(${userFlow1})`}} />
-      </div>
-      <div className="col">
-        <div className="col--img" style={{height: '280px', backgroundImage: `url(${userFlow3})`}} />
+      <div className="par par__img-container">
+        <div className="col">
+          <div className="col--img" style={{height: '300px', backgroundImage: `url(${userFlow2})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{height: '300px', backgroundImage: `url(${userFlow1})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{height: '300px', backgroundImage: `url(${userFlow3})`}} />
+        </div>
       </div>
     </div>
     <div className="par par--normal-width">
-      <span className="img-caption">Sketches of our userflow</span>
+      <span className="img-caption">Sketches of our userflows</span>
     </div>
     <div className="par par--normal-width">
       <p>
@@ -255,6 +278,98 @@ const caseStudyContent = (
       </p>
       <p>
         We found testing our own low-fi prototypes first was very helpful, because it allows us to make necessary revisions before creating proper user scenarios.
+      </p>
+    </div>
+    <div className="par par--wide-width spacing">
+      <div className="par par__img-container">
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFi6})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFi1})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFi3})`}} />
+        </div>
+      </div>
+      <div className="par par__img-container">
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFi4})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFi2})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFi5})`}} />
+        </div>
+      </div>
+    </div>
+    <div className="par par--normal-width">
+      <p>After we finished testing and made revisions of our own low-fi prototypes, we tested the prototypes to other users. The reason we conducted the test with other users outside our team is to minimize biased opinions about our solution.</p>
+    </div>
+    <div className="par par--wide-width spacing">
+      <div className="par par__img-container">
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFiTest1})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFiTest2})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFiTest3})`}} />
+        </div>
+      </div>
+      <div className="par par__img-container">
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFiTest4})`}} />
+        </div>
+        <div className="col">
+          <div className="col--img" style={{backgroundImage: `url(${lowFiTest5})`}} />
+        </div>
+      </div>
+    </div>
+
+    <div className="par par--normal-width">
+      <p>
+        <h3>Mid-fi</h3>
+        Our mid-fi is the last tangible deliverable from the UX team before we hand it over to the UI team to do hi-fi prototypes. During this creation process, it’s important to establish a core library UI component to ensure the style consistency through out all of mid-fi prototypes, and to provide an easier transition for the UI team to skin all of our mid-fi pages.
+      </p>
+    </div>
+    <div className="par par--medium-width">
+      <img src={midfiLib} alt="Mid-fi UI library" />
+      <span className="img-caption">Mid-fi UI library</span>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        Same process like what we did for low-fi, we also tested our mid-fi to make sure our flow makes sense to the users and it also gave us a chance to make minor adjustments before going to high-fi prototypes.
+      </p>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        <h3>Hi-fi</h3>
+        Once mid-fi prototypes are done we handed our mid-fi to UI team. We did the run through the mid-fi to make sure UI and UX teams are on the same page for the direction of final the high-fi prototypes.
+      </p>
+      <p>
+        For the UI approach, we got inspiration from Minecraft and Mario games. The reason because of the age demographic most millennial parents and generation-z children are very familiar with those. In our mind, Minecraft was the definition of playful, fun, kids friendly, and creative which is very suitable for what UTG stands for.
+      </p>
+
+      <p>
+        We incorporated gamification for some of our pages for example like the images on our 404 and registration pages are inspired by old Mario Bros game in the early 80s. The purpose of this approach is to add a little bit of creativity and fun factor to the website.
+      </p>
+    </div>
+    <div className="par par--normal-width">
+      <h2>Future Considerations</h2>
+      <p>
+        Because we had to finish this project in less than 3 weeks, we could only finish our MVP features, but we believe the website can be improved further beyond this project. One of the features that we felt can help their students and parents are incorporating the student login to their website.
+      </p>
+      <p>
+        By having student login, it will open up other important features such as course wishlist, better registration process, student progress tracker, and online one on one feedback from instructors.
+      </p>
+    </div>
+    <div className="par par--normal-width">
+      <h2>What Have We Learned</h2>
+      <p>
+        What we’ve learned from this project is important to respect every part of the process not to jump the step of the process, and drive the solution not only relying on our own creative ability but also incorporating it based on the research, feedbacks, and test result we got.
       </p>
     </div>
   </>

@@ -48,18 +48,20 @@
   &--medium-width {
     max-width: 1100px;
     padding: 0 48px;
-    display: flex;
-    flex-direction: row;
   }
   &--wide-width {
     max-width: 1200px;
     padding: 0 48px;
-    display: flex;
-    flex-direction: row;
   }
   &--full-width {
     max-width: 100%;
     padding: 0 80px;
+  }
+
+  &__img-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
   }
 
   .col {
