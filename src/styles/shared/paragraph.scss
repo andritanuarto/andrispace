@@ -20,20 +20,39 @@
 
   h3 {
     margin: 0 0 8px 0;
+    font-size: 20px;
   }
 
   ul {
     margin-top: 16px;
   }
+
+  .float-left {
+    margin: 0 24px 24px 0;
+  }
+
+  .float-right {
+    margin: 0 0 24px 24px;
+  }
+
   &.spacing {
-    margin-top: 36px;
+    margin-top: 36px!important;
+    &--none {
+      margin-top: 0!important;
+    }
   }
   &--normal-width {
-    max-width: 776px;
+    max-width: 904px;
     padding: 0 48px;
   }
   &--medium-width {
-    max-width: 1024px;
+    max-width: 1100px;
+    padding: 0 48px;
+    display: flex;
+    flex-direction: row;
+  }
+  &--wide-width {
+    max-width: 1200px;
     padding: 0 48px;
     display: flex;
     flex-direction: row;
@@ -67,7 +86,8 @@
   padding: 16px;
   align-items: stretch;
   &--light {
-    border: solid 1px $color-white
+    border: solid 1px $color-code-gray;
+    border-radius: 5px;
   }
   &__sub-info {
     font-size: 16px;
@@ -95,9 +115,9 @@
   &__right-section {
     flex: 2;
     padding-left: 24px;
-    font-size: 12px;
+    font-size: 14px;
     p {
-      font-size: 12px;
+      font-size: 14px;
       margin-top: 16px;
     }
     ul {

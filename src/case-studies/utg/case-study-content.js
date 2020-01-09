@@ -9,24 +9,36 @@ import utgAffinity2 from "./affinity-2.jpeg";
 import utgAffinity3 from "./affinity-3.jpeg";
 import utgAffinity4 from "./affinity-4.jpeg";
 import personaPhoto from "./persona.jpeg";
+import journeyMap from "./journey-map.png";
+import featurePrioritization from "./feature-prioritization.jpg";
+import mvp from "./mvp.png";
+import userFlow1 from "./user-flow-1.jpeg";
+import userFlow2 from "./user-flow-2.jpeg";
+import userFlow3 from "./user-flow-3.jpeg";
+import userFlowFindClassLocation from "./find-classes-locations-userflow.jpeg";
+import overallUserflow from "./overall-user-flow.jpeg";
 
 const caseStudyContent = (
   <>
     <div className="par par--normal-width">
       <p>
         <h2>Introduction</h2>
-        Founded in 2013, UTG Academy (Under The GUI Academy) is a programming school for children and teenagers from grades 1 to 12. Headquartered in Vancouver they have 40 franchise locations in Canada and Taiwan.
+        Programming is a skill that is not easy to master for a lot of people. I remember myself 8 years ago when I decided to switch my career related to programming. It was quite intimidating at first because I didn't have the basic knowledge and when I was in high school I never thought I'm going to have a career as a programmer. It took me countless hours of study to get comfortable, and I noticed these days a lot of high demand jobs are required to have programming skills and it is expected to be more programming related job in the future.
+      </p>
+      <p>
+        Parents nowadays are also aware of the potential to have programming skills for their children's future.
+        UTG Academy (Under The GUI Academy) was founded to facilitate that education demand. Founded in 2013, UTG Academy is a programming school for children and teenagers from grades 1 to 12. Headquartered in Vancouver they have 40 franchise locations in Canada and Taiwan.
       </p>
       <p>
         <h3>Project goals</h3>
         As the academy grew, redesign and reoptimized the website are necessary to help further growth. Some of the key goals of this project are:
         <ul>
-          <li>Improve the course registration process.</li>
-          <li>Incorporate the community-related content to their website.</li>
-          <li>Reduce the redundancy of the content.</li>
-          <li>Rebrand and redesign the overall website.</li>
-          <li>Optimized existing content and functionalities.</li>
-          <li>Create more engaging content for both parents and children.</li>
+          <li>Improve the finding courses and registration process</li>
+          <li>Incorporate the community-related content to their website</li>
+          <li>Reduce the redundancy of the content</li>
+          <li>Rebrand and redesign the overall website</li>
+          <li>Optimized existing content and functionalities</li>
+          <li>Create more engaging content for both parents and children</li>
         </ul>
       </p>
       <p>
@@ -163,11 +175,86 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h2>Planning</h2>
-        After we finished our research and have a user persona in hand we began planning our design solution. In this phase, we created a user journey map, priority matrix, user flow and sitemap.
+        After we finished our research and have a user persona in hand we began planning our design solution. In this phase, we created a journey map, priority matrix, user flow and sitemap.
       </p>
       <p>
-        <h2>Journey Map</h2>
-        We made a journey map based on Rachel Lee's persona. Besides helping us to map out user's thoughts, experience, and pain points towards the UTG website, it also helped us to have a better understanding of which part of the website that we can improve to minimize user's frustration.
+        <h3>Journey Map</h3>
+        We made a journey map based on Rachel Lee's persona. Besides helping us to map out user's thoughts, experience, and pain points towards the UTG website, it also helped us to pinpoint
+      </p>
+    </div>
+    <div className="par par--wide-width">
+      <p>
+        <img width="100%" src={journeyMap} alt="Journey Map"/>
+        <span className="img-caption">User journey based on Rachel Lee persona</span>
+      </p>
+    </div>
+    <div className="par par--normal-width spacing">
+      <p className="par spacing--none">
+        <h3>Features Priority &amp; MVP</h3>
+        Based on the user journey and persona we created, we listed all the potential features and prioritized them based on high to low user value and effort metrics. After some consideration based on the time constraint and resources we had, we decided to narrow down our scope for our MVP (minimum viable product).
+      </p>
+      <p>
+        <img src={featurePrioritization} alt="Feature Prioritization"/>
+      </p>
+      <p>
+        On our MVP we divided each feature into three different buckets: must-have, nice to have and not needed. We ended up taking all the list of must-have and some nice-to-have buckets into our project scope. Because of the time limitation, we didn't take calendar and intranet for student login.
+      </p>
+    </div>
+    <div className="par par--medium-width">
+      <p>
+        <img src={mvp} alt="MVP Features"/>
+        <span className="img-caption">MVP features for UTG website</span>
+      </p>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        <h3>User-flow</h3>
+        Next, after we did the MVP covered by a better understanding of the whole scope of the project, we designed our user-flow.
+      </p>
+    </div>
+    <div className="par par--wide-width spacing">
+      <div className="col">
+        <div className="col--img" style={{height: '280px', backgroundImage: `url(${userFlow2})`}} />
+      </div>
+      <div className="col">
+        <div className="col--img" style={{height: '280px', backgroundImage: `url(${userFlow1})`}} />
+      </div>
+      <div className="col">
+        <div className="col--img" style={{height: '280px', backgroundImage: `url(${userFlow3})`}} />
+      </div>
+    </div>
+    <div className="par par--normal-width">
+      <span className="img-caption">Sketches of our userflow</span>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        During the user-flow creation process, we found the most challenging part was to create a user-flow that helps parents to find suitable courses based on their time availability and location. What we found that the locations page can be linked to the find course page to find classes based on location. The reason because from the result of our user testing, some parents prefer to find the classes near where they live.
+      </p>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        <img src={userFlowFindClassLocation} />
+        <span className="img-caption">User-flow finding locations and classes</span>
+      </p>
+    </div>
+
+    <div className="par par--normal-width">
+      <p>
+        In this project, we ended up creating five different user-flows such as: registering class, request info, community, finding locations, and about us.
+      </p>
+      <p>
+        <img src={overallUserflow}/>
+        <span className="img-caption">Overall UTG user-flow</span>
+      </p>
+    </div>
+    <div className="par par--normal-width">
+      <p><h2>Design</h2></p>
+      <p>
+        <h3>Low-fi</h3>
+        We started our design process by creating low-fi prototypes and test them out ourselves to make sure our flows didn’t miss any steps and required information.
+      </p>
+      <p>
+        We found testing our own low-fi prototypes first was very helpful, because it allows us to make necessary revisions before creating proper user scenarios.
       </p>
     </div>
   </>
