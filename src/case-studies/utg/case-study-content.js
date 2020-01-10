@@ -1,4 +1,5 @@
 import React from "react";
+import ImgSection from '../../components/interior/img-section';
 import utgTeam from "./utg-team.png";
 import utgCCAnalysis from "./utg-cc-analysis.png";
 import utgContextualInquery1 from "./contextual-inquiry-1.jpeg";
@@ -56,8 +57,10 @@ const caseStudyContent = (
         </ul>
       </p>
       <p>
-        <img src={utgTeam} alt="UTG Team" />
-        <span className="img-caption">The team for the UTG project (myself is the third person from the right side)</span>
+        <ImgSection
+          imgs={[{url: utgTeam, backgroundImg: false}]}
+          caption="The team for the UTG project (myself is the third person from the right side)"
+        />
       </p>
       <p>
         In this project, our team consists of 4 UX and 2 UI designers. As a project scrum master, my role was leading daily scrum meetings, established communication between UX and UI teams, made sure the project was on the right track and involved in all UX design processes.
@@ -78,10 +81,11 @@ const caseStudyContent = (
         We also did competitive/comparative analysis to some other similar school websites to get to know their direction in terms of functionality and content on their websites. This analysis can help us how we position UTG for their online presence.
       </p>
     </div>
-    <div className="par par--medium-width">
-      <p>
-        <img src={utgCCAnalysis} alt="Competitive and comparative analysis"/>
-      </p>
+    <div className="par par--medium-width spacing">
+      <ImgSection
+        imgs={[{url: utgCCAnalysis, backgroundImg: false}]}
+        caption="Competitive and comparative analysis"
+      />
     </div>
     <div className="par par--normal-width">
       <p>
@@ -106,18 +110,14 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--medium-width spacing">
-      <div className="par par__img-container">
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery1})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery2})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${utgContextualInquery3})`}} />
-        </div>
-      </div>
-      <span className="img-caption">We visited one of the UTG school at Kitsilano, Vancouver</span>
+      <ImgSection
+        imgs={[
+          {url: utgContextualInquery1, backgroundImg: true},
+          {url: utgContextualInquery2, backgroundImg: true},
+          {url: utgContextualInquery3, backgroundImg: true},
+        ]}
+        caption="We visited one of the UTG school at Kitsilano, Vancouver"
+      />
     </div>
     <div className="par par--normal-width">
       <p>
@@ -126,22 +126,17 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--medium-width spacing">
-      <div className="par par__img-container">
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${utgAffinity1})`}} />
-        </div>
-        <div className="col" style={{flex: 1.5}}>
-          <div className="col--img" style={{backgroundImage: `url(${utgAffinity2})`}} />
-        </div>
-        <div className="col" style={{flex: 1.5}}>
-          <div className="col--img" style={{backgroundImage: `url(${utgAffinity4})`}} />
-        </div>
-      </div>
-      <div className="par par__img-container">
-        <div className="col">
-          <img width="100%" src={utgAffinity3} alt="Affinity Diagram"/>
-        </div>
-      </div>
+      <ImgSection
+        imgs={[
+          {url: utgAffinity1, backgroundImg: true},
+          {url: utgAffinity2, backgroundImg: true, style: {flex: 1.5}},
+          {url: utgAffinity4, backgroundImg: true, style: {flex: 1.5}},
+        ]}
+      />
+      <ImgSection
+        imgs={[{url: utgAffinity3, backgroundImg: false}]}
+        caption="Affinity Diagram"
+      />
     </div>
     <div className="par par--normal-width">
       <p>
@@ -205,8 +200,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--wide-width">
       <p>
-        <img width="100%" src={journeyMap} alt="Journey Map"/>
-        <span className="img-caption">User journey based on Rachel Lee persona</span>
+        <ImgSection imgs={[{url: journeyMap}]} caption="User journey based on Rachel Lee persona" />
       </p>
     </div>
     <div className="par par--normal-width spacing">
@@ -215,7 +209,7 @@ const caseStudyContent = (
         Based on the user journey and persona we created, we listed all the potential features and prioritized them based on high to low user value and effort metrics. After some consideration based on the time constraint and resources we had, we decided to narrow down our scope for our MVP (minimum viable product).
       </p>
       <p>
-        <img src={featurePrioritization} alt="Feature Prioritization"/>
+        <ImgSection imgs={[{url: featurePrioritization}]} caption="Feature Prioritization" />
       </p>
       <p>
         On our MVP we divided each feature into three different buckets: must-have, nice to have and not needed. We ended up taking all the list of must-have and some nice-to-have buckets into our project scope. Because of the time limitation, we didn't take calendar and intranet for student login.
@@ -234,41 +228,28 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--wide-width spacing">
-      <div className="par par__img-container">
-        <div className="col">
-          <div className="col--img" style={{height: '300px', backgroundImage: `url(${userFlow2})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{height: '300px', backgroundImage: `url(${userFlow1})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{height: '300px', backgroundImage: `url(${userFlow3})`}} />
-        </div>
-      </div>
-    </div>
-    <div className="par par--normal-width">
-      <span className="img-caption">Sketches of our userflows</span>
+      <ImgSection
+        imgs={[
+          {url: userFlow2, backgroundImg: true, style: {height: '300px'}},
+          {url: userFlow1, backgroundImg: true, style: {height: '300px'}},
+          {url: userFlow3, backgroundImg: true, style: {height: '300px'}},
+        ]}
+        caption="Sketches of our userflows"
+      />
     </div>
     <div className="par par--normal-width">
       <p>
         During the user-flow creation process, we found the most challenging part was to create a user-flow that helps parents to find suitable courses based on their time availability and location. What we found that the locations page can be linked to the find course page to find classes based on location. The reason because from the result of our user testing, some parents prefer to find the classes near where they live.
       </p>
-    </div>
-    <div className="par par--normal-width">
       <p>
-        <img src={userFlowFindClassLocation} />
-        <span className="img-caption">User-flow finding locations and classes</span>
+        <ImgSection imgs={[{url: userFlowFindClassLocation}]} caption="User-flow finding locations and classes" />
       </p>
     </div>
-
     <div className="par par--normal-width">
       <p>
         In this project, we ended up creating five different user-flows such as: registering class, request info, community, finding locations, and about us.
       </p>
-      <p>
-        <img src={overallUserflow}/>
-        <span className="img-caption">Overall UTG user-flow</span>
-      </p>
+      <p><ImgSection imgs={[{url: overallUserflow}]} caption="Overall UTG user-flow" /></p>
     </div>
     <div className="par par--normal-width">
       <p><h2>Design</h2></p>
@@ -281,54 +262,39 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--wide-width spacing">
-      <div className="par par__img-container">
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFi6})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFi1})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFi3})`}} />
-        </div>
-      </div>
-      <div className="par par__img-container">
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFi4})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFi2})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFi5})`}} />
-        </div>
-      </div>
+      <ImgSection
+        imgs={[
+          {url: lowFi6, backgroundImg: true},
+          {url: lowFi1, backgroundImg: true},
+          {url: lowFi3, backgroundImg: true},
+        ]}
+      />
+      <ImgSection
+        imgs={[
+          {url: lowFi4, backgroundImg: true},
+          {url: lowFi2, backgroundImg: true},
+          {url: lowFi5, backgroundImg: true},
+        ]}
+      />
     </div>
     <div className="par par--normal-width">
       <p>After we finished testing and made revisions of our own low-fi prototypes, we tested the prototypes to other users. The reason we conducted the test with other users outside our team is to minimize biased opinions about our solution.</p>
     </div>
     <div className="par par--wide-width spacing">
-      <div className="par par__img-container">
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFiTest1})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFiTest2})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFiTest3})`}} />
-        </div>
-      </div>
-      <div className="par par__img-container">
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFiTest4})`}} />
-        </div>
-        <div className="col">
-          <div className="col--img" style={{backgroundImage: `url(${lowFiTest5})`}} />
-        </div>
-      </div>
+      <ImgSection
+        imgs={[
+          {url: lowFiTest1, backgroundImg: true},
+          {url: lowFiTest2, backgroundImg: true},
+          {url: lowFiTest3, backgroundImg: true},
+        ]}
+      />
+      <ImgSection
+        imgs={[
+          {url: lowFiTest4, backgroundImg: true},
+          {url: lowFiTest5, backgroundImg: true},
+        ]}
+      />
     </div>
-
     <div className="par par--normal-width">
       <p>
         <h3>Mid-fi</h3>
@@ -336,8 +302,7 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--medium-width">
-      <img src={midfiLib} alt="Mid-fi UI library" />
-      <span className="img-caption">Mid-fi UI library</span>
+      <ImgSection imgs={[{url: midfiLib, backgroundImg: true}]} caption="Mid-fi UI library" />
     </div>
     <div className="par par--normal-width">
       <p>

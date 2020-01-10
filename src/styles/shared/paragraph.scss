@@ -68,7 +68,7 @@
     flex: 1;
     padding: 5px;
     &--img {
-      height: 380px;
+      height: 450px;
       background-size: cover;
       background-position: center;
     }
@@ -79,6 +79,7 @@
     display: block;
     text-align: center;
     font-style: italic;
+    padding: 5px;
   }
 
 }
