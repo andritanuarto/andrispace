@@ -36,19 +36,19 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h2>Introduction</h2>
-        Programming is a skill that is not easy to acquire. I remember myself eight years ago when I decided to switch my career related to programming. It was quite intimidating at first because I didn't have the basic knowledge. It took me a lot of hours of studying to get comfortable with it.
+        Programming is a skill that is not easy to acquire. I remember myself eight years ago when I decided to switch my career into programming. It was quite intimidating at first because I didn't have the basic knowledge. It took me countless hours of studying to just get comfortable with it.
       </p>
       <p>
-        These days a lot of high demand jobs are required to have programming skills. The fact that programming skills are increasingly important, but most secondary educations still don't teach programming as a mandatory subject. And a lot of parents nowadays are also aware of how important to have programming skills for their children.
+        These days, I see a lot of high demand jobs that require basic programming skills. The fact that programming skills are becoming increasingly important, most secondary educations still don't teach programming as a mandatory subject. Luckily, a lot of parents nowadays are becoming more aware of how important it is for their childtren to harvest their programming skills.
       </p>
       <p>
         UTG Academy (Under The GUI Academy) was founded to facilitate the programming education demand. Founded in 2013, UTG Academy is a programming school for students from grades 1 to 12.
       </p>
       <p>
         <h3>Project goals</h3>
-        As the academy grew, redesign and reoptimized their website are necessary to help further growth. Some of the key goals of this project are:
+        As the academy grew, the need to redesign and reoptimized their website became necessary to help further growth. Some of the key goals of this project were:
         <ul>
-          <li>Improve the finding courses and registration process</li>
+          <li>Improve finding courses and registration process</li>
           <li>Incorporate the community-related content to their website</li>
           <li>Reduce the redundancy of the content</li>
           <li>Rebrand and redesign the overall website</li>
@@ -63,7 +63,7 @@ const caseStudyContent = (
         />
       </p>
       <p>
-        In this project, our team consists of 4 UX and 2 UI designers. As a project scrum master, my role was leading daily scrum meetings, established communication between UX and UI teams, made sure the project was on the right track and involved in all UX design processes.
+        For this project, our team consisted of 4 UX and 2 UI designers. As the project scrum master, my role focused on leading daily scrum meetings, establishing communication between UX and UI teams, making sure the project was on the right track, and was involved in all UX design processes.
       </p>
     </div>
     <div className="par par--normal-width">
@@ -71,14 +71,14 @@ const caseStudyContent = (
         <h2>Research</h2>
       </p>
       <p>
-        To know more about the market, users, problems, and opportunities we conducted a series of qualitative and quantitative research such as domain research, survey, and contextual inquiry.
+        To learn more about the market, users, problems and opportunities, we conducted a series of qualitative and quantitative research such as domain research, survey, and contextual inquiry.
       </p>
       <p>
         <h3>Domain Research</h3>
-        To get a deeper understanding of how we positioned UTG among its competitors, we conducted domain research. What we found from canadalearningcode.ca - <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation, a lot of parents are aware learning programming is a very useful skill to have because there an increasing number of industries that rely on programming.
+        To gain a deeper understanding of how UTG positioned among its competitors, we conducted fdomain research. Our findings from canadalearningcode.ca showed that - <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation, a lot more parents are realizing that programming is a very useful skill to have because there's an increasing number of industries that demand and rely on programmers.
       </p>
       <p>
-        We also did competitive/comparative analysis to some other similar school websites to get to know their direction in terms of functionality and content on their websites. This analysis can help us how we position UTG for their online presence.
+        We also did competitive/comparative analysis on other similar school websites to get to know their direction in terms of functionality and content on their websites. This analysis helped us identify how to best position UTG on their online presence.
       </p>
     </div>
     <div className="par par--medium-width spacing">
@@ -90,13 +90,13 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h3>Survey</h3>
-        We surveyed to know our users and motivations by using Google Forms and send it to parents to fill the survey questions. Here are some of the highlights of our findings from 51 responses we received:
+        To identify our users and user-motivations, we organized surveys using Google Forms and sent it to parents to fill it out at their own time and convenience. Here are some of the highlights of our findings from all 51 responses we received:
       </p>
     </div>
     <div className="par par--normal-width">
       <p>
         <h3>Contextual Inquiry</h3>
-        We noticed a survey is very good to get more understanding about user demographics and decisions but in terms of detecting the pain point of the exact steps or pages on their website, the survey has limited capability in that area. So we decided to visit one of the UTG schools in Kitsilano, Vancouver BC to conduct contextual inquiry and user testing on the current website.
+        However, in terms of detecting the pain point of the exact steps or pages on their website, the surveys were limited and insufficient. So we decided to visit one of the UTG schools in Kitsilano, Vancouver BC to conduct contextual inquiry and user testing on the current website.
         <ul>
           <li>
             <strong>Test Scenario 1: Find a class appropriate for your child’s age:</strong><br/> parents were able to find course information, but neither of them did it at the first try.</li>
@@ -106,7 +106,7 @@ const caseStudyContent = (
         </ul>
       </p>
       <p>
-        We also found most parents were having difficulty to navigate the website. They were confused differentiating parts of the website for instructors, parents and franchises. For example, finding price info for specific courses, it took too many steps to find it from the homepage.
+        We also found most parents were having difficulty to navigate the website. They were confused in differentiating parts of the website for instructors, parents, and franchises. For example, finding price info for specific courses, it took too many steps to find it from the homepage.
       </p>
     </div>
     <div className="par par--medium-width spacing">
@@ -122,7 +122,7 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h3>Affinity Diagram</h3>
-        After we collected all the data from our research we created an affinity diagram. We wrote key findings on sticky notes and group them into relevant categories. An affinity diagram will help us later in creating user persona and feature scope.
+        After we collected all the data from our research we created an affinity diagram. We wrote key findings on sticky notes and grouped them into relevant categories. An affinity diagram also helped us in creating a user persona and feature scope.
       </p>
     </div>
     <div className="par par--medium-width spacing">
@@ -140,7 +140,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        From our affinity diagram, we found some of the pain points that we can improve such as finding course information and location, reducing text-heavy content, and fully responsive layout because from the survey data we got was most existing users are a mobile user. We also found parents like the current instructor's information section but it would be good to have additional information about the learning environment for each location.
+        From our affinity diagram, we found some of the pain points that we could improve on, such as finding course information and location, reducing text-heavy content, and a fully responsive layout as our survey data showed that most existing users were mobile users. We also found that parents liked the current instructor's information section, but we found that additional information about the learning environment for each location would add value to this.
       </p>
     </div>
     <div className="par par--normal-width">
@@ -163,12 +163,12 @@ const caseStudyContent = (
           "Ben is very curious and I believe coding helps him to achieve his full potential."
         </strong>
         <p>
-          Rachel is a Senior Accountant  and mother of Ben, a 8 years old kid. She and her family recently moved to Vancouver. Currently, Ben is taking swimming and violin lessons, but Rachel is starting to look into coding classes for Ben. Ever since Ben started learning coding skills in his past school and also with Minecraft, he’s been very passionate and excited about playing the games he creates. Since Ben’s current public school does not teach coding for kids his age, Rachel is looking into coding classes for him outside of school.
+          Rachel is a Senior Accountant  and mother of Ben, a 8-year old boy. She and her family recently moved to Vancouver. Currently, Ben is taking swimming and violin lessons, but Rachel is starting to look into coding classes for Ben. Ever since Ben started learning coding skills in his past school and also through Minecraft, he’s been very passionate and excited about playing the games he creates. Since Ben’s current public school does not teach coding for kids his age, Rachel is looking into coding classes for him outside of school.
         </p>
         <div>
           <div className="user-persona__right-section__bottom">
             <div>
-              <strong>Paint Points</strong>
+              <strong>Pain Points</strong>
               <ul>
                 <li>Hard to find the right course for her child</li>
                 <li>Hard to find price info</li>
@@ -191,11 +191,11 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h2>Planning</h2>
-        After we finished our research and have a user persona in hand we began planning our design solution. In this phase, we created a journey map, priority matrix, user-flows and sitemap.
+        After we finished our research and have a user persona on hand, we began planning our design solution. In this phase, we created a journey map, priority matrix, user-flows and sitemap.
       </p>
       <p>
         <h3>Journey Map</h3>
-        We made a journey map based on Rachel Lee's persona. Besides helping us to map out user's thoughts, experience, and pain points towards the UTG website, it also helped us to pinpoint
+        We made a journey map based on Rachel Lee's persona. Aside from helping us to map out user's thoughts, experience, and pain points towards the UTG website, it also helped us to pinpoint which stages in the user experience can be improved.
       </p>
     </div>
     <div className="par par--wide-width">
@@ -206,13 +206,13 @@ const caseStudyContent = (
     <div className="par par--normal-width spacing">
       <p className="par spacing--none">
         <h3>Features Priority &amp; MVP</h3>
-        Based on the user journey and persona we created, we listed all the potential features and prioritized them based on high to low user value and effort metrics. After some consideration based on the time constraint and resources we had, we decided to narrow down our scope for our MVP (minimum viable product).
+        Based on the user journey and persona we created, we listed all the potential features and prioritized them based on high to low user value and effort metrics. After considering the time constraint and resources we had, we decided to narrow down our scope for our MVP (minimum viable product).
       </p>
       <p>
         <ImgSection imgs={[{url: featurePrioritization}]} caption="Feature Prioritization" />
       </p>
       <p>
-        On our MVP we divided each feature into three different buckets: must-have, nice to have and not needed. We ended up taking all the list of must-have and some nice-to-have buckets into our project scope. Because of the time limitation, we didn't take calendar and intranet for student login.
+        On our MVP we divided each feature into three different buckets: must-have, nice to have, and not needed. We ended up taking all the list of must-have and some nice-to-have buckets into our project scope. Because of the time constraint, we didn't take calendar and intranet for student login.
       </p>
     </div>
     <div className="par par--medium-width">
@@ -224,7 +224,7 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h3>User-flow</h3>
-        Next, after we did the MVP covered by a better understanding of the whole scope of the project, we designed our user-flow.
+        Next, after we did the MVP and were equipped with a better understanding of the whole scope of the project, we designed our user-flow.
       </p>
     </div>
     <div className="par par--wide-width spacing">
@@ -239,7 +239,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        During the user-flow creation process, we found the most challenging part was to create a user-flow that helps parents to find suitable courses based on their time availability and location. What we found that the locations page can be linked to the find course page to find classes based on location. The reason because from the result of our user testing, some parents prefer to find the classes near where they live.
+        During the user-flow creation process, we found the most challenging part was to create a user-flow that help parents find suitable courses based on their time availability and location. What we found was that the locations page can be linked to the find course page, thus parents could find classes based on location. This is based on the result from our user testing that showed some parents prefer to find classes closest to where they live.
       </p>
       <p>
         <ImgSection imgs={[{url: userFlowFindClassLocation}]} caption="User-flow finding locations and classes" />
