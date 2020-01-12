@@ -39,7 +39,7 @@ const caseStudyContent = (
         Programming is a skill that is not easy to acquire. I remember myself eight years ago when I decided to switch my career into programming. It was quite intimidating at first because I didn't have the basic knowledge. It took me countless hours of studying to just get comfortable with it.
       </p>
       <p>
-        These days, I see a lot of high demand jobs that require basic programming skills. The fact that programming skills are becoming increasingly important, most secondary educations still don't teach programming as a mandatory subject. Luckily, a lot of parents nowadays are becoming more aware of how important it is for their childtren to harvest their programming skills.
+        These days, I see a lot of high demand jobs that require basic programming skills. The fact that programming skills are becoming increasingly important, most secondary educations still don't teach programming as a mandatory subject. Luckily, a lot of parents nowadays are becoming more aware of how important it is for their children to harvest their programming skills.
       </p>
       <p>
         UTG Academy (Under The GUI Academy) was founded to facilitate the programming education demand. Founded in 2013, UTG Academy is a programming school for students from grades 1 to 12.
@@ -239,7 +239,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        During the user-flow creation process, we found the most challenging part was to create a user-flow that help parents find suitable courses based on their time availability and location. What we found was that the locations page can be linked to the find course page, thus parents could find classes based on location. This is based on the result from our user testing that showed some parents prefer to find classes closest to where they live.
+        During the user-flow creation process, the most challenging part was to create a user-flow that could help parents find suitable courses based on their time availability and location. What we found was that the locations page can be linked to the find course page, thus parents could find classes based on location. This is based on the result from our user testing that showed some parents prefer to find classes closest to where they live.
       </p>
       <p>
         <ImgSection imgs={[{url: userFlowFindClassLocation}]} caption="User-flow finding locations and classes" />
@@ -247,7 +247,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        In this project, we ended up creating five different user-flows such as: registering class, request info, community, finding locations, and about us.
+        Therefore, we decided to create five different user-flows: registering class, request info, community, finding locations, and about us.
       </p>
       <p><ImgSection imgs={[{url: overallUserflow}]} caption="Overall UTG user-flow" /></p>
     </div>
@@ -255,10 +255,10 @@ const caseStudyContent = (
       <p><h2>Design</h2></p>
       <p>
         <h3>Low-fi</h3>
-        We started our design process by creating low-fi prototypes and test them out ourselves to make sure our flows didn’t miss any steps and required information.
+        We started our design process by creating low-fi prototypes and test them out ourselves to make sure our flows didn’t miss any steps and had all the required information.
       </p>
       <p>
-        We found testing our own low-fi prototypes first was very helpful, because it allows us to make necessary revisions before creating proper user scenarios.
+        We found testing our own low-fi prototypes first were very helpful because it allowed us to make necessary revisions before creating proper user scenarios.
       </p>
     </div>
     <div className="par par--wide-width spacing">
@@ -278,7 +278,7 @@ const caseStudyContent = (
       />
     </div>
     <div className="par par--normal-width">
-      <p>After we finished testing and made revisions of our own low-fi prototypes, we tested the prototypes to other users. The reason we conducted the test with other users outside our team is to minimize biased opinions about our solution.</p>
+      <p>After testing was completed and we had revised our own low-fi prototypes, we tested the prototypes on other users. The reason we conducted the test with other users outside our team was to minimize biased opinions about our solution.</p>
     </div>
     <div className="par par--wide-width spacing">
       <ImgSection
@@ -298,7 +298,7 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h3>Mid-fi</h3>
-        Our mid-fi is the last tangible deliverable from the UX team before we hand it over to the UI team to do hi-fi prototypes. During this creation process, it’s important to establish a core library UI component to ensure the style consistency through out all of mid-fi prototypes, and to provide an easier transition for the UI team to skin all of our mid-fi pages.
+        Our mid-fi was the last tangible deliverable before we hand it over to the UI team to build the hi-fi prototypes. During this creation process, it was important for us to establish a core library UI component to ensure the style consistency throughout all of mid-fi prototypes, and to provide an easier transition for the UI team to skin all of our mid-fi pages.
       </p>
     </div>
     <div className="par par--medium-width">
@@ -306,35 +306,35 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        Same process like what we did for low-fi, we also tested our mid-fi to make sure our flow makes sense to the users and it also gave us a chance to make minor adjustments before going to high-fi prototypes.
+        Following the same process like what we did for low-fi, we tested our mid-fi on other users to make sure our flow made sense to the users and it also gave us a chance to make minor adjustments before proceeding with the high-fi prototypes.
       </p>
     </div>
     <div className="par par--normal-width">
       <p>
         <h3>Hi-fi</h3>
-        Once mid-fi prototypes are done we handed our mid-fi to UI team. We did the run through the mid-fi to make sure UI and UX teams are on the same page for the direction of final the high-fi prototypes.
+        Once mid-fi prototypes were finalized, we conducted a run-through to ensure both UI and UX teams were on the same page on the direction of the final high-fi prototypes.
       </p>
       <p>
-        For the UI approach, we got inspiration from Minecraft and Mario games. The reason because of the age demographic most millennial parents and generation-z children are very familiar with those. In our mind, Minecraft was the definition of playful, fun, kids friendly, and creative which is very suitable for what UTG stands for.
+        For the UI approach, we derived inspiration from Minecraft and Mario Bros games because the age demographic of most millennial parents and generation-Z children are very familiar with these games. To us, Minecraft was the definition of playful, fun, kid-friendly, and creative which is very suitable for what UTG stands for.
       </p>
 
       <p>
-        We incorporated gamification for some of our pages for example like the images on our 404 and registration pages are inspired by old Mario Bros game in the early 80s. The purpose of this approach is to add a little bit of creativity and fun factor to the website.
+        We incorporated gamification for some of our pages, for example the images on our 404 and registration pages are inspired by old Mario Bros game in the early 80s. The purpose of this approach was to add a hint of creativity and fun factor to the website.
       </p>
     </div>
     <div className="par par--normal-width">
       <h2>Future Considerations</h2>
       <p>
-        Because we had to finish this project in less than 3 weeks, we could only finish our MVP features, but we believe the website can be improved further beyond this project. One of the features that we felt can help their students and parents are incorporating the student login to their website.
+        Because we had to finish this project in less than 3 weeks, we could only finish our MVP features. However, given more time we believe the website can still be improved. One of the features that we felt could greatly help both students and parents would be to incorporate a student login portal.
       </p>
       <p>
-        By having student login, it will open up other important features such as course wishlist, better registration process, student progress tracker, and online one on one feedback from instructors.
+        With this portal, it will open up other important features such as course wishlist, better registration process, student progress tracker, and online one-on-one feedback from instructors.
       </p>
     </div>
     <div className="par par--normal-width">
       <h2>What Have We Learned</h2>
       <p>
-        What we’ve learned from this project is important to respect every part of the process not to jump the step of the process, and drive the solution not only relying on our own creative ability but also incorporating it based on the research, feedbacks, and test result we got.
+        The biggest takeaway from this project was how important it is to respect every part of the process, and not to jump or rush through as every step has a purpose. Every design decision we made was backed by our research testing, and feedback data. We realized that by doing so, not only did it yield better results, but it was easier for us to recognize the areas that can be improved.
       </p>
     </div>
   </>
