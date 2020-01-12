@@ -58,7 +58,7 @@ const caseStudyContent = (
       </p>
       <p>
         <ImgSection
-          imgs={[{url: utgTeam, backgroundImg: false}]}
+          imgs={[{url: utgTeam}]}
           caption="The team for the UTG project (myself is the third person from the right side)"
         />
       </p>
@@ -75,7 +75,7 @@ const caseStudyContent = (
       </p>
       <p>
         <h3>Domain Research</h3>
-        To gain a deeper understanding of how UTG positioned among its competitors, we conducted fdomain research. Our findings from canadalearningcode.ca showed that - <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation, a lot more parents are realizing that programming is a very useful skill to have because there's an increasing number of industries that demand and rely on programmers.
+        To gain a deeper understanding of how UTG positioned among its competitors, we conducted domain research. Our findings from canadalearningcode.ca showed that - <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation, a lot more parents are realizing that programming is a very useful skill to have because there's an increasing number of industries that demand and rely on programmers.
       </p>
       <p>
         We also did competitive/comparative analysis on other similar school websites to get to know their direction in terms of functionality and content on their websites. This analysis helped us identify how to best position UTG on their online presence.
@@ -83,7 +83,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--medium-width spacing">
       <ImgSection
-        imgs={[{url: utgCCAnalysis, backgroundImg: false}]}
+        imgs={[{url: utgCCAnalysis}]}
         caption="Competitive and comparative analysis"
       />
     </div>
@@ -101,7 +101,7 @@ const caseStudyContent = (
           <li>
             <strong>Test Scenario 1: Find a class appropriate for your child’s age:</strong><br/> parents were able to find course information, but neither of them did it at the first try.</li>
           <li>
-            <strong>Scenario 2: Contact the child’s instructor for a question:</strong><br/> Neither of them knew about the “Forum” feature that allows parents to ask instructors questions. In fact, one parent thought he had to go on the “Contact” page and fill out a form.
+            <strong>Test Scenario 2: Contact the child’s instructor for a question:</strong><br/> Neither of them knew about the “Forum” feature that allows parents to ask instructors questions. In fact, one parent thought he had to go on the “Contact” page and fill out a form.
           </li>
         </ul>
       </p>
@@ -134,7 +134,7 @@ const caseStudyContent = (
         ]}
       />
       <ImgSection
-        imgs={[{url: utgAffinity3, backgroundImg: false}]}
+        imgs={[{url: utgAffinity3}]}
         caption="Affinity Diagram"
       />
     </div>
@@ -302,7 +302,7 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--medium-width">
-      <ImgSection imgs={[{url: midfiLib, backgroundImg: true}]} caption="Mid-fi UI library" />
+      <ImgSection imgs={[{url: midfiLib}]} caption="Mid-fi UI library" />
     </div>
     <div className="par par--normal-width">
       <p>
@@ -334,7 +334,7 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <h2>What Have We Learned</h2>
       <p>
-        The biggest takeaway from this project was how important it is to respect every part of the process, and not to jump or rush through as every step has a purpose. Every design decision we made was backed by our research testing, and feedback data. We realized that by doing so, not only did it yield better results, but it was easier for us to recognize the areas that can be improved.
+        The biggest takeaway from this project was how important it is to respect every part of the process, and not to jump or rush through as every step has a purpose. Every design decision we made was backed by our research testing, and feedback data. We realized that by doing so, not only did it yield better understanding about the problems, but it was easier for us to recognize the areas that can be improved.
       </p>
     </div>
   </>
