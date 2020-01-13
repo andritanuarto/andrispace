@@ -1,12 +1,13 @@
 import React from "react";
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
+import caseStudiesDirectory from "../../case-studies/case-studies-directory";
+
+const caseStudyContent = caseStudiesDirectory.find((caseStudy) => {
+  return caseStudy.clientName === 'Adbusters';
+});
 
 export default () => (
-  <InteriorPostLayout>
-    <h1>Adbusters</h1>
-    <p>
-      We're the only site running on your computer dedicated to showing the best
-      photos and videos of pandas eating lots of food.
-    </p>
+  <InteriorPostLayout caseStudyContent={caseStudyContent}>
+    {true && caseStudyContent.content}
   </InteriorPostLayout>
 );

@@ -5,6 +5,7 @@ import utgCaseStudyContent from './utg/case-study-content';
 
 import adbustersLogo from './adbusters/adbusters-logo.png';
 import adbustersBackground from './adbusters/social-protest.jpg';
+import adbustersCaseStudyContent from './adbusters/case-study-content';
 
 const caseStudies = [
   {
@@ -24,16 +25,16 @@ const caseStudies = [
   },
   {
     clientName: 'Adbusters',
+    projectDate: 'December 18, 2019',
     projectTitle: 'World Revolution',
-    postTitle: 'Under The Gui (UTG) – Website redesign for coding school for kids',
+    postTitle: 'World Revolution app',
     blurb: 'an app for organizing social activity campaigns',
     logoLink: adbustersLogo,
     heroBackground: adbustersBackground,
     opacityColor: '#000000',
     opacityLevel: '0.4',
     url: './case-studies/adbusters',
-    projectDate: 'December 18, 2019',
-    content: null,
+    content: adbustersCaseStudyContent,
     caseStudyBanner: ''
   }
 ];
