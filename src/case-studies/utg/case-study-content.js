@@ -42,6 +42,14 @@ import midMobileHome from './mid-mobile-home.jpg';
 import midMobileProgram from './mid-mobile-programs.jpg';
 import midMobileCourse1 from './mid-mobile-course.jpg';
 import midMobileCourse2 from './mid-mobile-course-2.jpg';
+import hiHome from './hi-home.jpg';
+import hiStory from './hi-story.jpg';
+import hiGam1 from './hi-gam1.jpg';
+import hiGam2 from './hi-gam2.jpg';
+import hiGam3 from './hi-gam3.jpg';
+import hiProgram from './hi-program.jpg';
+import hiCourse from './hi-course.jpg';
+import hiCourses from './hi-courses.jpg';
 
 const caseStudyContent = (
   <>
@@ -354,7 +362,6 @@ const caseStudyContent = (
         caption="Some of mid-fi mobile wireframes"
       />
     </div>
-
     <div className="par par--normal-width">
       <p>
         <h3>Hi-fi</h3>
@@ -363,9 +370,50 @@ const caseStudyContent = (
       <p>
         For the UI approach, we derived inspiration from Minecraft and Mario Bros games because the age demographic of most millennial parents and generation-Z children are very familiar with these games. To us, Minecraft was the definition of playful, fun, kid-friendly, and creative which is very suitable for what UTG stands for.
       </p>
+    </div>
+    <div className="par par--wide-width spacing">
+      <ImgSection
+        imgContainerStyle={{alignItems: 'flex-start'}}
+        imgs={[
+          {url: hiHome, style: {width: '50%', padding: '0 7.5px'}},
+          {url: hiStory, style: {width: '50%', padding: '0 7.5px'}}
+        ]}
+      />
+    </div>
+    <div className="par par--wide-width spacing">
+      <ImgSection
+        imgContainerStyle={{alignItems: 'flex-start'}}
+        imgs={[
+          {url: hiProgram, style: {width: '33.33%', padding: '0 7.5px'}},
+          {url: hiCourses, style: {width: '33.33%', padding: '0 7.5px'}},
+          {url: hiCourse, style: {width: '33.33%', padding: '0 7.5px'}},
+        ]}
+      />
+    </div>
+    <div className="par par--wide-width spacing">
+      <ImgSection
+        imgContainerStyle={{alignItems: 'flex-start'}}
+        imgs={[
+          {url: hiHome, style: {width: '50%', padding: '0 7.5px'}},
+          {url: hiStory, style: {width: '50%', padding: '0 7.5px'}}
+        ]}
+      />
+    </div>
+    <div className="par par--normal-width">
       <p>
-        We incorporated gamification for some of our pages, for example the images on our 404 and midRegistration pages are inspired by old Mario Bros game in the early 80s. The purpose of this approach was to add a hint of creativity and fun factor to the website.
+        We incorporated gamification for some of our pages, for example the images on our 404 and registration pages are inspired by old Mario Bros game in the early 80s. The purpose of this approach was to add a hint of creativity and fun factor to the website.
       </p>
+    </div>
+    <div className="par par--wide-width spacing">
+      <ImgSection
+        imgContainerStyle={{alignItems: 'flex-start'}}
+        imgs={[
+          {url: hiGam1, style: {width: '33.33%', padding: '0 7.5px'}},
+          {url: hiGam2, style: {width: '33.33%', padding: '0 7.5px'}},
+          {url: hiGam3, style: {width: '33.33%', padding: '0 7.5px'}},
+        ]}
+        caption="Gamification concept on some of the pages"
+      />
     </div>
     <div className="par par--normal-width">
       <h2>Future Considerations</h2>
