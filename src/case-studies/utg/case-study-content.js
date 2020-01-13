@@ -30,6 +30,18 @@ import lowFiTest3 from './low-fi-test3.jpg';
 import lowFiTest4 from './low-fi-test4.jpg';
 import lowFiTest5 from './low-fi-test5.jpg';
 import midfiLib from './utg-midfi-library.png';
+import midReg1 from './reg-1.jpg';
+import midReg2 from './reg-2.jpg';
+import midReg3 from './reg-3.jpg';
+import midReg4 from './reg-4.jpg';
+import midHome from './mid-home.jpg';
+import midPrograms from './mid-programs.jpg';
+import midCourse1 from './mid-course.jpg';
+import midCourse2 from './mid-Course2.jpg';
+import midMobileHome from './mid-mobile-home.jpg';
+import midMobileProgram from './mid-mobile-programs.jpg';
+import midMobileCourse1 from './mid-mobile-course.jpg';
+import midMobileCourse2 from './mid-mobile-course-2.jpg';
 
 const caseStudyContent = (
   <>
@@ -48,7 +60,7 @@ const caseStudyContent = (
         <h3>Project goals</h3>
         As the academy grew, the need to redesign and reoptimized their website became necessary to help further growth. Some of the key goals of this project were:
         <ul>
-          <li>Improve finding courses and registration process</li>
+          <li>Improve finding courses and midRegistration process</li>
           <li>Incorporate the community-related content to their website</li>
           <li>Reduce the redundancy of the content</li>
           <li>Rebrand and redesign the overall website</li>
@@ -247,7 +259,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        Therefore, we decided to create five different user-flows: registering class, request info, community, finding locations, and about us.
+        Therefore, we decided to create five different user-flows: midRegistering class, request info, community, finding locations, and about us.
       </p>
       <p><ImgSection imgs={[{url: overallUserflow}]} caption="Overall UTG user-flow" /></p>
     </div>
@@ -309,6 +321,40 @@ const caseStudyContent = (
         Following the same process like what we did for low-fi, we tested our mid-fi on other users to make sure our flow made sense to the users and it also gave us a chance to make minor adjustments before proceeding with the high-fi prototypes.
       </p>
     </div>
+    <div className="par par--wide-width spacing">
+      <ImgSection
+        imgContainerStyle={{alignItems: 'flex-start'}}
+        imgs={[
+          {url: midHome, style: {width: '25%', padding: '0 7.5px'}},
+          {url: midPrograms, style: {width: '25%', padding: '0 7.5px'}},
+          {url: midCourse1, style: {width: '25%', padding: '0 7.5px'}},
+          {url: midCourse2, style: {width: '25%', padding: '0 7.5px'}}
+        ]}
+      />
+      <ImgSection
+        imgContainerStyle={{alignItems: 'flex-start'}}
+        imgs={[
+          {url: midReg1, style: {width: '25%', padding: '0 7.5px'}},
+          {url: midReg2, style: {width: '25%', padding: '0 7.5px'}},
+          {url: midReg3, style: {width: '25%', padding: '0 7.5px'}},
+          {url: midReg4, style: {width: '25%', padding: '0 7.5px'}}
+        ]}
+        caption="Some of mid-fi desktop wireframes"
+      />
+    </div>
+    <div className="par par--wide-width spacing">
+      <ImgSection
+        imgContainerStyle={{alignItems: 'flex-start'}}
+        imgs={[
+          {url: midMobileHome, style: {width: '25%', padding: '0 7.5px'}},
+          {url: midMobileProgram, style: {width: '25%', padding: '0 7.5px'}},
+          {url: midMobileCourse1, style: {width: '25%', padding: '0 7.5px'}},
+          {url: midMobileCourse2, style: {width: '25%', padding: '0 7.5px'}}
+        ]}
+        caption="Some of mid-fi mobile wireframes"
+      />
+    </div>
+
     <div className="par par--normal-width">
       <p>
         <h3>Hi-fi</h3>
@@ -317,9 +363,8 @@ const caseStudyContent = (
       <p>
         For the UI approach, we derived inspiration from Minecraft and Mario Bros games because the age demographic of most millennial parents and generation-Z children are very familiar with these games. To us, Minecraft was the definition of playful, fun, kid-friendly, and creative which is very suitable for what UTG stands for.
       </p>
-
       <p>
-        We incorporated gamification for some of our pages, for example the images on our 404 and registration pages are inspired by old Mario Bros game in the early 80s. The purpose of this approach was to add a hint of creativity and fun factor to the website.
+        We incorporated gamification for some of our pages, for example the images on our 404 and midRegistration pages are inspired by old Mario Bros game in the early 80s. The purpose of this approach was to add a hint of creativity and fun factor to the website.
       </p>
     </div>
     <div className="par par--normal-width">
@@ -328,7 +373,7 @@ const caseStudyContent = (
         Because we had to finish this project in less than 3 weeks, we could only finish our MVP features. However, given more time we believe the website can still be improved. One of the features that we felt could greatly help both students and parents would be to incorporate a student login portal.
       </p>
       <p>
-        With this portal, it will open up other important features such as course wishlist, better registration process, student progress tracker, and online one-on-one feedback from instructors.
+        With this portal, it will open up other important features such as course wishlist, better midRegistration process, student progress tracker, and online one-on-one feedback from instructors.
       </p>
     </div>
     <div className="par par--normal-width">
