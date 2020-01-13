@@ -386,7 +386,7 @@ const caseStudyContent = (
         imgs={[
           {url: hiProgram, style: {width: '33.33%', padding: '0 7.5px'}},
           {url: hiCourses, style: {width: '33.33%', padding: '0 7.5px'}},
-          {url: hiCourse, style: {width: '33.33%', padding: '0 7.5px'}},
+          {url: hiCourse, style: {width: '33.33%', padding: '0 7.5px'}}
         ]}
       />
     </div>
