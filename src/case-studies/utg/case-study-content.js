@@ -66,9 +66,9 @@ const caseStudyContent = (
       </p>
       <p>
         <h3>Project goals</h3>
-        As the academy grew, the need to redesign and reoptimized their website became necessary to help further growth. Some of the key goals of this project were:
+        As the academy grew, the need to redesign and reoptimized its website became necessary to help further growth. Some of the key goals of this project were:
         <ul>
-          <li>Improve finding courses and midRegistration process</li>
+          <li>Improve finding courses and registration process</li>
           <li>Incorporate the community-related content to their website</li>
           <li>Reduce the redundancy of the content</li>
           <li>Rebrand and redesign the overall website</li>
@@ -83,7 +83,7 @@ const caseStudyContent = (
         />
       </p>
       <p>
-        For this project, our team consisted of 4 UX and 2 UI designers. As the project scrum master, my role focused on leading daily scrum meetings, establishing communication between UX and UI teams, making sure the project was on the right track, and was involved in all UX design processes.
+        For this project, our team consisted of 4 UX and 2 UI designers. As the project scrum master, my role focused on leading daily scrum meetings, establishing communication between UX and UI teams, making sure the project was on the right track and was involved in all UX design processes.
       </p>
     </div>
     <div className="par par--normal-width">
@@ -201,7 +201,7 @@ const caseStudyContent = (
               <ul>
                 <li>To find a safe and fun, learning environment for Ben, with successful student outcomes.</li>
                 <li>To be easy to navigate and find information about instructors and program details.</li>
-                <li>To support child’s development, creativity and social skills.</li>
+                <li>To support the child’s development, creativity and social skills.</li>
               </ul>
             </div>
           </div>
@@ -267,7 +267,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        Therefore, we decided to create five different user-flows: midRegistering class, request info, community, finding locations, and about us.
+        Therefore, we decided to create five different user-flows: registering class, request info, community, finding locations, and about us.
       </p>
       <p><ImgSection imgs={[{url: overallUserflow}]} caption="Overall UTG user-flow" /></p>
     </div>
@@ -326,7 +326,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        Following the same process like what we did for low-fi, we tested our mid-fi on other users to make sure our flow made sense to the users and it also gave us a chance to make minor adjustments before proceeding with the high-fi prototypes.
+        Following the same process like as we did for low-fi, we tested our mid-fi on other users to make sure our flow made sense to the users and it also gave us a chance to make minor adjustments before proceeding with the high-fi prototypes.
       </p>
     </div>
     <div className="par par--wide-width spacing">
@@ -368,7 +368,7 @@ const caseStudyContent = (
         Once mid-fi prototypes were finalized, we conducted a run-through to ensure both UI and UX teams were on the same page on the direction of the final high-fi prototypes.
       </p>
       <p>
-        For the UI approach, we derived inspiration from Minecraft and Mario Bros games because the age demographic of most millennial parents and generation-Z children are very familiar with these games. To us, Minecraft was the definition of playful, fun, kid-friendly, and creative which is very suitable for what UTG stands for.
+        For the UI approach, we derived inspiration from Minecraft and Mario Bros games because the age demographic of most millennial parents and Generation-Z children are very familiar with these games. To us, Minecraft was the definition of playful, fun, kid-friendly, and creative which is very suitable for what UTG stands for.
       </p>
     </div>
     <div className="par par--wide-width spacing">
@@ -401,7 +401,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        We incorporated gamification for some of our pages, for example the images on our 404 and registration pages are inspired by old Mario Bros game in the early 80s. The purpose of this approach was to add a hint of creativity and fun factor to the website.
+        We incorporated gamification for some of our pages, for example, the images on our 404 and registration pages are inspired by old Mario Bros game in the early 80s. The purpose of this approach was to add a hint of creativity and fun factor to the website.
       </p>
     </div>
     <div className="par par--wide-width spacing">
@@ -421,7 +421,7 @@ const caseStudyContent = (
         Because we had to finish this project in less than 3 weeks, we could only finish our MVP features. However, given more time we believe the website can still be improved. One of the features that we felt could greatly help both students and parents would be to incorporate a student login portal.
       </p>
       <p>
-        With this portal, it will open up other important features such as course wishlist, better midRegistration process, student progress tracker, and online one-on-one feedback from instructors.
+        With this portal, it will open up other important features such as course wishlist, better registration process, student progress tracker, and online one-on-one feedback from instructors.
       </p>
     </div>
     <div className="par par--normal-width">
