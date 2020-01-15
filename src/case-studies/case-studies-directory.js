@@ -5,6 +5,7 @@ import utgCaseStudyContent from './utg/case-study-content';
 
 import adbustersLogo from './adbusters/adbusters-logo.png';
 import adbustersBackground from './adbusters/social-protest.jpg';
+import adbustersCaseStudyBanner from './adbusters/adbusters-case-study-banner.jpg';
 import adbustersCaseStudyContent from './adbusters/case-study-content';
 
 const caseStudies = [
@@ -35,7 +36,7 @@ const caseStudies = [
     opacityLevel: '0.4',
     url: './case-studies/adbusters',
     content: adbustersCaseStudyContent,
-    caseStudyBanner: ''
+    caseStudyBanner: adbustersCaseStudyBanner
   }
 ];
 

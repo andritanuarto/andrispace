@@ -17,7 +17,7 @@ const caseStudyContent = (
         Topics related to anti-capitalism, subvertisements, pro-environment and political movements are some of their typical content in their magazine.
       </p>
       <p>
-      What's unique about Adbusters magazine is the unusual style compare to other magazines. Their approach of anti-big commercial means consistency of their content is almost non-existent unlike what most commercial companies do. Their content style tent to be free-flowing and spontaneous.
+      What's unique about Adbusters magazine is the unusual content style compare to other magazines. Their approach of anti-big commercial means consistency of their content is almost non-existent unlike what most commercial companies do. Their content style tent to be free-flowing and spontaneous.
       </p>
       <p>
         <ImgSection
@@ -47,7 +47,7 @@ const caseStudyContent = (
       </p>
       <p>
         <h3>My Role</h3>
-        There are 4 people were working on this project. I involved in every phase of the UX processes such as research, planning, and design, and setting up the standard library following the atomic design principle. Because of my varied background as a software UI designer and developer, I also helped some of the UI work for this project and advising the feasibility of translating design into real-life development.
+        For this project I involved in every phase of the UX processes such as research, planning, and design, and setting up the standard library following the atomic design principle. Because of my varied background as a software UI designer and developer, I also helped some of the UI work for this project and advising the feasibility of translating design into real-life development.
       </p>
     </div>
   </>
