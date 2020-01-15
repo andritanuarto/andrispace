@@ -50,6 +50,10 @@ const caseStudyContent = (
         For this project I involved in every phase of the UX processes such as research, planning, and design, and setting up the standard library following the atomic design principle. Because of my varied background as a software UI designer and developer, I also helped some of the UI work for this project and advising the feasibility of translating design into real-life development.
       </p>
     </div>
+    <div className="par par--normal-width">
+      <h2>Research</h2>
+
+    </div>
   </>
 );
 

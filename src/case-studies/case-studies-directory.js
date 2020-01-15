@@ -28,7 +28,7 @@ const caseStudies = [
     clientName: 'Adbusters',
     projectDate: 'December 18, 2019',
     projectTitle: 'World Revolution',
-    postTitle: 'World Revolution app',
+    postTitle: 'Adbusters – World Revolution app',
     blurb: 'an app for organizing social activity campaigns',
     logoLink: adbustersLogo,
     heroBackground: adbustersBackground,
