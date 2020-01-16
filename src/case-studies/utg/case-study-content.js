@@ -390,15 +390,6 @@ const caseStudyContent = (
         ]}
       />
     </div>
-    <div className="par par--wide-width spacing">
-      <ImgSection
-        imgContainerStyle={{alignItems: 'flex-start'}}
-        imgs={[
-          {url: hiHome, style: {width: '50%', padding: '0 7.5px'}},
-          {url: hiStory, style: {width: '50%', padding: '0 7.5px'}}
-        ]}
-      />
-    </div>
     <div className="par par--normal-width">
       <p>
         We incorporated gamification for some of our pages, for example, the images on our 404 and registration pages are inspired by old Mario Bros game in the early 80s. The purpose of this approach was to add a hint of creativity and fun factor to the website.

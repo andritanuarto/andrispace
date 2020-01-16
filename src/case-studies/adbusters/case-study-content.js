@@ -6,8 +6,8 @@ import magzLayout from './adbusters-layout.jpeg';
 const caseStudyContent = (
   <>
     <div className="par par--normal-width">
+      <h2>Client Background</h2>
       <p>
-        <h2>Client Background</h2>
         When I studied at <a href="https://redacademy.com/vancouver/" target="_blank">RED Academy Vancouver</a>, my team was given a great opportunity to work with <a href="https://www.adbusters.org/" target="_blank">Adbusters</a> for our client project.
       </p>
       <p>
@@ -52,6 +52,25 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <h2>Research</h2>
+      <p>
+        We started this project by researching to get knowledge about the domain of this project and also to help us how we position this app among other competitors.
+      </p>
+      <p>
+        <h3>Domain Research</h3>
+        When we conducted the domain research we wanted to know other competitors which focus on culture jamming similar to Adbusters. We found some of the similar websites that we thought can help us to do the analysis:
+        <ul>
+          <li>
+            <strong><a href="https://www.thezeitgeistmovement.com/" target="_blank">TZM (The Zeitgeist Movement)</a></strong> is an activist movement. Their topics of interest are mainly about common reforms and general community support to improve conditions such as environmental crisis, poverty, conflict, corruption, economic inequality, etc. Currently, they don't have a mobile app and mainly they communicate their movements by organizing some events and also through their website and social media platforms.
+          </li>
+          <li>
+            <strong><a href="https://rebellion.earth/" target="_blank">Extinction Rebellion</a></strong> is an international movement that uses non-violent civil disobedience in an attempt to halt mass extinction and minimize the risk of social collapse. Currently, they don't have a mobile app and rely on their websites and social media to communicate with subscribers and volunteers about the events they organize.
+          </li>
+          <li>
+            <strong><a href="https://charliehebdo.fr/" target="_blank">Charlie Hebdo</a></strong>
+            is a French-based political satirical magazine. Their content is targeting people who are politically left-wing, skeptic, secular, atheist and anti-racist. Based on our research we didn't see them actively organized events or campaigns, although they have both websites and mobile app their focus is promoting their magazines.
+          </li>
+        </ul>
+      </p>
 
     </div>
   </>
