@@ -57,7 +57,7 @@ const caseStudyContent = (
       </p>
       <p>
         <h3>Domain Research</h3>
-        When we conducted the domain research we wanted to know other competitors which focus on culture jamming similar to Adbusters. We found some of the similar websites that we thought can help us to do the analysis:
+        When we conducted the domain research we wanted to know other competitors which focus on similar topics like Adbusters and some of the website we found are:
         <ul>
           <li>
             <strong><a href="https://www.thezeitgeistmovement.com/" target="_blank">TZM (The Zeitgeist Movement)</a></strong> is an activist movement. Their topics of interest are mainly about common reforms and general community support to improve conditions such as environmental crisis, poverty, conflict, corruption, economic inequality, etc. Currently, they don't have a mobile app and mainly they communicate their movements by organizing some events and also through their website and social media platforms.
@@ -66,8 +66,7 @@ const caseStudyContent = (
             <strong><a href="https://rebellion.earth/" target="_blank">Extinction Rebellion</a></strong> is an international movement that uses non-violent civil disobedience in an attempt to halt mass extinction and minimize the risk of social collapse. Currently, they don't have a mobile app and rely on their websites and social media to communicate with subscribers and volunteers about the events they organize.
           </li>
           <li>
-            <strong><a href="https://charliehebdo.fr/" target="_blank">Charlie Hebdo</a></strong>
-            is a French-based political satirical magazine. Their content is targeting people who are politically left-wing, skeptic, secular, atheist and anti-racist. Based on our research we didn't see them actively organized events or campaigns, although they have both websites and mobile app their focus is promoting their magazines.
+            <strong><a href="https://charliehebdo.fr/" target="_blank">Charlie Hebdo</a></strong> is a French-based political satirical magazine. Their content is targeting people who are politically left-wing, skeptic, secular, atheist and anti-racist. Based on our research we didn't see them actively organized events or campaigns, although they have both websites and mobile app their focus is promoting their magazines.
           </li>
         </ul>
       </p>
