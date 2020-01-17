@@ -95,7 +95,7 @@ const caseStudyContent = (
       </p>
       <p>
         <h3>Domain Research</h3>
-        To gain a deeper understanding of how UTG positioned among its competitors, we conducted domain research. Our findings from canadalearningcode.ca showed that - <a href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation, a lot more parents are realizing that programming is a very useful skill to have because there's an increasing number of industries that demand and rely on programmers.
+        To gain a deeper understanding of how UTG positioned among its competitors, we conducted domain research. Our findings from canadalearningcode.ca showed that - <a rel="noopener noreferrer" href="https://www.canadalearningcode.ca/media-release-07-05/" target="_blank">91% of Canadians think children learning coding and computer science is important</a>. In this generation, a lot more parents are realizing that programming is a very useful skill to have because there's an increasing number of industries that demand and rely on programmers.
       </p>
       <p>
         We also did competitive/comparative analysis on other similar school websites to get to know their direction in terms of functionality and content on their websites. This analysis helped us identify how to best position UTG on their online presence.
