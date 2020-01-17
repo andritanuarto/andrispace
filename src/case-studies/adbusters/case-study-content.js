@@ -55,7 +55,7 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <h2>Research</h2>
       <p>
-        We started this project by researching to get knowledge about the domain of this project and also to help us how we position this app among other competitors.
+        To get knowledge about the domain of this project and to help us how we position this app among other competitors we conducted a series of research to bridge our knowledge gap.
       </p>
       <p>
         <h3>Domain Research</h3>
@@ -121,6 +121,36 @@ const caseStudyContent = (
       </p>
       <p>
         <ImgSection imgs={[{url: survey2}]} />
+      </p>
+      <p>
+        Based on our survey, most people indicated that push notifications were very effective when used to check on the related app and in reminding them of upcoming schedules and events, especially during inactive periods. Meanwhile, a few participants mentioned that they found push notifications irrelevant when it doesn't show the information that they need.
+      </p>
+      <p>
+        <h3>Contextual Inquiry</h3>
+        Part of the research we wanted to know from Adbusters' existing subscribers regarding their past experiences participating in their campaigns. We were given 15 contact lists and was able to get 6 responses from them.
+      </p>
+      <p>
+        In general, we got positive responses about the idea of having a dedicated app for Adbusters' events. They felt it is really hard to keep track of their events without a way to give direct reminders for future events and currently they relly on newsletters they subscribed from Adbusters' website. Here are some of the highlighted quotes we got when we interviewed them.
+      </p>
+      <p>
+        <h3>
+          "I typically find push notification to be spammy and turn them off, with rare exceptions. I prefer if you do send push notification make them meaningful and relevant."
+        </h3>
+      </p>
+      <p>
+        <h3>
+          "It will be great to have campaign related content in one app because social media can be little too much."
+        </h3>
+      </p>
+      <p>
+        <h3>
+          "I tent to sync more from facebook events. So it'll be good to have both options if there is a specific app. Push notifications feel more effective."
+        </h3>
+      </p>
+      <p>
+        <h3>
+          "Honestly promotional email have gotten a bit out of hand. I prefer push notifications."
+        </h3>
       </p>
     </div>
   </>
