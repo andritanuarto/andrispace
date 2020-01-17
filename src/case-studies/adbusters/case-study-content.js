@@ -4,36 +4,36 @@ import magzCovers from './magazine-covers.jpeg';
 import magzLayout from './adbusters-layout.jpeg';
 import survey1 from './survey-1.png';
 import survey2 from './survey-2.png';
+import affinity from './affinity.png';
+import persona from './persona.jpg';
+import storyBoard from './story-board.png';
 
 const caseStudyContent = (
   <>
     <div className="par par--normal-width">
-      <h2>Client Background</h2>
-      <p>
-        When I studied at <a rel="noopener noreferrer" href="https://redacademy.com/vancouver/" target="_blank">RED Academy Vancouver</a>, my team was given a great opportunity to work with <a rel="noopener noreferrer" href="https://www.adbusters.org/" target="_blank">Adbusters</a> for our client project.
+      <p className="first-paragraph">
+        When I studied at <a rel="noopener noreferrer" href="https://redacademy.com/vancouver/" target="_blank">RED Academy Vancouver</a>, my team was given a great opportunity to work with <a rel="noopener noreferrer" href="https://www.adbusters.org/" target="_blank">Adbusters</a> for our client project. Adbusters is a publishing company based in Canada and selling its magazine in North America. They describe themself as a global network of artists, activists, writers, pranksters, students, educators and entrepreneurs who want to advance the new social activist movement of the information age. Topics related to anti-capitalism, subvertisements, pro-environment and political movements are some of their typical content in their magazine.
       </p>
       <p>
-        Our client is a Canadian-based publishing company. Their magazine has a strong presence in the North American market. Adbusters describes itself as "a global network of artists, activists, writers, pranksters, students, educators and entrepreneurs who want to advance the new social activist movement of the information age."
-      </p>
-      <p>
-        Topics related to anti-capitalism, subvertisements, pro-environment and political movements are some of their typical content in their magazine.
-      </p>
-      <p>
-      What's unique about Adbusters magazine is the unusual content style compare to other magazines. Their approach of anti-big commercial means consistency of their content is almost non-existent unlike what most commercial companies do. Their content style tent to be free-flowing and spontaneous.
-      </p>
-      <p>
-        <ImgSection
-          imgs={[{url: magzCovers}]}
-          caption="Adbusters magazine covers. Notice there is no branding consistency throughout their editions.
-          "
-        />
+        They have an unusual content style compare to other magazines in general. Their magazine layout tent to be free-flowing and spontaneous. Unlike most other magazines that use a grid system for their content layout.
       </p>
       <p>
         <ImgSection
           imgs={[{url: magzLayout}]}
-          caption="Some of freeflow and spontaneous layout examples of Adbusters magazine."
+          caption="Freeflow and spontaneous content layout examples from Adbusters magazine."
         />
       </p>
+      <p>
+        Moreover, their belief in anti-commercial means, the consistency of their branding is non-existent. A very prominent example we noticed their magazine covers don't have the same logo for each edition.
+      </p>
+      <p>
+        <ImgSection
+          imgs={[{url: magzCovers}]}
+          caption="Adbusters magazine covers. Notice there is no logo consistency throughout their editions.
+          "
+        />
+      </p>
+
       <p>
         Besides publishing magazines, Adbusters also actively organizes and involves different social campaigns like <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Culture_jamming" target="_blank">Culture Jamming</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/8th-anniversary-of-occupywallstreet/" target="_blank">Occupy Wall Street</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/buy-nothing-day-2019/">Buy Nothing Day</a>, etc.
       </p>
@@ -53,8 +53,8 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--normal-width">
-      <h2>Research</h2>
       <p>
+        <h2>Research</h2>
         To get knowledge about the domain of this project and to help us how we position this app among other competitors we conducted a series of research to bridge our knowledge gap.
       </p>
       <p>
@@ -62,13 +62,13 @@ const caseStudyContent = (
         When we did the domain research we wanted to know other competitors which focus on similar topics like Adbusters and we found three websites that standout the most:
         <ul>
           <li>
-            <strong><a rel="noopener noreferrer" href="https://www.thezeitgeistmovement.com/" target="_blank">TZM (The Zeitgeist Movement)</a></strong> is an activist movement. Their topics of interest are mainly about common reforms and general community support to improve conditions such as environmental crisis, poverty, conflict, corruption, economic inequality, etc. Currently, they don't have a mobile app and mainly they communicate their movements by organizing some events and also through their website and social media platforms.
+            <strong><a rel="noopener noreferrer" href="https://www.thezeitgeistmovement.com/" target="_blank">TZM (The Zeitgeist Movement)</a>:</strong> It is an activist movement. Their topics of interest are mainly about common reforms and general community support to improve conditions such as environmental crisis, poverty, conflict, corruption, economic inequality, etc. Currently, they don't have a mobile app and mainly they communicate their movements by organizing some events and also through their website and social media platforms.
           </li>
           <li>
-            <strong><a rel="noopener noreferrer" href="https://rebellion.earth/" target="_blank">Extinction Rebellion</a></strong> is an international movement that uses non-violent civil disobedience in an attempt to halt mass extinction and minimize the risk of social collapse. Currently, they don't have a mobile app and rely on their websites and social media to communicate with subscribers and volunteers about the events they organize.
+            <strong><a rel="noopener noreferrer" href="https://rebellion.earth/" target="_blank">Extinction Rebellion</a>:</strong> It is an international movement that uses non-violent civil disobedience in an attempt to halt mass extinction and minimize the risk of social collapse. Currently, they don't have a mobile app and rely on their websites and social media to communicate with subscribers and volunteers about the events they organize.
           </li>
           <li>
-            <strong><a rel="noopener noreferrer" href="https://charliehebdo.fr/" target="_blank">Charlie Hebdo</a></strong> is a French-based political satirical magazine. Their content is targeting people who are politically left-wing, skeptic, secular, atheist and anti-racist. Based on our research we didn't see them actively organized events or campaigns, although they have both websites and mobile app their focus is promoting their magazines.
+            <strong><a rel="noopener noreferrer" href="https://charliehebdo.fr/" target="_blank">Charlie Hebdo</a>:</strong> It is a French-based political satirical magazine. Their content is targeting people who are politically left-wing, skeptic, secular, atheist and anti-racist. Based on our research we didn't see them actively organized events or campaigns, although they have both websites and mobile app they use them solely in promoting their magazines.
           </li>
         </ul>
       </p>
@@ -133,25 +133,106 @@ const caseStudyContent = (
         In general, we got positive responses about the idea of having a dedicated app for Adbusters' events. They felt it is really hard to keep track of their events without a way to give direct reminders for future events and currently they relly on newsletters they subscribed from Adbusters' website. Here are some of the highlighted quotes we got when we interviewed them.
       </p>
       <p>
-        <h3>
+        <h4 className="quote text--center">
           "I typically find push notification to be spammy and turn them off, with rare exceptions. I prefer if you do send push notification make them meaningful and relevant."
-        </h3>
+        </h4>
       </p>
       <p>
-        <h3>
+        <h4 className="quote text--center">
           "It will be great to have campaign related content in one app because social media can be little too much."
-        </h3>
+        </h4>
       </p>
       <p>
-        <h3>
+        <h4 className="quote text--center">
           "I tent to sync more from facebook events. So it'll be good to have both options if there is a specific app. Push notifications feel more effective."
-        </h3>
+        </h4>
       </p>
       <p>
-        <h3>
+        <h4 className="quote text--center">
           "Honestly promotional email have gotten a bit out of hand. I prefer push notifications."
-        </h3>
+        </h4>
       </p>
+    </div>
+    <div className="par par--normal-width spacing">
+      <p>
+        <h3>Affinity Diagram</h3>
+        After we gathered all the findings from our research, it was time to create an affinity diagram. Every team member wrote down the research findings using sticky notes and put them on the wall. Then we grouped them accordingly based on relevant categories. Below is the digitized version of our affinity diagram.
+      </p>
+    </div>
+    <div className=" par par--wide-width spacing">
+      <p>
+        <ImgSection imgs={[{url: affinity}]} caption="Digitized affinity diagram" />
+      </p>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        <h3>User Persona</h3>
+        After we analyzed our affinity diagram we created a user persona to represent the needs of typical users for this app. By creating the persona it helped us to gain a similar perspective about their motivations, pain points, and goals.
+      </p>
+    </div>
+
+    <div className="par user-persona user-persona--light spacing">
+      <div className="user-persona__left-section">
+        <div
+          className="user-persona__photo"
+          style={{backgroundImage: `url(${persona})`}}
+        />
+      </div>
+      <div className="user-persona__right-section">
+        <h3>Shane Parks</h3>
+        <strong className="user-persona__sub-info">28, Single, Animation Designer</strong>
+        <strong className="user-persona__quoet">
+          "Ben is very curious and I believe coding helps him to achieve his full potential."
+        </strong>
+        <p>
+          Shane is an animation designer living in Seattle, WA. He has been an ardent follower of Adbusters over the past few years and has actively participated in some of their campaigns. His frustration that he is unable to actively take part in protests about the issue he feels so passionate about.
+        </p>
+        <p>
+          Due to his demanding work schedule, he is unable to constantly stay updated on relevant campaigns in his inbox that get lost in the piles of promotional emails. Especially a lot of these events take place in his hometown of Vancouver, BC. He needs a way to be able to  keep track easily of all the events he is interested in so he can plan his trips accordingly in advance.
+        </p>
+        <div>
+          <div className="user-persona__right-section__bottom">
+            <div>
+              <strong>Pain Points</strong>
+              <ul>
+                <li>Using email irritates him because he has to search through too many promotional emails to find what he is looking for</li>
+                <li>He doesn't always have the time to go to the Adbusters website</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Goals</strong>
+              <ul>
+                <li>To unlearn ideas he has inherited from a culture that has bought into corporate greed and environmental destruction.</li>
+                <li>To connect with people who share his life philosophy and social consciousness</li>
+                <li>Expose himself to ideas that challenge his thinking on political, environmental, economic and other issues</li>
+                <li>To keep on top of the events information involving the activist community</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="par par--normal-width spacing">
+      <h3>Story board</h3>
+      After we got more understanding of our typical user pain points and goals based on Shane's persona, we also created a storyboard that shows a typical scenario of how Shane is going to use the app.
+    </div>
+    <div className="par par--wide-width">
+      <ImgSection imgs={[{url: storyBoard}]} caption="Shane's story board" />
+    </div>
+    <div className="par par--normal-width spacing">
+      <p>
+        <h2>Planning</h2>
+        Once we understood the type of users and the scenario of how our users going use the app, we moved to planning phase. In this phase we created a features priority matrix, user-flows and content structure.
+      </p>
+      <p>
+        <h3>Priority Matrix</h3>
+        At the beginning we had number of ideas about features that can be included into the project. Because of the time constraint and the budget from the client we had to prioritized them. To prioritized the app features we divided into three different categories:
+      </p>
+      <ul>
+        <li><strong>Must have:</strong> campaigns list view, campaign page, push notification, search bar, continue as a guest, campaign subscription, notification Tab and user settings.</li>
+        <li><strong>Nice to have:</strong> sign-in &amp; sign-up, campaign videos, profile account, calendar view, comment section for event page, filter</li>
+        <li><strong>Not Needed:</strong> upload image for the campaign</li>
+      </ul>
     </div>
   </>
 );

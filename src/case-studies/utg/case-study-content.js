@@ -54,8 +54,7 @@ import hiCourses from './hi-courses.jpg';
 const caseStudyContent = (
   <>
     <div className="par par--normal-width">
-      <p>
-        <h2>Introduction</h2>
+      <p className="first-paragraph">
         Programming is a skill that is not easy to acquire. I remember myself eight years ago when I decided to switch my career into programming. It was quite intimidating at first because I didn't have the basic knowledge. It took me countless hours of studying to just get comfortable with it.
       </p>
       <p>
