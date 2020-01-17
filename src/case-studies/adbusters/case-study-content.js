@@ -225,13 +225,27 @@ const caseStudyContent = (
         Once we understood the type of users and the scenario of how our users going use the app, we moved to planning phase. In this phase we created a features priority matrix, user-flows and content structure.
       </p>
       <p>
-        <h3>Priority Matrix</h3>
-        At the beginning we had number of ideas about features that can be included into the project. Because of the time constraint and the budget from the client we had to prioritized them. To prioritized the app features we divided into three different categories:
+        <h3>Priority Matrix &amp; MVP</h3>
+        In the beginning, we had a number of ideas about features that can be included in the project. Because of the time constraint and the budget from the client we had to prioritize them. To prioritize the app features we divided into three different categories:
       </p>
       <ul>
-        <li><strong>Must have:</strong> campaigns list view, campaign page, push notification, search bar, continue as a guest, campaign subscription, notification Tab and user settings.</li>
-        <li><strong>Nice to have:</strong> sign-in &amp; sign-up, campaign videos, profile account, calendar view, comment section for event page, filter</li>
-        <li><strong>Not Needed:</strong> upload image for the campaign</li>
+        <li><strong>Must-haves:</strong> event list view, event page, push notification, search bar, continue as a guest, event subscription, notification Tab and user settings.</li>
+        <li><strong>Nice to haves:</strong> sign-in & sign-up, campaign videos, profile account, add to the calendar, comment section for the event page, and event filters.</li>
+        <li><strong>Not Needed:</strong> upload image for the campaign.</li>
+      </ul>
+      <p>
+        After some considerations, here is the list of features that we included as our minimum viable product <strong>(MVP)</strong>:
+      </p>
+      <ul>
+        <li>Push notification</li>
+        <li>Search bar</li>
+        <li>Sign in &amp; sign up</li>
+        <li>Continue as a guest</li>
+        <li>User settings</li>
+        <li>Notification tab</li>
+        <li>Event page</li>
+        <li>Event subscription</li>
+        <li>Add to calendar</li>
       </ul>
     </div>
   </>
