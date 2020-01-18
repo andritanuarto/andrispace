@@ -45,11 +45,12 @@
 
   .first-paragraph {
     &::first-letter {
-      font-size: 55px;
+      font-size: 70px;
       float: left;
+      color: #632790;
       padding-right: 8px;
       font-weight: bold;
-      line-height: 65px;
+      line-height: 70px;
     }
   }
 

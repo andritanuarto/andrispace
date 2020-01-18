@@ -88,8 +88,6 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h2>Research</h2>
-      </p>
-      <p>
         To learn more about the market, users, problems and opportunities, we conducted a series of qualitative and quantitative research such as domain research, survey, and contextual inquiry.
       </p>
       <p>

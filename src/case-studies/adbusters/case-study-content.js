@@ -1,7 +1,7 @@
 import React from 'react';
 import ImgSection from '../../components/interior/img-section';
-import magzCovers from './magazine-covers.jpeg';
-import magzLayout from './adbusters-layout.jpeg';
+import magzCovers from './magazine-covers.png';
+import magzLayout from './adbusters-layout.png';
 import survey1 from './survey-1.png';
 import survey2 from './survey-2.png';
 import affinity from './affinity.png';
@@ -20,7 +20,7 @@ const caseStudyContent = (
       <p>
         <ImgSection
           imgs={[{url: magzLayout}]}
-          caption="Freeflow and spontaneous content layout examples from Adbusters magazine."
+          caption="Examples of freeflow layout style from Adbusters' magazines"
         />
       </p>
       <p>
@@ -29,7 +29,7 @@ const caseStudyContent = (
       <p>
         <ImgSection
           imgs={[{url: magzCovers}]}
-          caption="Adbusters magazine covers. Notice there is no logo consistency throughout their editions.
+          caption="Adbusters magazine covers and there is no logo consistency throughout their editions
           "
         />
       </p>
@@ -42,10 +42,10 @@ const caseStudyContent = (
         With the constant growth of digital technology and mobile users, Adbusters need a mobile platform where they can communicate and voicing their campaigns to their subscribers in a more direct and timely way.
       </p>
       <p>
-        During the kick-off project meeting with Adbusters, they wanted to create native mobile app in iOS platform and name this app as "The World Revolution"; the sole purpose of this app is to be able to subscribe and remind the subscribers about the campaigns they are interested to join. Initially, because Adbusters does not believe in collecting any data from users as most corporations do, they wanted to have an app without users having to log in, but on the other hand, without login informatiom, there is no way to have a personalized experience for the users using the app. After expressing some of our concerns and reasons why do we need to collect that information, Adbusters agreed to collect just username, email and password from the user.
+        During the kick-off project meeting with Adbusters, they wanted to create native mobile app in iOS platform and name this app as "The World Revolution"; the sole purpose of this app is to be able to subscribe and remind the subscribers about the campaigns they are interested to join. Initially, because Adbusters does not believe in collecting any data from users as most corporations do, they wanted to have an app without users having to log in, but on the other hand, without login information, there is no way to have a personalized experience for the users using the app. After expressing some of our concerns and reasons why do we need to collect that information, Adbusters agreed to collect just username, email and password from the users.
       </p>
       <p>
-        Our initial thought, this project is going be interesting, especially the UI direction would have a lot of room to do experimentation, but we also aware of the necessity to find a good balance between Adbusters' original style without sacrificing the usability of the app.
+        Our initial thought of this project is going be interesting, especially the UI direction would have a lot of room to do experimentation, but we also aware of the necessity to find a good balance between Adbusters' freeflow content style without sacrificing the usability of the app.
       </p>
       <p>
         <h3>My Role</h3>
@@ -182,7 +182,7 @@ const caseStudyContent = (
         <h3>Shane Parks</h3>
         <strong className="user-persona__sub-info">28, Single, Animation Designer</strong>
         <strong className="user-persona__quoet">
-          "Ben is very curious and I believe coding helps him to achieve his full potential."
+          "I want to be the change I wish for the world."
         </strong>
         <p>
           Shane is an animation designer living in Seattle, WA. He has been an ardent follower of Adbusters over the past few years and has actively participated in some of their campaigns. His frustration that he is unable to actively take part in protests about the issue he feels so passionate about.
@@ -213,10 +213,10 @@ const caseStudyContent = (
       </div>
     </div>
     <div className="par par--normal-width spacing">
-      <h3>Story board</h3>
+      <h3>Storyboard</h3>
       After we got more understanding of our typical user pain points and goals based on Shane's persona, we also created a storyboard that shows a typical scenario of how Shane is going to use the app.
     </div>
-    <div className="par par--wide-width">
+    <div className="par par--wide-width spacing">
       <ImgSection imgs={[{url: storyBoard}]} caption="Shane's story board" />
     </div>
     <div className="par par--normal-width spacing">
