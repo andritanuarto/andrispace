@@ -12,10 +12,11 @@ const caseStudyContent = (
   <>
     <div className="par par--normal-width">
       <p className="first-paragraph">
-        When I studied at <a rel="noopener noreferrer" href="https://redacademy.com/vancouver/" target="_blank">RED Academy Vancouver</a>, my team was given a great opportunity to work with <a rel="noopener noreferrer" href="https://www.adbusters.org/" target="_blank">Adbusters</a> for our client project. Adbusters is a publishing company based in Canada and selling its magazine in North America. They describe themself as a global network of artists, activists, writers, pranksters, students, educators and entrepreneurs who want to advance the new social activist movement of the information age. Topics related to anti-capitalism, subvertisements, pro-environment and political movements are some of their typical content in their magazine.
+        We had a great opportunity to work with <a rel="noopener noreferrer" href="https://www.adbusters.org/" target="_blank">Adbusters</a> for a mobile app project. Adbusters is a magazine publishing company based in Canada. They describe themself as a global network for artists, activists, writers, students, and entrepreneurs implementing radical design and media strategies to shake up complacent consumerist culture.
+        Besides publishing magazines, Adbusters also actively organizes and involves different social campaigns like <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Culture_jamming" target="_blank">Culture Jamming</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/8th-anniversary-of-occupywallstreet/" target="_blank">Occupy Wall Street</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/buy-nothing-day-2019/">Buy Nothing Day</a>, etc.
       </p>
       <p>
-        They have an unusual content style compare to other magazines in general. Their magazine layout tent to be free-flowing and spontaneous. Unlike most other magazines that use a grid system for their content layout.
+        We noticed Adbusters has an unusual content style compare to other magazines in general. Their magazine layout tent to be free-flowing and spontaneous unlike other magazines in general. With their content style, we felt there is a lot of room to experiment in terms of the art direction of the project. But we also aware of the necessity to find a good balance between their content style and the usability of the app.
       </p>
       <p>
         <ImgSection
@@ -33,23 +34,16 @@ const caseStudyContent = (
           "
         />
       </p>
-
-      <p>
-        Besides publishing magazines, Adbusters also actively organizes and involves different social campaigns like <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Culture_jamming" target="_blank">Culture Jamming</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/8th-anniversary-of-occupywallstreet/" target="_blank">Occupy Wall Street</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/buy-nothing-day-2019/">Buy Nothing Day</a>, etc.
-      </p>
       <p>
         <h2>Project Brief</h2>
         With the constant growth of digital technology and mobile users, Adbusters need a mobile platform where they can communicate and voicing their campaigns to their subscribers in a more direct and timely way.
       </p>
       <p>
-        During the kick-off project meeting with Adbusters, they wanted to create native mobile app in iOS platform and name this app as "The World Revolution"; the sole purpose of this app is to be able to subscribe and remind the subscribers about the campaigns they are interested to join. Initially, because Adbusters does not believe in collecting any data from users as most corporations do, they wanted to have an app without users having to log in, but on the other hand, without login information, there is no way to have a personalized experience for the users using the app. After expressing some of our concerns and reasons why do we need to collect that information, Adbusters agreed to collect just username, email and password from the users.
-      </p>
-      <p>
-        Our initial thought of this project is going be interesting, especially the UI direction would have a lot of room to do experimentation, but we also aware of the necessity to find a good balance between Adbusters' freeflow content style without sacrificing the usability of the app.
+        During the kick-off project meeting with Adbusters, they wanted to create a native mobile app on the iOS platform and name this app as "The World Revolution"; the sole purpose of this app is to be able to subscribe and remind the subscribers about the campaigns they are interested to join. Initially, because Adbusters does not believe in collecting any data from users as most corporations do, they wanted to have an app without users having to log in, but on the other hand, without login information, there is no way to have a personalized experience for the users using the app. After expressing some of our concerns and reasons why do we need to collect that information, Adbusters agreed to collect just username, email and password from the users.
       </p>
       <p>
         <h3>My Role</h3>
-        For this project I involved in every phase of the UX processes such as research, planning, and design, and setting up the standard library following the atomic design principle. Because of my varied background as a software UI designer and developer, I also helped some of the UI work for this project and advising the feasibility of translating design into real-life development.
+        For this project, I involved in every phase of the UX processes such as research, planning, and design, and setting up the standard library following the atomic design principle. Because of my varied background as a software UI designer and developer, I also helped some of the UI work for this project and advising the feasibility of translating design into real-life development.
       </p>
     </div>
     <div className="par par--normal-width">
@@ -59,7 +53,7 @@ const caseStudyContent = (
       </p>
       <p>
         <h3>Domain Research</h3>
-        When we did the domain research we wanted to know other competitors which focus on similar topics like Adbusters and we found three websites that standout the most:
+        When we did the domain research we wanted to know other competitors which focus on similar topics like Adbusters and we found three websites that stand out the most:
         <ul>
           <li>
             <strong><a rel="noopener noreferrer" href="https://www.thezeitgeistmovement.com/" target="_blank">TZM (The Zeitgeist Movement)</a>:</strong> It is an activist movement. Their topics of interest are mainly about common reforms and general community support to improve conditions such as environmental crisis, poverty, conflict, corruption, economic inequality, etc. Currently, they don't have a mobile app and mainly they communicate their movements by organizing some events and also through their website and social media platforms.
@@ -225,28 +219,41 @@ const caseStudyContent = (
         Once we understood the type of users and the scenario of how our users going use the app, we moved to planning phase. In this phase we created a features priority matrix, user-flows and content structure.
       </p>
       <p>
-        <h3>Priority Matrix &amp; MVP</h3>
-        In the beginning, we had a number of ideas about features that can be included in the project. Because of the time constraint and the budget from the client we had to prioritize them. To prioritize the app features we divided into three different categories:
+        <h3>Features List &amp; MVP</h3>
+        After we lay down the users' pain points and needs, we started to create a features list for this project. But because of time and resource constraints, we decided to prioritize them based on three different categories such as must-haves, nice to haves, and not needed. Below are the features prioritization based on those categories.
       </p>
       <ul>
-        <li><strong>Must-haves:</strong> event list view, event page, push notification, search bar, continue as a guest, event subscription, notification Tab and user settings.</li>
+        <li><strong>Must-haves:</strong> event list view, event page, push notification, search bar, continue as a guest, event subscription, notification tab, and user settings.</li>
         <li><strong>Nice to haves:</strong> sign-in & sign-up, campaign videos, profile account, add to the calendar, comment section for the event page, and event filters.</li>
         <li><strong>Not Needed:</strong> upload image for the campaign.</li>
       </ul>
       <p>
-        After some considerations, here is the list of features that we included as our minimum viable product <strong>(MVP)</strong>:
+        After we categorized based on the priority levels, we narrowed down the features list further based on our constraints as our minimum viable product (MVP). Below is the MVP features list:
       </p>
-      <ul>
-        <li>Push notification</li>
-        <li>Search bar</li>
-        <li>Sign in &amp; sign up</li>
-        <li>Continue as a guest</li>
-        <li>User settings</li>
-        <li>Notification tab</li>
-        <li>Event page</li>
-        <li>Event subscription</li>
-        <li>Add to calendar</li>
+      <ul style={{display: 'inline-block'}}>
+        <li><strong>Push notification</strong></li>
+        <li><strong>Search bar</strong></li>
+        <li><strong>Sign in &amp; sign up</strong></li>
       </ul>
+      <ul style={{display: 'inline-block', marginLeft: '80px'}}>
+        <li><strong>Continue as a guest</strong></li>
+        <li><strong>User settings</strong></li>
+        <li><strong>Notification tab</strong></li>
+      </ul>
+      <ul style={{display: 'inline-block', marginLeft: '80px'}}>
+        <li><strong>Event page</strong></li>
+        <li><strong>Event subscription</strong></li>
+        <li><strong>Add to calendar</strong></li>
+      </ul>
+    </div>
+    <div className="par par--normal-width spacing">
+      <p>
+        <h3>Userflow</h3>
+        We started creating hand-drawn user-flows based on the MVP features list we created.
+      </p>
+      <p>
+        After we settled with the hand-drawn user-flows, we created digitized overall user-flows..
+      </p>
     </div>
   </>
 );
