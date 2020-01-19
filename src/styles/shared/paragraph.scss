@@ -47,7 +47,7 @@
     &::first-letter {
       font-size: 70px;
       float: left;
-      color: #632790;
+      color: $color-purple;
       padding-right: 8px;
       font-weight: bold;
       line-height: 70px;
@@ -59,6 +59,14 @@
     &--none {
       margin-top: 0!important;
     }
+  }
+
+  &--will-do-next {
+    display: flex;
+    background: $color-light-pink;
+    padding: 100px 24px;
+    justify-content: center;
+    align-items: center;
   }
   &--normal-width {
     max-width: 904px;

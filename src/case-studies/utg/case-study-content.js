@@ -1,4 +1,5 @@
 import React from "react";
+import WillDoNext from '../../components/interior/will-do-next';
 import ImgSection from '../../components/interior/img-section';
 import utgTeam from "./utg-team.png";
 import utgCCAnalysis from "./utg-cc-analysis.png";
@@ -109,6 +110,7 @@ const caseStudyContent = (
         <h3>Survey</h3>
         To identify our users and user-motivations, we organized surveys using Google Forms and sent it to parents to fill it out at their own time and convenience. Here are some of the highlights of our findings from all 51 responses we received:
       </p>
+      <WillDoNext text="Do user research findings" />
     </div>
     <div className="par par--normal-width">
       <p>

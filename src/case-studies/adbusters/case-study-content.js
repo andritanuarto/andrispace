@@ -1,4 +1,5 @@
 import React from 'react';
+import WillDoNext from '../../components/interior/will-do-next';
 import ImgSection from '../../components/interior/img-section';
 import magzCovers from './magazine-covers.png';
 import magzLayout from './adbusters-layout.png';
@@ -251,9 +252,11 @@ const caseStudyContent = (
         <h3>Userflow</h3>
         We started creating hand-drawn user-flows based on the MVP features list we created.
       </p>
+      <WillDoNext text="Do handrawn userflows" />
       <p>
-        After we settled with the hand-drawn user-flows, we created digitized overall user-flows..
+        After we settled with the hand-drawn user-flows, we created digitized overall user-flows.
       </p>
+      <WillDoNext text="Do digitized userflows" />
     </div>
   </>
 );
