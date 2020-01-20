@@ -168,10 +168,7 @@ const caseStudyContent = (
 
     <div className="par user-persona user-persona--light spacing">
       <div className="user-persona__left-section">
-        <div
-          className="user-persona__photo"
-          style={{backgroundImage: `url(${persona})`}}
-        />
+        <div className="user-persona__photo" style={{backgroundImage: `url(${persona})`}} />
       </div>
       <div className="user-persona__right-section">
         <h3>Shane Parks</h3>

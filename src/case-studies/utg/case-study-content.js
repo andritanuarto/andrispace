@@ -1,18 +1,19 @@
-import React from "react";
+import React from 'react';
 import WillDoNext from '../../components/interior/will-do-next';
 import ImgSection from '../../components/interior/img-section';
-import utgTeam from "./utg-team.png";
-import utgCCAnalysis from "./utg-cc-analysis.png";
-import utgContextualInquery1 from "./contextual-inquiry-1.jpeg";
-import utgContextualInquery2 from "./contextual-inquiry-2.jpeg";
-import utgContextualInquery3 from "./contextual-inquiry-3.jpeg";
-import utgAffinity1 from "./affinity-1.jpeg";
-import utgAffinity2 from "./affinity-2.jpeg";
-import utgAffinity3 from "./affinity-3.jpeg";
-import utgAffinity4 from "./affinity-4.jpeg";
-import personaPhoto from "./persona.jpeg";
-import journeyMap from "./journey-map.png";
-import featurePrioritization from "./feature-prioritization.jpg";
+import BarChart from '../../components/interior/bar-chart';
+import utgTeam from './utg-team.png';
+import utgCCAnalysis from './utg-cc-analysis.png';
+import utgContextualInquery1 from './contextual-inquiry-1.jpeg';
+import utgContextualInquery2 from './contextual-inquiry-2.jpeg';
+import utgContextualInquery3 from './contextual-inquiry-3.jpeg';
+import utgAffinity1 from './affinity-1.jpeg';
+import utgAffinity2 from './affinity-2.jpeg';
+import utgAffinity3 from './affinity-3.jpeg';
+import utgAffinity4 from './affinity-4.jpeg';
+import personaPhoto from './persona.jpeg';
+import journeyMap from './journey-map.png';
+import featurePrioritization from './feature-prioritization.jpg';
 import mvp from './mvp.png';
 import userFlow1 from './user-flow-1.jpeg';
 import userFlow2 from './user-flow-2.jpeg';
@@ -108,9 +109,77 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h3>Survey</h3>
-        To identify our users and user-motivations, we organized surveys using Google Forms and sent it to parents to fill it out at their own time and convenience. Here are some of the highlights of our findings from all 51 responses we received:
+        To identify our users and user-motivations, we organized surveys using Google Forms and sent it to parents to fill it out at their own time and convenience. Here are some of the highlights of our findings from all responses we received:
       </p>
-      <WillDoNext text="Do user research findings" />
+    </div>
+    <div className="par par--normal-width spacing">
+      <BarChart
+        title="Level of difficulty to find a suitable course on the website."
+        subTitle="(Note: 1 for being the easiest and 5 for being the hardest)"
+        yTextWidth="100px"
+        data={[
+          {label: 1, color: '#ef4440', percent: 21},
+          {label: 2, color: '#179f61', percent: 35},
+          {label: 3, color: '#ffcb2f', percent: 21},
+          {label: 4, color: '#33a3da', percent: 14},
+          {label: 5, color: '#66408c', percent: 7},
+        ]}
+      />
+    </div>
+    <div className="par par--normal-width spacing">
+      <BarChart
+        title="Reasons why do parents enroll their children in the UTG program?"
+        subTitle="(Note: Parents can have multiple answers)"
+        yTextWidth="200px"
+        data={[
+          {label: 'Children\'s interest', color: '#ef4440', percent: 86, number: 13},
+          {label: 'Close proximity', color: '#179f61', percent: 33, number: 5},
+          {label: 'Explore potential', color: '#ffcb2f', percent: 26, number: 4},
+          {label: 'Program reputation', color: '#33a3da', percent: 6, number: 1},
+          {label: 'Importance future skill', color: '#66408c', percent: 6, number: 1},
+          {label: 'Referred', color: '#ffaa06', percent: 6, number: 1}
+        ]}
+      />
+    </div>
+    <div className="par par--normal-width spacing">
+      <BarChart
+        title="What do parents want to get for their children from the UTG program?"
+        subTitle="(Note: Parents can have multiple answers)"
+        yTextWidth="200px"
+        data={[
+          {label: 'Explore potential', color: '#33a3da', percent: 93.3, number: 14},
+          {label: 'Future career aspirations', color: '#66408c', percent: 80, number: 12},
+          {label: 'Have fun', color: '#179f61', percent: 60, number: 9},
+          {label: 'Make friends', color: '#ef4440', percent: 20, number: 3},
+          {label: 'Develop hobbies', color: '#ffcb2f', percent: 20, number: 3},
+        ]}
+      />
+    </div>
+    <div className="par par--normal-width spacing">
+      <BarChart
+        title="Information that parents are looking for when they enroll their children to coding school."
+        subTitle="(Note: Parents can have multiple answers)"
+        yTextWidth="200px"
+        data={[
+          {label: 'Course details', color: '#179f61', percent: 91.5, number: 43},
+          {label: 'Learning environment', color: '#ef4440', percent: 68.1, number: 32},
+          {label: 'About school and instructors', color: '#33a3da', percent: 63.8, number: 30},
+          {label: 'Contact info', color: '#66408c', percent: 44.7, number: 21},
+          {label: 'Upcoming events', color: '#fc22ff', percent: 34, number: 16},
+          {label: 'Student highlights', color: '#ffcb2f', percent: 29.8, number: 14},
+        ]}
+      />
+    </div>
+    <div className="par par--normal-width spacing">
+      <BarChart
+        title="Who decides on the extracurricular activities for your children?"
+        yTextWidth="200px"
+        data={[
+          {label: 'Both parents and children', color: '#179f61', percent: 70.2, number: 33},
+          {label: 'Parents', color: '#ef4440', percent: 17, number: 8},
+          {label: 'Children', color: '#33a3da', percent: 12.8, number: 6},
+        ]}
+      />
     </div>
     <div className="par par--normal-width">
       <p>
