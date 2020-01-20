@@ -172,12 +172,39 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <BarChart
+        title="What frustrates you when searching for your children’s extracurricular activities?"
+        subTitle="(Note: Parents can have multiple answers)"
+        yTextWidth="200px"
+        data={[
+          {label: 'Lack of reputable choices', color: '#179f61', percent: 19.1, number: 9},
+          {label: 'Limited seats in program', color: '#ef4440', percent: 31.9, number: 15},
+          {label: 'Time conflicts', color: '#33a3da', percent: 78.7, number: 37},
+          {label: 'Inconvenient location', color: '#66408c', percent: 40.4, number: 19},
+          {label: 'Not enough information', color: '#fc22ff', percent: 23.4, number: 11},
+          {label: 'Pricing', color: '#ffcb2f', percent: 38.3, number: 18},
+          {label: 'Inadequate facilities', color: '#ffab2e', percent: 8.5, number: 4}
+        ]}
+      />
+    </div>
+    <div className="par par--normal-width spacing">
+      <BarChart
         title="Who decides on the extracurricular activities for your children?"
         yTextWidth="200px"
         data={[
           {label: 'Both parents and children', color: '#179f61', percent: 70.2, number: 33},
           {label: 'Parents', color: '#ef4440', percent: 17, number: 8},
           {label: 'Children', color: '#33a3da', percent: 12.8, number: 6},
+        ]}
+      />
+    </div>
+    <div className="par par--normal-width spacing">
+      <BarChart
+        title="Which device(s) do you usually use to access online information about your children’s extracurricular activities?"
+        yTextWidth="200px"
+        data={[
+          {label: 'Mobile', color: '#179f61', percent: 76.6, number: 36},
+          {label: 'Laptop / Desktop', color: '#33a3da', percent: 66, number: 31},
+          {label: 'Tablet', color: '#ef4440', percent: 6.4, number: 3},
         ]}
       />
     </div>
@@ -475,8 +502,8 @@ const caseStudyContent = (
       />
     </div>
     <div className="par par--normal-width">
-      <h2>Future Considerations</h2>
       <p>
+        <h2>Future Considerations</h2>
         Because we had to finish this project in less than 3 weeks, we could only finish our MVP features. However, given more time we believe the website can still be improved. One of the features that we felt could greatly help both students and parents would be to incorporate a student login portal.
       </p>
       <p>
@@ -484,8 +511,8 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--normal-width">
-      <h2>What Have We Learned</h2>
       <p>
+        <h2>What Have We Learned</h2>
         The biggest takeaway from this project was how important it is to respect every part of the process, and not to jump or rush through as every step has a purpose. Every design decision we made was backed by our research testing, and feedback data. We realized that by doing so, not only did it yield better understanding about the problems, but it was easier for us to recognize the areas that can be improved.
       </p>
     </div>
