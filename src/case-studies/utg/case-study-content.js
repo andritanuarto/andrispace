@@ -39,7 +39,7 @@ import midReg4 from './reg-4.jpg';
 import midHome from './mid-home.jpg';
 import midPrograms from './mid-programs.jpg';
 import midCourse1 from './mid-course.jpg';
-import midCourse2 from './mid-Course2.jpg';
+import midCourse2 from './mid-course2.jpg';
 import midMobileHome from './mid-mobile-home.jpg';
 import midMobileProgram from './mid-mobile-programs.jpg';
 import midMobileCourse1 from './mid-mobile-course.jpg';
