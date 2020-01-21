@@ -54,7 +54,7 @@ $orange: #FAA43A;
     }
 
     .percentage {
-      font-size: .8em;
+      font-size: 14px;
       line-height: 1;
       width: 100%;
       height: 40px;
@@ -90,62 +90,40 @@ $orange: #FAA43A;
     }
   }
   &--pie {
-    display: flex;
-    .pie {
-      background:
-      conic-gradient($red 4%,
-        $gray 0 8%,
-        $blue 0 17%,
-        $yellow 0 48%,
-        $purple 0 54%,
-        $orange 0
-      );
-      border-radius: 50%;
-      width: 300px;
-      height: 300px;
+    &--title {
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
-
-    .key {
-      width: 50%;
-      list-style: none;
-      display: table;
-      border-collapse: separate;
-      > li {
-        display: table-row;
-        > * {
-          display: table-cell;
-          border-bottom: 12px solid white;
-        }
+    &__inner {
+      display: flex;
+      justify-content: center;
+    }
+    &__l {
+      .pie {
+        background:
+        conic-gradient($red 4%,
+          $gray 0 8%,
+          $blue 0 17%,
+          $yellow 0 48%,
+          $purple 0 54%,
+          $orange 0
+        );
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
       }
     }
-
-    .percent {
-      color: white;
-      padding: 10px 2px;
-      text-shadow: 0 0 1px black;
-      text-align: center;
-    }
-    .choice {
-      padding-left: 10px;
-    }
-
-    .red {
-      background: $red;
-    }
-    .gray {
-      background: $gray;
-    }
-    .blue {
-      background: $blue;
-    }
-    .yellow {
-      background: $yellow;
-    }
-    .purple {
-      background: $purple;
-    }
-    .orange {
-      background: $orange;
+    &__r {
+      .key {
+        font-size: 14px;
+        list-style: none;
+        display: table;
+        border-collapse: separate;
+        margin: 0;
+        padding-left: 24px;
+      }
     }
   }
 }
