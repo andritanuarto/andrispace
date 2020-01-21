@@ -1,7 +1,7 @@
 import React from 'react';
-import WillDoNext from '../../components/interior/will-do-next';
 import ImgSection from '../../components/interior/img-section';
 import BarChart from '../../components/interior/bar-chart';
+import PieChart from '../../components/interior/pie-chart';
 import utgTeam from './utg-team.png';
 import utgCCAnalysis from './utg-cc-analysis.png';
 import utgContextualInquery1 from './contextual-inquiry-1.jpeg';
@@ -111,6 +111,9 @@ const caseStudyContent = (
         <h3>Survey</h3>
         To identify our users and user-motivations, we organized surveys using Google Forms and sent it to parents to fill it out at their own time and convenience. Here are some of the highlights of our findings from all responses we received:
       </p>
+    </div>
+    <div className="par par--normal-width spacing">
+      <PieChart/>
     </div>
     <div className="par par--normal-width spacing">
       <BarChart
