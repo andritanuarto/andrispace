@@ -8,6 +8,9 @@ import survey2 from './survey-2.png';
 import affinity from './affinity.png';
 import persona from './persona.jpg';
 import storyBoard from './story-board.png';
+import digitizedUserflowLogin from './login-userflow.png';
+import userflowLogin from './login-userflow.jpg';
+import userflowResetPwd from './reset-pwd-userflow.jpg';
 
 const caseStudyContent = (
   <>
@@ -246,14 +249,28 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <p>
-        <h3>Userflow</h3>
-        We started creating hand-drawn user-flows based on the MVP features list we created.
+        <h3>User-flows</h3>
+        During the user-flows creation process, we started creating hand-drawn user-flows. After we tested the hand-drawn user-flows and feel satisfied, we created digitized user-flows.
       </p>
-      <WillDoNext text="Do handrawn userflows" />
-      <p>
-        After we settled with the hand-drawn user-flows, we created digitized overall user-flows.
-      </p>
-      <WillDoNext text="Do digitized userflows" />
+    </div>
+
+    <div className="par par--normal-width spacing">
+      <h4 style={{marginBottom: '10px'}}>Before</h4>
+    </div>
+    <div className="par par--wide-width">
+      <ImgSection
+        imgs={[
+          {url: userflowLogin, backgroundImg: true, style: {height: '380px'}},
+          {url: userflowResetPwd, backgroundImg: true, style: {height: '380px'}},
+        ]}
+        caption="Hand-drawn user-flows for login, signup, and forgot password"
+      />
+    </div>
+    <div className="par par--normal-width spacing">
+      <h4 style={{marginBottom: '10px'}}>After</h4>
+    </div>
+    <div className="par par--wide-width">
+      <ImgSection imgs={[{url: digitizedUserflowLogin}]} caption="Digitized userflows for login, signup, and forgot password" />
     </div>
   </>
 );

@@ -12,6 +12,7 @@ const BarChart = ({title, subTitle, data, yTextWidth}) => {
           data.map((datum) => {
             return (
               <dd
+                key={datum.label}
                 class={`percentage percentage-${Math.round(datum.percent)}`}
                 style={{paddingLeft: yTextWidth}}>
                 <span class="text" style={{width: yTextWidth}}>

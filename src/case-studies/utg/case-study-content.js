@@ -113,9 +113,6 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--normal-width spacing">
-      <PieChart/>
-    </div>
-    <div className="par par--normal-width spacing">
       <BarChart
         title="Level of difficulty to find a suitable course on the website."
         subTitle="(Note: 1 for being the easiest and 5 for being the hardest)"
@@ -341,8 +338,8 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        <h3>User-flow</h3>
-        Next, after we did the MVP and were equipped with a better understanding of the whole scope of the project, we designed our user-flow.
+        <h3>User-flows</h3>
+        Next, after we did the MVP and were equipped with a better understanding of the whole scope of the project, we designed our user-flows.
       </p>
     </div>
     <div className="par par--wide-width spacing">

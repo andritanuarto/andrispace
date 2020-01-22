@@ -11,7 +11,6 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(handleNavigation(openOrClose));
     },
     handleInitialRenderStatus: (status) => {
-      console.log(status);
       dispatch(handleInitialRenderStatus(status));
     }
   };
@@ -53,7 +52,7 @@ const Header = ({navColor, logoColor, navigationOpen, initialRender, handleNavig
 
   return (
     <>
-      <div className="header header--dark">
+      <div className="header header--light">
         <Logo logoColor={logoColor} animated={true && initialRender}/>
         <Hamburger
           navColor={navColor}

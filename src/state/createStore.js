@@ -29,7 +29,6 @@ const reducer = (state = initialState, action = {}) => {
     }
 
     case UI.SET_INITIAL_RENDER_STATUS: {
-      console.log(action.status);
       return Object.assign({}, state, {
         initialRender: action.status
       });
