@@ -60,16 +60,16 @@ const caseStudyContent = (
       </p>
       <p>
         <h3>Domain Research</h3>
-        When we did the domain research we wanted to know other competitors which focus on similar topics like Adbusters and we found three websites that stand out the most:
+        When we did the domain research, we wanted to know other competitors, which focus on similar topics like Adbusters, and we found three websites that stand out the most:
         <ul>
           <li>
-            <strong><a rel="noopener noreferrer" href="https://www.thezeitgeistmovement.com/" target="_blank">TZM (The Zeitgeist Movement)</a>:</strong> It is an activist movement. Their topics of interest are mainly about common reforms and general community support to improve conditions such as environmental crisis, poverty, conflict, corruption, economic inequality, etc. Currently, they don't have a mobile app and mainly they communicate their movements by organizing some events and also through their website and social media platforms.
+            <strong><a rel="noopener noreferrer" href="https://www.thezeitgeistmovement.com/" target="_blank">TZM (The Zeitgeist Movement)</a>:</strong> It is an activist movement. Their topics of interest are mainly about common reforms and general community support to improve conditions such as environmental crisis, poverty, conflict, corruption, economic inequality, etc. Currently, they don't have a mobile app, and mainly they communicate their movements by organizing some events and also through their website and social media platforms.
           </li>
           <li>
-            <strong><a rel="noopener noreferrer" href="https://rebellion.earth/" target="_blank">Extinction Rebellion</a>:</strong> It is an international movement that uses non-violent civil disobedience in an attempt to halt mass extinction and minimize the risk of social collapse. Currently, they don't have a mobile app and rely on their websites and social media to communicate with subscribers and volunteers about the events they organize.
+            <strong><a rel="noopener noreferrer" href="https://rebellion.earth/" target="_blank">Extinction Rebellion</a>:</strong>  It is an international movement that uses non-violent civil disobedience in an attempt to halt mass extinction and minimize the risk of social collapse. Based on our research, they use social media and their website to communicate their events.
           </li>
           <li>
-            <strong><a rel="noopener noreferrer" href="https://charliehebdo.fr/" target="_blank">Charlie Hebdo</a>:</strong> It is a French-based political satirical magazine. Their content is targeting people who are politically left-wing, skeptic, secular, atheist and anti-racist. Based on our research we didn't see them actively organized events or campaigns, although they have both websites and mobile app they use them solely in promoting their magazines.
+            <strong><a rel="noopener noreferrer" href="https://charliehebdo.fr/" target="_blank">Charlie Hebdo</a>:</strong> It is a French-based political satirical magazine. Their content is targeting people who are politically left-wing, skeptic, secular, atheist, and anti-racist. We didn't findings them actively organized events or campaigns, although they have both websites and the mobile app, they use them solely in promoting their magazines.
           </li>
         </ul>
       </p>
@@ -115,7 +115,7 @@ const caseStudyContent = (
         When we started planning our survey, we wanted to know how people remind themselves about their schedule and what tools do they use to help them remember about any event they are committed to joining.
       </p>
       <p>
-        We decided to create a survey using google form and we were targeting men and women from the age range between 15 to 50 years old and sent them to social-related community channels on slack and discord. We received 66 responses from our survey and here are some of the highlights from our survey findings.
+        We decided to create a survey using Google form, and we were targeting men and women from the age range between 15 to 50 years old and sent them to social-related community channels on slack and discord. We received 66 responses from our survey and here are some of the highlights from our survey findings.
       </p>
       <p>
         <ImgSection imgs={[{url: survey1}]} />
@@ -124,33 +124,33 @@ const caseStudyContent = (
         <ImgSection imgs={[{url: survey2}]} />
       </p>
       <p>
-        Based on our survey, most people indicated that push notifications were very effective when used to check on the related app and in reminding them of upcoming schedules and events, especially during inactive periods. Meanwhile, a few participants mentioned that they found push notifications irrelevant when it doesn't show the information that they need.
+        Based on our survey results, the majority of our survey samples think push notifications are useful to remind them about upcoming schedules or events, especially when they are not actively using the phone. Meanwhile, a few participants mentioned that push notifications could be annoying if they don't show the relevant information they need.
       </p>
       <p>
         <h3>Contextual Inquiry</h3>
-        Part of the research we wanted to know from Adbusters' existing subscribers regarding their past experiences participating in their campaigns. We were given 15 contact lists and was able to get 6 responses from them.
+        We wanted to know from the existing Adbusters' subscribers about their previous experience participating in Adbusters' events. To be able to do that, we asked Adbusters' to give us the contact list of their existing subscribers to do the interview. Out of fifteen contacts were given, we got six responses back.
       </p>
       <p>
-        In general, we got positive responses about the idea of having a dedicated app for Adbusters' events. They felt it is really hard to keep track of their events without a way to give direct reminders for future events and currently they relly on newsletters they subscribed from Adbusters' website. Here are some of the highlighted quotes we got when we interviewed them.
+        Overall we got positive responses about the idea of having a dedicated app for Adbusters' events. They felt it is hard to keep track of Adbusters' events just relying on email. Here are some of the highlighted quotes we got from them.
       </p>
       <p>
         <h4 className="quote text--center">
-          "I typically find push notification to be spammy and turn them off, with rare exceptions. I prefer if you do send push notification make them meaningful and relevant."
+          "I typically find push notification to be spammy and turn them off, with rare exceptions. I prefer if you do send push notifications, make them meaningful and relevant."
         </h4>
       </p>
       <p>
         <h4 className="quote text--center">
-          "It will be great to have campaign related content in one app because social media can be little too much."
+          "It will be great to have campaign-related content in one app because social media can be a little too much."
         </h4>
       </p>
       <p>
         <h4 className="quote text--center">
-          "I tent to sync more from facebook events. So it'll be good to have both options if there is a specific app. Push notifications feel more effective."
+          "I tent to sync more from Facebook events. So it'll be good to have both options if there is a specific app. Push notifications feel more effective."
         </h4>
       </p>
       <p>
         <h4 className="quote text--center">
-          "Honestly promotional email have gotten a bit out of hand. I prefer push notifications."
+          "Honestly, promotional email has gotten a bit out of hand. I prefer to have push notifications."
         </h4>
       </p>
     </div>
@@ -168,7 +168,7 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h3>User Persona</h3>
-        After we analyzed our affinity diagram we created a user persona to represent the needs of typical users for this app. By creating the persona it helped us to gain a similar perspective about their motivations, pain points, and goals.
+        After we analyzed our affinity diagram, we created a user persona to represent the needs of typical users for this app. By creating the persona, it helped us to gain a similar perspective about their motivations, pain points, and goals.
       </p>
     </div>
 
@@ -183,27 +183,27 @@ const caseStudyContent = (
           "I want to be the change I wish for the world."
         </strong>
         <p>
-          Shane is an animation designer living in Seattle, WA. He has been an ardent follower of Adbusters over the past few years and has actively participated in some of their campaigns. His frustration that he is unable to actively take part in protests about the issue he feels so passionate about.
+          Shane is an animation designer living in Seattle. He has been an ardent follower of Adbusters. Over the past few years, he has actively participated in some of their campaigns.
         </p>
         <p>
-          Due to his demanding work schedule, he is unable to constantly stay updated on relevant campaigns in his inbox that get lost in the piles of promotional emails. Especially a lot of these events take place in his hometown of Vancouver, BC. He needs a way to be able to  keep track easily of all the events he is interested in so he can plan his trips accordingly in advance.
+          Due to his demanding work schedule, he is unable to regularly stay up to date on the related campaigns in his email inbox. A lot of those events he is interested in are outside the city. He needs a way to be able to easily track all those events so he can plan his trips accordingly.
         </p>
         <div>
           <div className="user-persona__right-section__bottom">
             <div>
               <strong>Pain Points</strong>
               <ul>
-                <li>Using email irritates him because he has to search through too many promotional emails to find what he is looking for</li>
-                <li>He doesn't always have the time to go to the Adbusters website</li>
+                <li>Using email bothers him because he has to search through his pile of emails to find the event information.</li>
+                <li>He doesn't always have the time to check Adbusters' website.</li>
               </ul>
             </div>
             <div>
               <strong>Goals</strong>
               <ul>
-                <li>To unlearn ideas he has inherited from a culture that has bought into corporate greed and environmental destruction.</li>
-                <li>To connect with people who share his life philosophy and social consciousness</li>
-                <li>Expose himself to ideas that challenge his thinking on political, environmental, economic and other issues</li>
-                <li>To keep on top of the events information involving the activist community</li>
+                <li>To reject the ideas he has inherited from a culture that has bought into corporate greed and environmental destruction.</li>
+                <li>To connect with people who share his life philosophy and social consciousness.</li>
+                <li>Expose himself to ideas that challenge his thinking on political, environmental, economic and other issues.</li>
+                <li>To keep on top of the events information involving the activist community.</li>
               </ul>
             </div>
           </div>
@@ -212,7 +212,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <h3>Storyboard</h3>
-      After we got more understanding of our typical user pain points and goals based on Shane's persona, we also created a storyboard that shows a typical scenario of how Shane is going to use the app.
+      After we got more understanding of our typical user pain-points and goals based on Shane's persona, we also created a storyboard that shows a typical scenario of how Shane is going to use the app.
     </div>
     <div className="par par--wide-width spacing">
       <ImgSection imgs={[{url: storyBoard}]} caption="Shane's story board" />
@@ -220,19 +220,19 @@ const caseStudyContent = (
     <div className="par par--normal-width spacing">
       <p>
         <h2>Planning</h2>
-        Once we understood the type of users and the scenario of how our users going use the app, we moved to planning phase. In this phase we created a features priority matrix, user-flows and content structure.
+        Once we understood the type of users and the scenario of how our users going use the app, we moved to the planning phase. In this phase we created a features priority matrix, user-flows and content structure.
       </p>
       <p>
         <h3>Features List &amp; MVP</h3>
-        After we lay down the users' pain points and needs, we started to create a features list for this project. But because of time and resource constraints, we decided to prioritize them based on three different categories such as must-haves, nice to haves, and not needed. Below are the features prioritization based on those categories.
+        After we lay down the users' pain points and needs, we started to create a features list for this project. We decided to prioritize our features based on three different categories: must-have, nice to have, and not needed. Below are the features prioritization based on those categories.
       </p>
       <ul>
-        <li><strong>Must-haves:</strong> event list view, event page, push notification, search bar, continue as a guest, event subscription, notification tab, and user settings.</li>
-        <li><strong>Nice to haves:</strong> sign-in & sign-up, campaign videos, profile account, add to the calendar, comment section for the event page, and event filters.</li>
+        <li><strong>Must-have:</strong> event list view, event page, push notification, search bar, continue as a guest, event subscription, notification tab, and user settings.</li>
+        <li><strong>Nice to have:</strong> sign-in & sign-up, campaign videos, profile account, add to the calendar, comment section for the event page, and event filters.</li>
         <li><strong>Not Needed:</strong> upload image for the campaign.</li>
       </ul>
       <p>
-        After we categorized based on the priority levels, we narrowed down the features list further based on our constraints as our minimum viable product (MVP). Below is the MVP features list:
+        Next step, after we categorized based on the priority levels, we narrowed down the features list further based on our constraints as our minimum viable product (MVP). Below is the MVP features list:
       </p>
       <ul style={{display: 'inline-block'}}>
         <li><strong>Push notification</strong></li>
@@ -283,13 +283,16 @@ const caseStudyContent = (
         Based on Shane's persona and storyboard, we created the user-flow of how he is going to use the app.  From the survey result we got, the majority of people favoured push notification is the most efficient way for them to stay updated, so we incorporated the push notification feature to remind the user when the events are coming up or about to begin.
       </p>
       <p>
-        The event's notification user-flow is indicated by black boxes. It shows, when the notification message is received, the user can click the notification tab. After it's clicked, the app will be opened and redirected to the event's page.
+        From the user-flow image below, it shows when the notification message (right bottom corner black box) is received, the user can click the notification tab. After it's clicked, the app will be opened and redirected to the event detail page.
       </p>
     </div>
     <div className="par par--wide-width spacing">
       <ImgSection
         imgs={[{url: digitizedUserflowHome}]}
       />
+    </div>
+    <div className="par par--normal-width">
+      <h2>Design</h2>
     </div>
   </>
 );

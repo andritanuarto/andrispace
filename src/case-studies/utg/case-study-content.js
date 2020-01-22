@@ -57,10 +57,10 @@ const caseStudyContent = (
   <>
     <div className="par par--normal-width">
       <p className="first-paragraph">
-        Programming is a skill that is not easy to acquire. I remember myself eight years ago when I decided to switch my career into programming. It was quite intimidating at first because I didn't have the basic knowledge. It took me countless hours of studying to just get comfortable with it.
+        Programming is a skill that is not easy to acquire. I remember myself eight years ago when I decided to switch my career into programming, it was intimidating at first, and I started without basic programming knowledge. It took me a lot of practice to be proficient in programming.
       </p>
       <p>
-        These days, I see a lot of high demand jobs that require basic programming skills. The fact that programming skills are becoming increasingly important, most secondary educations still don't teach programming as a mandatory subject. Luckily, a lot of parents nowadays are becoming more aware of how important it is for their children to harvest their programming skills.
+        These days, I see a lot of high demand jobs require to have programming skills. The fact that programming skills are becoming increasingly important, most secondary educations still don't teach programming as a mandatory subject. Luckily, a lot of parents nowadays are becoming more aware of how important it is for their children to harvest their programming skills.
       </p>
       <p>
         UTG Academy (Under The GUI Academy) was founded to facilitate the programming education demand. Founded in 2013, UTG Academy is a programming school for students from grades 1 to 12.
