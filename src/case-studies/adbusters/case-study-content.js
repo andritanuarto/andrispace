@@ -11,6 +11,7 @@ import storyBoard from './story-board.png';
 import digitizedUserflowLogin from './login-userflow.png';
 import userflowLogin from './login-userflow.jpg';
 import userflowResetPwd from './reset-pwd-userflow.jpg';
+import digitizedUserflowHome from './home-userflow.png';
 
 const caseStudyContent = (
   <>
@@ -252,7 +253,7 @@ const caseStudyContent = (
     <div className="par par--normal-width spacing">
       <p>
         <h3>User-flows</h3>
-        During the user-flows creation process, we started creating hand-drawn user-flows. After we tested the hand-drawn user-flows and feel satisfied, we created digitized user-flows.
+        During the user-flows creation process, we started creating hand-drawn user-flows. After we tested the hand-drawn user-flows and felt satisfied, we created the digitized version of it.
       </p>
     </div>
 
@@ -272,12 +273,23 @@ const caseStudyContent = (
       <h4 style={{marginBottom: '10px'}}>After</h4>
     </div>
     <div className="par par--wide-width">
-      <ImgSection imgs={[{url: digitizedUserflowLogin}]} caption="Digitized userflows for login, signup, and forgot password" />
+      <ImgSection
+        imgs={[{url: digitizedUserflowLogin}]}
+        caption="Digitized userflows for login, signup, and forgot password"
+      />
     </div>
     <div className="par par--normal-width spacing">
       <p>
         Based on Shane's persona and storyboard, we created the user-flow of how he is going to use the app.  From the survey result we got, the majority of people favoured push notification is the most efficient way for them to stay updated, so we incorporated the push notification feature to remind the user when the events are coming up or about to begin.
       </p>
+      <p>
+        The event's notification user-flow is indicated by black boxes. It shows, when the notification message is received, the user can click the notification tab. After it's clicked, the app will be opened and redirected to the event's page.
+      </p>
+    </div>
+    <div className="par par--wide-width spacing">
+      <ImgSection
+        imgs={[{url: digitizedUserflowHome}]}
+      />
     </div>
   </>
 );
