@@ -5,25 +5,25 @@ button {
 .btn {
   height:30px;
   outline: 0;
-  border-radius: 3px;
   transition: all $generic-transition-time;
   font-size: 16px;
   letter-spacing: 1px;
   &--call-to-action {
-    height: 40px;
-    background-color: $color-purple;
-    color: $color-white;
+    height: 50px;
+    background-color: $color-white;
     display: inline-flex;
     align-items: center;
     padding: 0 15px;
     text-decoration: none;
+    color: $color-code-gray;
+    &:hover {
+      background-color: $color-code-gray;
+      color: $color-white;
+    }
     svg {
       margin-left: 5px;
       position: relative;
       top: -1px;
-    }
-    &:hover {
-      background-color: lighten($color-purple, 5%);
     }
   }
   &--transparent {

@@ -16,11 +16,10 @@ const caseStudyContent = (
   <>
     <div className="par par--normal-width">
       <p className="first-paragraph">
-        We had a great opportunity to work with <a rel="noopener noreferrer" href="https://www.adbusters.org/" target="_blank">Adbusters</a> for a mobile app project. Adbusters is a magazine publishing company based in Canada. They describe themself as a global network for artists, activists, writers, students, and entrepreneurs implementing radical design and media strategies to shake up complacent consumerist culture.
-        Besides publishing magazines, Adbusters also actively organizes and involves different social campaigns like <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Culture_jamming" target="_blank">Culture Jamming</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/8th-anniversary-of-occupywallstreet/" target="_blank">Occupy Wall Street</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/buy-nothing-day-2019/">Buy Nothing Day</a>, etc.
+        <a rel="noopener noreferrer" href="https://www.adbusters.org/" target="_blank">Adbusters</a> is a Canadian magazine publishing company. They describe themself as a global network for artists, activists, and entrepreneurs. Their media strategy is producing radical designs to shake up complacent consumerist culture. Besides publishing magazines, Adbusters also actively organizes and involves different social campaigns like <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Culture_jamming" target="_blank">Culture Jamming</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/8th-anniversary-of-occupywallstreet/" target="_blank">Occupy Wall Street</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/buy-nothing-day-2019/">Buy Nothing Day</a>, etc.
       </p>
       <p>
-        We noticed Adbusters has an unusual content style compare to other magazines in general. Their magazine layout tent to be free-flowing and spontaneous unlike other magazines in general. With their content style, we felt there is a lot of room to experiment in terms of the art direction of the project. But we also aware of the necessity to find a good balance between their content style and the usability of the app.
+        Our first impression when we looked at Adbusters' magazines, they have an unusual content style. Their magazine layout tent to be free-flowing, and spontaneous unlike other magazines in general. I can imagine if graphic designers who work for their magazine, they have the freedom to experiment with unusual imaginaries and typographies.
       </p>
       <p>
         <ImgSection
@@ -29,7 +28,7 @@ const caseStudyContent = (
         />
       </p>
       <p>
-        Moreover, their belief in anti-commercial means, the consistency of their branding is non-existent. A very prominent example we noticed their magazine covers don't have the same logo for each edition.
+        Moreover, their belief in anti-commercial means, the consistency of their branding is non-existent. A very prominent example we noticed their magazine covers don't have consistent branding for each edition.
       </p>
       <p>
         <ImgSection
@@ -43,17 +42,20 @@ const caseStudyContent = (
         With the constant growth of digital technology and mobile users, Adbusters need a mobile platform where they can communicate and voicing their campaigns to their subscribers in a more direct and timely way.
       </p>
       <p>
-        During the kick-off project meeting with Adbusters, they wanted to create a native mobile app on the iOS platform and name this app as "The World Revolution"; the sole purpose of this app is to be able to subscribe and remind the subscribers about the campaigns they are interested to join. Initially, because Adbusters does not believe in collecting any data from users as most corporations do, they wanted to have an app without users having to log in, but on the other hand, without login information, there is no way to have a personalized experience for the users using the app. After expressing some of our concerns and reasons why do we need to collect that information, Adbusters agreed to collect just username, email and password from the users.
+        When we had a kick-off meeting with Adbusters' team, they wanted to create a mobile app called "The World Revolution" and plan to develop it using <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>, so it's compatible with both iOS and Android platforms and also saves the development cost. The sole purpose of this app is to be able to subscribe and remind the subscribers about the campaigns they plan to join.
+      </p>
+      <p>
+        Initially, because Adbusters does not believe in collecting any data from users, they wanted to have an app without users having to log in. On the other hand, without login information, there is no way to have a personalized experience for app users. After expressing our concerns, Adbusters agreed to collect just username, email and password from the users.
       </p>
       <p>
         <h3>My Role</h3>
-        For this project, I involved in every phase of the UX processes such as research, planning, and design, and setting up the standard library following the atomic design principle. Because of my varied background as a software UI designer and developer, I also helped some of the UI work for this project and advising the feasibility of translating design into real-life development.
+        For this project, I involved in every phase of the UX processes such as research, planning, design, and setting up the standard library following the atomic design principle. Because of my varied background as a software UI designer and developer, I also helped some of the UI work for this project and advising the feasibility of translating design into real-life development.
       </p>
     </div>
     <div className="par par--normal-width">
       <p>
         <h2>Research</h2>
-        To get knowledge about the domain of this project and to help us how we position this app among other competitors we conducted a series of research to bridge our knowledge gap.
+        To get knowledge about the domain of this project and to help us how we position this app among other competitors, we conducted a series of research to bridge our knowledge gap.
       </p>
       <p>
         <h3>Domain Research</h3>
@@ -271,6 +273,11 @@ const caseStudyContent = (
     </div>
     <div className="par par--wide-width">
       <ImgSection imgs={[{url: digitizedUserflowLogin}]} caption="Digitized userflows for login, signup, and forgot password" />
+    </div>
+    <div className="par par--normal-width spacing">
+      <p>
+        Based on Shane's persona and storyboard, we created the user-flow of how he is going to use the app.  From the survey result we got, the majority of people favoured push notification is the most efficient way for them to stay updated, so we incorporated the push notification feature to remind the user when the events are coming up or about to begin.
+      </p>
     </div>
   </>
 );

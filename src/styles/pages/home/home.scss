@@ -81,7 +81,7 @@
   height: 100vh;
   flex-direction: column;
   color: $color-white;
-  background: $color-code-gray;
+  background: $color-silver;
   .hero-container {
     flex: 1;
     display: flex;
@@ -105,7 +105,7 @@
       transition: all $generic-transition-time;
     }
     &__bottom-spacing {
-      height: 100px;
+      // height: 100px;
     }
     &__slide-nav-container{
       list-style-type: none;
