@@ -1,26 +1,26 @@
 import React from 'react';
 import WillDoNext from '../../components/interior/will-do-next';
 import ImgSection from '../../components/interior/img-section';
-import magzCovers from './img/magazine-covers.png';
-import magzLayout from './img/adbusters-layout.png';
-import survey1 from './img/survey-1.png';
-import survey2 from './img/survey-2.png';
-import affinity from './img/affinity.png';
-import persona from './img/persona.jpg';
-import storyBoard from './img/story-board.png';
-import digitizedUserflowLogin from './img/login-userflow.png';
-import userflowLogin from './img/login-userflow.jpg';
-import userflowResetPwd from './img/reset-pwd-userflow.jpg';
-import digitizedUserflowHome from './img/home-userflow.png';
-import lowFiWhiteboard from './img/low-fi-whiteboard.jpg';
-import lowFiPaper from './img/low-fi-paper.jpg';
-import lowFiTest1 from './img/low-fi-test1.jpg';
-import lowFiTest2 from './img/low-fi-test2.jpg';
-import lowFiTest3 from './img/low-fi-test3.jpg';
-import midFiPrototypes from './img/mid-fi-prototypes.png';
-import iconSketches from './img/icon-sketches.png';
-import moodboard from './img/moodboard.jpeg';
-import styleTiles from './img/style-tiles.png';
+import magzCovers from './magazine-covers.png';
+import magzLayout from './adbusters-layout.png';
+import survey1 from './survey-1.png';
+import survey2 from './survey-2.png';
+import affinity from './affinity.png';
+import persona from './persona.jpg';
+import storyBoard from './story-board.png';
+import digitizedUserflowLogin from './login-userflow.png';
+import userflowLogin from './login-userflow.jpg';
+import userflowResetPwd from './reset-pwd-userflow.jpg';
+import digitizedUserflowHome from './home-userflow.png';
+import lowFiWhiteboard from './low-fi-whiteboard.jpg';
+import lowFiPaper from './low-fi-paper.jpg';
+import lowFiTest1 from './low-fi-test1.jpg';
+import lowFiTest2 from './low-fi-test2.jpg';
+import lowFiTest3 from './low-fi-test3.jpg';
+import midFiPrototypes from './mid-fi-prototypes.png';
+import iconSketches from './icon-sketches.png';
+import moodboard from './moodboard.jpeg';
+import styleTiles from './style-tiles.png';
 
 const caseStudyContent = (
   <>
@@ -29,7 +29,7 @@ const caseStudyContent = (
         <a rel="noopener noreferrer" href="https://www.adbusters.org/" target="_blank">Adbusters</a> is a Canadian magazine publishing company. They describe themself as a global network for artists, activists, and entrepreneurs. Their media strategy is producing radical designs to shake up complacent consumerist culture. Besides publishing magazines, Adbusters also actively organizes and involves different social campaigns like <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Culture_jamming" target="_blank">Culture Jamming</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/8th-anniversary-of-occupywallstreet/" target="_blank">Occupy Wall Street</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/buy-nothing-day-2019/">Buy Nothing Day</a>, etc.
       </p>
       <p>
-        Our first impression when we looked at Adbusters' magazines, they have an unusual content style. Their magazine layout tent to be free-flowing, and spontaneous unlike other magazines in general. I can imagine if graphic designers who work for their magazine, they have the freedom to experiment with unusual imaginaries and typographies.
+        Our first impression when we looked at Adbusters' magazines, they have an unusual content style. Their magazine layout tent to be free-flowing, and spontaneous unlike other magazines in general. I can imagine if graphic designers who work for their magazine, they may have the freedom to experiment with unusual imaginaries and typographies.
       </p>
       <p>
         <ImgSection

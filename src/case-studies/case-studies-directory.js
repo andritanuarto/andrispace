@@ -1,11 +1,11 @@
-import utgLogo from './utg/utg-logo.png';
-import utgBackground from './utg/utg-class.jpg';
-import utgCaseStudyBanner from './utg/utg-case-study-banner.jpg';
+import utgLogo from './utg/img/utg-logo.png';
+import utgBackground from './utg/img/utg-class.jpg';
+import utgCaseStudyBanner from './utg/img/utg-case-study-banner.jpg';
 import utgCaseStudyContent from './utg/case-study-content';
 
-import adbustersLogo from './adbusters/adbusters-logo.png';
-import adbustersBackground from './adbusters/social-protest.jpg';
-import adbustersCaseStudyBanner from './adbusters/adbusters-case-study-banner.jpg';
+import adbustersLogo from './adbusters/img/adbusters-logo.png';
+import adbustersBackground from './adbusters/img/social-protest.jpg';
+import adbustersCaseStudyBanner from './adbusters/img/adbusters-case-study-banner.jpg';
 import adbustersCaseStudyContent from './adbusters/case-study-content';
 
 const caseStudies = [
