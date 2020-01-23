@@ -318,7 +318,7 @@ const caseStudyContent = (
     <div className="par par--wide-width spacing">
       <ImgSection
         imgs={[
-          {url: lowFiTest2, backgroundImg: true}
+          {url: lowFiTest2, backgroundImg: true},
           {url: lowFiTest3, backgroundImg: true},
           {url: lowFiTest1, backgroundImg: true},
         ]}
