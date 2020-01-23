@@ -18,7 +18,9 @@ import lowFiTest1 from './low-fi-test1.jpg';
 import lowFiTest2 from './low-fi-test2.jpg';
 import lowFiTest3 from './low-fi-test3.jpg';
 import midFiPrototypes from './mid-fi-prototypes.png';
-
+import iconSketches from './icon-sketches.png';
+import moodboard from './moodboard.jpeg';
+import styleTiles from './style-tiles.png';
 
 const caseStudyContent = (
   <>
@@ -341,7 +343,7 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--normal-width spacing">
-        <h3>Mid Fidelity (mid-fi) Wireframes</h3>
+      <h3>Mid Fidelity (mid-fi) Wireframes</h3>
     </div>
     <div className="par par--normal-width spacing">
       <ImgSection imgs={[{url: midFiPrototypes}]} caption="Mid-fi prototypes from one of our Sketch file"/>
@@ -350,6 +352,48 @@ const caseStudyContent = (
       <p>
         After we tested our low-fi prototypes and made necessary revisions, we moved on to mid-fi wireframes creation. Ideally, we should have tested our mid-fi prototypes before we jump into final hi-fidelity (hi-fi) wireframes. Because of time limitations and only had minor issues from the testing result, we skipped the mid-fi testing and moved on to final Hi-fi prototypes.
       </p>
+    </div>
+    <div className="par par--normal-width spacing">
+      <p>
+        <h3>Hi Fidelity (hi-fi) Wireframes</h3>
+        The last process of our wireframes creation process was designing hi-fi prototypes. At this stage, we already established the user-flow from our previous low-fi and mid-fi wireframes, then we decided the look and feel for final skinning. In this process, we tried to make the app not only intuitive but also has the characteristic of Adbusters' visual style. Inspired by one of their magazine content, we came up with a rough hand-drawn design for some visual elements.
+      </p>
+    </div>
+    <div className="par par--normal-width spacing">
+      <ImgSection imgs={[{url: iconSketches}]} caption="Sketches of hand-drawn visual elements"/>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+      For our mood board and style tile, we used dark colours as the dominant colours, and incorporate them with red colour as the focal point colour.
+      </p>
+    </div>
+    <div className="par par--normal-width spacing">
+      <ImgSection imgs={[{url: moodboard}]} caption="App mood-board"/>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        The below picture is the complete app style tile to summarize the art direction for this app.
+      </p>
+    </div>
+    <div className="par par--normal-width spacing">
+      <ImgSection imgs={[{url: styleTiles}]} caption="Style tile"/>
+    </div>
+    <div className="par par--normal-width spacing">
+      <p>
+        <h2>Project Outcome</h2>
+        When we presented this project to the client, we got very positive feedback. Some of the features that people like are the notification control for only the stuff they want to get notified and the add to calendar feature on the event's page. From the UI perspective, they feel the visual style is still reflecting the Adbusters' style.
+      </p>
+    </div>
+    <div className="par par--normal-width">
+        <p>
+          <h2>Future Considerations</h2>
+          Unfortunately, because of this short time project, we couldn't do every feature that we wished to include as part of our MVP, and here are some feature ideas for future considerations:
+        </p>
+        <ul>
+          <li>Add user profile to make it more personalized</li>
+          <li>View events by location</li>
+          <li>Adding image comments</li>
+        </ul>
     </div>
   </>
 );
