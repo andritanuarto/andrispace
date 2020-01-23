@@ -297,6 +297,9 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <h2>Design</h2>
+    </div>
+    <div className="par par--normal-width spacing">
+      <h3>Low Fidelity (low-fi) Wireframes</h3>
       We started our design process by creating low-fi wireframes. Instead of started with paper and pencil, we did whiteboarding wireframes. The purpose of this exercise is to encourage conversations within the team and to bring solutions on the fly. I found using a whiteboard for this project is very handy, especially for making revisions and making sure each team member is on the same page.
     </div>
     <div className="par par--normal-width spacing">
@@ -312,7 +315,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <p>
-        To made sure our workflows make sense to other people, we tested our prototypes and took some node any findings during the testing.
+        To made sure our workflows made sense to other people, we tested our prototypes and took notes for any findings during the user testing. Generally, we got good feedback from our testers, and they felt the app navigation made sense. We only need some minor adjustments for both navigation and layout content.
       </p>
     </div>
     <div className="par par--wide-width spacing">
@@ -324,6 +327,12 @@ const caseStudyContent = (
         ]}
         caption="When I conducted user-testing for our low-fi prototypes"
       />
+    </div>
+    <div className="par par--normal-width spacing">
+      <h2>Mid Fidelity (mid-fi) Wireframes</h2>
+      <p>
+        After we tested our low-fi prototypes and made necessary revisions, we moved on to mid-fi wireframes creation. Ideally, we should have tested our mid-fi prototypes before we jump into final hi-fidelity (hi-fi) wireframes. Because of time limitations and minor issues from the low-fi test result, we skipped the mid-fi testing and moved on to final Hi-fi prototypes.
+      </p>
     </div>
   </>
 );
