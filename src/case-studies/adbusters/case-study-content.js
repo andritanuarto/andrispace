@@ -17,6 +17,7 @@ import lowFiPaper from './low-fi-paper.jpg';
 import lowFiTest1 from './low-fi-test1.jpg';
 import lowFiTest2 from './low-fi-test2.jpg';
 import lowFiTest3 from './low-fi-test3.jpg';
+import midFiPrototypes from './mid-fi-prototypes.png';
 
 
 const caseStudyContent = (
@@ -300,14 +301,14 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <h3>Low Fidelity (low-fi) Wireframes</h3>
-      We started our design process by creating low-fi wireframes. Instead of started with paper and pencil, we did whiteboarding wireframes. The purpose of this exercise is to encourage conversations within the team and to bring solutions on the fly. I found using a whiteboard for this project is very handy, especially for making revisions and making sure each team member is on the same page.
+      We started our design process by creating low-fi wireframes. Instead of started sketching wireframes with paper and pencil, we did whiteboarding to draw our wireframes. The purpose of this exercise is to encourage conversations within the team and to bring solutions on the fly. I found using a whiteboard for this project is very handy, especially for making revisions and making sure each team member is on the same page.
     </div>
     <div className="par par--normal-width spacing">
       <ImgSection imgs={[{url: lowFiWhiteboard}]} caption="Whiteboarding wireframes"/>
     </div>
     <div className="par par--normal-width">
       <p>
-        After we run through each wireframe on the whiteboard, and settled with the solution, we moved on to creating low-fi wireframes using paper and pencil for user testing purposes.
+        After we run through each wireframe on the whiteboard, and settled with the flows, we moved on to creating low-fi wireframes using paper and pencil for user testing purposes.
       </p>
     </div>
     <div className="par par--normal-width spacing">
@@ -315,7 +316,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <p>
-        To made sure our workflows made sense to other people, we tested our prototypes and took notes for any findings during the user testing. Generally, we got good feedback from our testers, and they felt the app navigation made sense. We only need some minor adjustments for both navigation and layout content.
+        To made sure our workflows made sense to other people, we tested our prototypes and took notes for any findings during the user testing.
       </p>
     </div>
     <div className="par par--wide-width spacing">
@@ -329,9 +330,25 @@ const caseStudyContent = (
       />
     </div>
     <div className="par par--normal-width spacing">
-      <h2>Mid Fidelity (mid-fi) Wireframes</h2>
       <p>
-        After we tested our low-fi prototypes and made necessary revisions, we moved on to mid-fi wireframes creation. Ideally, we should have tested our mid-fi prototypes before we jump into final hi-fidelity (hi-fi) wireframes. Because of time limitations and minor issues from the low-fi test result, we skipped the mid-fi testing and moved on to final Hi-fi prototypes.
+        Generally, we got good feedback from our testers, and they felt the app navigation made sense. We only need some minor adjustments for both navigation and layout content. Some of the key findings during the test are:
+        <ul>
+          <li>“Add to Calendar” button on the event page</li>
+          <li>Simplify the layout from tabs to linear, to show events belonging to a campaign</li>
+          <li>Subscribe button on the campaign category page</li>
+          <li>Changed the term follow to subscribe on the campaign category page</li>
+        </ul>
+      </p>
+    </div>
+    <div className="par par--normal-width spacing">
+        <h3>Mid Fidelity (mid-fi) Wireframes</h3>
+    </div>
+    <div className="par par--normal-width spacing">
+      <ImgSection imgs={[{url: midFiPrototypes}]} caption="Mid-fi prototypes from one of our Sketch file"/>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        After we tested our low-fi prototypes and made necessary revisions, we moved on to mid-fi wireframes creation. Ideally, we should have tested our mid-fi prototypes before we jump into final hi-fidelity (hi-fi) wireframes. Because of time limitations and only had minor issues from the testing result, we skipped the mid-fi testing and moved on to final Hi-fi prototypes.
       </p>
     </div>
   </>
