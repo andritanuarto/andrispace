@@ -12,6 +12,12 @@ import digitizedUserflowLogin from './login-userflow.png';
 import userflowLogin from './login-userflow.jpg';
 import userflowResetPwd from './reset-pwd-userflow.jpg';
 import digitizedUserflowHome from './home-userflow.png';
+import lowFiWhiteboard from './low-fi-whiteboard.jpg';
+import lowFiPaper from './low-fi-paper.jpg';
+import lowFiTest1 from './low-fi-test1.jpg';
+import lowFiTest2 from './low-fi-test2.jpg';
+import lowFiTest3 from './low-fi-test3.jpg';
+
 
 const caseStudyContent = (
   <>
@@ -287,12 +293,37 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--wide-width spacing">
-      <ImgSection
-        imgs={[{url: digitizedUserflowHome}]}
-      />
+      <ImgSection imgs={[{url: digitizedUserflowHome}]} />
     </div>
     <div className="par par--normal-width">
       <h2>Design</h2>
+      We started our design process by creating low-fi wireframes. Instead of started with paper and pencil, we did whiteboarding wireframes. The purpose of this exercise is to encourage conversations within the team and to bring solutions on the fly. I found using a whiteboard for this project is very handy, especially for making revisions and making sure each team member is on the same page.
+    </div>
+    <div className="par par--normal-width spacing">
+      <ImgSection imgs={[{url: lowFiWhiteboard}]} caption="Whiteboarding wireframes"/>
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        After we run through each wireframe on the whiteboard, and settled with the solution, we moved on to creating low-fi wireframes using paper and pencil for user testing purposes.
+      </p>
+    </div>
+    <div className="par par--normal-width spacing">
+      <ImgSection imgs={[{url: lowFiPaper}]} caption="Paper prototype wireframes"/>
+    </div>
+    <div className="par par--normal-width spacing">
+      <p>
+        To made sure our workflows make sense to other people, we tested our prototypes and took some node any findings during the testing.
+      </p>
+    </div>
+    <div className="par par--wide-width spacing">
+      <ImgSection
+        imgs={[
+          {url: lowFiTest1, backgroundImg: true},
+          {url: lowFiTest3, backgroundImg: true, style: {flex: 2}},
+          {url: lowFiTest2, backgroundImg: true}
+        ]}
+        caption="When I conducted user-testing for our low-fi prototypes"
+      />
     </div>
   </>
 );
