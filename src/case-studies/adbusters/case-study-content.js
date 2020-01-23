@@ -318,9 +318,9 @@ const caseStudyContent = (
     <div className="par par--wide-width spacing">
       <ImgSection
         imgs={[
-          {url: lowFiTest1, backgroundImg: true},
-          {url: lowFiTest3, backgroundImg: true, style: {flex: 2}},
           {url: lowFiTest2, backgroundImg: true}
+          {url: lowFiTest3, backgroundImg: true},
+          {url: lowFiTest1, backgroundImg: true},
         ]}
         caption="When I conducted user-testing for our low-fi prototypes"
       />
