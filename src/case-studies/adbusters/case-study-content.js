@@ -26,10 +26,10 @@ const caseStudyContent = (
   <>
     <div className="par par--normal-width">
       <p className="first-paragraph">
-        <a rel="noopener noreferrer" href="https://www.adbusters.org/" target="_blank">Adbusters</a> is a Canadian magazine publishing company. They describe themself as a global network for artists, activists, and entrepreneurs. Their media strategy is producing radical designs to shake up complacent consumerist culture. Besides publishing magazines, Adbusters also actively organizes and involves different social campaigns like <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Culture_jamming" target="_blank">Culture Jamming</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/8th-anniversary-of-occupywallstreet/" target="_blank">Occupy Wall Street</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/buy-nothing-day-2019/">Buy Nothing Day</a>, etc.
+        <a rel="noopener noreferrer" href="https://www.adbusters.org/" target="_blank">Adbusters</a> is a Canadian magazine publishing company. They describe themselves as a global network for artists, activists, and entrepreneurs. Their media strategy is producing radical designs to shake up complacent consumerist culture. Aside from publishing magazines, Adbusters also actively organize and are involved in different social campaigns like <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Culture_jamming" target="_blank">Culture Jamming</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/8th-anniversary-of-occupywallstreet/" target="_blank">Occupy Wall Street</a>, <a rel="noopener noreferrer" href="http://abillionpeople.org/buy-nothing-day-2019/">Buy Nothing Day</a>, etc.
       </p>
       <p>
-        Our first impression when we looked at Adbusters' magazines, they have an unusual content style. Their magazine layout tent to be free-flowing, and spontaneous unlike other magazines in general. I can imagine if graphic designers who work for their magazine, they have the freedom to experiment with unusual imaginaries and typographies.
+        Our first impression of Adbusters' magazines was their unusual content style. Their magazine layout tended to be free-flowing and spontaneous unlike other magazines in general. I can imagine that graphic designers who work for their magazine would have the freedom to experiment with unusual imaginaries and typographies.
       </p>
       <p>
         <ImgSection
@@ -38,7 +38,7 @@ const caseStudyContent = (
         />
       </p>
       <p>
-        Moreover, their belief in anti-commercial means, the consistency of their branding is non-existent. A very prominent example we noticed their magazine covers don't have consistent branding for each edition.
+        Moreover, their belief in anti-commercial means the consistency of their branding is non-existent. A very prominent example we noticed was their magazine covers didn't have consistent branding for each edition.
       </p>
       <p>
         <ImgSection
@@ -49,40 +49,40 @@ const caseStudyContent = (
       </p>
       <p>
         <h2>Project Brief</h2>
-        With the constant growth of digital technology and mobile users, Adbusters need a mobile platform where they can communicate and voicing their campaigns to their subscribers in a more direct and timely way.
+        With the constant growth of digital technology and mobile users, Adbusters needed a mobile platform where they can communicate and broadcast their campaigns to their subscribers in a more direct and timely way.
       </p>
       <p>
-        When we had a kick-off meeting with Adbusters' team, they wanted to create a mobile app called "The World Revolution" and plan to develop it using <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>, so it's compatible with both iOS and Android platforms and also saves the development cost. The sole purpose of this app is to be able to subscribe and remind the subscribers about the campaigns they plan to join.
+        When we had a kick-off meeting with the Adbusters' team, they wanted to create a mobile app called "The World Revolution" and intended to develop it using <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>, so it would be compatible with both iOS and Android platforms, and also save on the development cost. The sole purpose of this app was to enable users to subscribe and receive reminders about the campaigns they plan to join.
       </p>
       <p>
-        Initially, because Adbusters does not believe in collecting any data from users, they wanted to have an app without users having to log in. On the other hand, without login information, there is no way to have a personalized experience for app users. After expressing our concerns, Adbusters agreed to collect just username, email and password from the users.
+        Initially, because Adbusters do not believe in collecting any data from users, they wanted to have an app without users having to log in. But without any login information, there was no way to enable a personalized experience for app users. After expressing our concerns, Adbusters agreed to collect just the username, email, and password from the users.
       </p>
       <p>
         <h3>My Role</h3>
-        For this project, I involved in every phase of the UX processes such as research, planning, design, and setting up the standard library following the atomic design principle. Because of my varied background as a software UI designer and developer, I also helped some of the UI work for this project and advising the feasibility of translating design into real-life development.
+        For this project, I was involved in every phase of the UX processes from research, planning, design, and setting up the standard library that we built based on the atomic design principle. Given my background as a software UI designer and developer, I also helped some of the UI work for this project and advised on the feasibility of translating design into real-life development.
       </p>
     </div>
     <div className="par par--normal-width">
       <p>
         <h2>Research</h2>
-        To get knowledge about the domain of this project and to help us how we position this app among other competitors, we conducted a series of research to bridge our knowledge gap.
+        To get knowledge about the domain of this project and to help us identify how we can position this app among other competitors, we conducted a series of research to bridge our knowledge gap.
       </p>
       <p>
         <h3>Domain Research</h3>
-        When we did the domain research, we wanted to know other competitors, which focus on similar topics like Adbusters, and we found three websites that stand out the most:
+        During the domain research, we found three other competitor websites that focused on similar topics like Adbusters:
         <ul>
           <li>
-            <strong><a rel="noopener noreferrer" href="https://www.thezeitgeistmovement.com/" target="_blank">TZM (The Zeitgeist Movement)</a>:</strong> It is an activist movement. Their topics of interest are mainly about common reforms and general community support to improve conditions such as environmental crisis, poverty, conflict, corruption, economic inequality, etc. Currently, they don't have a mobile app, and mainly they communicate their movements by organizing some events and also through their website and social media platforms.
+            <strong><a rel="noopener noreferrer" href="https://www.thezeitgeistmovement.com/" target="_blank">TZM (The Zeitgeist Movement)</a>:</strong> This is an activist movement; their topics of interest are mainly about common reforms and general community support to improve conditions such as environmental crisis, poverty, conflict, corruption, economic inequality, etc. Currently, they don't have a mobile app, and mainly communicate their movements by organizing some events through their website and social media platforms.
           </li>
           <li>
             <strong><a rel="noopener noreferrer" href="https://rebellion.earth/" target="_blank">Extinction Rebellion</a>:</strong>  It is an international movement that uses non-violent civil disobedience in an attempt to halt mass extinction and minimize the risk of social collapse. Based on our research, they use social media and their website to communicate their events.
           </li>
           <li>
-            <strong><a rel="noopener noreferrer" href="https://charliehebdo.fr/" target="_blank">Charlie Hebdo</a>:</strong> It is a French-based political satirical magazine. Their content is targeting people who are politically left-wing, skeptic, secular, atheist, and anti-racist. We didn't findings them actively organized events or campaigns, although they have both websites and the mobile app, they use them solely in promoting their magazines.
+            <strong><a rel="noopener noreferrer" href="https://charliehebdo.fr/" target="_blank">Charlie Hebdo</a>:</strong> It is a French-based political satirical magazine. Their content targets people who are politically left-wing, skeptic, secular, atheist, and anti-racist. Our findings showed that they don't actively organize events or campaigns. Although they have both a website and a mobile app, they use them solely in promoting their magazines.
           </li>
         </ul>
       </p>
-      <p>To make it easier for us to compare our competitors, we created the table of comparison of our findings based on their focus and the platforms they use.</p>
+      <p>To make it easier for us to compare our competitors, we created a table to organize our findings based on their focus and the platforms they use.</p>
     </div>
     <div className="par par--medium-width spacing">
       <table border="1">
@@ -121,10 +121,10 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h3>Survey</h3>
-        When we started planning our survey, we wanted to know how people remind themselves about their schedule and what tools do they use to help them remember about any event they are committed to joining.
+        When we started planning our survey, we wanted to know how people remind themselves about their schedules, and which tools they used to help remind them about any event they have committed to join.
       </p>
       <p>
-        We decided to create a survey using Google form, and we were targeting men and women from the age range between 15 to 50 years old and sent them to social-related community channels on slack and discord. We received 66 responses from our survey and here are some of the highlights from our survey findings.
+        We created the survey using Google form, and our target audience were men and women aged between 15 to 50 years old, and sent them to social-related community channels on Slack and Discord. We received 66 responses from our survey. Below are several highlights from our survey findings:
       </p>
       <p>
         <ImgSection imgs={[{url: survey1}]} />
@@ -133,14 +133,14 @@ const caseStudyContent = (
         <ImgSection imgs={[{url: survey2}]} />
       </p>
       <p>
-        Based on our survey results, the majority of our survey samples think push notifications are useful to remind them about upcoming schedules or events, especially when they are not actively using the phone. Meanwhile, a few participants mentioned that push notifications could be annoying if they don't show the relevant information they need.
+        Based on our survey results, the majority of our survey samples think push notifications are useful in reminding them on upcoming schedules or events, especially when they are not actively using the phone. Meanwhile, a few participants mentioned that push notifications could be annoying if they don't show the relevant information they need.
       </p>
       <p>
         <h3>Contextual Inquiry</h3>
-        We wanted to know from the existing Adbusters' subscribers about their previous experience participating in Adbusters' events. To be able to do that, we asked Adbusters' to give us the contact list of their existing subscribers to do the interview. Out of fifteen contacts were given, we got six responses back.
+        We wanted to know from existing Adbusters subscribers about their previous experience participating in Adbusters events. We asked Adbusters to give us the contact list of their existing subscribers for the interview. And out of the fifteen contacts that were given, we received back six responses.
       </p>
       <p>
-        Overall we got positive responses about the idea of having a dedicated app for Adbusters' events. They felt it is hard to keep track of Adbusters' events just relying on email. Here are some of the highlighted quotes we got from them.
+        Overall, we received positive responses about the idea of having a dedicated app for Adbusters events. They felt it was hard to keep track of Adbusters events by just relying on email. Below are some of the highlighted quotes we received:
       </p>
       <p>
         <h4 className="quote text--center">
@@ -166,7 +166,7 @@ const caseStudyContent = (
     <div className="par par--normal-width spacing">
       <p>
         <h3>Affinity Diagram</h3>
-        After we gathered all the findings from our research, it was time to create an affinity diagram. Every team member wrote down the research findings using sticky notes and put them on the wall. Then we grouped them accordingly based on relevant categories. Below is the digitized version of our affinity diagram.
+        After we gathered all the findings from our research, it was time to create an affinity diagram. Every team member wrote down their research findings on sticky notes and arranged them on the wall. Then we grouped them accordingly based on relevant categories. Below is the digitized version of our affinity diagram.
       </p>
     </div>
     <div className=" par par--wide-width spacing">
@@ -202,8 +202,8 @@ const caseStudyContent = (
             <div>
               <strong>Pain Points</strong>
               <ul>
-                <li>Using email bothers him because he has to search through his pile of emails to find the event information.</li>
-                <li>He doesn't always have the time to check Adbusters' website.</li>
+                <li>Using email bothers him because he has to search through a pile of emails to find the event information.</li>
+                <li>He doesn't always have the time to check the Adbusters website.</li>
               </ul>
             </div>
             <div>
@@ -221,7 +221,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <h3>Storyboard</h3>
-      After we got more understanding of our typical user pain-points and goals based on Shane's persona, we also created a storyboard that shows a typical scenario of how Shane is going to use the app.
+      After gaining more understanding of our typical user pain-points and goals based on Shane's persona, we also created a storyboard that shows a typical scenario of how Shane is going to use the app.
     </div>
     <div className="par par--wide-width spacing">
       <ImgSection imgs={[{url: storyBoard}]} caption="Shane's story board" />
@@ -229,11 +229,11 @@ const caseStudyContent = (
     <div className="par par--normal-width spacing">
       <p>
         <h2>Planning</h2>
-        Once we understood the type of users and the scenario of how our users going use the app, we moved to the planning phase. In this phase we created a features priority matrix, user-flows and content structure.
+        Once we understood the type of users and the scenario of how our users were going use the app, we moved on to the planning phase. During this phase, we created a features priority matrix, user-flows, and content structure.
       </p>
       <p>
         <h3>Features List &amp; MVP</h3>
-        After we lay down the users' pain points and needs, we started to create a features list for this project. We decided to prioritize our features based on three different categories: must-have, nice to have, and not needed. Below are the features prioritization based on those categories.
+        After we laid down the users pain points and needs, we started a features list for this project. We decided to prioritize our features based on three different categories: must-have, nice to have, and not needed. Below are the features prioritization based on those categories.
       </p>
       <ul>
         <li><strong>Must-have:</strong> event list view, event page, push notification, search bar, continue as a guest, event subscription, notification tab, and user settings.</li>
@@ -262,7 +262,7 @@ const caseStudyContent = (
     <div className="par par--normal-width spacing">
       <p>
         <h3>User-flows</h3>
-        During the user-flows creation process, we started creating hand-drawn user-flows. After we tested the hand-drawn user-flows and felt satisfied, we created the digitized version of it.
+        During the user-flow creation process, we started with hand-drawn user-flows. After we tested the hand-drawn user-flows and felt satisfied, we created the digitized version of it.
       </p>
     </div>
 
@@ -289,10 +289,10 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <p>
-        Based on Shane's persona and storyboard, we created the user-flow of how he is going to use the app.  From the survey result we got, the majority of people favoured push notification is the most efficient way for them to stay updated, so we incorporated the push notification feature to remind the user when the events are coming up or about to begin.
+        Deriving from Shane's persona and storyboard, we created the user-flow based on how he's going to use the app.  From the survey results, the majority of people favoured push notification as the most efficient way for them to stay updated, so we incorporated the push notification feature to remind the user when the events are coming up or about to begin.
       </p>
       <p>
-        From the user-flow image below, it shows when the notification message (right bottom corner black box) is received, the user can click the notification tab. After it's clicked, the app will be opened and redirected to the event detail page.
+        From the user-flow image below, it shows that when the notification message (right bottom corner black box) is received, the user can click the notification tab. After it's clicked, the app will open and redirect the user to the event detail page.
       </p>
     </div>
     <div className="par par--wide-width spacing">
@@ -303,14 +303,14 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <h3>Low Fidelity (low-fi) Wireframes</h3>
-      We started our design process by creating low-fi wireframes. Instead of started sketching wireframes with paper and pencil, we did whiteboarding to draw our wireframes. The purpose of this exercise is to encourage conversations within the team and to bring solutions on the fly. I found using a whiteboard for this project is very handy, especially for making revisions and making sure each team member is on the same page.
+      We started our design process by creating Low-Fi wireframes. Instead of sketching wireframes on paper, we did it on a whiteboard instead. The purpose of this exercise was to encourage conversation within the team and to discuss solutions on the fly. I found that using a whiteboard for this project was very handy, especially for making revisions and ensuring each team member were on the same page.
     </div>
     <div className="par par--normal-width spacing">
       <ImgSection imgs={[{url: lowFiWhiteboard}]} caption="Whiteboarding wireframes"/>
     </div>
     <div className="par par--normal-width">
       <p>
-        After we run through each wireframe on the whiteboard, and settled with the flows, we moved on to creating low-fi wireframes using paper and pencil for user testing purposes.
+        After we run through each wireframe on the whiteboard, and settled with the flows, we moved on to creating low-fi wireframes on paper for user-testing purposes.
       </p>
     </div>
     <div className="par par--normal-width spacing">
@@ -318,7 +318,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <p>
-        To made sure our workflows made sense to other people, we tested our prototypes and took notes for any findings during the user testing.
+        To ensure our workflows made sense to other people, we tested our prototypes and took notes on any findings during the user-testing phase.
       </p>
     </div>
     <div className="par par--wide-width spacing">
@@ -333,7 +333,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <p>
-        Generally, we got good feedback from our testers, and they felt the app navigation made sense. We only need some minor adjustments for both navigation and layout content. Some of the key findings during the test are:
+        Generally, we received good feedback from our testers, and they felt the app navigation made sense. We only needed to make some minor adjustments on both navigation and layout content. Below are some of the key findings during the test:
         <ul>
           <li>“Add to Calendar” button on the event page</li>
           <li>Simplify the layout from tabs to linear, to show events belonging to a campaign</li>
@@ -350,13 +350,13 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        After we tested our low-fi prototypes and made necessary revisions, we moved on to mid-fi wireframes creation. Ideally, we should have tested our mid-fi prototypes before we jump into final hi-fidelity (hi-fi) wireframes. Because of time limitations and only had minor issues from the testing result, we skipped the mid-fi testing and moved on to final Hi-fi prototypes.
+        After we tested our low-fi prototypes and made necessary revisions, we moved on to mid-fi wireframes creation. Ideally, we should have tested our mid-fi prototypes before we jump into final Hi-Fidelity (hi-fi) wireframes. Because of time limitations and minor issues on the testing results, we skipped the mid-fi testing and moved on to final Hi-Fi prototypes.
       </p>
     </div>
     <div className="par par--normal-width spacing">
       <p>
-        <h3>Hi Fidelity (hi-fi) Wireframes</h3>
-        The last process of our wireframes creation process was designing hi-fi prototypes. At this stage, we already established the user-flow from our previous low-fi and mid-fi wireframes, then we decided the look and feel for final skinning. In this process, we tried to make the app not only intuitive but also has the characteristic of Adbusters' visual style. Inspired by one of their magazine content, we came up with a rough hand-drawn design for some visual elements.
+        <h3>High Fidelity (hi-fi) Wireframes</h3>
+        The last step on our wireframe creation process was to design the hi-fi prototypes. At this stage, we had already established the user-flow from our previous low-fi and mid-fi wireframes, then we decided the look and feel for the final skinning. During this process, we tried to make the app not only intuitive but still pertain the characteristic of Adbusters' visual style. Inspired by one of their magazine contents, we came up with a rough, hand-drawn design for some visual elements.
       </p>
     </div>
     <div className="par par--normal-width spacing">
@@ -364,7 +364,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-      For our mood board and style tile, we used dark colours as the dominant colours, and incorporate them with red colour as the focal point colour.
+      For our mood board and style tile, we used dark colours as the dominant colours, and incorporated them with red as the focal point colour.
       </p>
     </div>
     <div className="par par--normal-width spacing">
@@ -372,7 +372,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-        The below picture is the complete app style tile to summarize the art direction for this app.
+        The image below is the complete app style tile to summarize the art direction for this app.
       </p>
     </div>
     <div className="par par--normal-width spacing">
@@ -381,13 +381,13 @@ const caseStudyContent = (
     <div className="par par--normal-width spacing">
       <p>
         <h2>Project Outcome</h2>
-        When we presented this project to the client, we got very positive feedback. Some of the features that people like are the notification control for only the stuff they want to get notified and the add to calendar feature on the event's page. From the UI perspective, they feel the visual style is still reflecting the Adbusters' style.
+        When we presented this project to the client, we got very positive feedback. Some of the features that people liked were the notification control that only showed the items they wanted to be notified, and the "add to calendar" feature on each event page. From the UI perspective, they feel the visual style still reflects the Adbusters style.
       </p>
     </div>
     <div className="par par--normal-width">
         <p>
           <h2>Future Considerations</h2>
-          Unfortunately, because of this short time project, we couldn't do every feature that we wished to include as part of our MVP, and here are some feature ideas for future considerations:
+          Unfortunately due to the time constraint, we couldn't implement every feature that we wished to include as part of our MVP. Perhaps these features listed below can be considered for the app in the near future:
         </p>
         <ul>
           <li>Add user profile to make it more personalized</li>
