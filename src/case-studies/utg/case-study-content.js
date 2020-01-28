@@ -1,7 +1,6 @@
 import React from 'react';
 import ImgSection from '../../components/interior/img-section';
 import BarChart from '../../components/interior/bar-chart';
-import PieChart from '../../components/interior/pie-chart';
 import utgTeam from './img/utg-team.png';
 import utgCCAnalysis from './img/utg-cc-analysis.png';
 import utgContextualInquery1 from './img/contextual-inquiry-1.jpeg';

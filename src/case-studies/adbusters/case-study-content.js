@@ -1,5 +1,6 @@
 import React from 'react';
 import WillDoNext from '../../components/interior/will-do-next';
+import BarChart from '../../components/interior/bar-chart';
 import ImgSection from '../../components/interior/img-section';
 import magzCovers from './img/magazine-covers.png';
 import magzLayout from './img/adbusters-layout.png';
@@ -128,10 +129,51 @@ const caseStudyContent = (
         We created the survey using Google form, and our target audience were men and women aged between 15 to 50 years old, and sent them to social-related community channels on Slack and Discord. We received 66 responses from our survey. Below are several highlights from our survey findings:
       </p>
       <p>
-        <ImgSection imgs={[{url: survey1}]} />
+        <BarChart
+          title="Survey participants age group?"
+          yTextWidth="200px"
+          data={[
+            {label: '15 - 25', color: '#868686', percent: 21},
+            {label: '26 - 35', color: '#bdbdbd', percent: 35},
+            {label: '36 - 45', color: '#333333', percent: 21},
+            {label: '46+', color: '#717171', percent: 14}
+          ]}
+        />
       </p>
       <p>
-        <ImgSection imgs={[{url: survey2}]} />
+        <BarChart
+          title="How do you stay informed about important things when using your mobile phone?"
+          subTitle="(survey participants can have multiple answers)"
+          yTextWidth="250px"
+          data={[
+            {label: 'Push Notification', color: '#868686', percent: 41.1, number: 42},
+            {label: 'Email', color: '#bdbdbd', percent: 30.4, number: 31},
+            {label: 'Calendar', color: '#333333', percent: 19.6, number: 20},
+            {label: 'Todo App', color: '#717171', percent: 8.8, number: 9}
+          ]}
+        />
+      </p>
+      <p>
+        <BarChart
+          title="Do you read the alerts on your home screen (push notification)?"
+          yTextWidth="250px"
+          data={[
+            {label: 'Yes', color: '#868686', percent: 49.2, number: 32},
+            {label: 'Sometimes', color: '#bdbdbd', percent: 27.7, number: 18},
+            {label: 'No', color: '#333333', percent: 23.1, number: 15}
+          ]}
+        />
+      </p>
+      <p>
+        <BarChart
+          title="Do you navigate to the corresponding app after reading a push notification on your home screen ?"
+          yTextWidth="250px"
+          data={[
+            {label: 'Sometimes', color: '#868686', percent: 57.6, number: 38},
+            {label: 'Yes', color: '#333333', percent: 28.8, number: 19},
+            {label: 'No', color: '#bdbdbd', percent: 13.6, number: 9},
+          ]}
+        />
       </p>
       <p>
         Based on our survey results, the majority of our survey samples think push notifications are useful in reminding them on upcoming schedules or events, especially when they are not actively using the phone. Meanwhile, a few participants mentioned that push notifications could be annoying if they don't show the relevant information they need.
@@ -143,25 +185,17 @@ const caseStudyContent = (
       <p>
         Overall, we received positive responses about the idea of having a dedicated app for Adbusters events. They felt it was hard to keep track of Adbusters events by just relying on email. Below are some of the highlighted quotes we received:
       </p>
-      <p>
-        <h4 className="quote text--center">
-          "I typically find push notification to be spammy and turn them off, with rare exceptions. I prefer if you do send push notifications, make them meaningful and relevant."
-        </h4>
+      <p className="quote">
+        "I typically find push notification to be spammy and turn them off, with rare exceptions. I prefer if you do send push notifications, make them meaningful and relevant."
       </p>
-      <p>
-        <h4 className="quote text--center">
-          "It will be great to have campaign-related content in one app because social media can be a little too much."
-        </h4>
+      <p className="quote">
+        "It will be great to have campaign-related content in one app because social media can be a little too much."
       </p>
-      <p>
-        <h4 className="quote text--center">
-          "I tent to sync more from Facebook events. So it'll be good to have both options if there is a specific app. Push notifications feel more effective."
-        </h4>
+      <p className="quote">
+        "I tent to sync more from Facebook events. So it'll be good to have both options if there is a specific app. Push notifications feel more effective."
       </p>
-      <p>
-        <h4 className="quote text--center">
-          "Honestly, promotional email has gotten a bit out of hand. I prefer to have push notifications."
-        </h4>
+      <p className="quote">
+        "Honestly, promotional email has gotten a bit out of hand. I prefer to have push notifications."
       </p>
     </div>
     <div className="par par--normal-width spacing">
