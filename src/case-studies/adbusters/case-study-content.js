@@ -21,6 +21,7 @@ import midFiPrototypes from './img/mid-fi-prototypes.png';
 import iconSketches from './img/icon-sketches.png';
 import moodboard from './img/moodboard.jpeg';
 import styleTiles from './img/style-tiles.png';
+import hiFi from './img/hi-fi.jpg';
 
 const caseStudyContent = (
   <>
@@ -52,7 +53,7 @@ const caseStudyContent = (
         With the constant growth of digital technology and mobile users, Adbusters needed a mobile platform where they can communicate and broadcast their campaigns to their subscribers in a more direct and timely way.
       </p>
       <p>
-        When we had a kick-off meeting with the Adbusters' team, they wanted to create a mobile app called "The World Revolution" and intended to develop it using <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>, so it would be compatible with both iOS and Android platforms, and also save on the development cost. The sole purpose of this app was to enable users to subscribe and receive reminders about the campaigns they plan to join.
+        When we had a kick-off meeting with the Adbusters' team, they wanted to create a mobile app called "The World Revolution" and intended to develop it for iOS users for its initial release. The sole purpose of this app was to enable users to subscribe and receive reminders about the campaigns they plan to join.
       </p>
       <p>
         Initially, because Adbusters do not believe in collecting any data from users, they wanted to have an app without users having to log in. But without any login information, there was no way to enable a personalized experience for app users. After expressing our concerns, Adbusters agreed to collect just the username, email, and password from the users.
@@ -121,7 +122,7 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h3>Survey</h3>
-        When we started planning our survey, we wanted to know how people remind themselves about their schedules, and which tools they used to help remind them about any event they have committed to join.
+        When we started planning our survey, we wanted to know how people remind themselves about their schedules, and which tools they used to help them remember about any event they have committed to join.
       </p>
       <p>
         We created the survey using Google form, and our target audience were men and women aged between 15 to 50 years old, and sent them to social-related community channels on Slack and Discord. We received 66 responses from our survey. Below are several highlights from our survey findings:
@@ -355,7 +356,7 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width spacing">
       <p>
-        <h3>High Fidelity (hi-fi) Wireframes</h3>
+        <h3>Art Direction &amp; High Fidelity (hi-fi) Wireframes</h3>
         The last step on our wireframe creation process was to design the hi-fi prototypes. At this stage, we had already established the user-flow from our previous low-fi and mid-fi wireframes, then we decided the look and feel for the final skinning. During this process, we tried to make the app not only intuitive but still pertain the characteristic of Adbusters' visual style. Inspired by one of their magazine contents, we came up with a rough, hand-drawn design for some visual elements.
       </p>
     </div>
@@ -364,19 +365,22 @@ const caseStudyContent = (
     </div>
     <div className="par par--normal-width">
       <p>
-      For our mood board and style tile, we used dark colours as the dominant colours, and incorporated them with red as the focal point colour.
+      For our mood board and style tile, we used dark colours as the dominant colours, and incorporated them with red as the focal point colour. The image below is the complete app style tile to summarize the art direction for this app.
       </p>
     </div>
     <div className="par par--normal-width spacing">
-      <ImgSection imgs={[{url: moodboard}]} caption="App mood-board"/>
+      <ImgSection
+        imgs={[{url: styleTiles}, {url: moodboard}]}
+        caption="Visual style tile and moodboard"
+      />
     </div>
     <div className="par par--normal-width">
       <p>
-        The image below is the complete app style tile to summarize the art direction for this app.
+        During the hi-fi creation process, we skinned all the UI libraries that we created during the mid-fi creation process using Sketch. Some of the UI elements, especially the navigation system we used the iOS standard UI library because we wanted this app to have a familiar navigation pattern for iPhone users.
       </p>
     </div>
-    <div className="par par--normal-width spacing">
-      <ImgSection imgs={[{url: styleTiles}]} caption="Style tile"/>
+    <div className="par par--wide-width spacing">
+      <ImgSection imgs={[{url: hiFi}]} caption="Some of the app hi-fi screens"/>
     </div>
     <div className="par par--normal-width spacing">
       <p>
