@@ -9,7 +9,8 @@ export default () => (
       width: '100%',
       height: '100vh',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      background: '#000'
     }}>
     <img src={ad1} style={{width: '780px'}}/>
   </div>
