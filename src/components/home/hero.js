@@ -28,19 +28,18 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
   const slideIndex = caseStudiesDirectory[heroIndex];
 
   return (
-    <div className="hero-container">
+    <div className="hero-container" style={{backgroundImage: `url(${slideIndex.heroBackground})`}}>
+      <div
+        className="hero-container__overlay"
+        style={{
+          backgroundColor: slideIndex.opacityColor,
+          opacity: slideIndex.opacityLevel
+        }}
+      />
       <div
         key={slideIndex.clientName}
         className="hero-container__slide"
-        style={{backgroundImage: `url(${slideIndex.heroBackground})`}}
       >
-        <div
-          className="hero-container__overlay"
-          style={{
-            backgroundColor: slideIndex.opacityColor,
-            opacity: slideIndex.opacityLevel
-          }}
-        />
         <div className="hero-container__project-info">
           <div className="hero-container__project-info--l">
             <img style={{width: slideIndex.logoWidth || null }} src={slideIndex.logoLink} alt={slideIndex.clientName}/>
