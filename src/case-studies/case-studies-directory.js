@@ -2,11 +2,11 @@ import utgLogo from './utg/img/utg-logo.png';
 import utgBackground from './utg/img/utg-class.jpg';
 import utgCaseStudyBanner from './utg/img/utg-case-study-banner.jpg';
 import utgCaseStudyContent from './utg/case-study-content';
-
 import adbustersLogo from './adbusters/img/adbusters-logo.png';
 import adbustersBackground from './adbusters/img/social-protest.jpg';
 import adbustersCaseStudyBanner from './adbusters/img/adbusters-case-study-banner.jpg';
 import adbustersCaseStudyContent from './adbusters/case-study-content';
+import envisioCaseStudyContent from './envisio/case-study-content';
 
 const caseStudies = [
   {
@@ -26,9 +26,9 @@ const caseStudies = [
   },
   {
     clientName: 'Adbusters',
-    projectDate: 'December 18, 2019',
+    projectDate: 'November 27, 2019',
     projectTitle: 'World Revolution',
-    postTitle: 'Adbusters – World Revolution app',
+    postTitle: 'Adbusters – World Revolution App',
     blurb: 'an app for organizing social activity campaigns',
     logoLink: adbustersLogo,
     heroBackground: adbustersBackground,
@@ -36,6 +36,20 @@ const caseStudies = [
     opacityLevel: '0.4',
     url: './case-studies/adbusters',
     content: adbustersCaseStudyContent,
+    caseStudyBanner: adbustersCaseStudyBanner
+  },
+  {
+    clientName: 'Envisio',
+    projectDate: 'September 02, 2019',
+    projectTitle: 'Designing The Planning app',
+    postTitle: 'Envisio -  Designing The Planning app',
+    blurb: 'The future of planning software',
+    logoLink: adbustersLogo,
+    heroBackground: adbustersBackground,
+    opacityColor: '#000000',
+    opacityLevel: '0.4',
+    url: './case-studies/envisio',
+    content: envisioCaseStudyContent,
     caseStudyBanner: adbustersCaseStudyBanner
   }
 ];
