@@ -4,7 +4,7 @@ const caseStudyContent = (
   <>
     <div className="par par--normal-width">
       <p className="first-paragraph">
-        Envision developed the strategic planning web application that allows organizations to lay out their plans by defining their goals. Each goal's progress can be tracked and measured to ensure the operational plan is under control. At the very core, their strategic planning software consists of 3 main modules such as planning, reporting, and analyzing. For this case-study, I only talk about the planning module.
+        Envision developed the strategic planning web application that allows organizations to lay out their plans by defining their goals. Each goal's progress can be tracked and measured to ensure the operational plan is under control. At the very core, their strategic planning software consists of 3 main modules such as planning, reporting, and analyzing. For this case-study, I only talk about the planning module, and I'll post another case studies for the other modules.
       </p>
       <p>
 
