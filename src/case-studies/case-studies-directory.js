@@ -2,10 +2,15 @@ import utgLogo from './utg/img/utg-logo.png';
 import utgBackground from './utg/img/utg-class.jpg';
 import utgCaseStudyBanner from './utg/img/utg-case-study-banner.jpg';
 import utgCaseStudyContent from './utg/case-study-content';
+
 import adbustersLogo from './adbusters/img/adbusters-logo.png';
 import adbustersBackground from './adbusters/img/social-protest.jpg';
 import adbustersCaseStudyBanner from './adbusters/img/adbusters-case-study-banner.jpg';
 import adbustersCaseStudyContent from './adbusters/case-study-content';
+
+import envisioLogo from './envisio/img/envisio-logo.png';
+import envisioBackground from './envisio/img/envisio-bg.jpg';
+import envisioCaseStudyBanner from './envisio/img/envisio-case-study-banner.jpg'
 import envisioCaseStudyContent from './envisio/case-study-content';
 
 const caseStudies = [
@@ -33,7 +38,7 @@ const caseStudies = [
     logoLink: adbustersLogo,
     heroBackground: adbustersBackground,
     opacityColor: '#000000',
-    opacityLevel: '0.4',
+    opacityLevel: '0.5',
     url: './case-studies/adbusters',
     content: adbustersCaseStudyContent,
     caseStudyBanner: adbustersCaseStudyBanner
@@ -41,16 +46,16 @@ const caseStudies = [
   {
     clientName: 'Envisio',
     projectDate: 'September 02, 2019',
-    projectTitle: 'Designing The Planning app',
-    postTitle: 'Envisio -  Designing The Planning app',
+    projectTitle: 'Strategic Manager',
+    postTitle: 'Envisio - Strategic Manager',
     blurb: 'The future of planning software',
-    logoLink: adbustersLogo,
-    heroBackground: adbustersBackground,
+    logoLink: envisioLogo,
+    heroBackground: envisioBackground,
     opacityColor: '#000000',
-    opacityLevel: '0.4',
+    opacityLevel: '0.5',
     url: './case-studies/envisio',
     content: envisioCaseStudyContent,
-    caseStudyBanner: adbustersCaseStudyBanner
+    caseStudyBanner: envisioCaseStudyBanner
   }
 ];
 
