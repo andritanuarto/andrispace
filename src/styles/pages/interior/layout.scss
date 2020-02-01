@@ -6,18 +6,20 @@
     }
   }
   &__heading {
-    text-align: left;
+    text-align: center;
     max-width: 776px;
     padding: 0 48px;
     margin: 0 auto 0 auto;
     padding: 56px 0 40px;
     h1 {
       font-size: 40px;
+      font-family: $font-header;
+      letter-spacing: 1px;
       margin-bottom: 8px;
     }
     &__date {
       font-size: 14px;
-      color: $color-silver;
+      color: $color-chalise;
     }
     &__img {
       max-width: 1056px;

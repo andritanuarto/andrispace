@@ -1,8 +1,12 @@
 .par {
   margin: 0 auto;
   a {
-    color: $color-blue;
+    color: $color-burnt-sienna;
     text-decoration: none;
+    transition: border-color 1s;
+    &:hover {
+      border-bottom: $color-burnt-sienna dashed 1px;
+    }
   }
   code {
     background: $color-code-gray;
@@ -21,6 +25,11 @@
     margin-bottom: 0;
     width: 100%;
     max-width: 100%;
+  }
+
+  h2, h3 {
+    font-family: $font-header;
+    letter-spacing: 1px;
   }
 
   h2 {
@@ -61,8 +70,9 @@
   .first-paragraph {
     &::first-letter {
       font-size: 70px;
+      color: $color-code-gray;
+      font-family: $font-header;
       float: left;
-      color: $color-purple;
       padding-right: 8px;
       font-weight: bold;
       line-height: 70px;

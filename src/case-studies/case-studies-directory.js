@@ -18,7 +18,7 @@ const caseStudies = [
     clientName: 'UTG Academy',
     projectDate: 'December 18, 2019',
     projectTitle: 'UTG Academy',
-    postTitle: 'Under The Gui (UTG) – Website Redesign Project',
+    postTitle: 'Under The Gui (UTG) – Website Redesign',
     blurb: 'Website Redesign Project',
     logoLink: utgLogo,
     logoWidth: '100px',

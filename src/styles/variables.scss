@@ -1,16 +1,19 @@
-$color-code-gray: #101010;
-$color-black:     #000000;
-$color-white:     #ffffff;
-$color-alabaster: #fbfbfb;
-$color-chalise:   #787878;
-$color-silver:    #bbbbbb;
-$color-yellow:    #ffffff;
-$color-blue:      #3f9bf3;
-$color-purple:    #632790;
-$color-light-pink:#f9d7d7;
-$color-yellow:    #e6c205;
+$color-code-gray:     #101010;
+$color-black:         #000000;
+$color-white:         #ffffff;
+$color-alabaster:     #fbfbfb;
+$color-chalise:       #787878;
+$color-silver:        #bbbbbb;
+$color-blue:          #3f9bf3;
+$color-burnt-sienna:  #F07060;
+$color-light-pink:    #f9d7d7;
+$color-yellow:        #e6c205;
 
-$font-generic-type: 'Helvetica', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+$font-generic-type: 'Heebo', sans-serif;
+$font-header: 'DM Serif Display', serif;
 $font-generic-size: 18px;
 
 $generic-transition-time: 0.5s;

@@ -32,23 +32,23 @@ const caseStudyContent = (
       </p>
       <p>
         <h3>The Problems</h3>
-        We got some feedback from the customers to improve the functionality and the visibility of the overall plan view. Especially when the planning gets bigger, users were having a hard time finding items that buried inside on the lower level of the plan. Some visual alternative and quick ways to find items could potentially improve the usability of the software.
+        We got some feedback from the customers to improve the functionality and the visibility of the overall plan view. Especially when the planning gets bigger, users were having a hard time finding items that buried inside on the lower level of the plan. Some visual alternatives and quick ways to find items could potentially improve the usability of the software.
       </p>
       <p>
         <p style={{float: 'left', width: '320px', margin: '0 32px 24px 0'}}>
         <ImgSection
           imgs={[{url: planLevels}]}
-          caption="Illustration of how plan is structured inside the app."
+          caption="Simple illustration of how a plan is structured."
         />
         </p>
         {/* <img src={planLevels} style={{float: 'left', width: '320px', margin: '0 32px 24px 0'}} /> */}
-        The simple illustration on the left side shows how the Envisio plan application works. In that example, the plan has three levels such as <strong style={{color: '#1879eb'}}>Goal</strong>, <strong style={{color: '#52bf00'}}>Strategy</strong>, and <strong style={{color: '#7f17ec'}}>Action</strong>. The relationship between a parent and children indicated by the numbering system beside the level name. Level one indicated as the <strong style={{color: '#1879eb'}}>Goal</strong> level, level two as <strong style={{color: '#52bf00'}}>Strategy</strong>, and level three as <strong style={{color: '#7f17ec'}}>Action</strong>. Notice the deeper the level the more digit the number is.
+        The simple illustration on the left side shows how the basic plan application works. In that example, the plan has three levels such as <strong style={{color: '#1879eb'}}>Goal</strong>, <strong style={{color: '#52bf00'}}>Strategy</strong>, and <strong style={{color: '#7f17ec'}}>Action</strong>. The relationship between a parent and children indicated by the numbering system beside the level name. the first level indicated as <strong style={{color: '#1879eb'}}>Goal</strong>, second level as <strong style={{color: '#52bf00'}}>Strategy</strong>, and third-level as <strong style={{color: '#7f17ec'}}>Action</strong>. Notice the deeper the level the more digit number.
       </p>
       <p>
-        Let's take an example of <code style={{background: '#7f17ec', color: '#ffffff'}}>Action 1.2.1</code>. If you see the number convention means that Action's parent is <code style={{background: '#52bf00', color: '#ffffff'}}>1.2</code> which is <code style={{background: '#52bf00', color: '#ffffff'}}>Strategy 1.2</code>, and the <code style={{background: '#52bf00', color: '#ffffff'}}>Strategy 1.2</code> parent is <code style={{background: '#1879eb', color: '#ffffff'}}>Goal 1</code>. In conclusion, the relationship between parent and children are one-to-many.
+        Let's take an example of <code style={{background: '#7f17ec', color: '#ffffff'}}>Action 1.2.1</code>. If you see the number convention means that <code style={{background: '#7f17ec', color: '#ffffff'}}>Action 1.2.1</code>'s parent is <code style={{background: '#52bf00', color: '#ffffff'}}>1.2</code> which is <code style={{background: '#52bf00', color: '#ffffff'}}>Strategy 1.2</code>, and the <code style={{background: '#52bf00', color: '#ffffff'}}>Strategy 1.2</code> parent is <code style={{background: '#1879eb', color: '#ffffff'}}>Goal 1</code>. In conclusion, the relationship between a parent and children is one-to-many.
       </p>
       <p>
-        In reality, some organizations can have a much bigger plan. The previous solution, the user had to go through page by page to access items on a deeper level. The concern with that method was not only from the user experience but also from the technical perspective. Because every time the user wanted to access a different level, the browser had to re-render the whole UI until all the data gets loaded, which sometimes could take a long time if there are so many items on that level.
+        In reality, some of our clients had much bigger plans than the example above. In the previous solution, the user had to go through page by page to access items on a deeper level. The concern with that method was not only from the user experience but also from the technical point of view. Every time the user wanted to access a different level, the browser had to re-render the whole UI until all the data gets loaded, which sometimes could take a long time if there are so many items on that level. Some people also having difficulty to figure out the context of some items on the plan, because there is no visual cue that represent the relationship between child level and parent level.
       </p>
     </div>
   </>
