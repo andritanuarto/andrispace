@@ -77,7 +77,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
                     style={{backgroundImage: `url(${slide.heroBackground})`}}
                   >
                     {heroIndex === index || <div className="box--overlay box--overlay--dark"/>}
-                    <strong>{slide.clientName}</strong>
+                    <strong>{slide.projectTitle}</strong>
                   </div>
                 </div>
               )
