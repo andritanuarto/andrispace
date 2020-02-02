@@ -1,11 +1,15 @@
 .par {
   margin: 0 auto;
+  color: #333333;
   a {
-    color: $color-burnt-sienna;
+    color: $color-code-gray;
     text-decoration: none;
     transition: border-color 1s;
+    border-bottom: $color-burnt-sienna solid 2px;
+    transition: all $generic-transition-time;
     &:hover {
-      border-bottom: $color-burnt-sienna dashed 1px;
+      background: $color-burnt-sienna;
+      color: $color-code-gray;
     }
   }
   code {
@@ -70,7 +74,6 @@
   .first-paragraph {
     &::first-letter {
       font-size: 70px;
-      color: $color-code-gray;
       font-family: $font-header;
       float: left;
       padding-right: 8px;
