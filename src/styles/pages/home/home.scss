@@ -130,13 +130,13 @@
       transition: all $generic-transition-time;
     }
     &__bottom-spacing {
-      height: 190px;
+      height: 80px;
     }
     &__slide-nav-container{
       list-style-type: none;
       position: absolute;
       padding-top: 30px;
-      height: 180px;
+      height: 80px;
       width: 100%;
       bottom: 0px;
       z-index: 2;
@@ -144,17 +144,11 @@
     &__slide-nav-center {
       display: flex;
       position: relative;
-      max-width: 1200px;
+      padding: 0 24px;
       margin: 0 auto;
-      &--label {
-        position: absolute;
-        top: -40px;
-        left: 15px;
-      }
       &__controller {
         position: absolute;
-        top: -40px;
-        right: 15px;
+        right: 24px;
         display: flex;
         width: 200px;
         justify-content: flex-end;
@@ -171,11 +165,13 @@
       }
     }
     &__slide-nav {
-      width: 25%;
-      height: 120px;
-      padding: 0 24px;
+      width: 48px;
+      height: 8px;
+      top: 8px;
       overflow: hidden;
       position: relative;
+      background: $color-white;
+      margin-right: 16px;
       cursor: pointer;
       .box--overlay {
         z-index: 1;
@@ -186,6 +182,7 @@
       }
       &--active {
         cursor: auto;
+        background: $color-chalise;
         .hero-container__slide-nav-inner {
           border: solid 2px $color-white;
           transition: all $generic-transition-time;
@@ -199,36 +196,6 @@
             display: none;
           }
         }
-      }
-    }
-    &__slide-nav-inner {
-      cursor: pointer;
-      background-size: cover;
-      background-position: center;
-      height: 120px;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-      overflow: hidden;
-      position: relative;
-      border-radius: 10px;
-      transition: all $generic-transition-time;
-      &:hover {
-        .box--overlay {
-          background: rgba(0, 0, 0, 0);
-        }
-        strong {
-          opacity: 0;
-          transition: all $generic-transition-time;
-        }
-      }
-      strong {
-        display: block;
-        padding: 5px 10px;
-        position: relative;
-        z-index: 1;
-        font-size: 16px;
-        margin: 0 0 5px 5px;
       }
     }
     &__project-info {

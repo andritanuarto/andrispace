@@ -59,7 +59,6 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
       <div className="hero-container__bottom-spacing"/>
       <div className="hero-container__slide-nav-container">
         <div className="hero-container__slide-nav-center">
-          <strong className="hero-container__slide-nav-center--label">Recent Projects</strong>
           <div className="hero-container__slide-nav-center__controller">
             <strong><span key={heroIndex}>{`0${heroIndex + 1}`}</span> {`/ 0${caseStudiesDirectory.length}`}</strong>
             <PrevNextButtons clickHandler={slideIndexHandler} slidesLength={caseStudiesDirectory.length} />
@@ -71,15 +70,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
                   key={slide.projectTitle}
                   className={`hero-container__slide-nav ${heroIndex === index ? 'hero-container__slide-nav--active' : null}`}
                   onClick={() => {slideIndexHandler(index)}}
-                >
-                  <div
-                    className="hero-container__slide-nav-inner"
-                    style={{backgroundImage: `url(${slide.heroBackground})`}}
-                  >
-                    {heroIndex === index || <div className="box--overlay box--overlay--dark"/>}
-                    <strong>{slide.projectTitle}</strong>
-                  </div>
-                </div>
+                />
               )
             })
           }

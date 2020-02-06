@@ -10,6 +10,13 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `case-studies`,
+        path: `${__dirname}/src/case-studies`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sass`,
