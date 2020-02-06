@@ -7,7 +7,7 @@ import PlanningHTMLPrototype from './html-planning-prototype';
 
 const caseStudyContent = (
   <>
-    <div className="par par--normal-width spacing">
+    <div className="par par--wide-width spacing">
       <PlanningHTMLPrototype />
     </div>
     <div className="par par--normal-width">

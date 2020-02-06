@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PlanCard from './plan-card';
 
 const PlanningHTMLPrototype = () => {
   const [firstLevel, setFirstLevel] = useState(null);
@@ -18,15 +19,14 @@ const PlanningHTMLPrototype = () => {
 
   const setLevel = (label, level) => {
     if (level === 1) {
-      if (firstLevel) {
+      if (firstLevel === label) {
         setFirstLevel(null);
-        setSecondLevel(null);
       } else {
         setFirstLevel(label);
-        setSecondLevel(null);
       }
+      setSecondLevel(null);
     } else {
-      if (secondLevel !== null) {
+      if (secondLevel === label) {
         setSecondLevel(null);
       } else {
         setSecondLevel(label);
@@ -37,53 +37,48 @@ const PlanningHTMLPrototype = () => {
   console.log(firstLevel, secondLevel);
 
   const goalRow = (
-    <div className="scrolling-wrapper-flexbox">
+    <div className="scrolling-wrapper-flexbox row row--goal">
       {
         planningData.map((goal) => {
           return (
-            <div
-              className="card"
-              onClick={() => {setLevel(goal.label, 1)}}
-              key={goal.label}
-            >
-              Goal{goal.label}
-            </div>
-          )
+            <PlanCard
+              label={goal.label}
+              levelName="Goal"
+              clickHandler={() => {setLevel(goal.label, 1)}}
+            />
+          );
         })
       }
     </div>
   );
 
   const strategyRow = (
-    <div className="scrolling-wrapper-flexbox">
+    <div className="scrolling-wrapper-flexbox row row--strategy">
       {
-        planningData.map((goal, index) => {
+        planningData.map((goal) => {
           return (
-            <div
-              className="card"
-              onClick={() => {setLevel(`${firstLevel}.${goal.label}`, 2)}}
-              key={goal.label}
-            >
-              {`Strategy ${firstLevel}.${goal.label}`}
-            </div>
-          )
+            <PlanCard
+              label={`${firstLevel}.${goal.label}`}
+              levelName="Strategy"
+              clickHandler={() => {setLevel(`${firstLevel}.${goal.label}`, 2)}}
+            />
+          );
         })
       }
     </div>
   );
 
   const actionRow = (
-    <div className="scrolling-wrapper-flexbox">
+    <div className="scrolling-wrapper-flexbox row row--action">
       {
         planningData.map((goal, index) => {
           return (
-            <div
-              className="card"
-              key={goal.label}
-            >
-              {`Action ${secondLevel}.${index+1}`}
-            </div>
-          )
+            <PlanCard
+              label={`${secondLevel}.${index+1}`}
+              levelName="Action"
+              clickHandler={() => {}}
+            />
+          );
         })
       }
     </div>

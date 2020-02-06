@@ -1,6 +1,7 @@
 
 
 .envisio-plan {
+  border: solid 1px $color-code-gray;
   .scrolling-wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -21,18 +22,38 @@
     }
   }
 
+  .row {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    &--goal {
+      background: #ECF1FF;
+    }
+
+    &--strategy {
+      background:#EDF3F5;
+    }
+
+    &--action {
+      background:#D3E3E3;
+    }
+  }
+
   .card {
     width: 200px;
     height: 150px;
     background: $color-silver;
     border-radius: 3px;
-    padding: 8px;
+    padding: 8px 16px;
+    &__title {
+      font-size: 14px;
+      font-weight: bold;
+    }
   }
 
   .scrolling-wrapper, .scrolling-wrapper-flexbox {
     width: 100%;
     height: 200px;
-    margin-bottom: 20px;
     -webkit-overflow-scrolling: touch;
     &::-webkit-scrollbar {
       display: none;
