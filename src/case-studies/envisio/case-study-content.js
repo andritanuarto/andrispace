@@ -92,8 +92,8 @@ const caseStudyContent = (
       <p><WillDoNext text="Gantt view" /></p>
     </div>
     <div className="par par--normal-width">
-      <h2>Outcomes</h2>
       <p>
+        <h2>Outcomes</h2>
         When we just released the new version of the plans module, we didn't remove the old version. We allowed users to use both versions temporarily for two months. The goal of this setup is to validate which version users use the most. After two months of tracking the number, the result was 78.6% of our users were using the new version.
       </p>
     </div>
