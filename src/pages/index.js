@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { css } from "@emotion/core";
 import { Link, graphql } from "gatsby";
@@ -15,12 +15,12 @@ const mapStateToProps = ({ splashIndex, navigationOpen }) => {
 
 const Index = ({ data, splashIndex, navigationOpen }) => {
   return (
-    <Fragment>
+    <>
       <div className="home-container">
         <Header/>
         <Hero/>
       </div>
-      <div>
+      {/* <div>
         <h1
           css={css`
             display: inline-block;
@@ -57,8 +57,8 @@ const Index = ({ data, splashIndex, navigationOpen }) => {
             </Link>
           </div>
         ))}
-      </div>
-    </Fragment>
+      </div> */}
+    </>
   )
 }
 
