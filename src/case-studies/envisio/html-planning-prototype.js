@@ -58,7 +58,7 @@ const PlanningHTMLPrototype = () => {
 
   const strategyRow = (
     <div className="row row--strategy">
-      <div className="row__title">{secondLevel ? `Strategy ${firstLevel}.${secondLevel} is selected` : `Strategy ${firstLevel}.#`}</div>
+      <div className="row__title">{secondLevel ? `Strategy ${secondLevel} is selected` : `Strategy ${firstLevel}.#`}</div>
       <div className="scrolling-wrapper-flexbox">
         {
           firstLevel ? planningData.map((goal) => {
