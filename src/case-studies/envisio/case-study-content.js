@@ -3,6 +3,7 @@ import WillDoNext from '../../components/interior/will-do-next';
 import ImgSection from '../../components/interior/img-section';
 import SoftwareModules from './img/modules.png';
 import planLevels from './img/plan-levels.png';
+import iPadOverallView from './img/ipad-overall-view.png';
 import PlanningHTMLPrototype from './html-planning-prototype';
 
 const caseStudyContent = (
@@ -79,9 +80,16 @@ const caseStudyContent = (
       </p>
       <p><WillDoNext text="sketch of diagram experiment" /></p>
       <p>
-        We created different views: map-view, list-view, and Gantt chart. On the map view mode, the user can see the full hierarchy of the plan from top to bottom. This view is also useful to give the context of where each item resides on the overall organization plan.
+        We created different views: overall-view, list-view, and Gantt-view. On the overall-view mode, the user can see the full hierarchy of the plan from top to bottom. This view is also useful to give the context of where each item resides on the overall organization plan.
       </p>
-      <p><WillDoNext text="Map view" /></p>
+    </div>
+    <div className="par par--normal-width spacing">
+      <ImgSection
+        imgs={[{url: iPadOverallView}]}
+        caption="Planning overall view mode"
+      />
+    </div>
+    <div className="par par--normal-width">
       <p>
         To handle a scenario where the user wants to see only the items they own or filter based on some criteria, we created a list view mode.
       </p>
