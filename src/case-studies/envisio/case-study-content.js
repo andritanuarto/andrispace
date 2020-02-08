@@ -4,6 +4,7 @@ import ImgSection from '../../components/interior/img-section';
 import SoftwareModules from './img/modules.png';
 import planLevels from './img/plan-levels.png';
 import iPadOverallView from './img/ipad-overall-view.png';
+import iPadGanttView from './img/ipad-gantt-view.png';
 import PlanningHTMLPrototype from './html-planning-prototype';
 
 const caseStudyContent = (
@@ -56,19 +57,19 @@ const caseStudyContent = (
       </p>
       <p>
         <h2>User Research</h2>
-        We started this project by conducting a series of user testing from the old version of the app. The purpose of this testing is to identify the exact steps where users were having problems to complete the tasks and also to confirm our initial hypothesis based on the customers' feedback.
+        We started this project by conducting a series of user testing from the old version of the app. The purpose of this testing is to identify the exact steps where users were having problems and also to confirm our initial hypothesis based on the customers' feedback.
       </p>
       <p>
-        We were able to get six participants from our existing clients to test the old version of the plans module. During the user testing, we asked each participant to complete the task based on the scenario that we wrote. From the test result, we found most of the participants didn't have any problems finding items on the highest level. However, some of the participants had difficulty at the lower levels.
+        We were able to get six participants from our existing clients to test the old version of the plans module. During the user testing, we asked each participant to complete the task based on the scenario that we wrote. From the test result, we found most of the participants didn't have any problems finding items on the highest level. However, some of the participants had difficulty finding items at the lower levels.
       </p>
       <p>
         <h2>Product Ideation</h2>
-        Equipped with a better understanding of our users' pain points, we began doing the product ideation process. The first step of this process was to establish the scope of this project by prioritizing the features. After the scope was defined, I started sketching some user-flows and visual alternatives for the planning structure. Inspired by the traditional organizational diagram structure, I experimented with the diagram in different ways.
+        After we were equipped with a better understanding of our users' pain points, we began doing the product ideation process. The first step of this process was to establish the scope of this project by prioritizing the features. After the scope was defined, I started sketching some user-flows and visual alternatives for the planning structure. Inspired by the traditional organizational diagram structure, I experimented with the diagram in different ways.
       </p>
       <p><WillDoNext text="sketch of diagram experiment and userflows" /></p>
       <p><WillDoNext text="photo of planning with sticky notes" /></p>
       <p>
-        One of the most challenging parts of this design process was to find a visual solution where the UI is responsive enough to support a big plan in different monitor and tablet sizes. So I decided to create a quick HTML prototype for the chosen visual solution to test the responsiveness of the layout. This HTML prototype also helped us to smoothen the conversation with developers and other stakeholders. Below is the clickable HTML prototype to show the basic functionality of how a plan can be structured.
+        One of the most challenging parts of this design process was to find a visual solution where the UI is responsive enough to support a big plan in different monitor and tablet sizes. So I decided to create a quick HTML prototype for the chosen visual solution to test the responsiveness of the layout. This HTML prototype also helped us to smoothen the conversation with developers and other stakeholders. Below is the clickable HTML prototype to show the basic functionality of how an overall plan can be structured.
       </p>
     </div>
     <div className="par par--wide-width spacing">
@@ -80,29 +81,28 @@ const caseStudyContent = (
       </p>
       <p><WillDoNext text="sketch of diagram experiment" /></p>
       <p>
-        We created different views: overall-view, list-view, and Gantt-view. On the overall-view mode, the user can see the full hierarchy of the plan from top to bottom. This view is also useful to give the context of where each item resides on the overall organization plan.
+        We created different views: map-view, list-view, and gantt-view. On the overall-view mode, the user can see the full hierarchy of the plan from top to bottom. This view is also useful to give the context of where each item resides on the overall organization plan.
       </p>
     </div>
-    <div className="par par--normal-width spacing">
-      <ImgSection
-        imgs={[{url: iPadOverallView}]}
-        caption="Planning overall view mode"
-      />
+    <div className="par par--wide-width spacing">
+      <ImgSection imgs={[{url: iPadOverallView}]} caption="Planning overall view" />
     </div>
     <div className="par par--normal-width">
       <p>
-        To handle a scenario where the user wants to see only the items they own or filter based on some criteria, we created a list view mode.
+        To handle scenarios where the user wants to see only the items they own and filter based on some criteria, we created narrow-view mode and by default showing only items that current user owns.
       </p>
       <p><WillDoNext text="List view" /></p>
       <p>
-        We added a Gantt chart view to show better visibility for the plan's timeline.
+        Users can also switch to Gantt view to show better visibility regarding the timeline for each part of the plan.
       </p>
-      <p><WillDoNext text="Gantt view" /></p>
+    </div>
+    <div className="par par--wide-width">
+      <ImgSection imgs={[{url: iPadGanttView}]} caption="Planning gantt view" />
     </div>
     <div className="par par--normal-width">
       <p>
         <h2>Outcomes</h2>
-        When we just released the new version of the plans module, we didn't remove the old version. We allowed users to use both versions temporarily for two months. The goal of this setup is to validate which version users use the most. After two months of tracking the number, the result was 78.6% of our users were using the new version.
+        When we just released the new version of the plans module, we didn't remove the old version. We allowed users to use both versions temporarily. The goal of this setup is to validate which version users use the most. After two months of tracking the number, 78.6% of the traffic went to the new version of the plans module.
       </p>
     </div>
   </>
