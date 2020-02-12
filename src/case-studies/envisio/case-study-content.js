@@ -2,10 +2,14 @@ import React from "react";
 import WillDoNext from '../../components/interior/will-do-next';
 import ImgSection from '../../components/interior/img-section';
 import SoftwareModules from './img/modules.png';
+import PlanningHTMLPrototype from './html-planning-prototype';
 import planLevels from './img/plan-levels.png';
 import iPadOverallView from './img/ipad-overall-view.png';
 import iPadGanttView from './img/ipad-gantt-view.png';
-import PlanningHTMLPrototype from './html-planning-prototype';
+import iPadDetailView from './img/ipad-detail-view.png';
+import iPadListlView from './img/ipad-list-view.png';
+import stickies1 from './img/stickies1.jpg';
+import stickies2 from './img/stickies2.jpg';
 
 const caseStudyContent = (
   <>
@@ -64,10 +68,16 @@ const caseStudyContent = (
       </p>
       <p>
         <h2>Product Ideation</h2>
-        After we were equipped with a better understanding of our users' pain points, we began doing the product ideation process. The first step of this process was to establish the scope of this project by prioritizing the features. After the scope was defined, I started sketching some user-flows and visual alternatives for the planning structure. Inspired by the traditional organizational diagram structure, I experimented with the diagram in different ways.
+        Equipped with a better understanding of our users' pain points, we began doing the product ideation process. The first step of this process was to established the scope of this project by prioritizing the features. After the scope was defined our team decided to start brainstorming the layout ideas for the overall view of the plan. We use sticky notes to help us find a solution for the planning structure. This exercise helped us to solve the problem on the fly and encourage everyone within the team to openly share their thoughts and ideas.
       </p>
-      <p><WillDoNext text="sketch of diagram experiment and userflows" /></p>
-      <p><WillDoNext text="photo of planning with sticky notes" /></p>
+      <p>
+        <ImgSection
+          imgs={[
+            {url: stickies1, backgroundImg: true, style: {height: '300px', flex: 1}},
+            {url: stickies2, backgroundImg: true, style: {height: '300px', flex: 2}},
+          ]}
+          caption="Brainstorming layout ideas with sticky notes" />
+      </p>
       <p>
         One of the most challenging parts of this design process was to find a visual solution where the UI is responsive enough to support a big plan in different monitor and tablet sizes. So I decided to create a quick HTML prototype for the chosen visual solution to test the responsiveness of the layout. This HTML prototype also helped us to smoothen the conversation with developers and other stakeholders. Below is the clickable HTML prototype to show the basic functionality of how an overall plan can be structured.
       </p>
@@ -79,25 +89,36 @@ const caseStudyContent = (
       <p>
         <h2>The Solutions</h2>
       </p>
-      <p><WillDoNext text="sketch of diagram experiment" /></p>
       <p>
         We created different views: map-view, list-view, and gantt-view. On the overall-view mode, the user can see the full hierarchy of the plan from top to bottom. This view is also useful to give the context of where each item resides on the overall organization plan.
       </p>
     </div>
-    <div className="par par--wide-width spacing">
+    <div className="par par--normal-width spacing">
       <ImgSection imgs={[{url: iPadOverallView}]} caption="Planning overall view" />
     </div>
     <div className="par par--normal-width">
       <p>
         To handle scenarios where the user wants to see only the items they own and filter based on some criteria, we created narrow-view mode and by default showing only items that current user owns.
       </p>
-      <p><WillDoNext text="List view" /></p>
+    </div>
+    <div className="par par--normal-width">
+      <ImgSection imgs={[{url: iPadListlView}]} caption="Planning overall view" />
+    </div>
+    <div className="par par--normal-width">
       <p>
         Users can also switch to Gantt view to show better visibility regarding the timeline for each part of the plan.
       </p>
     </div>
-    <div className="par par--wide-width">
+    <div className="par par--normal-width">
       <ImgSection imgs={[{url: iPadGanttView}]} caption="Planning gantt view" />
+    </div>
+    <div className="par par--normal-width">
+      <p>
+        User can also see more information for each part of the plan.
+      </p>
+    </div>
+    <div className="par par--normal-width">
+      <ImgSection imgs={[{url: iPadDetailView}]} caption="Planning gantt view" />
     </div>
     <div className="par par--normal-width">
       <p>

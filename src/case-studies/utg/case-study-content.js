@@ -413,7 +413,7 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h3>Mid-fi</h3>
-        Our mid-fi was the last tangible deliverable before we hand it over to the UI team to build the hi-fi prototypes. During this creation process, it was important for us to establish a core library UI component to ensure the style consistency throughout all of mid-fi prototypes, and to provide an easier transition for the UI team to skin all of our mid-fi pages.
+        Our mid-fi was the last tangible deliverable from the ux team before we hand it over to the UI team to build the hi-fi prototypes. During this creation process, it was important for us to establish a core library UI component to ensure the style consistency throughout all of mid-fi prototypes, and to provide an easier transition for the UI team to skin all of our mid-fi pages.
       </p>
     </div>
     <div className="par par--medium-width">
