@@ -59,10 +59,6 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
       <div className="hero-container__bottom-spacing"/>
       <div className="hero-container__slide-nav-container">
         <div className="hero-container__slide-nav-center">
-          <div className="hero-container__slide-nav-center__controller">
-            <strong><span key={heroIndex}>{`0${heroIndex + 1}`}</span> {`/ 0${caseStudiesDirectory.length}`}</strong>
-            <PrevNextButtons clickHandler={slideIndexHandler} slidesLength={caseStudiesDirectory.length} />
-          </div>
           {
             caseStudiesDirectory.map((slide, index) => {
               return (
@@ -74,6 +70,10 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
               )
             })
           }
+          <div className="hero-container__slide-nav-center__controller">
+            <strong><span key={heroIndex}>{`0${heroIndex + 1}`}</span> {`/ 0${caseStudiesDirectory.length}`}</strong>
+            <PrevNextButtons clickHandler={slideIndexHandler} slidesLength={caseStudiesDirectory.length} />
+          </div>
         </div>
       </div>
     </div>
