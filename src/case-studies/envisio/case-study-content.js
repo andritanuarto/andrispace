@@ -90,11 +90,11 @@ const caseStudyContent = (
         <h2>The Solutions</h2>
       </p>
       <p>
-        We created different views: map-view, list-view, and gantt-view. On the overall-view mode, the user can see the full hierarchy of the plan from top to bottom. This view is also useful to give the context of where each item resides on the overall organization plan.
+        We created different views: map-view, list-view, and gantt-view. On the map-view mode, the user can see the full hierarchy of the plan from top to bottom. This view is also useful to give the context of where each item resides on the overall organization plan.
       </p>
     </div>
     <div className="par par--normal-width spacing">
-      <ImgSection imgs={[{url: iPadOverallView}]} caption="Planning overall view" />
+      <ImgSection imgs={[{url: iPadOverallView}]} caption="Planning map-view" />
     </div>
     <div className="par par--normal-width">
       <p>
@@ -102,7 +102,7 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--normal-width">
-      <ImgSection imgs={[{url: iPadListlView}]} caption="Planning overall view" />
+      <ImgSection imgs={[{url: iPadListlView}]} caption="Planning list-view" />
     </div>
     <div className="par par--normal-width">
       <p>
@@ -110,20 +110,20 @@ const caseStudyContent = (
       </p>
     </div>
     <div className="par par--normal-width">
-      <ImgSection imgs={[{url: iPadGanttView}]} caption="Planning gantt view" />
+      <ImgSection imgs={[{url: iPadGanttView}]} caption="Planning gantt-view" />
     </div>
     <div className="par par--normal-width">
       <p>
-        User can also see more information for each part of the plan.
+        For each part of the plan is clickable to see more detail about the specific part of the plan.
       </p>
     </div>
     <div className="par par--normal-width">
-      <ImgSection imgs={[{url: iPadDetailView}]} caption="Planning gantt view" />
+      <ImgSection imgs={[{url: iPadDetailView}]} caption="Planning detail view" />
     </div>
     <div className="par par--normal-width">
       <p>
         <h2>Outcomes</h2>
-        When we just released the new version of the plans module, we didn't remove the old version. We allowed users to use both versions temporarily. The goal of this setup is to validate which version users use the most. After two months of tracking the number, 78.6% of the traffic went to the new version of the plans module.
+        To be able to track and to confirm the usability of the end product, we didn't remove the old UI version. We allowed users to easily switch between old and new UI versions temporarily. The goal of this setup is to validate which version users use the most. After two months of tracking the number of visits, 78.6% of the traffic went to the new design, which was a very satisfying result.
       </p>
     </div>
   </>
