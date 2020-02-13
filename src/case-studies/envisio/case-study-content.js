@@ -88,8 +88,6 @@ const caseStudyContent = (
     <div className="par par--normal-width">
       <p>
         <h2>The Solutions</h2>
-      </p>
-      <p>
         We created different views: map-view, list-view, and gantt-view. On the map-view mode, the user can see the full hierarchy of the plan from top to bottom. This view is also useful to give the context of where each item resides on the overall organization plan.
       </p>
     </div>
