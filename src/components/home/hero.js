@@ -5,6 +5,7 @@ import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
 import PrevNextButtons from '../shared/prevNextButtons';
 import { handleHeroIndex } from '../../actions/ui';
 import caseStudiesDirectory from '../../case-studies/case-studies-directory';
+import { CSSTransition } from 'react-transition-group';
 
 const mapDispatchToProps = (dispatch) => {
   return {

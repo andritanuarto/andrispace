@@ -7,6 +7,5 @@ const typography = new Typography({
   baseLineHeight: 1.5,
 });
 
-
 export default typography;
 export const rhythm = typography.rhythm;

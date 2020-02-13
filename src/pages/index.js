@@ -1,5 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
 import Header from "../components/shared/header";
 import Hero from "../components/home/hero";
 
