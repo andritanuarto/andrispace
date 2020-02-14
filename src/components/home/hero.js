@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from "gatsby";
 import { connect } from 'react-redux';
-import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
 import PrevNextButtons from '../shared/prevNextButtons';
 import { handleHeroIndex } from '../../actions/ui';
-import caseStudiesDirectory from '../../case-studies/case-studies-directory';
+import HeroSlide from './hero-slide';
+import { useStaticQuery, graphql } from "gatsby";
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -25,55 +24,42 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
     handleHeroIndex(nextOrPrev);
   }
 
-  const slideIndex = caseStudiesDirectory[heroIndex];
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      allJavascriptFrontmatter {
+        edges {
+          node {
+            frontmatter {
+              clientName
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const edges = data.allJavascriptFrontmatter.edges;
 
   return (
-    <div className="hero-container" style={{backgroundImage: `url(${slideIndex.heroBackground})`}}>
-      <div
-        className="hero-container__overlay"
-        style={{
-          backgroundColor: slideIndex.opacityColor,
-          opacity: slideIndex.opacityLevel
-        }}
-      />
-      <div
-        key={slideIndex.clientName}
-        className="hero-container__slide"
-      >
-        <div className="hero-container__project-info">
-          <div className="hero-container__project-info--l">
-            <img style={{width: slideIndex.logoWidth || null }} src={slideIndex.logoLink} alt={slideIndex.clientName}/>
-          </div>
-          <div className="hero-container__project-info--r">
-            <h1 >{slideIndex.projectTitle}</h1>
-            <span >{slideIndex.blurb}</span>
-            <Link
-              to={slideIndex.url}
-              className="btn btn--call-to-action"
-            >
-              Read The Case Study <ArrowRightAlt/>
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="hero-container__bottom-spacing"/>
+    <div className="hero-container">
+      <HeroSlide />
       <div className="hero-container__slide-nav-container">
         <div className="hero-container__slide-nav-center">
-          <div className="hero-container__slide-nav-center__controller">
-            <strong><span key={heroIndex}>{`0${heroIndex + 1}`}</span> {`/ 0${caseStudiesDirectory.length}`}</strong>
-            <PrevNextButtons clickHandler={slideIndexHandler} slidesLength={caseStudiesDirectory.length} />
-          </div>
           {
-            caseStudiesDirectory.map((slide, index) => {
+            edges.map((slide, index) => {
               return (
                 <div
-                  key={slide.projectTitle}
+                  key={slide.node.frontmatter.clientName}
                   className={`hero-container__slide-nav ${heroIndex === index ? 'hero-container__slide-nav--active' : null}`}
                   onClick={() => {slideIndexHandler(index)}}
                 />
               )
             })
           }
+          <div className="hero-container__slide-nav-center__controller">
+            <strong><span key={heroIndex}>{`0${heroIndex + 1}`}</span> {`/ 0${edges.length}`}</strong>
+            <PrevNextButtons clickHandler={slideIndexHandler} slidesLength={edges.length} />
+          </div>
         </div>
       </div>
     </div>

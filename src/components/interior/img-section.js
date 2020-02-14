@@ -30,7 +30,6 @@ const ImgSection = ({imgs, caption, imgContainerStyle}) => {
         {imageColumns}
       </div>
       {imgCaption}
-      <div className="overlay"/>
     </>
   );
 }

@@ -7,8 +7,6 @@ const PieChart = ({title, data}) => {
     pieGradient += `${datum.color} 0 ${datum.percent}%, `
   });
 
-
-  console.log(pieGradient, 'pieGradient');
   return (
     <div className="chart chart--pie">
       <strong className="chart--pie--title">{title}</strong>

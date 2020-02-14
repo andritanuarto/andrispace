@@ -17,6 +17,7 @@ module.exports = {
         path: `${__dirname}/src/case-studies`,
       },
     },
+    `gatsby-transformer-javascript-frontmatter`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sass`,

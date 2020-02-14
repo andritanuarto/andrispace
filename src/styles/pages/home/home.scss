@@ -81,7 +81,7 @@
   height: 100vh;
   flex-direction: column;
   color: $color-white;
-  background: $color-silver;
+  background: $color-black;
   .header {
     position: absolute;
     background: none;
@@ -107,10 +107,17 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: $color-black;
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
+    &__background {
+      background-color: $color-black;
+      animation-delay: 2s;
+      @include animation(heroFadeIn, 1s, ease-out);
+      background-position: center;
+      background-repeat: none;
+      background-size: cover;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
     &__slide {
       display: flex;
       z-index: 2;
@@ -120,17 +127,6 @@
       background-size: cover;
       background-position: center center;
       @include animation(heroFadeIn, 2s, ease-out);
-    }
-    &__overlay {
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      animation-fill-mode: forwards;
-      transition: all $generic-transition-time;
-    }
-    &__bottom-spacing {
-      height: 80px;
     }
     &__slide-nav-container{
       list-style-type: none;
@@ -146,31 +142,28 @@
       position: relative;
       padding: 0 24px;
       margin: 0 auto;
+      align-items: center;
+      justify-content: flex-end;
       &__controller {
-        position: absolute;
-        right: 24px;
         display: flex;
-        width: 200px;
-        justify-content: flex-end;
         align-items: center;
+        margin-left: 32px;
         strong {
           margin-right: 15px;
           overflow: hidden;
           span {
             position: relative;
-            color: $color-yellow;
             @include animation(heroFadeIn, 1s, ease-out);
           }
         }
       }
     }
     &__slide-nav {
-      width: 48px;
-      height: 8px;
-      top: 8px;
+      width: 40px;
+      height: 4px;
       overflow: hidden;
       position: relative;
-      background: $color-white;
+      background: rgba(255, 255, 255, 0.5);
       margin-right: 16px;
       cursor: pointer;
       .box--overlay {
@@ -182,7 +175,7 @@
       }
       &--active {
         cursor: auto;
-        background: $color-chalise;
+        background: $color-white;
         .hero-container__slide-nav-inner {
           border: solid 2px $color-white;
           transition: all $generic-transition-time;
@@ -200,7 +193,7 @@
     }
     &__project-info {
       display: flex;
-      max-width: 1000px;
+      max-width: 800px;
       width: 100%;
       height: 100%;
       margin: 0 auto;
@@ -216,7 +209,6 @@
           margin-top: 15px;
           max-width: 100%;
           position: relative;
-          // @include animation(heroSlideAnimation, 2s, ease-out);
           @include animation(heroFadeIn, 1s, ease-out);
         }
       }
