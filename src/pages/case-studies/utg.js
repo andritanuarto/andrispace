@@ -54,7 +54,6 @@ import hiProgram from './img/utg/hi-program.jpg';
 import hiCourse from './img/utg/hi-course.jpg';
 import hiCourses from './img/utg/hi-courses.jpg';
 
-
 export const frontmatter = {
   clientName: 'UTG Academy',
   projectDate: 'December 18, 2019',

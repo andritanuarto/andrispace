@@ -41,7 +41,7 @@ export default () => (
   <InteriorPostLayout
     caseStudyContent={{
       postTitle: 'Adbusters – World Revolution App',
-      projectDate: 'September 02, 2019',
+      projectDate: 'November 27, 2019',
       caseStudyBanner: caseStudyBanner
     }}
   >
