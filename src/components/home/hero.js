@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link } from "gatsby";
 import { connect } from 'react-redux';
-import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
 import PrevNextButtons from '../shared/prevNextButtons';
 import { handleHeroIndex } from '../../actions/ui';
 import caseStudiesDirectory from '../../case-studies/case-studies-directory';
-import { CSSTransition } from 'react-transition-group';
+import HeroSlide from './hero-slide';
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -26,38 +24,9 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
     handleHeroIndex(nextOrPrev);
   }
 
-  const slideIndex = caseStudiesDirectory[heroIndex];
-
   return (
-    <div className="hero-container" style={{backgroundImage: `url(${slideIndex.heroBackground})`}}>
-      <div
-        className="hero-container__overlay"
-        style={{
-          backgroundColor: slideIndex.opacityColor,
-          opacity: slideIndex.opacityLevel
-        }}
-      />
-      <div
-        key={slideIndex.clientName}
-        className="hero-container__slide"
-      >
-        <div className="hero-container__project-info">
-          <div className="hero-container__project-info--l">
-            <img style={{width: slideIndex.logoWidth || null }} src={slideIndex.logoLink} alt={slideIndex.clientName}/>
-          </div>
-          <div className="hero-container__project-info--r">
-            <h1 >{slideIndex.projectTitle}</h1>
-            <span >{slideIndex.blurb}</span>
-            <Link
-              to={slideIndex.url}
-              className="btn btn--call-to-action"
-            >
-              Read The Case Study <ArrowRightAlt/>
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="hero-container__bottom-spacing"/>
+    <div className="hero-container">
+      <HeroSlide />
       <div className="hero-container__slide-nav-container">
         <div className="hero-container__slide-nav-center">
           {
