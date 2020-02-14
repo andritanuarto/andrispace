@@ -112,3 +112,16 @@ query MyQuery {
     }
   }
 }
+
+
+query MyQuery {
+  allJavascriptFrontmatter {
+    edges {
+      node {
+        frontmatter {
+          CaseStudyTitle
+        }
+      }
+    }
+  }
+}
