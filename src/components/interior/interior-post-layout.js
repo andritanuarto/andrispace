@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../shared/header";
 
 export default ({ caseStudyContent, children }) => {
+  console.log(caseStudyContent, 'caseStudyContent');
   return (
     <div className="interior-page">
       <Header/>

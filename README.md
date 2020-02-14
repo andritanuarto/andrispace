@@ -119,7 +119,7 @@ query MyQuery {
     edges {
       node {
         frontmatter {
-          CaseStudyTitle
+          clientName
         }
       }
     }
