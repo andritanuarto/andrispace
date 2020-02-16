@@ -22,7 +22,8 @@ export const frontmatter = {
   opacityColor: '#000000',
   opacityLevel: '0.5',
   url: './case-studies/envisio',
-  heroImg: './img/envisio/envisio-bg.jpg'
+  heroImg: './img/envisio/envisio-bg.jpg',
+  summary: 'Envisio developed the strategic planning web application that facilitates organizations to lay out their plans by defining their goals.'
 }
 
 export default () => (
@@ -36,7 +37,7 @@ export default () => (
     <>
       <div className="par par--normal-width">
         <p className="first-paragraph">
-          Envision developed the strategic planning web application that facilitates organizations to lay out their plans by defining their goals. Each goal's progress can be tracked and measured to ensure the operational plan is under control. Their software consists of 3 main modules, such as <strong>Plans</strong>, <strong>Reports</strong>, and <strong>Analytics</strong>. For this case-study, I only write about the plans module and will post another case studies for the other modules. Due to the NDA policy, I can only share limited information about this project.
+          Envisio developed the strategic planning web application that facilitates organizations to lay out their plans by defining their goals. Each goal's progress can be tracked and measured to ensure the operational plan is under control. Their software consists of 3 main modules, such as <strong>Plans</strong>, <strong>Reports</strong>, and <strong>Analytics</strong>. For this case-study, I only write about the plans module and will post another case studies for the other modules. Due to the NDA policy, I can only share limited information about this project.
         </p>
         <p>
           <ImgSection
@@ -46,7 +47,7 @@ export default () => (
         </p>
         <p>
           <h2>Project Brief</h2>
-          For this project, Envision wanted to modernize the UI and optimize the user-flow of its planning module for both desktop and tablet users. I collaborated with the product manager, customer success, and developers to ensure this project meets the business requirements and also making sure the technical feasibility to complete this project.
+          For this project, Envisio wanted to modernize the UI and optimize the user-flow of its planning module for both desktop and tablet users. I collaborated with the product manager, customer success, and developers to ensure this project meets the business requirements and also making sure the technical feasibility to complete this project.
         </p>
         <p>
           <h3>My Role</h3>

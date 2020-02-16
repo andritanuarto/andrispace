@@ -77,9 +77,9 @@ const HeroSlide = ({heroIndex}) => {
             <span >{slide.blurb}</span>
             <Link
               to={slide.url}
-              className="btn btn--call-to-action"
+              className="btn btn--reverse"
             >
-              Read The Case Study <ArrowRightAlt/>
+              read more <ArrowRightAlt/>
             </Link>
           </div>
         </div>

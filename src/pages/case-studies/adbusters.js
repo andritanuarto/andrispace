@@ -33,7 +33,8 @@ export const frontmatter = {
   opacityColor: '#000000',
   opacityLevel: '0.5',
   url: './case-studies/adbusters',
-  heroImg: './img/adbusters/hero.jpg'
+  heroImg: './img/adbusters/hero.jpg',
+  summary: 'Adbusters is a Canadian magazine publishing company. They describe themselves as a global network for artists, activists, and entrepreneurs.'
 }
 
 

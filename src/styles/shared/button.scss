@@ -4,30 +4,35 @@ button {
 
 .btn {
   display: flex;
-  height:30px;
   outline: 0;
+  height: 32px;
   transition: all $generic-transition-time;
-  font-size: 16px;
   letter-spacing: 1px;
   justify-content: center;
   align-items: center;
-  &--call-to-action {
-    height: 40px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 14px;
+  padding: 0 12px;
+  background-color: $color-code-gray;
+  color: $color-white;
+  text-decoration: none;
+  &:hover {
+    background-color: $color-silver;
+    color: $color-code-gray;
+  }
+  &--reverse {
     background-color: $color-white;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 15px;
-    text-decoration: none;
     color: $color-code-gray;
     &:hover {
       background-color: $color-code-gray;
       color: $color-white;
     }
-    svg {
-      margin-left: 5px;
-      position: relative;
-      top: -1px;
-    }
+  }
+  svg {
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
   }
   &--transparent {
     outline: 0;

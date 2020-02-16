@@ -1,6 +1,7 @@
 .par {
   margin: 0 auto;
   color: #333333;
+  width: 100%;
   a {
     color: $color-code-gray;
     text-decoration: none;
@@ -9,7 +10,7 @@
     transition: all $generic-transition-time;
     &:hover {
       background: $color-burnt-sienna;
-      color: $color-code-gray;
+      color: $color-white;
     }
   }
   code {
