@@ -7,21 +7,26 @@ export default () => (
     <div className="interior-page__content">
       <div className="interior-page__heading">
         <h1>
-          Relentlessly trying to empathize with people, and help their life a little bit better.
+          Let's Humanize The Design & Technology
         </h1>
       </div>
     </div>
     <div className="par par--normal-width">
       <p>
-        I'm passionate about solving problems to make things better and enjoy collaboration to broaden my knowledge and seeing different perspectives. Over the past eight years, I've been helping companies and startups to create delightful experiences that connects people with design and technology.
+        <strong>Hello, I'm Andri Tanuarto.</strong>
+      </p>
+      <p>I'm a UI / UX designer and front-end engineer from Vancouver, Canada.</p>
+      <p>
+        To me, a great product is one that helps people make their lives better.  For the past eight years, I've been helping companies and startups create meaningful experiences that connect people with design and technology.
       </p>
       <p>
-        Having interesting project in mind? Just shoot me an <a href="mailto:andritanuarto@gmail.com">email</a> and let's chat.
+        Outside work, I enjoy scale-modeling super cars from the 80s and 90s to keep my creative juice flowing, and remain active by playing sports like soccer, badminton, tennis, table-tennis, volleyball, you name it.
       </p>
     </div>
     <div className="par par--normal-width spacing">
+      <p>Little bit more about me from the technical perspective</p>
       <div className="about-page__skills">
-        <div>
+        <div className="about-page__skills-col">
           <strong>Design Software</strong>
           <ul>
             <li>Sketch</li>
@@ -31,7 +36,7 @@ export default () => (
             <li>Lightroom</li>
           </ul>
         </div>
-        <div>
+        <div className="about-page__skills-col">
           <strong>Programming</strong>
           <ul>
             <li>HTML / HAML</li>
@@ -44,7 +49,7 @@ export default () => (
             <li>Wordpress</li>
           </ul>
         </div>
-        <div>
+        <div className="about-page__skills-col">
           <strong>UI / UX process</strong>
           <ul>
             <li>User Research</li>

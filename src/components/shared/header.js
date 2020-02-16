@@ -25,9 +25,9 @@ const mapStateToProps = ({ navigationOpen, initialRender }) => {
 
 const menus = [
   {label: 'home', link: '/'},
+  {label: 'about', link: '/about'},
   {label: 'case studies', link: '/case-studies'},
   {label: 'journals', link: '/journals'},
-  {label: 'about', link: '/about'},
   {label: 'contact', link: '/contact'}
 ];
 
