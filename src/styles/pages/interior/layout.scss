@@ -51,6 +51,8 @@
       &__img {
         height: 180px;
         background-color: $color-code-gray;
+        background-size: cover;
+        background-position: center;
       }
       strong, span {
         display: block;

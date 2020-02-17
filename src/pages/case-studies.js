@@ -5,7 +5,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 const CaseStudies = () => {
   const data = useStaticQuery(graphql`
     query CaseStudyQuery {
-      allJavascriptFrontmatter {
+      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: ASC}) {
         edges {
           node {
             frontmatter {
@@ -15,7 +15,11 @@ const CaseStudies = () => {
               url
               summary
               heroImg {
-                publicURL
+                childImageSharp {
+                  resize(width: 500) {
+                    src
+                  }
+                }
               }
             }
           }
@@ -40,7 +44,7 @@ const CaseStudies = () => {
                 <Link to={frontmatter.url} className="thumbnail-view__thumbnail" key={frontmatter.postTitle}>
                   <div
                     className="thumbnail-view__thumbnail__img"
-                    style={{background: `url(${frontmatter.heroImg.publicURL})`}}/>
+                    style={{backgroundImage: `url(${frontmatter.heroImg.childImageSharp.resize.src})`}}/>
                   <span>{frontmatter.projectDate}</span>
                   <strong>{frontmatter.postTitle}</strong>
                   <div className="thumbnail-view__thumbnail__blurb">
