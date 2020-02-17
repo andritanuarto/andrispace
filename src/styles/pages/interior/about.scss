@@ -1,10 +1,47 @@
 .about-page {
-  &__skills {
+  &__container {
+    position: absolute;
+    top: 0;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: stretch;
+    flex-direction: row;
   }
-  &__skills-col {
+  &__left {
+    background-size: cover;
+    background-position: center;
     flex: 1;
+    height: 100vh;
+    border-right: solid 1px $color-code-gray;
+  }
+  &__right {
+    padding: 64px 54px 54px 54px;
+    flex: 2;
+    height: 100vh;
+    overflow: auto;
+    h1 {
+      margin-bottom: 0;
+    }
+    .first-par {
+      color: $color-code-gray;
+      font-weight: bold;
+    }
+  }
+  &__skills {
+    &__col {
+      margin-bottom: 24px;
+      strong {
+        margin-bottom: 8px;
+        display: block;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li {
+          display: inline-block;
+          margin-right: 24px;
+        }
+      }
+    }
   }
 }
