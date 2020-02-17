@@ -1,4 +1,5 @@
 import React from 'react';
+import InteriorContainer from '../components/shared/interior-container';
 import Header from '../components/shared/header';
 import andri from '../img/andri.jpg';
 import sketch from '../img/sketch.svg';
@@ -13,7 +14,7 @@ import vs from '../img/vs.svg';
 import github from '../img/github.svg';
 
 export default () => (
-  <div className="interior-page about-page">
+  <InteriorContainer additionalClass="about-page">
     <Header/>
     <div className="about-page__container">
       <div className="about-page__left" style={{backgroundImage: `url(${andri})`}} />
@@ -79,5 +80,5 @@ export default () => (
         </div>
       </div>
     </div>
-  </div>
+  </InteriorContainer>
 );

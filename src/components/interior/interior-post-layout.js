@@ -1,9 +1,10 @@
-import React from "react";
-import Header from "../shared/header";
+import React from 'react';
+import Header from '../shared/header';
+import InteriorContainer from '../shared/interior-container';
 
 export default ({ caseStudyContent, children }) => {
   return (
-    <div className="interior-page">
+    <InteriorContainer>
       <Header/>
       <div className="interior-page__content">
         <div className="interior-page__heading">
@@ -15,6 +16,6 @@ export default ({ caseStudyContent, children }) => {
         </div>
         {children}
       </div>
-    </div>
+    </InteriorContainer>
   )
 }

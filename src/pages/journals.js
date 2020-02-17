@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from "../components/shared/header";
+import InteriorContainer from '../components/shared/interior-container';
 import { Link, graphql } from "gatsby";
 
 const Journal = ({ data }) => {
   return (
-    <div className="interior-page journals-page">
+    <InteriorContainer additionalPage="journals-page">
       <Header/>
       <div className="interior-page__content">
         <div className="interior-page__heading">
@@ -29,7 +30,7 @@ const Journal = ({ data }) => {
 
         ))}
       </div>
-    </div>
+    </InteriorContainer>
   );
 };
 

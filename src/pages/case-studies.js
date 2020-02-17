@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from "../components/shared/header";
+import InteriorContainer from '../components/shared/interior-container';
 import { useStaticQuery, graphql, Link } from "gatsby";
 
 const CaseStudies = () => {
@@ -32,7 +33,7 @@ const CaseStudies = () => {
 
 
   return (
-    <div className="interior-page">
+    <InteriorContainer>
       <Header/>
       <div className="interior-page__content">
         <div className="interior-page__heading">
@@ -59,7 +60,7 @@ const CaseStudies = () => {
           }
         </div>
       </div>
-    </div>
+      </InteriorContainer>
   );
 }
 
