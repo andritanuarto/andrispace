@@ -33,34 +33,36 @@ const CaseStudies = () => {
 
 
   return (
-    <InteriorContainer>
+    <>
       <Header/>
-      <div className="interior-page__content">
-        <div className="interior-page__heading">
-          <h1>Case Studies</h1>
+      <InteriorContainer>
+        <div className="interior-page__content">
+          <div className="interior-page__heading">
+            <h1>Case Studies</h1>
+          </div>
+          <div className="par par--wide-width thumbnail-view">
+            {
+              caseStudies.map((caseStudy) => {
+                const frontmatter = caseStudy.node.frontmatter;
+                return (
+                  <Link to={frontmatter.url} className="thumbnail-view__thumbnail" key={frontmatter.postTitle}>
+                    <div
+                      className="thumbnail-view__thumbnail__img"
+                      style={{backgroundImage: `url(${frontmatter.heroImg.childImageSharp.resize.src})`}}/>
+                    <span>{frontmatter.projectDate}</span>
+                    <strong>{frontmatter.postTitle}</strong>
+                    <div className="thumbnail-view__thumbnail__blurb">
+                      {frontmatter.summary} ...
+                    </div>
+                    <button className="btn">read more</button>
+                  </Link>
+                );
+              })
+            }
+          </div>
         </div>
-        <div className="par par--wide-width thumbnail-view">
-          {
-            caseStudies.map((caseStudy) => {
-              const frontmatter = caseStudy.node.frontmatter;
-              return (
-                <Link to={frontmatter.url} className="thumbnail-view__thumbnail" key={frontmatter.postTitle}>
-                  <div
-                    className="thumbnail-view__thumbnail__img"
-                    style={{backgroundImage: `url(${frontmatter.heroImg.childImageSharp.resize.src})`}}/>
-                  <span>{frontmatter.projectDate}</span>
-                  <strong>{frontmatter.postTitle}</strong>
-                  <div className="thumbnail-view__thumbnail__blurb">
-                    {frontmatter.summary} ...
-                  </div>
-                  <button className="btn">read more</button>
-                </Link>
-              );
-            })
-          }
-        </div>
-      </div>
-      </InteriorContainer>
+        </InteriorContainer>
+      </>
   );
 }
 

@@ -1,8 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const InteriorContainer = ({children, additionalClass}) => {
+const mapStateToProps = ({ navigationOpen }) => {
+  return {
+    navigationOpen
+  };
+};
+
+const InteriorContainer = ({children, additionalClass, navigationOpen}) => {
   return (
-    <div className={`interior-page ${additionalClass}`}>
+    <div
+      className={`interior-page ${additionalClass} ${navigationOpen ? 'interior-page--overflow-hidden' : ''}`}
+    >
       {children}
     </div>
   );
@@ -12,4 +21,4 @@ InteriorContainer.defaultProps = {
   additionalClass: ''
 }
 
-export default InteriorContainer;
+export default connect(mapStateToProps)(InteriorContainer);
