@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/shared/header";
-
+import andri from "../img/andri.jpg";
 export default () => (
   <div className="interior-page about-page">
     <Header/>
@@ -12,6 +12,7 @@ export default () => (
       </div>
     </div>
     <div className="par par--normal-width">
+      <img src={andri} alt="Andri Tanuarto" />
       <p>
         <strong>Hello, I'm Andri Tanuarto.</strong>
       </p>

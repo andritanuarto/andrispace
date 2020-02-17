@@ -35,7 +35,9 @@ const CaseStudies = () => {
     <div className="interior-page">
       <Header/>
       <div className="interior-page__content">
-        <div className="interior-page__heading"><h1>Case Studies</h1></div>
+        <div className="interior-page__heading">
+          <h1>Case Studies</h1>
+        </div>
         <div className="par par--wide-width thumbnail-view">
           {
             caseStudies.map((caseStudy) => {
