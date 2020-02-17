@@ -14,6 +14,9 @@ const CaseStudies = () => {
               projectDate
               url
               summary
+              heroImg {
+                publicURL
+              }
             }
           }
         }
@@ -35,7 +38,9 @@ const CaseStudies = () => {
               const frontmatter = caseStudy.node.frontmatter;
               return (
                 <Link to={frontmatter.url} className="thumbnail-view__thumbnail" key={frontmatter.postTitle}>
-                  <div className="thumbnail-view__thumbnail__img" />
+                  <div
+                    className="thumbnail-view__thumbnail__img"
+                    style={{background: `url(${frontmatter.heroImg.publicURL})`}}/>
                   <span>{frontmatter.projectDate}</span>
                   <strong>{frontmatter.postTitle}</strong>
                   <div className="thumbnail-view__thumbnail__blurb">
