@@ -14,16 +14,37 @@
     border-right: solid 1px $color-code-gray;
   }
   &__right {
-    padding: 64px 54px 54px 54px;
+    padding: 80px 54px 54px 54px;
     flex: 2;
     height: 100vh;
     overflow: auto;
+    h1, h2 {
+      letter-spacing: 0.3px;
+    }
     h1 {
       margin-bottom: 0;
+    }
+    h2 {
+      margin-top: 50px;
     }
     .first-par {
       color: $color-code-gray;
       font-weight: bold;
+    }
+    code {
+      background: $color-code-gray;
+      border-radius: 10px;
+      padding: 5px 10px;
+      color: $color-yellow;
+    }
+    .process {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background: $color-blue;
+      color: $color-white;
     }
   }
   &__skills {
