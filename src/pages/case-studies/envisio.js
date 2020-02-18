@@ -1,16 +1,16 @@
 import React from "react";
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
+import PlanningHTMLPrototype from '../../components/envisio/html-planning-prototype';
 import ImgSection from '../../components/interior/img-section';
-import PlanningHTMLPrototype from '../../case-studies/envisio/html-planning-prototype';
-import SoftwareModules from './img/envisio/modules.png';
-import planLevels from './img/envisio/plan-levels.png';
-import iPadOverallView from './img/envisio/ipad-overall-view.png';
-import iPadGanttView from './img/envisio/ipad-gantt-view.png';
-import iPadDetailView from './img/envisio/ipad-detail-view.png';
-import iPadListlView from './img/envisio/ipad-list-view.png';
-import stickies1 from './img/envisio/stickies1.jpg';
-import stickies2 from './img/envisio/stickies2.jpg';
-import caseStudyBanner from './img/envisio/envisio-case-study-banner.jpg';
+import SoftwareModules from '../../img/envisio/modules.png';
+import planLevels from '../../img/envisio/plan-levels.png';
+import iPadOverallView from '../../img/envisio/ipad-overall-view.png';
+import iPadGanttView from '../../img/envisio/ipad-gantt-view.png';
+import iPadDetailView from '../../img/envisio/ipad-detail-view.png';
+import iPadListlView from '../../img/envisio/ipad-list-view.png';
+import stickies1 from '../../img/envisio/stickies1.jpg';
+import stickies2 from '../../img/envisio/stickies2.jpg';
+import caseStudyBanner from '../../img/envisio/envisio-case-study-banner.jpg';
 
 export const frontmatter = {
   clientName: 'Envisio',
@@ -22,7 +22,7 @@ export const frontmatter = {
   opacityColor: '#000000',
   opacityLevel: '0.5',
   url: './case-studies/envisio',
-  heroImg: './img/envisio/envisio-bg.jpg',
+  heroImg: '../../img/envisio/envisio-bg.jpg',
   summary: 'Envisio developed the strategic planning web application that facilitates organizations to lay out their plans by defining their goals.'
 }
 

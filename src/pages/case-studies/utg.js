@@ -2,57 +2,57 @@ import React from "react";
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
 import BarChart from '../../components/interior/bar-chart';
 import ImgSection from '../../components/interior/img-section';
-import caseStudyBanner from './img/utg/utg-case-study-banner.jpg';
-import utgTeam from './img/utg/utg-team.png';
-import utgCCAnalysis from './img/utg/utg-cc-analysis.png';
-import utgContextualInquery1 from './img/utg/contextual-inquiry-1.jpeg';
-import utgContextualInquery2 from './img/utg/contextual-inquiry-2.jpeg';
-import utgContextualInquery3 from './img/utg/contextual-inquiry-3.jpeg';
-import utgAffinity1 from './img/utg/affinity-1.jpeg';
-import utgAffinity2 from './img/utg/affinity-2.jpeg';
-import utgAffinity3 from './img/utg/affinity-3.jpeg';
-import utgAffinity4 from './img/utg/affinity-4.jpeg';
-import personaPhoto from './img/utg/persona.jpeg';
-import journeyMap from './img/utg/journey-map.png';
-import featurePrioritization from './img/utg/feature-prioritization.jpg';
-import mvp from './img/utg/mvp.png';
-import userFlow1 from './img/utg/user-flow-1.jpeg';
-import userFlow2 from './img/utg/user-flow-2.jpeg';
-import userFlow3 from './img/utg/user-flow-3.jpeg';
-import userFlowFindClassLocation from './img/utg/find-classes-locations-userflow.jpeg';
-import overallUserflow from './img/utg/overall-user-flow.jpeg';
-import lowFi1 from './img/utg/low-fi-1.jpeg';
-import lowFi2 from './img/utg/low-fi-2.jpeg';
-import lowFi3 from './img/utg/low-fi-3.jpeg';
-import lowFi4 from './img/utg/low-fi-4.jpeg';
-import lowFi5 from './img/utg/low-fi-5.jpeg';
-import lowFi6 from './img/utg/low-fi-6.jpeg';
-import lowFiTest1 from './img/utg/low-fi-test1.jpg';
-import lowFiTest2 from './img/utg/low-fi-test2.jpg';
-import lowFiTest3 from './img/utg/low-fi-test3.jpg';
-import lowFiTest4 from './img/utg/low-fi-test4.jpg';
-import lowFiTest5 from './img/utg/low-fi-test5.jpg';
-import midfiLib from './img/utg/utg-midfi-library.png';
-import midReg1 from './img/utg/reg-1.jpg';
-import midReg2 from './img/utg/reg-2.jpg';
-import midReg3 from './img/utg/reg-3.jpg';
-import midReg4 from './img/utg/reg-4.jpg';
-import midHome from './img/utg/mid-home.jpg';
-import midPrograms from './img/utg/mid-programs.jpg';
-import midCourse1 from './img/utg/mid-course.jpg';
-import midCourse2 from './img/utg/mid-course2.jpg';
-import midMobileHome from './img/utg/mid-mobile-home.jpg';
-import midMobileProgram from './img/utg/mid-mobile-programs.jpg';
-import midMobileCourse1 from './img/utg/mid-mobile-course.jpg';
-import midMobileCourse2 from './img/utg/mid-mobile-course-2.jpg';
-import hiHome from './img/utg/hi-home.jpg';
-import hiStory from './img/utg/hi-story.jpg';
-import hiGam1 from './img/utg/hi-gam1.jpg';
-import hiGam2 from './img/utg/hi-gam2.jpg';
-import hiGam3 from './img/utg/hi-gam3.jpg';
-import hiProgram from './img/utg/hi-program.jpg';
-import hiCourse from './img/utg/hi-course.jpg';
-import hiCourses from './img/utg/hi-courses.jpg';
+import caseStudyBanner from '../../img/utg/utg-case-study-banner.jpg';
+import utgTeam from '../../img/utg/utg-team.png';
+import utgCCAnalysis from '../../img/utg/utg-cc-analysis.png';
+import utgContextualInquery1 from '../../img/utg/contextual-inquiry-1.jpeg';
+import utgContextualInquery2 from '../../img/utg/contextual-inquiry-2.jpeg';
+import utgContextualInquery3 from '../../img/utg/contextual-inquiry-3.jpeg';
+import utgAffinity1 from '../../img/utg/affinity-1.jpeg';
+import utgAffinity2 from '../../img/utg/affinity-2.jpeg';
+import utgAffinity3 from '../../img/utg/affinity-3.jpeg';
+import utgAffinity4 from '../../img/utg/affinity-4.jpeg';
+import personaPhoto from '../../img/utg/persona.jpeg';
+import journeyMap from '../../img/utg/journey-map.png';
+import featurePrioritization from '../../img/utg/feature-prioritization.jpg';
+import mvp from '../../img/utg/mvp.png';
+import userFlow1 from '../../img/utg/user-flow-1.jpeg';
+import userFlow2 from '../../img/utg/user-flow-2.jpeg';
+import userFlow3 from '../../img/utg/user-flow-3.jpeg';
+import userFlowFindClassLocation from '../../img/utg/find-classes-locations-userflow.jpeg';
+import overallUserflow from '../../img/utg/overall-user-flow.jpeg';
+import lowFi1 from '../../img/utg/low-fi-1.jpeg';
+import lowFi2 from '../../img/utg/low-fi-2.jpeg';
+import lowFi3 from '../../img/utg/low-fi-3.jpeg';
+import lowFi4 from '../../img/utg/low-fi-4.jpeg';
+import lowFi5 from '../../img/utg/low-fi-5.jpeg';
+import lowFi6 from '../../img/utg/low-fi-6.jpeg';
+import lowFiTest1 from '../../img/utg/low-fi-test1.jpg';
+import lowFiTest2 from '../../img/utg/low-fi-test2.jpg';
+import lowFiTest3 from '../../img/utg/low-fi-test3.jpg';
+import lowFiTest4 from '../../img/utg/low-fi-test4.jpg';
+import lowFiTest5 from '../../img/utg/low-fi-test5.jpg';
+import midfiLib from '../../img/utg/utg-midfi-library.png';
+import midReg1 from '../../img/utg/reg-1.jpg';
+import midReg2 from '../../img/utg/reg-2.jpg';
+import midReg3 from '../../img/utg/reg-3.jpg';
+import midReg4 from '../../img/utg/reg-4.jpg';
+import midHome from '../../img/utg/mid-home.jpg';
+import midPrograms from '../../img/utg/mid-programs.jpg';
+import midCourse1 from '../../img/utg/mid-course.jpg';
+import midCourse2 from '../../img/utg/mid-course2.jpg';
+import midMobileHome from '../../img/utg/mid-mobile-home.jpg';
+import midMobileProgram from '../../img/utg/mid-mobile-programs.jpg';
+import midMobileCourse1 from '../../img/utg/mid-mobile-course.jpg';
+import midMobileCourse2 from '../../img/utg/mid-mobile-course-2.jpg';
+import hiHome from '../../img/utg/hi-home.jpg';
+import hiStory from '../../img/utg/hi-story.jpg';
+import hiGam1 from '../../img/utg/hi-gam1.jpg';
+import hiGam2 from '../../img/utg/hi-gam2.jpg';
+import hiGam3 from '../../img/utg/hi-gam3.jpg';
+import hiProgram from '../../img/utg/hi-program.jpg';
+import hiCourse from '../../img/utg/hi-course.jpg';
+import hiCourses from '../../img/utg/hi-courses.jpg';
 
 export const frontmatter = {
   clientName: 'UTG Academy',
@@ -64,7 +64,7 @@ export const frontmatter = {
   opacityColor: '#000000',
   opacityLevel: '0.4',
   url: './case-studies/utg',
-  heroImg : './img/utg/utg-case-study-banner.jpg',
+  heroImg: '../../img/utg/utg-case-study-banner.jpg',
   summary: 'These days, I see a lot of high demand jobs require to have programming skills. The fact that programming skills are becoming increasingly important, most'
 }
 

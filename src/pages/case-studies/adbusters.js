@@ -2,26 +2,26 @@ import React from "react";
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
 import BarChart from '../../components/interior/bar-chart';
 import ImgSection from '../../components/interior/img-section';
-import caseStudyBanner from './img/adbusters/adbusters-case-study-banner.jpg';
-import magzCovers from './img/adbusters/magazine-covers.png';
-import magzLayout from './img/adbusters/adbusters-layout.png';
-import affinity from './img/adbusters/affinity.png';
-import persona from './img/adbusters/persona.jpg';
-import storyBoard from './img/adbusters/story-board.png';
-import digitizedUserflowLogin from './img/adbusters/login-userflow.png';
-import userflowLogin from './img/adbusters/login-userflow.jpg';
-import userflowResetPwd from './img/adbusters/reset-pwd-userflow.jpg';
-import digitizedUserflowHome from './img/adbusters/home-userflow.png';
-import lowFiWhiteboard from './img/adbusters/low-fi-whiteboard.jpg';
-import lowFiPaper from './img/adbusters/low-fi-paper.jpg';
-import lowFiTest1 from './img/adbusters/low-fi-test1.jpg';
-import lowFiTest2 from './img/adbusters/low-fi-test2.jpg';
-import lowFiTest3 from './img/adbusters/low-fi-test3.jpg';
-import midFiPrototypes from './img/adbusters/mid-fi-prototypes.png';
-import iconSketches from './img/adbusters/icon-sketches.png';
-import moodboard from './img/adbusters/moodboard.jpeg';
-import styleTiles from './img/adbusters/style-tiles.png';
-import hiFi from './img/adbusters/hi-fi.jpg';
+import caseStudyBanner from '../../img/adbusters/adbusters-case-study-banner.jpg';
+import magzCovers from '../../img/adbusters/magazine-covers.png';
+import magzLayout from '../../img/adbusters/adbusters-layout.png';
+import affinity from '../../img/adbusters/affinity.png';
+import persona from '../../img/adbusters/persona.jpg';
+import storyBoard from '../../img/adbusters/story-board.png';
+import digitizedUserflowLogin from '../../img/adbusters/login-userflow.png';
+import userflowLogin from '../../img/adbusters/login-userflow.jpg';
+import userflowResetPwd from '../../img/adbusters/reset-pwd-userflow.jpg';
+import digitizedUserflowHome from '../../img/adbusters/home-userflow.png';
+import lowFiWhiteboard from '../../img/adbusters/low-fi-whiteboard.jpg';
+import lowFiPaper from '../../img/adbusters/low-fi-paper.jpg';
+import lowFiTest1 from '../../img/adbusters/low-fi-test1.jpg';
+import lowFiTest2 from '../../img/adbusters/low-fi-test2.jpg';
+import lowFiTest3 from '../../img/adbusters/low-fi-test3.jpg';
+import midFiPrototypes from '../../img/adbusters/mid-fi-prototypes.png';
+import iconSketches from '../../img/adbusters/icon-sketches.png';
+import moodboard from '../../img/adbusters/moodboard.jpeg';
+import styleTiles from '../../img/adbusters/style-tiles.png';
+import hiFi from '../../img/adbusters/hi-fi.jpg';
 
 export const frontmatter = {
   clientName: 'Adbusters',
@@ -33,7 +33,7 @@ export const frontmatter = {
   opacityColor: '#000000',
   opacityLevel: '0.5',
   url: './case-studies/adbusters',
-  heroImg: './img/adbusters/hero.jpg',
+  heroImg: '../../img/adbusters/hero.jpg',
   summary: 'Adbusters is a Canadian magazine publishing company. They describe themselves as a global network for artists, activists, and entrepreneurs.'
 }
 

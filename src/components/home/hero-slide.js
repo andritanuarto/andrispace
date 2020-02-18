@@ -3,13 +3,12 @@ import { connect } from 'react-redux';
 import { Link } from "gatsby";
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
 import { useStaticQuery, graphql } from "gatsby";
-
-import heroImgAdbusters from '../../pages/case-studies/img/adbusters/hero.jpg';
-import heroImgUtg from '../../pages/case-studies/img/utg/utg-case-study-banner.jpg';
-import heroImgEnvisio from '../../pages/case-studies/img/envisio/envisio-bg.jpg';
-import logoImgAdbusters from '../../pages/case-studies/img/adbusters/adbusters-logo.png';
-import logoImgUtg from '../../pages/case-studies/img/utg/utg-logo.png';
-import logoImgEnvisio from '../../pages/case-studies/img/envisio/envisio-logo.png';
+import heroImgAdbusters from '../../img/adbusters/hero.jpg';
+import heroImgUtg from '../../img/utg/utg-case-study-banner.jpg';
+import heroImgEnvisio from '../../img/envisio/envisio-bg.jpg';
+import logoImgAdbusters from '../../img/adbusters/adbusters-logo.png';
+import logoImgUtg from '../../img/utg/utg-logo.png';
+import logoImgEnvisio from '../../img/envisio/envisio-logo.png';
 
 const mapStateToProps = ({ heroIndex }) => {
   return {
