@@ -20,9 +20,6 @@ export default () => (
       <div className="about-page__container">
         <div className="about-page__left" style={{backgroundImage: `url(${andri})`}} />
         <div className="about-page__right">
-          {/* <h1>
-            Let's Humanize The Design & Technology
-          </h1> */}
           <h1>Hello, I'm Andri Tanuarto.</h1>
           <p className="first-par">
             I'm a UI / UX designer and front-end engineer from Vancouver, Canada
@@ -33,7 +30,7 @@ export default () => (
           <p>
             Outside work, I enjoy scale-modeling super cars from the 80s and 90s to keep my creative juice flowing, and remain active by playing sports like soccer, badminton, tennis, table-tennis, volleyball, you name it.
           </p>
-          <h2>Little bit more about myself from the technical perspective</h2>
+          <h2>A Little bit more about myself from the technical perspective</h2>
           <div className="about-page__skills">
             <div className="about-page__skills__col">
               <strong>Tools that I use</strong>
