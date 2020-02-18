@@ -16,8 +16,8 @@ export const frontmatter = {
   clientName: 'Envisio',
   projectDate: 'September 02, 2019',
   projectTitle: 'Strategic Manager',
-  postTitle: 'Envisio - Strategic Manager',
-  blurb: 'The future of planning software',
+  postTitle: 'Envisio - Strategic Planning Manager',
+  blurb: 'Strategy and performance management software',
   logoWidth: 'auto',
   opacityColor: '#000000',
   opacityLevel: '0.5',
@@ -29,8 +29,8 @@ export const frontmatter = {
 export default () => (
   <InteriorPostLayout
     caseStudyContent={{
-      postTitle: 'Envisio - Strategic Manager',
-      projectDate: 'September 02, 2019',
+      postTitle: frontmatter.postTitle,
+      projectDate: frontmatter.projectDate,
       caseStudyBanner: caseStudyBanner
     }}
   >

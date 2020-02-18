@@ -52,8 +52,10 @@ export default () => (
               <ul>
                 <li><span className="process">User Research</span></li>
                 <li><span className="process">User Testing</span></li>
+                <li><span className="process">User Flow</span></li>
+                <li><span className="process">Sitemap</span></li>
                 <li><span className="process">Prototyping</span></li>
-                <li><span className="process">Wireframes cration</span></li>
+                <li><span className="process">Wireframes</span></li>
                 <li><span className="process">Agile Methodology</span></li>
                 <li><span className="process">Atomic Design</span></li>
               </ul>

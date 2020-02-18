@@ -27,8 +27,8 @@ export const frontmatter = {
   clientName: 'Adbusters',
   projectDate: 'November 27, 2019',
   projectTitle: 'World Revolution',
-  postTitle: 'Adbusters – World Revolution App',
-  blurb: 'an app for organizing social activity campaigns',
+  postTitle: 'Adbusters – World Revolution',
+  blurb: 'Now is the time to find each other and assemble',
   logoWidth: 'auto',
   opacityColor: '#000000',
   opacityLevel: '0.5',
@@ -41,8 +41,8 @@ export const frontmatter = {
 export default () => (
   <InteriorPostLayout
     caseStudyContent={{
-      postTitle: 'Adbusters – World Revolution App',
-      projectDate: 'November 27, 2019',
+      postTitle: frontmatter.postTitle,
+      projectDate: frontmatter.projectDate,
       caseStudyBanner: caseStudyBanner
     }}
   >
