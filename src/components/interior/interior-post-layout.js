@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../shared/header';
 import InteriorContainer from '../shared/interior-container';
 
-export default ({ caseStudyContent, children }) => {
+const InteriorPostLayout = ({ caseStudyContent, children }) => {
   return (
     <>
       <Header/>
@@ -12,12 +12,20 @@ export default ({ caseStudyContent, children }) => {
             <h1>{caseStudyContent.postTitle} </h1>
             <span className="interior-page__heading__date">{caseStudyContent.projectDate}</span>
           </div>
-          <div className="interior-page__heading__img">
-            <img src={caseStudyContent.caseStudyBanner} alt={caseStudyContent.postTitle}/>
-          </div>
+          {
+            caseStudyContent.caseStudyBanner
+            ?
+              <div className="interior-page__heading__img">
+                <img src={caseStudyContent.caseStudyBanner} alt={caseStudyContent.postTitle}/>
+              </div>
+            :
+              null
+          }
           {children}
         </div>
       </InteriorContainer>
     </>
-  )
+  );
 }
+
+export default InteriorPostLayout;

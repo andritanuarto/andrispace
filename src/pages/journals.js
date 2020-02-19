@@ -4,6 +4,7 @@ import InteriorContainer from '../components/shared/interior-container';
 import { Link, graphql } from "gatsby";
 
 const Journal = ({ data }) => {
+  console.log(data.allMarkdownRemark.edges[0].node.frontmatter.image.childImageSharp.fluid.src)
   return (
     <>
       <Header/>
@@ -21,14 +22,14 @@ const Journal = ({ data }) => {
             >
               <div
                 className="thumbnail-view__thumbnail__img"
-                style={{backgroundImage: `url(${''})`}}/>
+                style={{backgroundImage: `url(${node.frontmatter.image.childImageSharp.fluid.src})`}}>
+              </div>
               <span>{node.frontmatter.date}</span>
               <strong>{node.frontmatter.title}</strong>
               <div className="thumbnail-view__thumbnail__blurb">
               {node.excerpt}
               </div>
             </Link>
-
           ))}
         </div>
       </InteriorContainer>
@@ -46,6 +47,13 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            image {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           fields {
             slug

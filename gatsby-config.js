@@ -13,16 +13,30 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `case-studies`,
-        path: `${__dirname}/src/pages/case-studies`,
+        name: `src`,
+        path: `${__dirname}/src/pages/journals`,
       },
     },
     `gatsby-transformer-javascript-frontmatter`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1000,
+              quality: 80,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {

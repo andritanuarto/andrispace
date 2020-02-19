@@ -1,13 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
+import InteriorPostLayout from '../components/interior/interior-post-layout';
 
 export default ({ data }) => {
-  const post = data.markdownRemark
+  const content = data.markdownRemark.html;
+  const frontmatter = data.markdownRemark.frontmatter;
+
   return (
-    <div>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </div>
+    <InteriorPostLayout
+      caseStudyContent={{
+        postTitle: frontmatter.title,
+        projectDate: frontmatter.date,
+      }}
+    >
+      <div className="par par--normal-width" dangerouslySetInnerHTML={{ __html: content }} />
+    </InteriorPostLayout>
   )
 }
 
@@ -17,6 +24,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }
