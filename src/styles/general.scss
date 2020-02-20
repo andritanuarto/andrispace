@@ -11,3 +11,19 @@ html {
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+input[type='text'], input[type='email'], select {
+  height: 32px;
+  border: solid 1px $color-silver;
+  border-radius: 3px;
+  padding: 0 8px;
+}
+
+textarea {
+  padding: 8px;
+  border: solid 1px $color-silver;
+}
+
+.required {
+  color: $color-red;
+}

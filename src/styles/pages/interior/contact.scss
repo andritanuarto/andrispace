@@ -1,0 +1,43 @@
+.contact {
+  position: absolute;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  &__left-side {
+    border-right: solid 1px $color-silver;
+    flex-basis: 300px;
+    padding: 24px;
+    span {
+      display: block;
+    }
+
+    a {
+      font-size: 12px;
+    }
+  }
+  &__email-detail {
+    font-size: 12px;
+    color: $color-chalise;
+  }
+  &__right-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  &__form {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+    input, textarea {
+      width: 100%;
+    }
+    label {
+      font-size: 14px;
+    }
+    textarea {
+      height: 150px;
+    }
+  }
+}
