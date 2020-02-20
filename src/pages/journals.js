@@ -8,7 +8,7 @@ const Journal = ({ data }) => {
   return (
     <>
       <Header/>
-      <InteriorContainer additionalPage="journals-page">
+      <InteriorContainer additionalClass="journal-page">
         <div className="interior-page__content">
           <div className="interior-page__heading">
             <h1>Journals</h1>

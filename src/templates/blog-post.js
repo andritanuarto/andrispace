@@ -13,7 +13,7 @@ export default ({ data }) => {
         projectDate: frontmatter.date,
       }}
     >
-      <div className="par par--normal-width" dangerouslySetInnerHTML={{ __html: content }} />
+      <div className="par par--normal-width journal-content" dangerouslySetInnerHTML={{ __html: content }} />
     </InteriorPostLayout>
   )
 }
