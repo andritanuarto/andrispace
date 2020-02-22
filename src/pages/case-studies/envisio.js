@@ -20,7 +20,7 @@ export const frontmatter = {
   blurb: 'Strategy and performance management software',
   logoWidth: 'auto',
   opacityColor: '#000000',
-  opacityLevel: '0.5',
+  opacityLevel: '0.4',
   url: './case-studies/envisio',
   heroImg: '../../img/envisio/envisio-bg.jpg',
   summary: 'Envisio developed the strategic planning web application that facilitates organizations to lay out their plans by defining their goals.'

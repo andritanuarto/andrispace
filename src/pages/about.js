@@ -25,10 +25,10 @@ export default () => (
             I'm a UI / UX designer and front-end engineer from Vancouver, Canada
           </p>
           <p>
-            To me, a great product is one that helps people make their lives better.  For the past eight years, I've been helping companies and startups create meaningful experiences that connect people with design and technology.
+            To me, a great product is one that helps people to make their lives better.  For the past eight years, I've been helping companies and startups to create meaningful experiences that connect people with design and technology.
           </p>
           <p>
-            Outside work, I enjoy scale-modeling super cars from the 80s and 90s to keep my creative juice flowing, and remain active by playing sports like soccer, badminton, tennis, table-tennis, volleyball, you name it.
+            Originally I started working as a UI developer, but along the way, my interest grew in UI / UX field. Outside work, I enjoy scale-modelling supercars from the 80s and 90s to keep my creative juice flowing, and remain active by playing many sports like soccer, badminton, tennis, table-tennis, volleyball, you name it.
           </p>
           <h2>A Little bit more about myself from the technical perspective</h2>
           <div className="about-page__skills">

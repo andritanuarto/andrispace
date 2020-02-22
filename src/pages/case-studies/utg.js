@@ -100,13 +100,13 @@ export default () => (
           </ul>
         </p>
         <p>
+          For this project, our team consisted of 4 UX and 2 UI designers. As the project scrum master, my role focused on leading daily scrum meetings, establishing communication between UX and UI teams, making sure the project was on the right track and was involved in all UX design processes.
+        </p>
+        <p>
           <ImgSection
             imgs={[{url: utgTeam}]}
             caption="The team for the UTG project (myself is the third person from the right side)"
           />
-        </p>
-        <p>
-          For this project, our team consisted of 4 UX and 2 UI designers. As the project scrum master, my role focused on leading daily scrum meetings, establishing communication between UX and UI teams, making sure the project was on the right track and was involved in all UX design processes.
         </p>
       </div>
       <div className="par par--normal-width">
@@ -488,7 +488,7 @@ export default () => (
           For the UI approach, we derived inspiration from Minecraft and Mario Bros games because the age demographic of most millennial parents and Generation-Z children are very familiar with these games. To us, Minecraft was the definition of playful, fun, kid-friendly, and creative which is very suitable for what UTG stands for.
         </p>
       </div>
-      <div className="par par--wide-width spacing">
+      <div className="par par--full-width spacing">
         <ImgSection
           imgContainerStyle={{alignItems: 'flex-start'}}
           imgs={[
@@ -497,7 +497,7 @@ export default () => (
           ]}
         />
       </div>
-      <div className="par par--wide-width spacing">
+      <div className="par par--full-width spacing">
         <ImgSection
           imgContainerStyle={{alignItems: 'flex-start'}}
           imgs={[

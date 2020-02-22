@@ -12,6 +12,10 @@ html {
   }
 }
 
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+}
+
 input[type='text'], input[type='email'], select {
   height: 32px;
   border: solid 1px $color-silver;
