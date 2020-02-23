@@ -5,7 +5,7 @@ date: "2019-01-08"
 author: "Andri Tanuarto"
 email: "andritanuarto@gmail.com"
 type: "post"
-image: "./testarossa.jpg"
+image: "./ferrari-testarossa.jpg"
 tags: ["hobby", "toy"]
 postNo: "3"
 status: "draft"

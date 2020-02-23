@@ -1,7 +1,16 @@
 .journal-content {
+  padding-bottom: 40px;
   p {
     &:first-child {
       margin-top: 0;
     }
+  }
+  img {
+    float: left;
+    width: 300px;
+    margin-right: 48px;
+    box-shadow: rgba(51, 51, 51, 0.6) 0px 0px 6px -1px;
+    max-width: 100%;
+    border: solid 1px $color-code-gray;
   }
 }

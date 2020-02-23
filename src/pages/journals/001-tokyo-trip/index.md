@@ -6,7 +6,7 @@ date: "2018-09-21"
 author: "Andri Tanuarto"
 email: "andritanuarto@gmail.com"
 type: "post"
-image: "./shibuya.jpg"
+image: "./tokyo-tower.jpg"
 tags: ["travel"]
 postNo: "1"
 status: "published"

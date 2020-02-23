@@ -14,26 +14,27 @@ const Journal = ({ data }) => {
           <div className="interior-page__heading">
             <h1>Journals</h1>
           </div>
-        </div>
-        <div className="par par--wide-width thumbnail-view">
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Link
-              key={node.id}
-              to={node.fields.slug} className="thumbnail-view__thumbnail"
-            >
-              <Fade>
-                <div
-                  className="thumbnail-view__thumbnail__img"
-                  style={{backgroundImage: `url(${node.frontmatter.image.childImageSharp.fluid.src})`}}>
-                </div>
-                <span>{node.frontmatter.date}</span>
-                <strong>{node.frontmatter.title}</strong>
-                <div className="thumbnail-view__thumbnail__blurb">
-                {node.excerpt}
-                </div>
-              </Fade>
-            </Link>
-          ))}
+          <div className="par par--wide-width thumbnail-view">
+            {data.allMarkdownRemark.edges.map(({ node }) => (
+              <Link
+                key={node.id}
+                to={node.fields.slug} className="thumbnail-view__thumbnail"
+              >
+                <Fade>
+                  <div
+                    className="thumbnail-view__thumbnail__img"
+                    style={{backgroundImage: `url(${node.frontmatter.image.childImageSharp.fluid.src})`}}>
+                  </div>
+                  <span>{node.frontmatter.date}</span>
+                  <strong>{node.frontmatter.title}</strong>
+                  <div className="thumbnail-view__thumbnail__blurb">
+                    {node.excerpt} ...
+                  </div>
+                  <button className="btn">read more</button>
+                </Fade>
+              </Link>
+            ))}
+          </div>
         </div>
       </InteriorContainer>
     </>
