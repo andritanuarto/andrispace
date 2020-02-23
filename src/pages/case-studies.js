@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import Header from "../components/shared/header";
 import InteriorContainer from '../components/shared/interior-container';
 import { useStaticQuery, graphql, Link } from "gatsby";
@@ -46,15 +47,17 @@ const CaseStudies = () => {
                 const frontmatter = caseStudy.node.frontmatter;
                 return (
                   <Link to={frontmatter.url} className="thumbnail-view__thumbnail" key={frontmatter.postTitle}>
-                    <div
-                      className="thumbnail-view__thumbnail__img"
-                      style={{backgroundImage: `url(${frontmatter.heroImg.childImageSharp.resize.src})`}}/>
-                    <span>{frontmatter.projectDate}</span>
-                    <strong>{frontmatter.postTitle}</strong>
-                    <div className="thumbnail-view__thumbnail__blurb">
-                      {frontmatter.summary} ...
-                    </div>
-                    <button className="btn">read more</button>
+                    <Fade>
+                      <div
+                        className="thumbnail-view__thumbnail__img"
+                        style={{backgroundImage: `url(${frontmatter.heroImg.childImageSharp.resize.src})`}}/>
+                      <span>{frontmatter.projectDate}</span>
+                      <strong>{frontmatter.postTitle}</strong>
+                      <div className="thumbnail-view__thumbnail__blurb">
+                        {frontmatter.summary} ...
+                      </div>
+                      <button className="btn">read more</button>
+                    </Fade>
                   </Link>
                 );
               })

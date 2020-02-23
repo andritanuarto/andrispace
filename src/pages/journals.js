@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import Header from "../components/shared/header";
 import InteriorContainer from '../components/shared/interior-container';
 import { Link, graphql } from "gatsby";
@@ -20,15 +21,17 @@ const Journal = ({ data }) => {
               key={node.id}
               to={node.fields.slug} className="thumbnail-view__thumbnail"
             >
-              <div
-                className="thumbnail-view__thumbnail__img"
-                style={{backgroundImage: `url(${node.frontmatter.image.childImageSharp.fluid.src})`}}>
-              </div>
-              <span>{node.frontmatter.date}</span>
-              <strong>{node.frontmatter.title}</strong>
-              <div className="thumbnail-view__thumbnail__blurb">
-              {node.excerpt}
-              </div>
+              <Fade>
+                <div
+                  className="thumbnail-view__thumbnail__img"
+                  style={{backgroundImage: `url(${node.frontmatter.image.childImageSharp.fluid.src})`}}>
+                </div>
+                <span>{node.frontmatter.date}</span>
+                <strong>{node.frontmatter.title}</strong>
+                <div className="thumbnail-view__thumbnail__blurb">
+                {node.excerpt}
+                </div>
+              </Fade>
             </Link>
           ))}
         </div>

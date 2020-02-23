@@ -21,7 +21,7 @@ import midFiPrototypes from '../../img/adbusters/mid-fi-prototypes.png';
 import iconSketches from '../../img/adbusters/icon-sketches.png';
 import moodboard from '../../img/adbusters/moodboard.jpeg';
 import styleTiles from '../../img/adbusters/style-tiles.png';
-import hiFi from '../../img/adbusters/hi-fi.jpg';
+import hiFi from '../../img/adbusters/hi-fi.png';
 
 export const frontmatter = {
   clientName: 'Adbusters',
@@ -321,22 +321,6 @@ export default () => (
         During the user-flow creation process, we started with hand-drawn user-flows. After we tested the hand-drawn user-flows and felt satisfied, we created the digitized version of it.
       </p>
     </div>
-
-    <div className="par par--normal-width spacing">
-      <h4 style={{marginBottom: '10px'}}>Before</h4>
-    </div>
-    <div className="par par--wide-width">
-      <ImgSection
-        imgs={[
-          {url: userflowLogin, backgroundImg: true, style: {height: '380px'}},
-          {url: userflowResetPwd, backgroundImg: true, style: {height: '380px'}},
-        ]}
-        caption="Hand-drawn user-flows for login, signup, and forgot password"
-      />
-    </div>
-    <div className="par par--normal-width spacing">
-      <h4 style={{marginBottom: '10px'}}>After</h4>
-    </div>
     <div className="par par--wide-width">
       <ImgSection
         imgs={[{url: digitizedUserflowLogin}]}
@@ -450,7 +434,7 @@ export default () => (
         </p>
         <ul>
           <li>Add user profile to make it more personalized</li>
-          <li>View events by location</li>
+          <li>Filter events by location</li>
           <li>Adding image comments</li>
         </ul>
     </div>
