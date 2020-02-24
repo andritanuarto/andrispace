@@ -30,7 +30,8 @@ export default () => (
             </ul>
           </div>
           <div className="contact__right-side">
-            <form className="contact__form" name="contact" method="POST" data-netlify="true">
+            <form className="contact__form" name="contact" action="/thank-you" method="POST" data-netlify="true">
+              <input type="hidden" name="form-contact" value="Contact Form" />
               <h3>Send me a message</h3>
               <p>
                 <label>

@@ -14,7 +14,7 @@ import caseStudyBanner from '../../img/envisio/envisio-case-study-banner.jpg';
 
 export const frontmatter = {
   clientName: 'Envisio',
-  projectDate: 'September 02, 2019',
+  projectDate: 'January 25, 2020',
   projectTitle: 'Strategic Planning Manager',
   postTitle: 'Envisio - Strategic Planning Manager',
   blurb: 'Strategy and performance management software',
@@ -104,7 +104,7 @@ export default () => (
           One of the biggest challenges of this design process was to find a visual solution where the UI is responsive enough to support a big plan in different monitor and tablet sizes. So I decided to create a quick HTML prototype for the chosen visual solution to test the responsiveness of the layout. This HTML prototype also helped us smoothen the conversation with developers and other stakeholders. Below is the clickable HTML prototype to show the basic functionality of how an overall plan can be structured.
         </p>
       </div>
-      <div className="par par--wide-width spacing">
+      <div className="par par--normal-width spacing">
         <PlanningHTMLPrototype />
       </div>
       <div className="par par--normal-width">
