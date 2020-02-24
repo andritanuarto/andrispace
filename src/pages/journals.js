@@ -13,6 +13,7 @@ const Journal = ({ data }) => {
         <div className="interior-page__content">
           <div className="interior-page__heading">
             <h1>Journals</h1>
+            <span className="interior-page__heading__date">A little part of my life outside work</span>
           </div>
           <div className="par par--wide-width thumbnail-view">
             {data.allMarkdownRemark.edges.map(({ node }) => (

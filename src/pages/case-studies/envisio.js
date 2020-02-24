@@ -15,7 +15,7 @@ import caseStudyBanner from '../../img/envisio/envisio-case-study-banner.jpg';
 export const frontmatter = {
   clientName: 'Envisio',
   projectDate: 'September 02, 2019',
-  projectTitle: 'Strategic Manager',
+  projectTitle: 'Strategic Planning Manager',
   postTitle: 'Envisio - Strategic Planning Manager',
   blurb: 'Strategy and performance management software',
   logoWidth: 'auto',

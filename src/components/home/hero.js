@@ -26,7 +26,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
 
   const data = useStaticQuery(graphql`
     query HeaderQuery {
-      allJavascriptFrontmatter {
+      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: ASC}) {
         edges {
           node {
             frontmatter {
@@ -40,6 +40,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
 
   const edges = data.allJavascriptFrontmatter.edges;
 
+  console.log(data);
   return (
     <div className="hero-container">
       <HeroSlide />

@@ -26,8 +26,8 @@ import hiFi from '../../img/adbusters/hi-fi.png';
 export const frontmatter = {
   clientName: 'Adbusters',
   projectDate: 'November 27, 2019',
-  projectTitle: 'World Revolution',
-  postTitle: 'Adbusters – World Revolution',
+  projectTitle: 'World Revolution App',
+  postTitle: 'Adbusters – World Revolution App',
   blurb: 'Now is the time to find each other and assemble',
   logoWidth: 'auto',
   opacityColor: '#000000',
@@ -107,7 +107,7 @@ export default () => (
       </p>
       <p>To make it easier for us to compare our competitors, we created a table to organize our findings based on their focus and the platforms they use.</p>
     </div>
-    <div className="par par--medium-width spacing">
+    <div className="par par--normal-width spacing">
       <table border="1">
         <tr>
           <td style={{textAlign: 'center'}}></td>
@@ -225,7 +225,7 @@ export default () => (
         After we gathered all the findings from our research, it was time to create an affinity diagram. Every team member wrote down their research findings on sticky notes and arranged them on the wall. Then we grouped them accordingly based on relevant categories. Below is the digitized version of our affinity diagram.
       </p>
     </div>
-    <div className=" par par--wide-width spacing">
+    <div className=" par par--normal-width spacing">
       <p>
         <ImgSection imgs={[{url: affinity}]} caption="Digitized affinity diagram" />
       </p>
@@ -279,7 +279,7 @@ export default () => (
       <h3>Storyboard</h3>
       After gaining more understanding of our typical user pain-points and goals based on Shane's persona, we also created a storyboard that shows a typical scenario of how Shane is going to use the app.
     </div>
-    <div className="par par--wide-width spacing">
+    <div className="par par--normal-width spacing">
       <ImgSection imgs={[{url: storyBoard}]} caption="Shane's story board" />
     </div>
     <div className="par par--normal-width spacing">
@@ -321,7 +321,7 @@ export default () => (
         During the user-flow creation process, we started with hand-drawn user-flows. After we tested the hand-drawn user-flows and felt satisfied, we created the digitized version of it.
       </p>
     </div>
-    <div className="par par--wide-width">
+    <div className="par par--normal-width">
       <ImgSection
         imgs={[{url: digitizedUserflowLogin}]}
         caption="Digitized userflows for login, signup, and forgot password"
@@ -335,7 +335,7 @@ export default () => (
         From the user-flow image below, it shows that when the notification message (right bottom corner black box) is received, the user can click the notification tab. After it's clicked, the app will open and redirect the user to the event detail page.
       </p>
     </div>
-    <div className="par par--wide-width spacing">
+    <div className="par par--normal-width spacing">
       <ImgSection imgs={[{url: digitizedUserflowHome}]} />
     </div>
     <div className="par par--normal-width">

@@ -69,9 +69,8 @@
   align-items: center;
   justify-content: center;
   z-index: 3;
-  padding-top: 48px;
+  padding: 48px 24px 0 24px;
   & > div {
-    padding: 0 24px;
     width: 100%;
     max-width: 900px;
     a {
@@ -98,6 +97,11 @@
         cursor: pointer;
       }
     }
+    @media only screen and (max-width: 800px) {
+      a {
+        font-size: 48px;
+      }
+    }
   }
   &__social-media-links {
     list-style-type: none;
@@ -114,6 +118,19 @@
         &:hover {
           color: $color-chalise;
         }
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    &__social-media-links {
+      margin: 0;
+      padding: 0 32px;
+      bottom: 16px;
+      position: absolute;
+      width: 100%;
+      text-align: left;
+      li {
+        margin: 0 0 16px 16px;
       }
     }
   }

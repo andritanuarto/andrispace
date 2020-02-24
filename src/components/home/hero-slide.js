@@ -19,7 +19,7 @@ const mapStateToProps = ({ heroIndex }) => {
 const HeroSlide = ({heroIndex}) => {
   const data = useStaticQuery(graphql`
     query SlideQuery {
-      allJavascriptFrontmatter {
+      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: ASC}) {
         edges {
           node {
             frontmatter {
@@ -59,8 +59,6 @@ const HeroSlide = ({heroIndex}) => {
       logoImg = logoImgUtg;
       break;
   }
-
-  console.log (heroImg, 'heroImg');
 
   return (
     <>

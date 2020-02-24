@@ -198,3 +198,8 @@
     }
   }
 }
+@media only screen and (max-width: 900px) {
+  .user-persona {
+    flex-direction: column;
+  }
+}
