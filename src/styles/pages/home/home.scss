@@ -1,6 +1,11 @@
 // @import './splash';
 // @import './splash-slides/planswift';
 // @import './splash-slides/world-revolution';
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
 @-webkit-keyframes heroSlideAnimation {
   0%   { left: -100%; }
   100% { left: 0%; }
@@ -203,6 +208,12 @@
             display: none;
           }
         }
+      }
+      &--timer {
+        background: $color-silver;
+        height: 4px;
+        animation: progressBar 10s ease-in-out;
+        animation-fill-mode:both;
       }
     }
     &__project-info {

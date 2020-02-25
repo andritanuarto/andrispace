@@ -40,7 +40,14 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
 
   const edges = data.allJavascriptFrontmatter.edges;
 
-  console.log(data);
+  setTimeout(() => {
+    if (edges.length === heroIndex + 1) {
+      slideIndexHandler(0);
+    } else {
+      slideIndexHandler(heroIndex + 1);
+    }
+  }, 10000);
+
   return (
     <div className="hero-container">
       <HeroSlide />
@@ -53,7 +60,9 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
                   key={slide.node.frontmatter.clientName}
                   className={`hero-container__slide-nav ${heroIndex === index ? 'hero-container__slide-nav--active' : null}`}
                   onClick={() => {slideIndexHandler(index)}}
-                />
+                >
+                  {heroIndex === index ? <div className="hero-container__slide-nav--timer" /> : <div />}
+                </div>
               )
             })
           }

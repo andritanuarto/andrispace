@@ -46,8 +46,14 @@ button {
     transition: all $generic-transition-time;
     color: $color-white;
     &:hover {
-      background: $color-white;
       color: $color-code-gray;
+      background: $color-white radial-gradient(circle, transparent 1%, $color-white 1%) center/15000%;
+    }
+
+    &:active {
+      background-color: $color-mine-shaft;
+      background-size: 100%;
+      transition: background 0s;
     }
   }
 }

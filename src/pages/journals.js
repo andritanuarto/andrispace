@@ -29,7 +29,7 @@ const Journal = ({ data }) => {
                   <span>{node.frontmatter.date}</span>
                   <strong>{node.frontmatter.title}</strong>
                   <div className="thumbnail-view__thumbnail__blurb">
-                    {node.excerpt} ...
+                    {node.excerpt}
                   </div>
                   <button className="btn">read more</button>
                 </Fade>
