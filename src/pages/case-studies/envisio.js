@@ -120,7 +120,7 @@ export default () => (
           We created different views: map-view, list-view, and Gantt-view. On the map-view mode, the user can see the full hierarchy of the plan from top to bottom. This view is also useful to give the context of where each item resides on the overall organization plan.
         </p>
       </div>
-      <div className="par par--normal-width spacing">
+      <div className="par par--medium-width spacing">
         <ImgSection imgs={[{url: iPadOverallView}]} caption="Planning map-view" />
       </div>
       <div className="par par--normal-width">
@@ -128,7 +128,7 @@ export default () => (
           To handle scenarios where the user wants to see only the items that they own and filter based on some criteria, we created a narrow-view mode which by default showed only items that current user owns.
         </p>
       </div>
-      <div className="par par--normal-width spacing">
+      <div className="par par--medium-width spacing">
         <ImgSection imgs={[{url: iPadListlView}]} caption="Planning list-view" />
       </div>
       <div className="par par--normal-width">
@@ -136,7 +136,7 @@ export default () => (
           Users can also switch to Gantt-view to show better visibility of the timeline for each part of the plan.
         </p>
       </div>
-      <div className="par par--normal-width spacing">
+      <div className="par par--medium-width spacing">
         <ImgSection imgs={[{url: iPadGanttView}]} caption="Planning gantt-view" />
       </div>
       <div className="par par--normal-width">
@@ -144,7 +144,7 @@ export default () => (
           Each part of the plan is clickable to show more details about that selected part of the plan.
         </p>
       </div>
-      <div className="par par--normal-width spacing">
+      <div className="par par--medium-width spacing">
         <ImgSection imgs={[{url: iPadDetailView}]} caption="Planning detail view" />
       </div>
       <div className="par par--normal-width">
