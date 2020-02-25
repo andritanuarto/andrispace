@@ -25,7 +25,7 @@ import hiFi from '../../img/adbusters/hi-fi.png';
 
 export const frontmatter = {
   clientName: 'Adbusters',
-  projectDate: 'November 27, 2019',
+  projectDate: '2019-11-27',
   projectTitle: 'World Revolution App',
   postTitle: 'Adbusters – World Revolution App',
   blurb: 'Now is the time to find each other and assemble',

@@ -17,7 +17,7 @@ import award from '../../img/envisio/award.svg';
 
 export const frontmatter = {
   clientName: 'Envisio',
-  projectDate: 'January 25, 2020',
+  projectDate: '2019-01-25',
   projectTitle: 'Strategic Planning Manager',
   postTitle: 'Envisio - Strategic Planning Manager',
   blurb: 'Strategy and performance management software',
