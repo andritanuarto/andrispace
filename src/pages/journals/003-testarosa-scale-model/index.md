@@ -48,45 +48,50 @@ I started working on the engine and cockpit. Although those parts have a lot of 
 </div>
 
 <div style="max-width: 600px; margin: 56px auto;" >
-  <img class="Testarossa Cockpit" src="../../../img/journals/003/cockpit-6.jpg" />
+  <img class="Testarossa Cockpit" src="../../../img/journals/003/engine.jpg" />
 </div>
 
 Like the shape and colour of Testarossa's engine and the colour of red gives a nice contrast from dominant black and silver colours.
 
 <div style="max-width: 600px; margin: 56px auto;" >
-  <img class="Testarossa Cockpit" src="../../../img/journals/003/engine.jpg" />
+  <img class="Testarossa Engine" src="../../../img/journals/003/cockpit-6.jpg" />
 </div>
+
 
 For this project, I chose traditional Ferrari colours. I chose the beige colour for most of the interior parts and Italian red for the body.
 
 <div style="max-width: 600px; margin: 56px auto;">
-  <img class="Testarossa Cockpit" src="../../../img/journals/003/body-1.jpg" />
+  <img class="Testarossa Body" src="../../../img/journals/003/body-2.jpg" />
 </div>
 
 <div style="max-width: 600px; margin: 56px auto;">
-  <img class="Testarossa Cockpit" src="../../../img/journals/003/body-2.jpg" />
+  <img class="Testarossa Body" src="../../../img/journals/003/body-1.jpg" />
 </div>
 
 <div style="max-width: 600px; margin: 56px auto;">
-  <img class="Testarossa Cockpit" src="../../../img/journals/003/body-4.jpg" />
+  <img class="Testarossa Body" src="../../../img/journals/003/body-4.jpg" />
 </div>
 
 <div style="max-width: 600px; margin: 56px auto;">
-  <img class="Testarossa Cockpit" src="../../../img/journals/003/body-5.jpg" />
+  <img class="Testarossa Body" src="../../../img/journals/003/body-5.jpg" />
 </div>
 
 I feel that I need to improve more working on the body part, especially the polishing technique, which is the hardest to master in my opinion. After I did the paint job for the red body, I did a lot of masking especially for the black window frames which are very meticulous processes.
 
 <div style="max-width: 600px; margin: 56px auto;">
-  <img class="Testarossa Cockpit" src="../../../img/journals/003/body-3.jpg" />
+  <img class="Testarossa Body" src="../../../img/journals/003/body-3.jpg" />
 </div>
 
 <div style="max-width: 600px; margin: 56px auto;">
-  <img class="Testarossa Cockpit" src="../../../img/journals/003/body-6.jpg" />
+  <img class="Testarossa Body" src="../../../img/journals/003/body-6.jpg" />
 </div>
 
 <div style="max-width: 600px; margin: 56px auto;">
-  <img class="Testarossa Cockpit" src="../../../img/journals/003/body-7.jpg" />
+  <img class="Testarossa Body" src="../../../img/journals/003/body-7.jpg" />
+</div>
+
+<div style="max-width: 600px; margin: 56px auto;">
+  <img class="Testarossa Body" src="../../../img/journals/003/body-8.jpg" />
 </div>
 
 Overall I enjoyed the experience building it and very satisfied with the result. In the future, I might try to build this model again in a different colour. Thank you for reading this post and stay tuned.
