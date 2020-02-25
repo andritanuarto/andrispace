@@ -1,4 +1,5 @@
 import React from "react";
+import SVG from 'react-inlinesvg';
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
 import PlanningHTMLPrototype from '../../components/envisio/html-planning-prototype';
 import ImgSection from '../../components/interior/img-section';
@@ -12,6 +13,7 @@ import stickies1 from '../../img/envisio/stickies1.jpg';
 import stickies2 from '../../img/envisio/stickies2.jpg';
 import caseStudyBanner from '../../img/envisio/envisio-case-study-banner.jpg';
 import planLoading from '../../img/envisio/plan-loading.png';
+import award from '../../img/envisio/award.svg';
 
 export const frontmatter = {
   clientName: 'Envisio',
@@ -149,6 +151,12 @@ export default () => (
         <p>
           <h2>Outcomes</h2>
           To be able to track and to confirm the usability of the end product, we didn't remove the old UI version. We allowed users to easily switch between old and new UI versions temporarily. The goal of this setup was to further validate which version users used the most. After two months of tracking the number of visits, 78.6% of the traffic went to the new design, which was a very satisfying result.
+        </p>
+        <p>
+          Because of this solution, our software got a recognition as consistently rated the easiest to use strategic planning software by Capterra.
+        </p>
+        <p style={{textAlign: 'center'}}>
+          <SVG src={award} width="400"/>
         </p>
       </div>
     </>

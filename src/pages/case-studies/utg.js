@@ -57,7 +57,7 @@ import hiCourses from '../../img/utg/hi-courses.jpg';
 export const frontmatter = {
   clientName: 'UTG Academy',
   projectDate: 'December 18, 2019',
-  projectTitle: 'UTG Academy – Website Redesign',
+  projectTitle: 'UTG Academy Website Redesign',
   postTitle: 'UTG Academy – Website Redesign',
   blurb: 'Coders will be the wizard of tomorrow',
   logoWidth: '100px',
