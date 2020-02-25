@@ -20,7 +20,7 @@ export const frontmatter = {
   projectDate: '2019-01-25',
   projectTitle: 'Strategic Planning Manager',
   postTitle: 'Envisio - Strategic Planning Manager',
-  blurb: 'Strategy and performance management software',
+  blurb: 'Get your plans on track',
   logoWidth: 'auto',
   opacityColor: '#000000',
   opacityLevel: '0.4',
