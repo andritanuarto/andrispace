@@ -210,10 +210,10 @@
         }
       }
       &--timer {
-        background: $color-silver;
-        height: 4px;
-        animation: progressBar 10s ease-in-out;
-        animation-fill-mode:both;
+        // background: $color-silver;
+        // height: 4px;
+        // animation: progressBar 10s ease-in-out;
+        // animation-fill-mode:both;
       }
     }
     &__project-info {

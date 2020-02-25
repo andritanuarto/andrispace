@@ -40,13 +40,13 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
 
   const edges = data.allJavascriptFrontmatter.edges;
 
-  setTimeout(() => {
-    if (edges.length === heroIndex + 1) {
-      slideIndexHandler(0);
-    } else {
-      slideIndexHandler(heroIndex + 1);
-    }
-  }, 10000);
+  // setTimeout(() => {
+  //   if (edges.length === heroIndex + 1) {
+  //     slideIndexHandler(0);
+  //   } else {
+  //     slideIndexHandler(heroIndex + 1);
+  //   }
+  // }, 10000);
 
   return (
     <div className="hero-container">
