@@ -11,6 +11,7 @@ import iPadListlView from '../../img/envisio/ipad-list-view.png';
 import stickies1 from '../../img/envisio/stickies1.jpg';
 import stickies2 from '../../img/envisio/stickies2.jpg';
 import caseStudyBanner from '../../img/envisio/envisio-case-study-banner.jpg';
+import planLoading from '../../img/envisio/plan-loading.png';
 
 export const frontmatter = {
   clientName: 'Envisio',
@@ -79,7 +80,11 @@ export default () => (
           Let's take the example of <code style={{background: '#7f17ec', color: '#ffffff'}}>Action 1.2.1</code>. If you see the number convention, it means that <code style={{background: '#7f17ec', color: '#ffffff'}}>Action 1.2.1</code>'s parent is <code style={{background: '#52bf00', color: '#ffffff'}}>1.2</code>, which is <code style={{background: '#52bf00', color: '#ffffff'}}>Strategy 1.2</code>, and the <code style={{background: '#52bf00', color: '#ffffff'}}>Strategy 1.2</code> parent is <code style={{background: '#1879eb', color: '#ffffff'}}>Goal 1</code>. Therefore, the relationship between a parent and children is one-to-many.
         </p>
         <p>
-          In reality, some of our clients had much bigger plans than the example provided above. In the previous version, the user had to go through page by page to access items on the deeper levels. The concern with that approach is that every time the user wanted to access different levels, the browser had to re-render the whole UI until all the data gets loaded, which sometimes could take a long time if there are so many items on that level. Another problem was that users found it diffivult to figure out the context in some parts of the plan as there is no clear visual cue that represents the relationship between the parent level and the child level.
+          In reality, some of our clients had much bigger plans than the example provided above. In the previous version, the user had to go through page by page to access items on the deeper levels. The concern with that approach is that every time the user wanted to access different levels, the browser had to re-render the whole UI until all the data gets loaded, which sometimes could take a long time if there are so many items on that level.
+        </p>
+        <p><ImgSection imgs={[{url: planLoading}]} /></p>
+        <p>
+          Another problem was that users found it difficult to figure out the context in some parts of the plan as there is no clear visual cue that represents the relationship between the parent level and the child level.
         </p>
         <p>
           <h2>User Research</h2>
