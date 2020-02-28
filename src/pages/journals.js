@@ -44,7 +44,7 @@ const Journal = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {status: {eq: "published"}}}) {
       totalCount
       edges {
         node {

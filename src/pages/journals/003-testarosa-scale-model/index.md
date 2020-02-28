@@ -8,7 +8,7 @@ type: "post"
 image: "./ferrari-testarossa.jpg"
 tags: ["hobby", "toy"]
 postNo: "3"
-status: "draft"
+status: "published"
 ---
 
 When I was watching a <a target="_blank" href="https://www.youtube.com/watch?v=kMM8i5nIQ00">YouTube video</a> from Petrolicious about Ferrari Testarossa, it reminded me about this car poster from back in the early 90s, and this model remains to be one of my favourite Ferrari models of all time. To me, Testarossa represents how the supercar should look like; it has a fiery red colour and it still looks fast even without seeing it running. That video inspired me to work on the scale model for that car. Luckily I found the model from eBay made by Japanese manufacture called Tamiya. If you're interested you can buy it <a target="_blank" href="https://www.ebay.ca/sch/i.html?_ssc=1&_nkw=tamiya+ferrari+testarossa">here</a>.
