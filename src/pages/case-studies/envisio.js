@@ -40,12 +40,12 @@ export default () => (
     <>
       <div className="par par--normal-width">
         <p className="first-paragraph">
-          Envisio develops strategic planning web applications that facilitates organizations to lay out their plans by defining their goals. Each goal's progress can be tracked and measured to ensure the operational plan is under control. Their software consists of 3 main modules: <strong>Plans</strong>, <strong>Reports</strong>, and <strong>Analytics</strong>. For this case study, the focus will only be on the plan's module as I plan on creating individual case studies for each module. Due to the NDA agreement, I am only able to share limited information about this project.
+          Envisio develops strategic planning web applications that facilitates organizations to lay out their plans by defining their goals. Each goal's progress can be tracked and measured to ensure the operational plan is under control. Their software consists of 3 main modules: <strong>Planning</strong>, <strong>Reporting</strong>, and <strong>Analyzing</strong>. For this case study, the focus will only be on the plan's module as I plan on creating individual case studies for each module. Due to the NDA agreement, I am only able to share limited information about this project.
         </p>
         <p>
           <ImgSection
             imgs={[{url: SoftwareModules}]}
-            caption="Users can navigate to a different module by clicking the module dropdown. The image shows that currently you are in the Plans module."
+            caption="Users can navigate to a different module by clicking the module dropdown. The image shows that currently user is in the planning module."
           />
         </p>
         <p>
