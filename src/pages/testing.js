@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Child from './test/child';
+import Child from './testing/child';
 
-const Test = () => {
+const Testing = () => {
   const [count, setCount] = useState(0);
 
   console.log('rerender');
@@ -16,9 +16,9 @@ const Test = () => {
   return (
     <div>
       <Child ok={a} />
-      <button onClick={() => setCount(count + 1)}>Test</button>
+      <button onClick={() => setCount(count + 1)}>Testing</button>
     </div>
   )
 };
 
-export default Test;
+export default Testing;
