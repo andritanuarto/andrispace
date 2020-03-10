@@ -15,11 +15,12 @@ const Logo = ({logoColor, animated}) => {
 
 Logo.propTypes = {
   logoColor: PropTypes.string,
-  animated: PropTypes.bool.isRequired
+  animated: PropTypes.bool
 };
 
 Logo.defaultProps = {
-  logoColor: '#ffffff'
+  logoColor: '#ffffff',
+  animated: false
 }
 
 export default Logo;

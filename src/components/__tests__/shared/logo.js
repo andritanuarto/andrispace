@@ -1,6 +1,5 @@
 import React from "react";
-import renderer from "react-test-renderer";
-import { findByTestAttr } from '../../../test/testUtils';
+import { findByTestAttr, proptypesValidator } from '../../../test/testUtils';
 import Logo from "../../shared/logo";
 
 import Enzyme, { shallow } from 'enzyme';
@@ -16,7 +15,17 @@ const setup = (props={}) => {
   return shallow( <Logo {...setupProps} /> );
 }
 
-test("renders correctly", () => {
+test('renders correctly', () => {
   const logoComponent = findByTestAttr(setup(), 'logo');
   expect(logoComponent.length).toBe(1);
+});
+
+test('proptypes are correct', () => {
+  const expectedProps = { animated: false, logoColor: '#ffffff' };
+  proptypesValidator(Logo, expectedProps);
+});
+
+test('logo has .logo--animated when animated props is true', () => {
+  const wrapper = setup({animated: true});
+  expect(wrapper.find('.logo--animated').length).toBe(1);
 });
