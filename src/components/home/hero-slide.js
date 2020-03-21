@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { connect } from 'react-redux';
 import { Link } from "gatsby";
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
@@ -6,6 +6,8 @@ import { useStaticQuery, graphql } from "gatsby";
 import heroImgAdbusters from '../../img/adbusters/hero.jpg';
 import heroImgUtg from '../../img/utg/utg-case-study-banner.jpg';
 import heroImgEnvisio from '../../img/envisio/envisio-bg.jpg';
+import heroImgVinylFanatics from '../../img/vinyl-fanatics/hero.jpg';
+
 import logoImgAdbusters from '../../img/adbusters/splash-adbusters.png';
 import logoImgUtg from '../../img/utg/utg-splash.png';
 import logoImgEnvisio from '../../img/envisio/planning-banner.png';
@@ -19,7 +21,7 @@ const mapStateToProps = ({ heroIndex }) => {
 const HeroSlide = ({heroIndex}) => {
   const data = useStaticQuery(graphql`
     query SlideQuery {
-      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: ASC}) {
+      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: ASC}, filter: {frontmatter: {status: {eq: "published"}}}) {
         edges {
           node {
             frontmatter {
@@ -40,7 +42,9 @@ const HeroSlide = ({heroIndex}) => {
     }
   `);
 
+
   const slide = data.allJavascriptFrontmatter.edges[heroIndex].node.frontmatter;
+  console.log('rerender');
 
   let heroImg;
   let logoImg;
@@ -54,6 +58,9 @@ const HeroSlide = ({heroIndex}) => {
       heroImg = heroImgAdbusters;
       logoImg = logoImgAdbusters;
       break;
+    case 'vinyl fanatics':
+      heroImg = heroImgVinylFanatics;
+      logoImg = logoImgAdbusters;
     default:
       heroImg = heroImgUtg;
       logoImg = logoImgUtg;
@@ -85,4 +92,4 @@ const HeroSlide = ({heroIndex}) => {
   );
 }
 
-export default connect(mapStateToProps)(HeroSlide);
+export default connect(mapStateToProps)(memo(HeroSlide));

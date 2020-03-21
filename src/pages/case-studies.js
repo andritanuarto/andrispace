@@ -7,7 +7,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 const CaseStudies = () => {
   const data = useStaticQuery(graphql`
     query CaseStudyQuery {
-      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: ASC}) {
+      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: ASC}, filter: {frontmatter: {status: {eq: "published"}}}) {
         edges {
           node {
             frontmatter {
