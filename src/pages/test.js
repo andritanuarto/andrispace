@@ -15,7 +15,7 @@ const Test = () => {
 
   return (
     <div>
-      <Child ok={a} />
+      <Child ok="test" />
       <button onClick={() => setCount(count + 1)}>Test</button>
     </div>
   )

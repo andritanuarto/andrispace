@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from "gatsby";
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
@@ -46,7 +46,7 @@ const HeroSlide = ({heroIndex}) => {
 
   let heroImg;
   let logoImg;
-  console.log(slide.clientName.toLowerCase());
+
   switch(slide.clientName.toLowerCase()) {
     case 'envisio':
       heroImg = heroImgEnvisio;
@@ -91,4 +91,4 @@ const HeroSlide = ({heroIndex}) => {
   );
 }
 
-export default connect(mapStateToProps)(memo(HeroSlide));
+export default connect(mapStateToProps)(HeroSlide);

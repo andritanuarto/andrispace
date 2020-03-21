@@ -14,7 +14,7 @@ export const frontmatter = {
   opacityLevel: '0.7',
   url: './case-studies/vinyl-fanatics',
   heroImg: '../../img/vinyl-fanatics/hero.jpg',
-  summary: 'Way before mp3, cd even cassette, the vinyl records enjoyed the popularity among music lovers. It was the primary medium for music reproduction in the 20th century.'
+  summary: 'Way before mp3, cd even cassette, the vinyl records enjoyed the popularity among music lovers'
 };
 
 export default () => (
