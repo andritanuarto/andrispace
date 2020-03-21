@@ -23,7 +23,7 @@ export const frontmatter = {
   blurb: 'Get your plans on track',
   logoWidth: 'auto',
   opacityColor: '#000000',
-  opacityLevel: '0.4',
+  opacityLevel: '0.7',
   url: './case-studies/envisio',
   heroImg: '../../img/envisio/envisio-bg.jpg',
   summary: 'Envisio developed the strategic planning web application that facilitates organizations to lay out their plans by defining their goals.'

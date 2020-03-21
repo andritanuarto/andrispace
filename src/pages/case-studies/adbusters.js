@@ -31,7 +31,7 @@ export const frontmatter = {
   blurb: 'Now is the time to find each other and assemble',
   logoWidth: 'auto',
   opacityColor: '#000000',
-  opacityLevel: '0.4',
+  opacityLevel: '0.7',
   url: './case-studies/adbusters',
   heroImg: '../../img/adbusters/hero.jpg',
   summary: 'Adbusters is a Canadian magazine publishing company. They describe themselves as a global network for artists, activists, and entrepreneurs.'

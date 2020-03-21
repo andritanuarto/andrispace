@@ -138,6 +138,7 @@
       width: 100%;
     }
     &__slide {
+      padding-top: 48px;
       display: flex;
       z-index: 2;
       flex: 1;
@@ -209,36 +210,39 @@
           }
         }
       }
-      &--timer {
+      // &--timer {
         // background: $color-silver;
         // height: 4px;
         // animation: progressBar 10s ease-in-out;
         // animation-fill-mode:both;
-      }
+      // }
     }
     &__project-info {
       display: flex;
-      max-width: 800px;
+      max-width: 1500px;
       width: 100%;
       height: 100%;
       margin: 0 auto;
-      padding: 0 15px;
+      padding: 0 40px;
       position: relative;
       z-index: 2;
       align-items: center;
       &--l {
-        width: 200px;
-        padding-right: 50px;
+        width: 55%;
+        padding-right: 20px;
         overflow: hidden;
+        text-align: center;
         img {
           margin-top: 15px;
           max-width: 100%;
+          max-height: 500px;
           position: relative;
           @include animation(heroFadeOut, 1s, ease-out);
         }
       }
       &--r {
         flex: 1;
+        width: 45%;
         padding-left: 50px;
         overflow: hidden;
         h1 {

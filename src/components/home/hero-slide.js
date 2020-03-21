@@ -6,9 +6,9 @@ import { useStaticQuery, graphql } from "gatsby";
 import heroImgAdbusters from '../../img/adbusters/hero.jpg';
 import heroImgUtg from '../../img/utg/utg-case-study-banner.jpg';
 import heroImgEnvisio from '../../img/envisio/envisio-bg.jpg';
-import logoImgAdbusters from '../../img/adbusters/adbusters-logo.png';
+import logoImgAdbusters from '../../img/adbusters/splash-adbusters.png';
 import logoImgUtg from '../../img/utg/utg-logo.png';
-import logoImgEnvisio from '../../img/envisio/envisio-logo.png';
+import logoImgEnvisio from '../../img/envisio/planning-banner.png';
 
 const mapStateToProps = ({ heroIndex }) => {
   return {
