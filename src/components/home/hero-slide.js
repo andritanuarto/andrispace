@@ -42,9 +42,7 @@ const HeroSlide = ({heroIndex}) => {
     }
   `);
 
-
   const slide = data.allJavascriptFrontmatter.edges[heroIndex].node.frontmatter;
-  console.log('rerender');
 
   let heroImg;
   let logoImg;
