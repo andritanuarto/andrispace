@@ -62,7 +62,7 @@ export const frontmatter = {
   blurb: 'Coders will be the wizard of tomorrow',
   logoWidth: 'auto',
   opacityColor: '#000000',
-  opacityLevel: '0.4',
+  opacityLevel: '0.7',
   url: './case-studies/utg',
   heroImg: '../../img/utg/utg-case-study-banner.jpg',
   summary: 'These days, I see a lot of high demand jobs require to have programming skills. The fact that programming skills are becoming increasingly important, most'
