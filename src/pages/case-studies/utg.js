@@ -60,7 +60,7 @@ export const frontmatter = {
   projectTitle: 'UTG Academy Website Redesign',
   postTitle: 'UTG Academy – Website Redesign',
   blurb: 'Coders will be the wizard of tomorrow',
-  logoWidth: '100px',
+  logoWidth: 'auto',
   opacityColor: '#000000',
   opacityLevel: '0.4',
   url: './case-studies/utg',
