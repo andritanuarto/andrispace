@@ -21,7 +21,7 @@ const mapStateToProps = ({ heroIndex }) => {
 const HeroSlide = ({heroIndex}) => {
   const data = useStaticQuery(graphql`
     query SlideQuery {
-      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: ASC}, filter: {frontmatter: {status: {eq: "published"}}}) {
+      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: DESC}, filter: {frontmatter: {status: {eq: "published"}}}) {
         edges {
           node {
             frontmatter {
@@ -46,7 +46,7 @@ const HeroSlide = ({heroIndex}) => {
 
   let heroImg;
   let logoImg;
-
+  console.log(slide.clientName.toLowerCase());
   switch(slide.clientName.toLowerCase()) {
     case 'envisio':
       heroImg = heroImgEnvisio;
@@ -56,12 +56,13 @@ const HeroSlide = ({heroIndex}) => {
       heroImg = heroImgAdbusters;
       logoImg = logoImgAdbusters;
       break;
-    case 'vinyl fanatics':
-      heroImg = heroImgVinylFanatics;
-      logoImg = logoImgAdbusters;
-    default:
+    case 'utg academy':
       heroImg = heroImgUtg;
       logoImg = logoImgUtg;
+      break;
+    default:
+      heroImg = heroImgVinylFanatics;
+      logoImg = heroImgVinylFanatics;
       break;
   }
 

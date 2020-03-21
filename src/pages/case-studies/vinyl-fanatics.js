@@ -1,14 +1,14 @@
 import React from "react";
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
-import caseStudyBanner from '../../img/adbusters/adbusters-case-study-banner.jpg';
+import caseStudyBanner from '../../img/vinyl-fanatics/case-study-banner.jpeg';
 
 export const frontmatter = {
   clientName: 'Vinyl Fanatics',
-  projectDate: '2019-09-15',
+  projectDate: '2019-05-15',
   status: 'draft',
   projectTitle: 'Vinyl Fanatics – An online store for vinyl collectors',
   postTitle: 'An online store for Vinyl Fanatics',
-  blurb: 'Now is the time to find each other and assemble',
+  blurb: 'Buy records online to grow your music collection',
   logoWidth: 'auto',
   opacityColor: '#000000',
   opacityLevel: '0.7',

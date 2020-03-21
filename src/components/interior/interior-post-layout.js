@@ -4,6 +4,7 @@ import Header from '../shared/header';
 import InteriorContainer from '../shared/interior-container';
 
 const InteriorPostLayout = ({ caseStudyContent, children }) => {
+  console.log(caseStudyContent);
   return (
     <>
       <Header/>

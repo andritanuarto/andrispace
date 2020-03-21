@@ -26,7 +26,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
 
   const data = useStaticQuery(graphql`
     query HeaderQuery {
-      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: ASC}, filter: {frontmatter: {status: {eq: "published"}}}) {
+      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: DESC}, filter: {frontmatter: {status: {eq: "published"}}}) {
         edges {
           node {
             frontmatter {
