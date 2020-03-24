@@ -7,6 +7,7 @@ export default ({navColor, navigationOpen, handleNavigation}) => {
       type="button"
       aria-label="Menu"
       aria-controls="navigation"
+      data-test="hamburger"
       onClick={() => {handleNavigation(!navigationOpen)}}
     >
       <span className="hamburger-box">

@@ -65,7 +65,7 @@ const Header = ({navColor, logoColor, navigationOpen, initialRender, handleNavig
 
   return (
     <>
-      <div className="header header--light">
+      <div data-test="header" className="header header--light">
         <Logo logoColor={logoColor} animated={true && initialRender}/>
         <Hamburger
           navColor={navColor}
