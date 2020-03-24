@@ -5,7 +5,7 @@ import caseStudyBanner from '../../img/vinyl-fanatics/case-study-banner.jpeg';
 export const frontmatter = {
   clientName: 'Vinyl Fanatics',
   projectDate: '2019-05-15',
-  status: 'published',
+  status: 'draft',
   projectTitle: 'Vinyl Fanatics – An online store for vinyl collectors',
   postTitle: 'An online store for vinyl collectors',
   blurb: 'Buy records online to grow your music collection',
