@@ -26,12 +26,13 @@ import hiFi from '../../img/adbusters/hi-fi.png';
 export const frontmatter = {
   clientName: 'Adbusters',
   projectDate: '2019-11-27',
+  status: 'published',
   projectTitle: 'World Revolution App',
   postTitle: 'Adbusters – World Revolution App',
   blurb: 'Now is the time to find each other and assemble',
   logoWidth: 'auto',
   opacityColor: '#000000',
-  opacityLevel: '0.4',
+  opacityLevel: '0.7',
   url: './case-studies/adbusters',
   heroImg: '../../img/adbusters/hero.jpg',
   summary: 'Adbusters is a Canadian magazine publishing company. They describe themselves as a global network for artists, activists, and entrepreneurs.'

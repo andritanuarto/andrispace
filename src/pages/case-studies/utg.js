@@ -57,12 +57,13 @@ import hiCourses from '../../img/utg/hi-courses.jpg';
 export const frontmatter = {
   clientName: 'UTG Academy',
   projectDate: '2019-12-18',
+  status: 'published',
   projectTitle: 'UTG Academy Website Redesign',
   postTitle: 'UTG Academy – Website Redesign',
   blurb: 'Coders will be the wizard of tomorrow',
-  logoWidth: '100px',
+  logoWidth: 'auto',
   opacityColor: '#000000',
-  opacityLevel: '0.4',
+  opacityLevel: '0.7',
   url: './case-studies/utg',
   heroImg: '../../img/utg/utg-case-study-banner.jpg',
   summary: 'These days, I see a lot of high demand jobs require to have programming skills. The fact that programming skills are becoming increasingly important, most'

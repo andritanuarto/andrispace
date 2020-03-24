@@ -6,7 +6,7 @@ const Logo = ({logoColor, animated}) => {
   return (
     <Link data-test="logo" to={`/`} className={`logo ${animated ? 'logo--animated' : ''}`} style={{color: logoColor}}>
       <div className="logo__main">
-        andri&apos;space
+        andri&rsquo;space
         <span>UI / UX / DEV</span>
       </div>
     </Link>

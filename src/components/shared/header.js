@@ -46,9 +46,8 @@ const Header = ({navColor, logoColor, navigationOpen, initialRender, handleNavig
   const mainMenu = (
     <div className="nav">
       {menus.map((menu) => {
-        console.log(menu.label);
         return (
-          <div>
+          <div key={menu.label}>
             <Link key={menu.label} onClick={() => {handleNavigation(!navigationOpen)}} to={menu.link}>
               {menu.label}
             </Link>

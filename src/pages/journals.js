@@ -5,7 +5,6 @@ import InteriorContainer from '../components/shared/interior-container';
 import { Link, graphql } from "gatsby";
 
 const Journal = ({ data }) => {
-  console.log(data.allMarkdownRemark.edges[0].node.frontmatter.image.childImageSharp.fluid.src)
   return (
     <>
       <Header/>
