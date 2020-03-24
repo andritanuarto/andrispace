@@ -39,8 +39,12 @@ export default () => (
         </p>
         <p>
           <h3>The Challenge</h3>
-          A lot of people enjoy going to the physical store and do crate surfing to buy vinyl, but not everyone has the access and time to go to the physical store. The challenge is how to accommodate and to create a good experience for people to browse and purchase vinyl online, and also attracting younger audiences.
+          A lot of people enjoy going to the physical store and do crate surfing to buy vinyl, but not everyone has the access and time to go to the physical store. The challenge is how to create a pleasant experience for users to browse and purchase vinyl online and attracting younger audiences.
         </p>
+      </div>
+      <div className="par par--normal-width">
+        <h2>Research</h2>
+        <p>As a starting point, we did some research to gain a better understanding of vinyl records and the music markets in general. We conducted domain research, user interviews, and surveys to get the data about users' behaviour, needs, pain-points and opportunities.</p>
       </div>
     </>
   </InteriorPostLayout>

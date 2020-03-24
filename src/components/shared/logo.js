@@ -19,7 +19,7 @@ Logo.propTypes = {
 };
 
 Logo.defaultProps = {
-  logoColor: '#ffffff',
+  logoColor: '#333333',
   animated: false
 }
 
