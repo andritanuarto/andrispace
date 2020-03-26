@@ -1,6 +1,7 @@
 import React from "react";
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
 import caseStudyBanner from '../../img/vinyl-fanatics/case-study-banner.jpeg';
+import BarChart from '../../components/interior/bar-chart';
 
 export const frontmatter = {
   clientName: 'Vinyl Fanatics',
@@ -28,23 +29,95 @@ export default () => (
     <>
       <div className="par par--normal-width">
         <p className="first-paragraph">
-          Before mp3, cd or even cassette, the vinyl records industry enjoyed its renaissance among music lovers. It was the primary medium for music reproduction in the 20th century. Although the industry faced stiff competition when the compact cassettes were mass-produced in the 1910s, it still able maintained the largest market share. By the early 90s, the CD became the most preferred medium for people to collect music. As CD continued to grow, it contributed to a major decline in vinyl sales.
+          Before mp3, CD or even cassette, the vinyl records industry enjoyed its renaissance among music lovers. It was the primary medium for music reproduction in the 20th century. Although the industry faced stiff competition when the compact cassettes were mass-produced in the 1910s, records were able to maintain the largest market share at that time. Records sales started a major decline in the early '90s when CD became the most preferred medium for people to collect music.
         </p>
         <p>
-          After declining market in the 90s to early 2000s, vinyl records experienced a resurgence in 2008. Its sales reached 1.9 million units, and the increasing trend continues and eventually outsell CDs in 2019 for the first time in 40 years. Today vinyl records established its niche besides the popularity of online music platforms. It attracted not only older generations, but more millennials started to enjoy vinyl records as an alternative way to enjoy music.
+          After its declining popularity in the 90s to early 2000s, vinyl records experienced a resurgence in 2008. Its sales reached 1.9 million units, and the increasing trend continued until it eventually outsold CDs in 2019 for the first time in 40 years. Today, vinyl records has found a niche market that attracts both the young and old generations as an alternative way to enjoy music in the midst of the popularity of online music platforms.
         </p>
         <p>
           <h2>Project Brief</h2>
-          Started as a small store in Singapore, they wanted to sell their products beyond the local market through the e-commerce website. The new website aims to attract more buyers and becoming more relevant for the increasing number of younger audiences to enjoy music using vinyl records. Their website will be developed using Shopify and targeting for both mobile and desktop users.
+          Started as a small store, Vinyl Fanatics wanted to sell its products beyond the local market through the e-commerce website. The new website aims to attract more buyers and becoming more relevant for the increasing number of younger audiences to enjoy music through vinyl records. The website will be developed using Shopify and targeting for both mobile and desktop users.
         </p>
         <p>
-          <h3>The Challenge</h3>
-          A lot of people enjoy going to the physical store and do crate surfing to buy vinyl, but not everyone has the access and time to go to the physical store. The challenge is how to create a pleasant experience for users to browse and purchase vinyl online and attracting younger audiences.
+          <h3>The Opportunity &amp; The Challenge</h3>
+          People can go to the physical stores and do crate surfing to buy records, but not everyone has the time and proximity from where they live to go to those stores, and that is where the online store can offer to those people. Our challenge is to create a pleasant experience for users to browse and purchase records online and also identifying market behaviour and factors that affect their buying decisions, especially for younger people.
         </p>
       </div>
       <div className="par par--normal-width">
-        <h2>Research</h2>
-        <p>As a starting point, we did some research to gain a better understanding of vinyl records and the music markets in general. We conducted domain research, user interviews, and surveys to get the data about users' behaviour, needs, pain-points and opportunities.</p>
+        <p>
+          <h2>Research</h2>
+          As a starting point, we did user-research to gain a better understanding of vinyl records and the music markets in general. We used a variety of research methods such as domain research, user interviews, and surveys to get different insights about users' behaviour, needs, pain-points, opportunities and the related industry.
+        </p>
+        <p>
+          <h3>Domain Research</h3>
+          During the domain research that we found from RIAA (Recording Industry Association of America), people who are buying records are mostly age between 35 to 54. It is an estimated 9.7 million albums sold in 2018, and approximately 67% of the sales took place in physical stores, and the rest are mostly from online stores like Discogs, eBay, and other small sites.
+        </p>
+        <p>
+          The two biggest online market Discogs and eBay listed around 5.7 million and 2.3 million vinyl items respectively on their sites. From those numbers, Discogs were the number one destination for sellers and collectors to buy records online. What contributed to their growth, besides having a specific niche for records buyers and sellers, Discogs requires sellers to put more comprehensive information for each item they list on their site. It takes more effort for sellers to list items on Discogs compare to other websites, but buyers like to have detailed information to help their buying decisions.
+        </p>
+        <p>
+          According to Rolling Stone magazine, in Canada and the US alone, vinyl records earned $224.1 million in revenue in the first half of 2019, and the sales outnumber the CD sales. BestBuy stores discontinued selling CDs in 2019, but as of January 2020, they still sell vinyl. Target and Wallmart are still selling CDs, but they are slowly decreasing the space and add more space for vinyl records, players and accessories.
+        </p>
+        <p>
+          <h3>User Survey</h3>
+          To have a deeper understanding of our target users' buying behaviour and how they perceived music in general, we conducted a survey. For this survey, we were reaching audiences both who don't and have vinyl records but love music. From this survey, we wanted to know what are the common reasons people decided to buy vinyl or not. Some of the key questions we wanted to find are:
+          <ul>
+            <li>Discover the reasons why people who buy vinyl and who doesn't.</li>
+            <li>Define the motivation behind their buying decision.</li>
+            <li>To find out where are the preferred place to buy vinyl and why.</li>
+            <li>Distinguish areas of improvement for existing online stores.</li>
+          </ul>
+        </p>
+        <p>
+          From the 29 responses we got, here are the key highlights of our findings.
+        </p>
+        <p>
+          <BarChart
+            title="Survey participants by age group"
+            yTextWidth="200px"
+            data={[
+              {label: '19 - 24', color: '#868686', percent: 82.8},
+              {label: '25 - 34', color: '#bdbdbd', percent: 13.8},
+              {label: '45+', color: '#717171', percent: 3.4}
+            ]}
+          />
+        </p>
+        <p>
+          <BarChart
+            title="Frequency people buying online"
+            yTextWidth="200px"
+            data={[
+              {label: 'Once a week', color: '#868686', percent: 15.4, number: 4},
+              {label: 'Once a month', color: '#bdbdbd', percent: 50, number: 13},
+              {label: 'Once every 6 months', color: '#868686', percent: 26.9, number: 7},
+              {label: 'Once a year', color: '#868686', percent: 1, number: 1},
+              {label: 'Once every 2 months', color: '#868686', percent: 1, number: 1},
+              {label: 'During holiday or special price', color: '#868686', percent: 1, number: 1},
+            ]}
+          />
+        </p>
+        <p>
+          <BarChart
+            title="Reasons why people are buying online"
+            yTextWidth="200px"
+            data={[
+              {label: 'Convenience', color: '#868686', percent: 73.1, number: 19},
+              {label: 'Comparison shopping', color: '#bdbdbd', percent: 57.7, number: 15},
+              {label: 'Wider selection', color: '#868686', percent: 42.3, number: 11},
+              {label: 'Better prices', color: '#868686', percent: 65.4, number: 17},
+              {label: 'Reviews from other shoppers', color: '#868686', percent: 50, number: 13},
+              {label: 'Save time', color: '#868686', percent: 57.7, number: 15},
+              {label: 'No pressure on making a decision', color: '#868686', percent: 3.8, number: 1},
+            ]}
+          />
+        </p>
+        <p>
+          <h3>Contextual Inquiry &amp; Interviews</h3>
+          For contextual Inquiry, We visited four local vinyl stores in Vancouver and conducted user interviews with customers, staff, and store owners. From our findings, two store owners run online stores in conjunction with their physical stores, but they also mentioned their main revenues are mainly from the physical stores. The reason because they encountered stiff competition against bigger online retail stores like Amazon, eBay, Discogs, etc. And the other owner who previously had an online store had to close it down because the revenue didn't cover the operational cost.
+        </p>
+        <p>
+          From the customers' perspective, many of them didn't have anything in mind of what to buy before coming to the store, and they like to crate surfing in-store to find hidden gems before they decided to make purchases.
+        </p>
       </div>
     </>
   </InteriorPostLayout>

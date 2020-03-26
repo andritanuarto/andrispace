@@ -152,7 +152,7 @@ export default () => (
       </p>
       <p>
         <BarChart
-          title="Survey participants age group?"
+          title="Survey participants by age group"
           yTextWidth="200px"
           data={[
             {label: '15 - 25', color: '#868686', percent: 21},
