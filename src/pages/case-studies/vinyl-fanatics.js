@@ -51,7 +51,7 @@ export default () => (
         </p>
         <p>
           <h3>Domain Research</h3>
-          During the domain research that we found from RIAA (Recording Industry Association of America), people who are buying records are mostly age between 35 to 54. It is an estimated 9.7 million albums sold in 2018, and approximately 67% of the sales took place in physical stores, and the rest are mostly from online stores like Discogs, eBay, and other small sites.
+          According to RIAA (Recording Industry Association of America), people who are buying records are mostly age between 35 to 54. It is an estimated 9.7 million albums sold in 2018, and approximately 67% of the sales took place in physical stores, and the rest are mostly from online stores like Discogs, eBay, and other small sites.
         </p>
         <p>
           The two biggest online market Discogs and eBay listed around 5.7 million and 2.3 million vinyl items respectively on their sites. From those numbers, Discogs were the number one destination for sellers and collectors to buy records online. What contributed to their growth, besides having a specific niche for records buyers and sellers, Discogs requires sellers to put more comprehensive information for each item they list on their site. It takes more effort for sellers to list items on Discogs compare to other websites, but buyers like to have detailed information to help their buying decisions.
