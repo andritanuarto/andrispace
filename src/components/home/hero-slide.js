@@ -18,31 +18,8 @@ const mapStateToProps = ({ heroIndex }) => {
   };
 };
 
-const HeroSlide = ({heroIndex}) => {
-  const data = useStaticQuery(graphql`
-    query SlideQuery {
-      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: DESC}, filter: {frontmatter: {status: {eq: "published"}}}) {
-        edges {
-          node {
-            frontmatter {
-              blurb
-              clientName
-              error
-              opacityColor
-              opacityLevel
-              postTitle
-              projectDate
-              projectTitle
-              url
-              logoWidth
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const slide = data.allJavascriptFrontmatter.edges[heroIndex].node.frontmatter;
+const HeroSlide = ({heroIndex, edges}) => {
+  const slide = edges[heroIndex].node.frontmatter;
 
   let heroImg;
   let logoImg;

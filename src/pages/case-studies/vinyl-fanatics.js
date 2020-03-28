@@ -2,6 +2,7 @@ import React from "react";
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
 import caseStudyBanner from '../../img/vinyl-fanatics/case-study-banner.jpeg';
 import BarChart from '../../components/interior/bar-chart';
+import WillDoNext from '../../components/interior/will-do-next';
 
 export const frontmatter = {
   clientName: 'Vinyl Fanatics',
@@ -112,11 +113,45 @@ export default () => (
           />
         </p>
         <p>
+          <WillDoNext text="More survey findings" />
+        </p>
+        <p>
           <h3>Contextual Inquiry &amp; Interviews</h3>
           For contextual Inquiry, We visited four local vinyl stores in Vancouver and conducted user interviews with customers, staff, and store owners. From our findings, two store owners run online stores in conjunction with their physical stores, but they also mentioned their main revenues are mainly from the physical stores. The reason because they encountered stiff competition against bigger online retail stores like Amazon, eBay, Discogs, etc. And the other owner who previously had an online store had to close it down because the revenue didn't cover the operational cost.
         </p>
         <p>
           From the customers' perspective, many of them didn't have anything in mind of what to buy before coming to the store, and they like to crate surfing in-store to find hidden gems before they decided to make purchases.
+        </p>
+        <p><WillDoNext text="Picture our locations" /></p>
+      </div>
+      <div className="par par--normal-width">
+        <p>
+          <h2>Analysis</h2>
+          After we gathered both qualitative and quantitative data, the next step is to analyze our research data and generate the overall conclusion based on our research findings.
+        </p>
+        <p>
+          <h3>Affinity Diagram</h3>
+          We arranged the data we collected from our research and grouped them into various categories to create an affinity diagram. This exercise will help us to develop other analysis deliverables such as user journey, user scenario, and persona.
+        </p>
+        <p><WillDoNext text="Affinity diagram image" /></p>
+        <p>
+          <h3>User Journey &amp; User Scenario</h3>
+          Furthermore, to elaborate more on how users might interact with the website from start to finish, we created both user journey and user scenario.
+        </p>
+        <p><WillDoNext text="User Journey Image" /></p>
+        <p><WillDoNext text="User Scenario Image" /></p>
+      </div>
+      <div className="par par--normal-width">
+        <p>
+          <h2>Information Architecture &amp; User-Flow</h2>
+          After we had a better knowledge of the target user's needs and pain points, we started to structure and prioritize the content by creating Information Architecture (IA). Producing a reliable IA will help us to streamline our design process during the creation of the wireframes. Essential pages like homepage, product listing, contact, product search, cart, and payment process are the top priority. We also decided not to implement user account functionality considering the client's limited resource to maintain it and our team also felt that feature is not essential at the beginning, but will be a future consideration once the website gets more traffic.
+        </p>
+        <p><WillDoNext text="IA Image" /></p>
+        <p><WillDoNext text="User Flow Image" /></p>
+      </div>
+      <div className="par par--normal-width">
+        <p>
+          <h2>Wireframes</h2>
         </p>
       </div>
     </>

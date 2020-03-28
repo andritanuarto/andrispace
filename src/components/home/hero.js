@@ -30,7 +30,16 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
         edges {
           node {
             frontmatter {
+              blurb
               clientName
+              error
+              opacityColor
+              opacityLevel
+              postTitle
+              projectDate
+              projectTitle
+              url
+              logoWidth
             }
           }
         }
@@ -42,7 +51,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
 
   return (
     <div className="hero-container">
-      <HeroSlide />
+      <HeroSlide edges={edges} />
       <div className="hero-container__slide-nav-container">
         <div className="hero-container__slide-nav-center">
           {
