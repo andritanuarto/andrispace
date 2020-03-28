@@ -147,12 +147,19 @@ export default () => (
           After we had a better knowledge of the target user's needs and pain points, we started to structure and prioritize the content by creating Information Architecture (IA). Producing a reliable IA will help us to streamline our design process during the creation of the wireframes. Essential pages like homepage, product listing, contact, product search, cart, and payment process are the top priority. We also decided not to implement user account functionality considering the client's limited resource to maintain it and our team also felt that feature is not essential at the beginning, but will be a future consideration once the website gets more traffic.
         </p>
         <p><WillDoNext text="IA Image" /></p>
+        <p>
+          Because we decided to include a user account, we created a single checkout by asking the user to put payment information every time they make a purchase. To accommodate frequent buyers, we advised our client to have a cookie functionality to auto-fill the payment information such as name, email, address so the user can make a quick purchase after the first time.
+        </p>
         <p><WillDoNext text="User Flow Image" /></p>
       </div>
       <div className="par par--normal-width">
         <p>
           <h2>Wireframes</h2>
+          After we completed IA and user-flow, we began mid-fi and hi-fi wireframes, respectively. Each fidelity we tested internally, but for hi-fi, we did both internal and external tests to a minimized biassed view on our design decision.
         </p>
+        <p><WillDoNext text="Mid-fi Image" /></p>
+        <p><WillDoNext text="Hi-fi Image" /></p>
+        <p>Our design approach is to create the right balance of white space to make the content easier to read. During the prototype testing, we also noticed it's easier for users to break down the payment process into different steps rather than completing a full form into one page.</p>
       </div>
     </>
   </InteriorPostLayout>
