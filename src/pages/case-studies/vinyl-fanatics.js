@@ -1,4 +1,5 @@
 import React from "react";
+import Moment from 'moment';
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
 import caseStudyBanner from '../../img/vinyl-fanatics/case-study-banner.jpeg';
 import BarChart from '../../components/interior/bar-chart';
@@ -23,7 +24,7 @@ export default () => (
   <InteriorPostLayout
     caseStudyContent={{
       postTitle: frontmatter.postTitle,
-      projectDate: frontmatter.projectDate,
+      projectDate: Moment(frontmatter.projectDate).format('ll'),
       caseStudyBanner: caseStudyBanner
     }}
   >
@@ -85,7 +86,7 @@ export default () => (
         </p>
         <p>
           <BarChart
-            title="Frequency people buying online"
+            title="Frequency of people buying online"
             yTextWidth="200px"
             data={[
               {label: 'Once a week', color: '#868686', percent: 15.4, number: 4},
@@ -93,7 +94,7 @@ export default () => (
               {label: 'Once every 6 months', color: '#868686', percent: 26.9, number: 7},
               {label: 'Once a year', color: '#868686', percent: 1, number: 1},
               {label: 'Once every 2 months', color: '#868686', percent: 1, number: 1},
-              {label: 'During holiday or special price', color: '#868686', percent: 1, number: 1},
+              {label: 'Special price or holiday', color: '#868686', percent: 1, number: 1},
             ]}
           />
         </p>
@@ -108,12 +109,39 @@ export default () => (
               {label: 'Better prices', color: '#868686', percent: 65.4, number: 17},
               {label: 'Reviews from other shoppers', color: '#868686', percent: 50, number: 13},
               {label: 'Save time', color: '#868686', percent: 57.7, number: 15},
-              {label: 'No pressure on making a decision', color: '#868686', percent: 3.8, number: 1},
+              {label: 'Less pressure', color: '#868686', percent: 3.8, number: 1},
             ]}
           />
         </p>
         <p>
-          <WillDoNext text="More survey findings" />
+          <BarChart
+            title="Pain points for buying online"
+            yTextWidth="200px"
+            data={[
+              {label: 'Delay Delivery', color: '#868686', percent: 84.6, number: 22},
+              {label: 'Inadequate product description', color: '#868686', percent: 65.4, number: 17},
+              {label: 'Ugly website', color: '#868686', percent: 30.8, number: 8},
+              {label: 'System errors', color: '#bdbdbd', percent: 15.4, number: 4},
+              {label: 'Slow loading', color: '#868686', percent: 15.4, number: 4},
+              {label: 'Lack of some payment method', color: '#868686', percent: 11.5, number: 3},
+              {label: 'Problems with checkout', color: '#868686', percent: 11.5, number: 3},
+              {label: 'Others', color: '#868686', percent: 19, number: 5},
+            ]}
+          />
+        </p>
+        <p>
+          <BarChart
+            title="Favourite websites and apps to listen to music"
+            yTextWidth="200px"
+            data={[
+              {label: 'Spotify', color: '#868686', percent: 80.8, number: 21},
+              {label: 'YouTube', color: '#868686', percent: 61.5, number: 16},
+              {label: 'SoundCloud', color: '#868686', percent: 7.7, number: 2},
+              {label: 'Apple Music', color: '#868686', percent: 7.7, number: 2},
+              {label: 'Deezer', color: '#868686', percent: 3.8, number: 1},
+              {label: 'Google Music', color: '#868686', percent: 3.8, number: 1},
+            ]}
+          />
         </p>
         <p>
           <h3>Contextual Inquiry &amp; Interviews</h3>

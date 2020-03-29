@@ -1,4 +1,5 @@
 import React from "react";
+import Moment from 'moment';
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
 import BarChart from '../../components/interior/bar-chart';
 import ImgSection from '../../components/interior/img-section';
@@ -43,7 +44,7 @@ export default () => (
   <InteriorPostLayout
     caseStudyContent={{
       postTitle: frontmatter.postTitle,
-      projectDate: frontmatter.projectDate,
+      projectDate: Moment(frontmatter.projectDate).format('ll'),
       caseStudyBanner: caseStudyBanner
     }}
   >

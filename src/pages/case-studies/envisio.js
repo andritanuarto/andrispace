@@ -1,4 +1,5 @@
 import React from "react";
+import Moment from 'moment';
 import SVG from 'react-inlinesvg';
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
 import PlanningHTMLPrototype from '../../components/envisio/html-planning-prototype';
@@ -34,7 +35,7 @@ export default () => (
   <InteriorPostLayout
     caseStudyContent={{
       postTitle: frontmatter.postTitle,
-      projectDate: frontmatter.projectDate,
+      projectDate: Moment(frontmatter.projectDate).format('ll'),
       caseStudyBanner: caseStudyBanner
     }}
   >

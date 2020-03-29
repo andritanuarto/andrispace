@@ -1,8 +1,9 @@
 import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import Moment from 'moment';
 import Fade from 'react-reveal/Fade';
-import Header from "../components/shared/header";
+import Header from '../components/shared/header';
 import InteriorContainer from '../components/shared/interior-container';
-import { useStaticQuery, graphql, Link } from "gatsby";
 
 const CaseStudies = () => {
   const data = useStaticQuery(graphql`
@@ -51,7 +52,7 @@ const CaseStudies = () => {
                       <div
                         className="thumbnail-view__thumbnail__img"
                         style={{backgroundImage: `url(${frontmatter.heroImg.childImageSharp.resize.src})`}}/>
-                      <span>{frontmatter.projectDate}</span>
+                      <span>{Moment(frontmatter.projectDate).format('ll')}</span>
                       <strong>{frontmatter.postTitle}</strong>
                       <div className="thumbnail-view__thumbnail__blurb">
                         {frontmatter.summary} ...

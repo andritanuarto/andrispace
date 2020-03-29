@@ -1,5 +1,6 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import Moment from 'moment';
+import { graphql } from "gatsby";
 import InteriorPostLayout from '../components/interior/interior-post-layout';
 
 export default ({ data }) => {
@@ -10,7 +11,7 @@ export default ({ data }) => {
     <InteriorPostLayout
       caseStudyContent={{
         postTitle: frontmatter.title,
-        projectDate: frontmatter.date,
+        projectDate: Moment(frontmatter.date).format('ll'),
       }}
     >
       <div className="par par--normal-width journal-content" dangerouslySetInnerHTML={{ __html: content }} />
