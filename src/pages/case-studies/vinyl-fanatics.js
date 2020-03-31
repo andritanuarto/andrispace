@@ -6,6 +6,9 @@ import WillDoNext from '../../components/interior/will-do-next';
 import InteriorPostLayout from "../../components/interior/interior-post-layout";
 import caseStudyBanner from '../../img/vinyl-fanatics/case-study-banner.jpeg';
 import taskFlow from '../../img/vinyl-fanatics/payment-task-flow.png';
+import vinylStore1 from '../../img/vinyl-fanatics/vinyl-store-1.jpg';
+import vinylStore2 from '../../img/vinyl-fanatics/vinyl-store-2.jpg';
+import vinylStore3 from '../../img/vinyl-fanatics/vinyl-store-3.jpg';
 
 export const frontmatter = {
   clientName: 'Vinyl Fanatics',
@@ -152,7 +155,16 @@ export default () => (
         <p>
           From the customers' perspective, many of them didn't have anything in mind of what to buy before coming to the store, and they like to crate surfing in-store to find hidden gems before they decided to make purchases.
         </p>
-        <p><WillDoNext text="Picture our locations" /></p>
+      </div>
+      <div className="par par--wide-width spacing">
+        <ImgSection
+          imgs={[
+            {url: vinylStore1, style: {padding: '8px'}},
+            {url: vinylStore2, style: {padding: '8px'}},
+            {url: vinylStore3, style: {padding: '8px'}},
+          ]}
+          caption="Payment process wire-flow"
+          />
       </div>
       <div className="par par--normal-width">
         <p>
