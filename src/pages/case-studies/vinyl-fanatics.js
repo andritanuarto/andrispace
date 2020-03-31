@@ -9,6 +9,8 @@ import taskFlow from '../../img/vinyl-fanatics/payment-task-flow.png';
 import vinylStore1 from '../../img/vinyl-fanatics/vinyl-store-1.jpg';
 import vinylStore2 from '../../img/vinyl-fanatics/vinyl-store-2.jpg';
 import vinylStore3 from '../../img/vinyl-fanatics/vinyl-store-3.jpg';
+import affinityDiagram from '../../img/vinyl-fanatics/affinity-diagram.jpg';
+import costumerJourney from '../../img/vinyl-fanatics/customer-journey.jpg';
 
 export const frontmatter = {
   clientName: 'Vinyl Fanatics',
@@ -152,9 +154,6 @@ export default () => (
           <h3>Contextual Inquiry &amp; Interviews</h3>
           For contextual Inquiry, We visited four local vinyl stores in Vancouver and conducted user interviews with customers, staff, and store owners. From our findings, two store owners run online stores in conjunction with their physical stores, but they also mentioned their main revenues are mainly from the physical stores. The reason because they encountered stiff competition against bigger online retail stores like Amazon, eBay, Discogs, etc. And the other owner who previously had an online store had to close it down because the revenue didn't cover the operational cost.
         </p>
-        <p>
-          From the customers' perspective, many of them didn't have anything in mind of what to buy before coming to the store, and they like to crate surfing in-store to find hidden gems before they decided to make purchases.
-        </p>
       </div>
       <div className="par par--wide-width spacing">
         <ImgSection
@@ -163,8 +162,12 @@ export default () => (
             {url: vinylStore2, style: {padding: '8px'}},
             {url: vinylStore3, style: {padding: '8px'}},
           ]}
-          caption="Payment process wire-flow"
-          />
+        />
+      </div>
+      <div className="par par--normal-width spacing">
+        <p>
+          From the customers' perspective, many of them didn't have anything in mind of what to buy before coming to the store, and they like to crate surfing in-store to find hidden gems before they decided to make purchases.
+        </p>
       </div>
       <div className="par par--normal-width">
         <p>
@@ -175,13 +178,17 @@ export default () => (
           <h3>Affinity Diagram</h3>
           We arranged the data we collected from our research and grouped them into various categories to create an affinity diagram. This exercise will help us to develop other analysis deliverables such as user journey, user scenario, and persona.
         </p>
-        <p><WillDoNext text="Affinity diagram image" /></p>
+        <p>
+          <ImgSection
+            imgs={[{url: affinityDiagram}]}
+            caption="Affinity Diagram"
+          />
+        </p>
         <p>
           <h3>User Journey &amp; User Scenario</h3>
-          Furthermore, to elaborate more on how users might interact with the website from start to finish, we created both user journey and user scenario.
+          Furthermore, to elaborate more on how users might interact with the website from start to finish, we created both user journey and user scenario. These deliverables will help us to determine the user flow for each step of the process because users unconsciously have expectations every stage interacting with the website.
         </p>
-        <p><WillDoNext text="User Journey Image" /></p>
-        <p><WillDoNext text="User Scenario Image" /></p>
+        <p><ImgSection imgs={[{url: costumerJourney}]} caption="User Journey" /></p>
       </div>
       <div className="par par--normal-width">
         <p>
@@ -196,8 +203,8 @@ export default () => (
       <div className="par par--wide-width spacing">
         <ImgSection
           imgs={[{url: taskFlow}]}
-            caption="Payment process wire-flow"
-          />
+          caption="Payment process wire-flow"
+        />
       </div>
       <div className="par par--normal-width">
         <p>
