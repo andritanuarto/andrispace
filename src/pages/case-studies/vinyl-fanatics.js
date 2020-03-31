@@ -1,9 +1,11 @@
 import React from "react";
 import Moment from 'moment';
-import InteriorPostLayout from "../../components/interior/interior-post-layout";
-import caseStudyBanner from '../../img/vinyl-fanatics/case-study-banner.jpeg';
+import ImgSection from '../../components/interior/img-section';
 import BarChart from '../../components/interior/bar-chart';
 import WillDoNext from '../../components/interior/will-do-next';
+import InteriorPostLayout from "../../components/interior/interior-post-layout";
+import caseStudyBanner from '../../img/vinyl-fanatics/case-study-banner.jpeg';
+import taskFlow from '../../img/vinyl-fanatics/payment-task-flow.png';
 
 export const frontmatter = {
   clientName: 'Vinyl Fanatics',
@@ -178,7 +180,12 @@ export default () => (
         <p>
           Because we decided to include a user account, we created a single checkout by asking the user to put payment information every time they make a purchase. To accommodate frequent buyers, we advised our client to have a cookie functionality to auto-fill the payment information such as name, email, address so the user can make a quick purchase after the first time.
         </p>
-        <p><WillDoNext text="User Flow Image" /></p>
+      </div>
+      <div className="par par--wide-width spacing">
+        <ImgSection
+          imgs={[{url: taskFlow}]}
+            caption="Payment process user-flow"
+          />
       </div>
       <div className="par par--normal-width">
         <p>
