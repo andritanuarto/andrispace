@@ -11,6 +11,7 @@ import vinylStore2 from '../../img/vinyl-fanatics/vinyl-store-2.jpg';
 import vinylStore3 from '../../img/vinyl-fanatics/vinyl-store-3.jpg';
 import affinityDiagram from '../../img/vinyl-fanatics/affinity-diagram.jpg';
 import costumerJourney from '../../img/vinyl-fanatics/customer-journey.jpg';
+import iA from '../../img/vinyl-fanatics/ia.png'
 
 export const frontmatter = {
   clientName: 'Vinyl Fanatics',
@@ -195,7 +196,7 @@ export default () => (
           <h2>Information Architecture &amp; Wire-Flow</h2>
           After we had a better knowledge of the target user's needs and pain points, we started to structure and prioritize the content by creating Information Architecture (IA). Producing a reliable IA will help us to streamline our design process during the creation of the wireframes. Essential pages like homepage, product listing, contact, product search, cart, and payment process are the top priority. We also decided not to implement user account functionality considering the client's limited resource to maintain it and our team also felt that feature is not essential at the beginning, but will be a future consideration once the website gets more traffic.
         </p>
-        <p><WillDoNext text="IA Image" /></p>
+        <p><ImgSection imgs={[{url: iA}]} caption="Navigations for both desktop and mobile versions" /></p>
         <p>
           Because we decided to include a user account, we created a single checkout by asking the user to put payment information every time they make a purchase. To accommodate frequent buyers, we advised our client to have a cookie functionality to auto-fill the payment information such as name, email, address so the user can make a quick purchase after the first time.
         </p>
