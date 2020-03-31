@@ -173,7 +173,7 @@ export default () => (
       </div>
       <div className="par par--normal-width">
         <p>
-          <h2>Information Architecture &amp; User-Flow</h2>
+          <h2>Information Architecture &amp; Wire-Flow</h2>
           After we had a better knowledge of the target user's needs and pain points, we started to structure and prioritize the content by creating Information Architecture (IA). Producing a reliable IA will help us to streamline our design process during the creation of the wireframes. Essential pages like homepage, product listing, contact, product search, cart, and payment process are the top priority. We also decided not to implement user account functionality considering the client's limited resource to maintain it and our team also felt that feature is not essential at the beginning, but will be a future consideration once the website gets more traffic.
         </p>
         <p><WillDoNext text="IA Image" /></p>
@@ -184,13 +184,13 @@ export default () => (
       <div className="par par--wide-width spacing">
         <ImgSection
           imgs={[{url: taskFlow}]}
-            caption="Payment process user-flow"
+            caption="Payment process wire-flow"
           />
       </div>
       <div className="par par--normal-width">
         <p>
           <h2>Wireframes</h2>
-          After we completed IA and user-flow, we began mid-fi and hi-fi wireframes, respectively. Each fidelity we tested internally, but for hi-fi, we did both internal and external tests to a minimized biassed view on our design decision.
+          After we completed IA and wire-flow, we began mid-fi and hi-fi wireframes, respectively. Each fidelity we tested internally, but for hi-fi, we did both internal and external tests to a minimized biassed view on our design decision.
         </p>
         <p><WillDoNext text="Mid-fi Image" /></p>
         <p><WillDoNext text="Hi-fi Image" /></p>
