@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <>
       <div className="home-container">
-        <Header/>
+        <Header logoColor="#ffffff" />
         <Hero/>
       </div>
     </>

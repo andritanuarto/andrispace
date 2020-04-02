@@ -12,6 +12,7 @@ import vinylStore3 from '../../img/vinyl-fanatics/vinyl-store-3.jpg';
 import affinityDiagram from '../../img/vinyl-fanatics/affinity-diagram.jpg';
 import costumerJourney from '../../img/vinyl-fanatics/customer-journey.jpg';
 import iA from '../../img/vinyl-fanatics/ia.png'
+import lowFi from '../../img/vinyl-fanatics/low-fi.jpg'
 
 export const frontmatter = {
   clientName: 'Vinyl Fanatics',
@@ -210,10 +211,11 @@ export default () => (
       <div className="par par--normal-width">
         <p>
           <h2>Wireframes</h2>
-          After we completed IA and wire-flow, we began mid-fi and hi-fi wireframes, respectively. Each fidelity we tested internally, but for hi-fi, we did both internal and external tests to a minimized biassed view on our design decision.
+          After we completed IA and wire-flow, we began low-fi, mid-fi and hi-fi wireframes, respectively. Each fidelity we tested internally, but for hi-fi, we did both internal and external tests to a minimized biassed view on our design decision.
         </p>
+        <p><ImgSection imgs={[{url: lowFi}]} caption="Low fidelity wireframes"/></p>
         <p><WillDoNext text="Mid-fi Image" /></p>
-        <p><WillDoNext text="Hi-fi Image" /></p>
+        <p> </p>
         <p>Our design approach is to create the right balance of white space to make the content easier to read. During the prototype testing, we also noticed it's easier for users to break down the payment process into different steps rather than completing a full form into one page.</p>
       </div>
     </>
