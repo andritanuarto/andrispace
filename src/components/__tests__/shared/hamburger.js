@@ -1,9 +1,10 @@
 import React from "react";
-import { findByTestAttr, proptypesValidator } from '../../../test/testUtils';
+import { findByTestAttr } from '../../../test/testUtils';
 import Hamburger from "../../shared/hamburger";
-
+import { connect } from 'react-redux';
 import Enzyme, { shallow } from 'enzyme';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
+
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 const mockFunction = jest.fn();
