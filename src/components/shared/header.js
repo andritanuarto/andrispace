@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Link } from "gatsby";
-import Logo from "./logo";
-import Hamburger from "./hamburger";
+import { Link } from 'gatsby';
+import Logo from './logo';
+import Hamburger from './hamburger';
 import { handleNavigation, handleInitialRenderStatus } from '../../actions/ui';
 import instagram from '../../img/instagram.svg';
 import twitter from '../../img/twitter.svg';
@@ -19,7 +19,7 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(handleInitialRenderStatus(status));
     }
   };
-}
+};
 
 const mapStateToProps = ({ navigationOpen, initialRender }) => {
   return {
@@ -36,7 +36,14 @@ const menus = [
   {label: 'contact', link: '/contact'}
 ];
 
-export const Header = ({navColor, logoColor, navigationOpen, initialRender, handleNavigation, handleInitialRenderStatus}) => {
+export const Header = ({
+  navColor,
+  logoColor,
+  navigationOpen,
+  initialRender,
+  handleNavigation,
+  handleInitialRenderStatus
+}) => {
   useEffect(() => {
     setTimeout(() => {
       handleInitialRenderStatus(false);
