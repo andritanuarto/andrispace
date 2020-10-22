@@ -2,10 +2,10 @@ import { createStore as reduxCreateStore } from "redux"
 import { UI } from '../actions/action-types';
 
 export const initialState = {
-initialRender: true,
-splashIndex: 0,
-heroIndex: 0,
-navigationOpen: false
+  initialRender: true,
+  splashIndex: 0,
+  heroIndex: 0,
+  navigationOpen: false
 };
 
 const reducer = (state = initialState, action = {}) => {

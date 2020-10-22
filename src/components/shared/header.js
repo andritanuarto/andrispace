@@ -10,7 +10,7 @@ import github from '../../img/github-cat.svg';
 import linkedin from '../../img/linkedin.svg';
 import SVG from 'react-inlinesvg';
 
-const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = (dispatch) => {
   return {
     handleNavigation: (openOrClose) => {
       dispatch(handleNavigation(openOrClose));
@@ -21,7 +21,7 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-const mapStateToProps = ({ navigationOpen, initialRender }) => {
+export const mapStateToProps = ({ navigationOpen, initialRender }) => {
   return {
     navigationOpen,
     initialRender
