@@ -26,6 +26,8 @@ test('proptypes are correct', () => {
 });
 
 test('logo has .logo--animated when animated props is true', () => {
-  const wrapper = setup({animated: true});
-  expect(wrapper.find('.logo--animated').length).toBe(1);
+  let wrapper = setup({animated: true});
+  expect(wrapper.find('.logo.logo--animated').length).toBe(1);
+  wrapper = setup({animated: false});
+  expect(wrapper.find('.logo--animated').length).toBe(0);
 });

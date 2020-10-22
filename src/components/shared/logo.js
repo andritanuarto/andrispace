@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 
 const Logo = ({logoColor, animated}) => {
   return (
-    <Link data-test="logo" to={`/`} className={`logo ${animated ? 'logo--animated' : ''}`} style={{color: logoColor}}>
+    <Link
+      data-test="logo" to={`/`}
+      className={`logo ${animated ? 'logo--animated' : ''}`}
+      style={{color: logoColor}}
+    >
       <div className="logo__main">
         andri&rsquo;space
         <span>UI / UX / DEV</span>

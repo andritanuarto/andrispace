@@ -44,11 +44,12 @@ export const Header = ({navColor, logoColor, navigationOpen, initialRender, hand
   });
 
   const mainMenu = (
-    <div className="nav" data-test="nav-menu">
+    <div className="nav">
       {menus.map((menu) => {
         return (
-          <div key={menu.label}>
+          <div key={menu.label} data-test="nav-menu">
             <Link
+              data-test={`nav-menu-${menu.label}`}
               key={menu.label}
               onClick={() => {handleNavigation(!navigationOpen)}}
               to={menu.link}>

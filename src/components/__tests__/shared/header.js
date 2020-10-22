@@ -1,13 +1,10 @@
 import React from "react";
 import Enzyme, { mount, shallow } from 'enzyme';
-import configureStore from 'redux-mock-store';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
-
-import { initialState } from '../../../state/createStore';
+import { findByTestAttr } from '../../../test/testUtils';
 import { Header } from "../../shared/header";
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });
-const mockStore = configureStore([]);
 
 const defaultProps = {
   navColor: '#ffffff',
@@ -30,19 +27,25 @@ describe('<Header/>', () => {
   });
 
   it('It should render nav', () => {
-    const overwrite = {
-      navColor: '#ffffff',
-      logoColor: '#ffffff',
-      navigationOpen: true,
-      initialRender: false,
-      handleNavigation: () => {},
-      handleInitialRenderStatus: () => {}
-    }
+    const overwrite = Object.assign(defaultProps, {navigationOpen: true});
 
     const wrapper = shallow(
       <Header {...overwrite} />
     );
 
     expect(wrapper.find('.nav').length).toBe(1);
+    expect(findByTestAttr(wrapper, 'nav-menu').length).toBe(5);
+  });
+
+  it('should call funtion', () => {
+    const mockFunction = jest.fn();
+    const overwrite = Object.assign(defaultProps, {navigationOpen: true, handleNavigation: mockFunction});
+
+    const wrapper = shallow(
+      <Header {...overwrite} />
+    );
+
+    findByTestAttr(wrapper, 'nav-menu-home').simulate('click');
+    expect(mockFunction).toHaveBeenCalledTimes(1);
   });
 });
