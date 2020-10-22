@@ -36,7 +36,7 @@ const menus = [
   {label: 'contact', link: '/contact'}
 ];
 
-const Header = ({navColor, logoColor, navigationOpen, initialRender, handleNavigation, handleInitialRenderStatus}) => {
+export const Header = ({navColor, logoColor, navigationOpen, initialRender, handleNavigation, handleInitialRenderStatus}) => {
   useEffect(() => {
     setTimeout(() => {
       handleInitialRenderStatus(false);
@@ -44,13 +44,12 @@ const Header = ({navColor, logoColor, navigationOpen, initialRender, handleNavig
   });
 
   const mainMenu = (
-    <div className="nav">
+    <div className="nav" data-test="nav-menu">
       {menus.map((menu) => {
         return (
           <div key={menu.label}>
             <Link
               key={menu.label}
-              data-test="nav__menu"
               onClick={() => {handleNavigation(!navigationOpen)}}
               to={menu.link}>
               {menu.label}

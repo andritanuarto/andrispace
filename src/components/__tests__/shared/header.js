@@ -1,38 +1,48 @@
 import React from "react";
-import Header from "../../shared/header";
-import { findByTestAttr } from '../../../test/testUtils';
-import Enzyme, { mount } from 'enzyme';
-import { Provider } from "react-redux"
+import Enzyme, { mount, shallow } from 'enzyme';
 import configureStore from 'redux-mock-store';
-
 import EnzymeAdapter from 'enzyme-adapter-react-16';
-Enzyme.configure({ adapter: new EnzymeAdapter() });
 
-const mockStore = configureStore();
-const store = mockStore();
+import { initialState } from '../../../state/createStore';
+import { Header } from "../../shared/header";
+
+Enzyme.configure({ adapter: new EnzymeAdapter() });
+const mockStore = configureStore([]);
 
 const defaultProps = {
   navColor: '#ffffff',
   logoColor: '#ffffff',
-  navigationOpen: '#ffffff',
-  initialRender: '#ffffff',
-  handleNavigation: '#ffffff',
-  handleInitialRenderStatus: '#ffffff'
+  navigationOpen: false,
+  initialRender: false,
+  handleNavigation: () => {},
+  handleInitialRenderStatus: () => {}
 }
 
-describe('My Footer Component', () => {
-  let wrapper;
+describe('<Header/>', () => {
+  let store;
 
-  beforeEach(() => {
-    wrapper = mount(
-      <Provider store={store}>
-          <Header {...defaultProps} />
-      </Provider>
+  it('It should render the component properly', () => {
+    const wrapper = shallow(
+      <Header {...defaultProps} />
     );
+
+    expect(wrapper.find('.header').length).toBe(1);
   });
 
-  it('It should render <Header> properly', () => {
-      expect(wrapper.find(Header).length).toBe(1);
-      expect(wrapper.find('.header').length).toBe(1);
+  it('It should render nav', () => {
+    const overwrite = {
+      navColor: '#ffffff',
+      logoColor: '#ffffff',
+      navigationOpen: true,
+      initialRender: false,
+      handleNavigation: () => {},
+      handleInitialRenderStatus: () => {}
+    }
+
+    const wrapper = shallow(
+      <Header {...overwrite} />
+    );
+
+    expect(wrapper.find('.nav').length).toBe(1);
   });
 });
