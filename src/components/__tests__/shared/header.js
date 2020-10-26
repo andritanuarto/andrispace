@@ -1,5 +1,5 @@
 import React from "react";
-import Enzyme, { shallow } from 'enzyme';
+import Enzyme, { shallow, mount } from 'enzyme';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
 import { findByTestAttr } from '../../../test/testUtils';
 import { Header, mapStateToProps, mapDispatchToProps } from "../../shared/header";
@@ -15,14 +15,16 @@ const defaultProps = {
   handleInitialRenderStatus: () => {}
 }
 
+jest.useFakeTimers();
+
 describe('<Header/>', () => {
-  let store;
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<Header {...defaultProps} />);
+  });
 
   it('It should render the component properly', () => {
-    const wrapper = shallow(
-      <Header {...defaultProps} />
-    );
-
     expect(wrapper.find('.header').length).toBe(1);
   });
 
@@ -37,7 +39,7 @@ describe('<Header/>', () => {
     expect(findByTestAttr(wrapper, 'nav-menu').length).toBe(5);
   });
 
-  it('should call funtion', () => {
+  it('should call handleNavigation funtion', () => {
     const mockFunction = jest.fn();
     const overwrite = Object.assign(defaultProps, {navigationOpen: true, handleNavigation: mockFunction});
 
@@ -47,6 +49,21 @@ describe('<Header/>', () => {
 
     findByTestAttr(wrapper, 'nav-menu-home').simulate('click');
     expect(mockFunction).toHaveBeenCalledTimes(1);
+  });
+
+  it('should call handleInitialRenderStatus funtion', () => {
+    const mockFunction = jest.fn();
+    const overwrite = Object.assign(defaultProps, {navigationOpen: true, handleInitialRenderStatus: mockFunction});
+
+    mount(<Header {...overwrite} />);
+
+    // Fast-forward until all timers have been executed
+    jest.runAllTimers();
+
+    // Now our callback should have been called!
+    expect(mockFunction).toBeCalled();
+    expect(mockFunction).toHaveBeenCalledTimes(1);
+
   });
 
   it('show expected value for mapStateToProps', () => {
@@ -59,14 +76,14 @@ describe('<Header/>', () => {
     expect(mapStateToProps(initialState).navigationOpen).toEqual(false);
   });
 
-  it('handleNavigation should call the right action type', () => {
+  it('handleNavigation should call the UI.SET_NAVIGATION_OPEN action type', () => {
     const dispatch = jest.fn();
 
     mapDispatchToProps(dispatch).handleNavigation();
     expect(dispatch.mock.calls[0][0]).toEqual({ type: 'UI.SET_NAVIGATION_OPEN'});
   });
 
-  it('handleInitialRenderStatus should call the right action type', () => {
+  it('handleInitialRenderStatus should call UI.SET_INITIAL_RENDER_STATUS action type', () => {
     const dispatch = jest.fn();
 
     mapDispatchToProps(dispatch).handleInitialRenderStatus();
