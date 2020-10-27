@@ -36,6 +36,7 @@ export const Splash = (
     return (
       <li key={index}>
         <a
+          data-test={`slide-nav`}
           style={{background: activeSlideIndex === index ? activeSlideNavColor : slideNavColor}}
           onClick={() => splashHandler(index)}/>
       </li>
