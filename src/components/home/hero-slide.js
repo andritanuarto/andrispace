@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from "gatsby";
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
-import { useStaticQuery, graphql } from "gatsby";
 import heroImgAdbusters from '../../img/adbusters/hero.jpg';
 import heroImgUtg from '../../img/utg/utg-case-study-banner.jpg';
 import heroImgEnvisio from '../../img/envisio/envisio-bg.jpg';

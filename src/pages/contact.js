@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from 'react-reveal/Fade';
 import Header from "../components/shared/header";
 import InteriorContainer from '../components/shared/interior-container';
 import instagram from '../img/instagram.svg';
@@ -23,10 +22,10 @@ export default () => (
               phone: <a href="tel:andritanuarto@gmaio.com">+1 604-728-0786</a>
             </span>
             <ul className="contact__social-media-links">
-              <li><a target="_blank" href="http://instagram.com/andritanuarto"><SVG src={instagram} /></a></li>
-              <li><a target="_blank" href="https://twitter.com/andritanuarto" href="#"><SVG src={twitter} /></a></li>
-              <li><a target="_blank" href="https://github.com/andritanuarto"><SVG src={github} /></a></li>
-              <li><a target="_blank" href="https://www.linkedin.com/in/andritanuarto/"><SVG src={linkedin} /></a></li>
+              <li><a target="_blank" rel="noreferrer" href="http://instagram.com/andritanuarto"><SVG src={instagram} /></a></li>
+              <li><a target="_blank" rel="noreferrer" href="https://twitter.com/andritanuarto"><SVG src={twitter} /></a></li>
+              <li><a target="_blank" rel="noreferrer" href="https://github.com/andritanuarto"><SVG src={github} /></a></li>
+              <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/andritanuarto/"><SVG src={linkedin} /></a></li>
             </ul>
           </div>
           <div className="contact__right-side">

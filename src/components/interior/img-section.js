@@ -17,7 +17,7 @@ const ImgSection = ({imgs, caption, imgContainerStyle}) => {
 
     return (
       <div className="col--img" style={style} key={`${img}-${index}`}>
-        <img src={url} />
+        <img alt={url} src={url} />
       </div>
     );
   });

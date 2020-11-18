@@ -35,16 +35,16 @@ export default () => (
             <div className="about-page__skills__col">
               <strong>Tools that I use</strong>
               <ul>
-                <li><img src={sketch} height={48} title="Sketch" /></li>
-                <li><img src={invision} height={48} title="Invision" /></li>
-                <li><img src={xd} height={48} title="Adobe XD" /></li>
-                <li><img src={photoshop} height={48} title="Adobe Photoshop" /></li>
-                <li><img src={lightroom} height={48} title="Adobe Lightroom" /></li>
-                <li><img src={illustrator} height={48} title="Adobe Illustrator" /></li>
-                <li><img src={indesign} height={48}  title="Adobe Indesign" /></li>
-                <li><img src={vs} height={48}  title="Visual Studio Code" /></li>
-                <li><img src={iterm} height={54}  title="iTerm" /></li>
-                <li><img src={github} height={54}  title="Github Desktop" /></li>
+                <li><img alt="Sketch" src={sketch} height={48} title="Sketch" /></li>
+                <li><img alt="Invision" src={invision} height={48} title="Invision" /></li>
+                <li><img alt="Adobe XD" src={xd} height={48} title="Adobe XD" /></li>
+                <li><img alt="Adobe Photoshop" src={photoshop} height={48} title="Adobe Photoshop" /></li>
+                <li><img alt="Adobe Lightroom" src={lightroom} height={48} title="Adobe Lightroom" /></li>
+                <li><img alt="Adobe Illustrator" src={illustrator} height={48} title="Adobe Illustrator" /></li>
+                <li><img alt="Adobe Indesign" src={indesign} height={48}  title="Adobe Indesign" /></li>
+                <li><img alt="Adobe Visual Studio Code" src={vs} height={48}  title="Visual Studio Code" /></li>
+                <li><img alt="iTerm" src={iterm} height={54}  title="iTerm" /></li>
+                <li><img alt="Github" src={github} height={54}  title="Github Desktop" /></li>
               </ul>
             </div>
             <div className="about-page__skills__col">

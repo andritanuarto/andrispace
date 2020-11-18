@@ -10,8 +10,6 @@ import affinity from '../../img/adbusters/affinity.png';
 import persona from '../../img/adbusters/persona.jpg';
 import storyBoard from '../../img/adbusters/story-board.png';
 import digitizedUserflowLogin from '../../img/adbusters/login-userflow.png';
-import userflowLogin from '../../img/adbusters/login-userflow.jpg';
-import userflowResetPwd from '../../img/adbusters/reset-pwd-userflow.jpg';
 import digitizedUserflowHome from '../../img/adbusters/home-userflow.png';
 import lowFiWhiteboard from '../../img/adbusters/low-fi-whiteboard.jpg';
 import lowFiPaper from '../../img/adbusters/low-fi-paper.jpg';

@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../components/shared/header";
 import Hero from "../components/home/hero";
-import Fade from 'react-reveal/Fade';
 
 const Index = () => {
   return (
