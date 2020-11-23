@@ -12,7 +12,6 @@ const mapStateToProps = ({ heroIndex }) => {
 const PrevNextButtons = ({clickHandler, heroIndex, slidesLength}) => {
   const prevValue = (heroIndex - 1) < 0 ? 0 : heroIndex - 1;
   const nextValue = heroIndex >= (slidesLength - 1) ? slidesLength - 1 : heroIndex + 1;
-
   return (
     <div className="prev-next-buttons-container">
       <button
