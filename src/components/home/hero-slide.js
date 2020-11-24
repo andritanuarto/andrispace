@@ -57,7 +57,7 @@ const HeroSlide = ({heroIndex, edges, baseURL}) => {
             <h1 >{slide.projectTitle}</h1>
             <span >{slide.blurb}</span>
             <Link
-              to={`${slide.url}`}
+              to={`https://andrispace.com/${slide.url}`}
               className="btn btn--reverse"
             >
               read more <ArrowRightAlt/>
