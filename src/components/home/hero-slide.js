@@ -17,7 +17,7 @@ const mapStateToProps = ({ heroIndex }) => {
   };
 };
 
-const HeroSlide = ({heroIndex, edges}) => {
+const HeroSlide = ({heroIndex, edges, baseURL}) => {
   const slide = edges[heroIndex].node.frontmatter;
 
   let heroImg;
@@ -55,7 +55,7 @@ const HeroSlide = ({heroIndex, edges}) => {
             <h1 >{slide.projectTitle}</h1>
             <span >{slide.blurb}</span>
             <Link
-              to={slide.url}
+              to={`${baseURL}${slide.url}`}
               className="btn btn--reverse"
             >
               read more <ArrowRightAlt/>

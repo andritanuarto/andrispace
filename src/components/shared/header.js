@@ -42,7 +42,8 @@ export const Header = ({
   navigationOpen,
   initialRender,
   handleNavigation,
-  handleInitialRenderStatus
+  handleInitialRenderStatus,
+  
 }) => {
   useEffect(() => {
     setTimeout(() => {
@@ -59,7 +60,7 @@ export const Header = ({
               data-test={`nav-menu-${menu.label}`}
               key={menu.label}
               onClick={() => {handleNavigation(!navigationOpen)}}
-              to={menu.link}>
+              to={`${menu.link}`}>
               {menu.label}
             </Link>
           </div>

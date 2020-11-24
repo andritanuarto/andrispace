@@ -19,7 +19,7 @@ const mapStateToProps = ({ heroIndex }) => {
   };
 };
 
-const Hero = ({heroIndex, handleHeroIndex}) => {
+const Hero = ({heroIndex, handleHeroIndex, baseURL}) => {
   const slideIndexHandler = (nextOrPrev) => {
     handleHeroIndex(nextOrPrev);
   }
@@ -51,7 +51,7 @@ const Hero = ({heroIndex, handleHeroIndex}) => {
 
   return (
     <div className="hero-container">
-      <HeroSlide edges={edges} />
+      <HeroSlide edges={edges} baseURL={baseURL}/>
       <div className="hero-container__slide-nav-container">
         <div className="hero-container__slide-nav-center">
           {

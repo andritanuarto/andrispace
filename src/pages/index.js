@@ -2,12 +2,12 @@ import React from "react";
 import Header from "../components/shared/header";
 import Hero from "../components/home/hero";
 
-const Index = () => {
+const Index = ({location}) => {
   return (
     <>
       <div className="home-container">
         <Header logoColor="#ffffff" />
-        <Hero/>
+        <Hero baseURL={location.href}/>
       </div>
     </>
   );
