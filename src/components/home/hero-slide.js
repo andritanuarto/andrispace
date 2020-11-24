@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from "gatsby";
+import { Link, withPrefix } from "gatsby";
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
 import heroImgAdbusters from '../../img/adbusters/hero.jpg';
 import heroImgUtg from '../../img/utg/utg-case-study-banner.jpg';
@@ -42,7 +42,7 @@ const HeroSlide = ({heroIndex, edges, baseURL}) => {
       break;
   }
 
-  console.log(baseURL, 'baseURL');
+  console.log(withPrefix(), 'withPrefix');
 
   return (
     <>
@@ -57,7 +57,7 @@ const HeroSlide = ({heroIndex, edges, baseURL}) => {
             <h1 >{slide.projectTitle}</h1>
             <span >{slide.blurb}</span>
             <Link
-              to={`${baseURL}${slide.url}`}
+              to={`${slide.url}`}
               className="btn btn--reverse"
             >
               read more <ArrowRightAlt/>

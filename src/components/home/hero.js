@@ -51,7 +51,7 @@ const Hero = ({heroIndex, handleHeroIndex, baseURL}) => {
 
   return (
     <div className="hero-container">
-      <HeroSlide edges={edges} baseURL={baseURL}/>
+      <HeroSlide edges={edges} />
       <div className="hero-container__slide-nav-container">
         <div className="hero-container__slide-nav-center">
           {

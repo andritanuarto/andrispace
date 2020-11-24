@@ -26,7 +26,7 @@ export const frontmatter = {
   logoWidth: 'auto',
   opacityColor: '#000000',
   opacityLevel: '0.7',
-  url: './case-studies/envisio',
+  url: './envisio',
   heroImg: '../../img/envisio/envisio-bg.jpg',
   summary: 'Envisio developed the strategic planning web application that facilitates organizations to lay out their plans by defining their goals.'
 }

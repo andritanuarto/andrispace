@@ -24,7 +24,7 @@ export const frontmatter = {
   logoWidth: 'auto',
   opacityColor: '#000000',
   opacityLevel: '0.7',
-  url: './case-studies/vinyl-fanatics',
+  url: './vinyl-fanatics',
   heroImg: '../../img/vinyl-fanatics/hero.jpg',
   summary: 'Way before mp3, cd even cassette, the vinyl records enjoyed the popularity among music lovers'
 };
