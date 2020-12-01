@@ -58,12 +58,11 @@ describe('<Header/>', () => {
     const wrapper = mount(<Header {...overwrite} />);
     
     // Fast-forward until all timers have been executed
-    jest.advanceTimersByTime(4000);
+    jest.advanceTimersByTime(5000);
     wrapper.update();
 
     // Now our callback should have been called!
     expect(mockFunction).toHaveBeenCalledTimes(1);
-
   });
 
   it('show expected value for mapStateToProps', () => {

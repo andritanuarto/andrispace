@@ -49,10 +49,6 @@ export const Header = ({
     let timer = setTimeout(() => {
       handleInitialRenderStatus(false);
     }, 4000);
-
-    return () => {
-      clearTimeout(timer);
-    }
   }, []);
 
   const mainMenu = (
