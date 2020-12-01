@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import PropTypes from 'prop-types';
 
 const Logo = ({logoColor, animated}) => {
-  console.log('rerender');
   return (
     <Link
       data-test="logo" to={`/`}

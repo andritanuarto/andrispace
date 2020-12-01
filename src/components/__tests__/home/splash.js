@@ -1,6 +1,6 @@
 import React from "react";
 import Enzyme, { shallow, mount } from 'enzyme';
-import EnzymeAdapter from 'enzyme-adapter-react-16';
+import EnzymeAdapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { findByTestAttr } from '../../../test/testUtils';
 import { Splash, mapDispatchToProps } from "../../home/splash";
 

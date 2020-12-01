@@ -1,6 +1,6 @@
 import React from "react";
 import Enzyme, { shallow, mount } from 'enzyme';
-import EnzymeAdapter from 'enzyme-adapter-react-16';
+import EnzymeAdapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { findByTestAttr } from '../../../test/testUtils';
 import { Header, mapStateToProps, mapDispatchToProps } from "../../shared/header";
 
@@ -51,17 +51,17 @@ describe('<Header/>', () => {
     expect(mockFunction).toHaveBeenCalledTimes(1);
   });
 
-  it('should call handleInitialRenderStatus funtion', () => {
+  it('should call handleInitialRenderStatus function', () => {
     const mockFunction = jest.fn();
     const overwrite = Object.assign(defaultProps, {navigationOpen: true, handleInitialRenderStatus: mockFunction});
 
-    mount(<Header {...overwrite} />);
-
+    const wrapper = mount(<Header {...overwrite} />);
+    
     // Fast-forward until all timers have been executed
-    jest.runAllTimers();
+    jest.advanceTimersByTime(4000);
+    wrapper.update();
 
     // Now our callback should have been called!
-    expect(mockFunction).toBeCalled();
     expect(mockFunction).toHaveBeenCalledTimes(1);
 
   });

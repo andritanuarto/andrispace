@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const mapStateToProps = ({ navigationOpen }) => {
+export const mapStateToProps = ({ navigationOpen }) => {
   return {
     navigationOpen
   };
 };
 
-const InteriorContainer = ({children, additionalClass, navigationOpen}) => {
+export const InteriorContainer = ({children, additionalClass, navigationOpen}) => {
   return (
     <div
       className={`interior-page ${additionalClass} ${navigationOpen ? 'interior-page--overflow-hidden' : ''}`}

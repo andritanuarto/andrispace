@@ -42,8 +42,6 @@ const HeroSlide = ({heroIndex, edges, baseURL}) => {
       break;
   }
 
-  console.log(withPrefix(), 'withPrefix');
-
   return (
     <>
       <div key={slide.url} className="hero-container__background" style={{backgroundImage: `url(${heroImg})`}}/>
