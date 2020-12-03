@@ -3,23 +3,31 @@ import { connect } from 'react-redux';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 
-const mapStateToProps = ({ heroIndex }) => {
+export const mapStateToProps = ({ heroIndex }) => {
   return {
     heroIndex
   };
 };
 
-const PrevNextButtons = ({clickHandler, heroIndex, slidesLength}) => {
-  const prevValue = (heroIndex - 1) < 0 ? 0 : heroIndex - 1;
-  const nextValue = heroIndex >= (slidesLength - 1) ? slidesLength - 1 : heroIndex + 1;
+export const handlePrevNextValue = (buttonType, index, length) => {
+  if (buttonType === 'prev') {
+    return (index - 1) <= 0 ? 0 : index - 1;
+  } else {
+    return index >= (length - 1) ? length - 1 : index + 1;
+  }
+}
+
+export const PrevNextButtons = ({clickHandler, heroIndex, slidesLength}) => {
   return (
     <div className="prev-next-buttons-container">
       <button
         className="btn btn--transparent"
-        onClick={() => clickHandler(prevValue)}>
+        onClick={() => clickHandler(handlePrevNextValue('prev', heroIndex))}>
         <ArrowLeftIcon/>
       </button>
-      <button className="btn btn--transparent" onClick={() => clickHandler(nextValue)}>
+      <button 
+        className="btn btn--transparent"
+        onClick={() => clickHandler(handlePrevNextValue('next', heroIndex, slidesLength))}>
         <ArrowRightIcon/>
       </button>
     </div>
