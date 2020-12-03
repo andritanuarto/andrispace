@@ -22,7 +22,6 @@ export const handleNavigation = (openOrClose) => {
 }
 
 export const handleInitialRenderStatus = (status) => {
-  console.log('ok');
   return {
     type: UI.SET_INITIAL_RENDER_STATUS,
     status

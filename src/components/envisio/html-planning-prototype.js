@@ -97,7 +97,16 @@ const PlanningHTMLPrototype = () => {
 
   const playOverlay = (
     <div className="envisio-plan__overlay">
-      <button className="btn" onClick={() => {setRunPrototype(true)}}>Run The HTML Prototype <ArrowRightIcon/></button>
+      <button
+        className="btn" 
+        onClick={
+          () => {
+            setRunPrototype((current) => {
+              return !current
+            })
+          }
+        }
+      >Run The HTML Prototype <ArrowRightIcon/></button>
     </div>
   )
 

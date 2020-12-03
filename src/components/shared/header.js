@@ -46,10 +46,10 @@ export const Header = ({
   
 }) => {
   useEffect(() => {
-    let timer = setTimeout(() => {
+    setTimeout(() => {
       handleInitialRenderStatus(false);
     }, 4000);
-  }, []);
+  }, [initialRender, handleInitialRenderStatus]);
 
   const mainMenu = (
     <div className="nav">

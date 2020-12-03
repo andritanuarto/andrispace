@@ -8,7 +8,6 @@ Enzyme.configure({ adapter: new EnzymeAdapter() });
 describe('<InteriorContainer/>', () => {
   let wrapper;
 
-
   it('It should render the component properly', () => {
     wrapper = shallow(
       <InteriorContainer additionalClass="journal-page" navigationOpen={true}>
