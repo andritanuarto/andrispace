@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import PrevNextButtons from '../shared/prevNextButtons';
 import { handleHeroIndex } from '../../actions/ui';
 import HeroSlide from './hero-slide';
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 
-const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = (dispatch) => {
   return {
     handleHeroIndex: (heroIndex) => {
       dispatch(handleHeroIndex(heroIndex));
@@ -13,41 +13,18 @@ const mapDispatchToProps = (dispatch) => {
   };
 }
 
-const mapStateToProps = ({ heroIndex }) => {
+export const mapStateToProps = ({ heroIndex }) => {
   return {
     heroIndex
   };
 };
 
-const Hero = ({heroIndex, handleHeroIndex, baseURL}) => {
+export const HeroRender = ({data, heroIndex, handleHeroIndex}) => {
+  const edges = data.allJavascriptFrontmatter.edges;
+
   const slideIndexHandler = (nextOrPrev) => {
     handleHeroIndex(nextOrPrev);
   }
-
-  const data = useStaticQuery(graphql`
-    query HeaderQuery {
-      allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: DESC}, filter: {frontmatter: {status: {eq: "published"}}}) {
-        edges {
-          node {
-            frontmatter {
-              blurb
-              clientName
-              error
-              opacityColor
-              opacityLevel
-              postTitle
-              projectDate
-              projectTitle
-              url
-              logoWidth
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const edges = data.allJavascriptFrontmatter.edges;
 
   return (
     <div className="hero-container">
@@ -75,6 +52,37 @@ const Hero = ({heroIndex, handleHeroIndex, baseURL}) => {
       </div>
     </div>
   )
+}
+
+export const Hero = ({heroIndex, handleHeroIndex}) => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query HeaderQuery {
+          allJavascriptFrontmatter(sort: {fields: frontmatter___projectDate, order: DESC}, filter: {frontmatter: {status: {eq: "published"}}}) {
+            edges {
+              node {
+                frontmatter {
+                  blurb
+                  clientName
+                  error
+                  opacityColor
+                  opacityLevel
+                  postTitle
+                  projectDate
+                  projectTitle
+                  url
+                  logoWidth
+                }
+              }
+            }
+          }
+        }
+      `
+      }
+      render={data => <HeroRender data={data} heroIndex={heroIndex} handleHeroIndex={handleHeroIndex}/>}
+    />
+  );
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Hero);
