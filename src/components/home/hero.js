@@ -19,7 +19,7 @@ export const mapStateToProps = ({ heroIndex }) => {
   };
 };
 
-export const HeroRender = ({data, heroIndex, handleHeroIndex}) => {
+export const HeroRender = ({data, heroIndex, handleHeroIndex, baseURL}) => {
   const edges = data.allJavascriptFrontmatter.edges;
 
   const slideIndexHandler = (nextOrPrev) => {
@@ -28,7 +28,7 @@ export const HeroRender = ({data, heroIndex, handleHeroIndex}) => {
 
   return (
     <div className="hero-container">
-      <HeroSlide edges={edges} />
+      <HeroSlide edges={edges} baseURL={baseURL} />
       <div className="hero-container__slide-nav-container">
         <div className="hero-container__slide-nav-center">
           {
@@ -54,7 +54,7 @@ export const HeroRender = ({data, heroIndex, handleHeroIndex}) => {
   )
 }
 
-export const Hero = ({heroIndex, handleHeroIndex}) => {
+export const Hero = ({heroIndex, handleHeroIndex, baseURL}) => {
   return (
     <StaticQuery
       query={graphql`
@@ -80,7 +80,7 @@ export const Hero = ({heroIndex, handleHeroIndex}) => {
         }
       `
       }
-      render={data => <HeroRender data={data} heroIndex={heroIndex} handleHeroIndex={handleHeroIndex}/>}
+      render={data => <HeroRender data={data} heroIndex={heroIndex} handleHeroIndex={handleHeroIndex} baseURL={baseURL} />}
     />
   );
 };
